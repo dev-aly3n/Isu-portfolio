@@ -1,0 +1,5 @@
+@layer components {
+    .main-container {
+        @apply w-full overflow-hidden;
+    }
+}
