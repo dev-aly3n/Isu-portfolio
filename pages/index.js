@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import Home from '../components/homePage/Home';
 
 export default function home() {
   return (
@@ -16,6 +17,7 @@ export default function home() {
         />
         <meta name="author" content="dev aly3n" />
       </Head>
+      <Home />
     </Fragment>
   );
 }

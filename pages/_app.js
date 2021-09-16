@@ -11,11 +11,11 @@ fontawesomeConfig.autoAddCss = false;
 function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
-      <Header />
-      <Main>
+      {/* <Header /> */}
+      {/* <Main> */}
         <Component {...pageProps} />
-      </Main>
-      <Footer />
+      {/* </Main> */}
+      {/* <Footer /> */}
     </Fragment>
   );
 }
