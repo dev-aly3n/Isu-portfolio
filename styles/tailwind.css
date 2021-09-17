@@ -15,7 +15,7 @@
   @apply mx-auto bg-black overflow-x-hidden;
 } */
 body {
-  @apply bg-promary-500;
+  @apply bg-promary-300;
 }
 
 
