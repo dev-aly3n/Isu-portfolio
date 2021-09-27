@@ -1,6 +1,6 @@
 
 // shimmer effect for image placeholder
-export const shimmer = (w, h) => `
+export const shimmer = (w:number, h:number):string => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="g">
@@ -14,7 +14,7 @@ export const shimmer = (w, h) => `
   <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
 </svg>`;
 
-export const toBase64 = (str) =>
+export const toBase64 = (str:string):string =>
   typeof window === "undefined"
     ? Buffer.from(str).toString("base64")
     : window.btoa(str);

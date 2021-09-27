@@ -205,7 +205,7 @@ export const twAnimation = {
     opacity: 0,
     x: 300,
   },
-  visable: (custom) => ({
+  visable: (custom:number) => ({
     opacity: 1,
     x: 0,
     transition: { duration: 0.9, delay: custom * 0.15 },
