@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Home from '../components/homePage/Home';
+import Gate from '../components/gatePage/Gate';
 
-export default function home() {
+export default function home():JSX.Element {
   return (
     <Fragment>
       <Head>
@@ -17,7 +17,7 @@ export default function home() {
         />
         <meta name="author" content="dev aly3n" />
       </Head>
-      <Home />
+      <Gate />
     </Fragment>
   );
 }
