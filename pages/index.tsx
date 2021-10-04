@@ -6,6 +6,7 @@ export default function home():JSX.Element {
   return (
     <Fragment>
       <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>dev Aly3n - JS developer</title>
         <meta
           name="description"

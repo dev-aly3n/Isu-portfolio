@@ -6,9 +6,8 @@ const UpLine: React.FC = (): JSX.Element => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="812"
-      height="243"
       viewBox="359 207 812 243"
-      preserveAspectRatio="none"
+      preserveAspectRatio="slice"
     >
       <g>
         <defs>
@@ -25,8 +24,8 @@ const UpLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d1224"
             fill="none"
-            stroke-width="1.0"
-            stroke="#404040"
+            stroke-width="3.0"
+            stroke="#fff"
             stroke-linecap="square"
             filter="none"
           ></use>
