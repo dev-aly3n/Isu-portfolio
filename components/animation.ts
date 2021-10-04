@@ -318,6 +318,14 @@ export const sportwaveAnimation = {
   visable: {
     pathLength: 1,
     pathOffset: 0,
-    transition: { duration: 5, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+    transition: { duration: 3, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+  },
+};
+export const sportwaveAnimation2 = {
+  hidden: { pathLength: 0, pathOffset: 1 },
+  visable: {
+    pathLength: 1,
+    pathOffset: 0,
+    transition: { duration: 3, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
   },
 };
