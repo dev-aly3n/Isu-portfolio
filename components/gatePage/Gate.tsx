@@ -1,18 +1,12 @@
-import LeftSign from "./LeftSign";
-import LeftSignContainer from "./LeftSignContainer";
+import LeftDoor from "./LeftDoor";
+import RightDoor from "./RightDoor";
 
 const Gate: React.FC = (): JSX.Element => {
   return (
-    <div>
-      <h1>open the Gate</h1>
-      <div className="relative">
-        <div className="absolute top-10 left-10 z-50">
-
-      <LeftSign anim={true} />
-        </div>
-        <div className="absolute top-10 left-10">
-      <LeftSignContainer anim={true} />
-      </div>
+    <div className="flex flex-col justify-center items-center h-screen">
+      <div className="flex flex-row items-center justify-center">
+        <LeftDoor />
+        <RightDoor />
       </div>
     </div>
   );

@@ -314,10 +314,10 @@ export const uniwaveAnimation = {
 // sportwave
 // sportwave
 export const sportwaveAnimation = {
-  hidden: { pathLength: 0, pathOffset: 1 },
+  hidden: { pathLength: 0, pathOffset: 0 },
   visable: {
     pathLength: 1,
     pathOffset: 0,
-    transition: { duration: 30, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+    transition: { duration: 5, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
   },
 };
