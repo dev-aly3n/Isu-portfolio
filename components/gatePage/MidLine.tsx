@@ -10,6 +10,7 @@ const MidLine: React.FC = (): JSX.Element => {
       <g>
         <defs>
           <motion.path
+          filter="url(#inset-shadow)"
             variants={sportwaveAnimation}
             initial="hidden"
             animate="visable"
@@ -22,8 +23,8 @@ const MidLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d12245"
             fill="none"
-            stroke-width="3.0"
-            stroke="#fff"
+            stroke-width="30.0"
+            stroke="#535353"
             stroke-linecap="square"
             filter="none"
           ></use>

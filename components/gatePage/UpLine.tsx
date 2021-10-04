@@ -3,13 +3,25 @@ import { sportwaveAnimation } from "../animation";
 
 const UpLine: React.FC = (): JSX.Element => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="359 207 812 243"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="359 207 812 243">
+      <filter id="inset-shadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feComponentTransfer in="SourceAlpha">
+          <feFuncA type="table" tableValues="1 0" />
+        </feComponentTransfer>
+        <feGaussianBlur stdDeviation="5" />
+        <feOffset dx="0" dy="5" result="offsetblur" />
+        <feFlood flood-color="rgb(0, 0, 0)" result="color" />
+        <feComposite in2="offsetblur" operator="in" />
+        <feComposite in2="SourceAlpha" operator="in" />
+        <feMerge>
+          <feMergeNode in="SourceGraphic" />
+          <feMergeNode />
+        </feMerge>
+      </filter>
       <g>
         <defs>
           <motion.path
+            filter="url(#inset-shadow)"
             variants={sportwaveAnimation}
             initial="hidden"
             animate="visable"
@@ -22,8 +34,8 @@ const UpLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d1224"
             fill="none"
-            stroke-width="3.0"
-            stroke="#fff"
+            stroke-width="30.0"
+            stroke="#535353"
             stroke-linecap="square"
             filter="none"
           ></use>
