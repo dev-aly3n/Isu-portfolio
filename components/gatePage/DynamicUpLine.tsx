@@ -4,24 +4,53 @@ import { sportwaveAnimation } from "../animation";
 const DynamicUpLine: React.FC = (): JSX.Element => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="359 207 812 243">
-      <filter id="inset-shadow" x="-50%" y="-50%" width="200%" height="200%">
-        <feComponentTransfer in="SourceAlpha">
-          <feFuncA type="table" tableValues="1 0" />
-        </feComponentTransfer>
-        <feGaussianBlur stdDeviation="5" />
-        <feOffset dx="0" dy="5" result="offsetblur" />
-        <feFlood flood-color="rgb(0, 0, 0)" result="color" />
-        <feComposite in2="offsetblur" operator="in" />
-        <feComposite in2="SourceAlpha" operator="in" />
-        <feMerge>
-          <feMergeNode in="SourceGraphic" />
-          <feMergeNode />
-        </feMerge>
-      </filter>
       <g>
+        <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
+          {/* <!-- Thicken out the original shape --> */}
+          <feMorphology
+            operator="dilate"
+            radius="2"
+            in="SourceAlpha"
+            result="thicken"
+          />
+
+          {/* <!-- Use a gaussian blur to create the soft blurriness of the glow --> */}
+          <feGaussianBlur in="thicken" stdDeviation="10" result="blurred" >
+          <animate
+            attributeName="stdDeviation"
+            from="5"
+            to="8"
+            dur="3s"
+            repeatCount="indefinite"
+            values="7; 10; 10; 7;"
+            keyTimes="0; 0.33; 0.66; 1"
+
+          />
+          </feGaussianBlur>
+
+          {/* <!-- Change the colour --> */}
+          <feFlood floodColor="rgb(0,186,255)" result="glowColor" />
+
+          {/* <!-- Color in the glows --> */}
+          <feComposite
+            in="glowColor"
+            in2="blurred"
+            operator="in"
+            result="softGlow_colored"
+          />
+
+
+
+          {/* <!--	Layer the effects together --> */}
+          <feMerge>
+            <feMergeNode in="softGlow_colored" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+    
+        </filter>
         <defs>
           <motion.path
-            filter="url(#inset-shadow)"
+            filter="url(#sofGlow)"
             variants={sportwaveAnimation}
             initial="hidden"
             animate="visable"

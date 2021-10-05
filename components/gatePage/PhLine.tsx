@@ -3,7 +3,9 @@ import { sportwaveAnimation2 } from "../animation";
 
 const PhLine: React.FC = (): JSX.Element => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="227 26 250 900">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="227 26 250 900"
+    className="overflow-visible"
+    >
       <g>
         <defs>
           <motion.path

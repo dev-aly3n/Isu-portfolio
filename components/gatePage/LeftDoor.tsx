@@ -3,6 +3,7 @@ import MidLine from "./MidLine";
 import PhLine from "./PhLine";
 import DoorKey from "./DoorKey";
 import DynamicUpLine from "./DynamicUpLine";
+import DynamicMidLine from "./DynamicMidLine";
 
 const LeftDoor: React.FC = (): JSX.Element => {
   return (
@@ -10,31 +11,40 @@ const LeftDoor: React.FC = (): JSX.Element => {
       <img src="/gate1.jpg" className="w-full h-screen object-right" />
 
       <DoorKey />
-        <div className="absolute top-0 right-0 w-36 h-[50vh]  overflow-hidden">
-          <PhLine />
-        </div>
-        <div className="absolute bottom-0 right-0 w-36 h-[50vh]  overflow-hidden" style={{ transform: "scaleY(-1)" }}>
-          <PhLine />
-        </div>
+      <div className="absolute top-0 right-0 w-36 h-[50vh]  overflow-hidden">
+        <PhLine />
+      </div>
+      <div
+        className="absolute bottom-0 right-0 w-36 h-[50vh]  overflow-hidden"
+        style={{ transform: "scaleY(-1)" }}
+      >
+        <PhLine />
+      </div>
       <div className="flex flex-col absolute top-1/2 mt-[-40%] right-0 w-full">
         <div className="relative">
           <UpLine />
           <div className="absolute top-0 left-0 w-full h-full">
-          <DynamicUpLine />
+            <DynamicUpLine />
           </div>
         </div>
         <div className=" flex flex-col">
-          <div>
+          <div className="relative">
             <MidLine />
+            <div className="absolute top-0 left-0 w-full h-full ">
+              <DynamicMidLine />
+            </div>
           </div>
-          <div className="" style={{ transform: "scaleY(-1)" }}>
+          <div className="relative" style={{ transform: "scaleY(-1)" }}>
             <MidLine />
+            <div className="absolute top-0 left-0 w-full h-full">
+              <DynamicMidLine />
+            </div>
           </div>
         </div>
         <div className="relative" style={{ transform: "scaleY(-1)" }}>
           <UpLine />
           <div className="absolute top-0 left-0 w-full h-full">
-          <DynamicUpLine />
+            <DynamicUpLine />
           </div>
         </div>
       </div>
