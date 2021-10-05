@@ -11,7 +11,7 @@ const DynamicUpLine: React.FC = (): JSX.Element => {
           {/* <!-- Thicken out the original shape --> */}
           <feMorphology
             operator="dilate"
-            radius="2"
+            radius="3"
             in="SourceAlpha"
             result="thicken"
           />

@@ -29,9 +29,9 @@ const PhLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d122469"
             fill="none"
-            stroke-width="30.0"
+            className="stroke-[15px] sm:stroke-[20px] md:stroke-[30px] lg:stroke-[40px]"
             stroke="url(#pat3)"
-            stroke-linecap="square"
+            strokeLinecap="square"
             filter="none"
           ></use>
         </g>

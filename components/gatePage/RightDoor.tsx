@@ -3,6 +3,7 @@ import MidLine from "./MidLine";
 import PhLine from "./PhLine";
 import DynamicUpLine from "./DynamicUpLine";
 import DynamicMidLine from "./DynamicMidLine";
+import DynamicPhLine from './DynamicPhLine'
 
 const LeftDoor: React.FC = (): JSX.Element => {
   return (
@@ -11,8 +12,14 @@ const LeftDoor: React.FC = (): JSX.Element => {
       <div className="absolute top-0 right-0 w-36 h-[50vh] " style={{ transform: "scale(1,1)" }}>
           <PhLine />
         </div>
+      <div className="absolute top-0 right-0 w-36 h-[50vh] " style={{ transform: "scale(1,1)" }}>
+          <DynamicPhLine />
+        </div>
         <div className="absolute bottom-0 right-0 w-36 h-[50vh]" style={{ transform: "scaleY(-1)" }}>
           <PhLine />
+        </div>
+        <div className="absolute bottom-0 right-0 w-36 h-[50vh]" style={{ transform: "scaleY(-1)" }}>
+          <DynamicPhLine />
         </div>
       <div className="flex flex-col absolute top-1/2 mt-[-40%] right-0 w-full">
       <div className="relative">
