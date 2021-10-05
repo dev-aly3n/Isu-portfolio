@@ -9,11 +9,19 @@ const MidLine: React.FC = (): JSX.Element => {
       className="overflow-visible"
     >
       <g>
+      <pattern
+        id="pat1"
+        patternUnits="userSpaceOnUse"
+        width="1200"
+        height="700"
+      >
+        <image xlinkHref="/gate.jpg" width="1200" height="700" />
+      </pattern>
       <filter id="inset-shadow2" x="-100%" y="-100%" width="200%" height="200%">
         <feComponentTransfer in="SourceAlpha">
           <feFuncA type="table" tableValues="1 0" />
         </feComponentTransfer>
-        <feGaussianBlur stdDeviation="5" />
+        <feGaussianBlur stdDeviation="2" />
         <feOffset dx="0" dy="5" result="offsetblur" />
         <feFlood floodColor="rgb(0, 0, 0)" result="color" />
         <feComposite in2="offsetblur" operator="in" />
@@ -36,7 +44,7 @@ const MidLine: React.FC = (): JSX.Element => {
             xlinkHref="#s-Path_1-d12245"
             fill="none"
             stroke-width="30.0"
-            stroke="#535353"
+            stroke="url(#pat1)"
             stroke-linecap="square"
             filter="none"
           ></use>

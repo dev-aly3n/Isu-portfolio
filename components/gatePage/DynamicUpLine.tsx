@@ -3,7 +3,9 @@ import { sportwaveAnimation } from "../animation";
 
 const DynamicUpLine: React.FC = (): JSX.Element => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="359 207 812 243">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="359 207 812 243"
+    className="overflow-visible"
+    >
       <g>
         <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
           {/* <!-- Thicken out the original shape --> */}

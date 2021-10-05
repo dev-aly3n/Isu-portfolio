@@ -11,11 +11,11 @@ const LeftDoor: React.FC = (): JSX.Element => {
       <img src="/gate1.jpg" className="w-full h-screen object-right" />
 
       <DoorKey />
-      <div className="absolute top-0 right-0 w-36 h-[50vh]  overflow-hidden">
+      <div className="absolute top-0 right-0 w-36 h-[50vh]">
         <PhLine />
       </div>
       <div
-        className="absolute bottom-0 right-0 w-36 h-[50vh]  overflow-hidden"
+        className="absolute bottom-0 right-0 w-36 h-[50vh]"
         style={{ transform: "scaleY(-1)" }}
       >
         <PhLine />
