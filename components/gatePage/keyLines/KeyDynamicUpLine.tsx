@@ -1,17 +1,18 @@
 import { motion } from "framer-motion";
 import { sportwaveAnimation } from "../../animation";
 
-const DynamicUpLine: React.FC = (): JSX.Element => {
+const KeyDynamicUpLine: React.FC = (): JSX.Element => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="359 207 812 243"
+    <svg xmlns="http://www.w3.org/2000/svg" 
+    viewBox="250 200 1000 260"
     className="overflow-visible"
     >
       <g>
-        <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
+        <filter id="sofGlow1" height="300%" width="300%" x="-75%" y="-75%">
           {/* <!-- Thicken out the original shape --> */}
           <feMorphology
             operator="dilate"
-            radius="3"
+            radius="9"
             in="SourceAlpha"
             result="thicken"
           />
@@ -31,7 +32,7 @@ const DynamicUpLine: React.FC = (): JSX.Element => {
           </feGaussianBlur>
 
           {/* <!-- Change the colour --> */}
-          <feFlood floodColor="rgb(0,186,255)" result="glowColor" />
+          <feFlood floodColor="rgb(160,255,255)" result="glowColor" />
 
           {/* <!-- Color in the glows --> */}
           <feComposite
@@ -52,21 +53,21 @@ const DynamicUpLine: React.FC = (): JSX.Element => {
         </filter>
         <defs>
           <motion.path
-            filter="url(#sofGlow)"
+            filter="url(#sofGlow1)"
             variants={sportwaveAnimation}
             initial="hidden"
             animate="visable"
-            id="s-Path_1-d1224"
-            d="M1171.0 450.0 L824.3507718696401 315.82847341337913 L735.5240137221272 362.35677530017153 L360.4777015437396 208.6723842195541 "
+            id="s-Path_1-d122488"
+            d="M727.0 455.0 L570.5600343053175 229.82161234991406 L368.9373927958836 136.76500857632914"
           ></motion.path>
         </defs>
         <g>
           <use
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            xlinkHref="#s-Path_1-d1224"
+            xlinkHref="#s-Path_1-d122488"
             fill="none"
-            stroke-width="20.0"
-            stroke="#16FBFF"
+            stroke-width="15.0"
+            stroke="#A0FFFF"
             stroke-linecap="square"
             filter="none"
           ></use>
@@ -76,4 +77,4 @@ const DynamicUpLine: React.FC = (): JSX.Element => {
   );
 };
 
-export default DynamicUpLine;
+export default KeyDynamicUpLine;

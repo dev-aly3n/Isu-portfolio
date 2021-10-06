@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import KeyUpLine from "./keyLines/KeyUpLine";
 import KeyMidLine from "./keyLines/KeyMidLine";
+import KeyDynamicUpLine from "./keyLines/KeyDynamicUpLine";
+import KeyDynamicMidLine from "./keyLines/KeyDynamicMidLine";
 const doorAnimation = {
   hidden: { transform: "rotate(0deg)" },
   visable: {
@@ -25,24 +27,24 @@ const DoorKey: React.FC = (): JSX.Element => {
         className="w-[22vw] h-[22vw] rounded-full z-40 relative"
         style={{ backgroundImage: "url(/key.jpg)" }}
       >
-        <div className="h-1/2 w-1/2 absolute top-[11vw] left-[11vw] mt-[-5.5vw]  ml-[-5.5vw] rounded-full bg-gray-500/50 z-50"></div>
+        <div className="h-1/2 w-1/2 absolute top-[11vw] left-[11vw] mt-[-5.5vw]  ml-[-5.5vw] rounded-full bg-gray-500 z-50"></div>
         <div className="flex flex-col absolute top-1/2 mt-[-30%] left-1/2 ml-[-47%] w-full z-40">
           <div className="relative">
             <KeyUpLine />
             <div className="absolute top-0 left-0 w-full h-full">
-              <KeyUpLine />
+              <KeyDynamicUpLine />
             </div>
           </div>
           <div className="relative" style={{ transform: "scaleY(-1)" }}>
             <KeyMidLine />
             <div className="absolute top-0 left-0 w-full h-full">
-              <KeyMidLine />
+              <KeyDynamicMidLine />
             </div>
           </div>
           <div className="relative" style={{ transform: "scaleY(-1)" }}>
             <KeyUpLine />
             <div className="absolute top-0 left-0 w-full h-full">
-              <KeyUpLine />
+              <KeyDynamicUpLine />
             </div>
           </div>
         </div>
@@ -53,19 +55,19 @@ const DoorKey: React.FC = (): JSX.Element => {
           <div className="relative">
             <KeyUpLine />
             <div className="absolute top-0 left-0 w-full h-full">
-              <KeyUpLine />
+              <KeyDynamicUpLine />
             </div>
           </div>
           <div className="relative" style={{ transform: "scaleY(-1)" }}>
             <KeyMidLine />
             <div className="absolute top-0 left-0 w-full h-full">
-              <KeyMidLine />
+              <KeyDynamicMidLine />
             </div>
           </div>
           <div className="relative" style={{ transform: "scaleY(-1)" }}>
             <KeyUpLine />
             <div className="absolute top-0 left-0 w-full h-full">
-              <KeyUpLine />
+              <KeyDynamicUpLine />
             </div>
           </div>
         </div>
