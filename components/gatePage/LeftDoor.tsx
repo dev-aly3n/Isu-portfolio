@@ -37,7 +37,6 @@ const LeftDoor: React.FC = (): JSX.Element => {
             <DynamicUpLine />
           </div>
         </div>
-        <div className=" flex flex-col">
           <div className="relative">
             <MidLine />
             <div className="absolute top-0 left-0 w-full h-full ">
@@ -50,7 +49,6 @@ const LeftDoor: React.FC = (): JSX.Element => {
               <DynamicMidLine />
             </div>
           </div>
-        </div>
         <div className="relative" style={{ transform: "scaleY(-1)" }}>
           <UpLine />
           <div className="absolute top-0 left-0 w-full h-full">
