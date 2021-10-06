@@ -18,7 +18,11 @@ const DoorKey: React.FC = (): JSX.Element => {
       initial="hidden"
       animate="visable"
       />
-      <div className="w-[22vw] h-[22vw] rounded-full bg-gray-500 z-50">
+      <div className="w-[22vw] h-[22vw] rounded-full z-50"
+      style={{backgroundImage:"url(/key.jpg)"}}>
+        <div>
+          
+        </div>
       </div>
     </div>
   );

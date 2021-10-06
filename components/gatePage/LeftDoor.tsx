@@ -1,10 +1,10 @@
-import UpLine from "./UpLine";
-import MidLine from "./MidLine";
-import PhLine from "./PhLine";
+import UpLine from "./doorLines/UpLine";
+import MidLine from "./doorLines/MidLine";
+import PhLine from "./doorLines/PhLine";
 import DoorKey from "./DoorKey";
-import DynamicUpLine from "./DynamicUpLine";
-import DynamicMidLine from "./DynamicMidLine";
-import DynamicPhLine from './DynamicPhLine'
+import DynamicUpLine from "./doorLines/DynamicUpLine";
+import DynamicMidLine from "./doorLines/DynamicMidLine";
+import DynamicPhLine from './doorLines/DynamicPhLine'
 
 const LeftDoor: React.FC = (): JSX.Element => {
   return (

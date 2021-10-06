@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { sportwaveAnimation } from "../animation";
+import { sportwaveAnimation } from "../../animation";
 
 const DynamicUpLine: React.FC = (): JSX.Element => {
   return (
