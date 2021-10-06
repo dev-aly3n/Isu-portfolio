@@ -11,7 +11,7 @@ const KeyDynamicMidLine: React.FC = (): JSX.Element => {
       <g>
         <defs>
           <motion.path
-          filter="url(#sofGlow1) url()"
+          filter="url(#sofGlow1) url(#inset-shadow5)"
           variants={sportwaveAnimation}
           initial="hidden"
           animate="visable"
@@ -24,7 +24,7 @@ const KeyDynamicMidLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d4578978"
             fill="none"
-            stroke-width="15.0"
+            stroke-width="40.0"
             stroke="#A0FFFF"
             stroke-linecap="square"
             filter="none"

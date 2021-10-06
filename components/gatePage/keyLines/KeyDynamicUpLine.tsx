@@ -53,7 +53,7 @@ const KeyDynamicUpLine: React.FC = (): JSX.Element => {
         </filter>
         <defs>
           <motion.path
-            filter="url(#sofGlow1)"
+            filter="url(#sofGlow1) url(#inset-shadow)"
             variants={sportwaveAnimation}
             initial="hidden"
             animate="visable"
@@ -66,7 +66,7 @@ const KeyDynamicUpLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d122488"
             fill="none"
-            stroke-width="15.0"
+            stroke-width="55.0"
             stroke="#A0FFFF"
             stroke-linecap="square"
             filter="none"

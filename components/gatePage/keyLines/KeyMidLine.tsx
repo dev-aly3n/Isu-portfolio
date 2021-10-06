@@ -10,7 +10,7 @@ const KeyMidLine: React.FC = (): JSX.Element => {
     >
       <g>
         <pattern
-          id="pat1"
+          id="pat2"
           patternUnits="userSpaceOnUse"
           width="1200"
           height="700"
@@ -27,7 +27,7 @@ const KeyMidLine: React.FC = (): JSX.Element => {
           <feComponentTransfer in="SourceAlpha">
             <feFuncA type="table" tableValues="1 0" />
           </feComponentTransfer>
-          <feGaussianBlur stdDeviation="2" />
+          <feGaussianBlur stdDeviation="5" />
           <feOffset dx="0" dy="5" result="offsetblur" />
           <feFlood floodColor="rgb(0, 0, 0)" result="color" />
           <feComposite in2="offsetblur" operator="in" />
@@ -49,8 +49,8 @@ const KeyMidLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d1224577987"
             fill="none"
-            stroke-width="20.0"
-            stroke="url(#pat1)"
+            stroke-width="55.0"
+            stroke="url(#pat2)"
             stroke-linecap="square"
             filter="none"
           ></use>
