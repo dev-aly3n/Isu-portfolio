@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { sportwaveAnimation } from "../../animation";
+import { sportwaveAnimation } from "../../../utils/animation";
 
 const DynamicMidLine: React.FC = (): JSX.Element => {
   return (

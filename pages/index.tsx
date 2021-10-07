@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Gate from '../components/gatePage/Gate';
+import Gate from '../src/components/gatePage/Gate';
 
 export default function home():JSX.Element {
   return (
