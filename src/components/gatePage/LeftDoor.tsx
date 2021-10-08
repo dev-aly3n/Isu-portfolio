@@ -1,12 +1,21 @@
+//libs
+import { useContext } from "react";
+
+//store
+import {IsuGateCtx} from '../../store/context/isuGateCtx'
+
+//components
 import UpLine from "./doorLines/UpLine";
 import MidLine from "./doorLines/MidLine";
 import PhLine from "./doorLines/PhLine";
 import DoorKey from "./DoorKey";
 import DynamicUpLine from "./doorLines/DynamicUpLine";
 import DynamicMidLine from "./doorLines/DynamicMidLine";
-import DynamicPhLine from './doorLines/DynamicPhLine'
+import DynamicPhLine from './doorLines/DynamicPhLine';
+
 
 const LeftDoor: React.FC = (): JSX.Element => {
+
   return (
     <div className=" w-1/2 h-full relative">
       <img src="/gate1.jpg" className="w-full h-screen object-right" />
