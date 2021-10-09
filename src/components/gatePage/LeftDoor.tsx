@@ -15,6 +15,8 @@ import DynamicPhLine from './doorLines/DynamicPhLine';
 
 
 const LeftDoor: React.FC = (): JSX.Element => {
+  const gateCtx = useContext(IsuGateCtx);
+
 
   return (
     <div className=" w-1/2 h-full relative">
