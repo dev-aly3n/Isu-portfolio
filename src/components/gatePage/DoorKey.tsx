@@ -1,8 +1,16 @@
+//libs
+import { useContext, useRef, useEffect } from "react";
+
+//store
+import { IsuGateCtx } from "../../store/context/isuGateCtx";
+
+//components
 import { motion } from "framer-motion";
 import KeyUpLine from "./keyLines/KeyUpLine";
 import KeyMidLine from "./keyLines/KeyMidLine";
 import KeyDynamicUpLine from "./keyLines/KeyDynamicUpLine";
 import KeyDynamicMidLine from "./keyLines/KeyDynamicMidLine";
+
 const doorAnimation = {
   hidden: { transform: "rotate(0deg)" },
   visable: {
@@ -13,8 +21,26 @@ const doorAnimation = {
 };
 
 const DoorKey: React.FC = (): JSX.Element => {
+  const gateCtx = useContext(IsuGateCtx);
+
+  const keyRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if(keyRef.current){
+    keyRef.current.addEventListener('mouseover', function(){
+      gateCtx.hovering(true)
+    });
+    keyRef.current.addEventListener('mouseleave', function(){
+      gateCtx.hovering(false)
+    });
+    keyRef.current.addEventListener('click', function(){
+      gateCtx.clicking(true)
+    });
+  }
+
+  }, [keyRef])
   return (
-    <div className="cycle-1 absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw] flex justify-center items-center">
+    <div ref={keyRef} className="cycle-1 absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw] flex justify-center items-center">
       <motion.img
         src="/door1.png"
         alt=""

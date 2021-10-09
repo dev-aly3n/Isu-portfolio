@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import { sportwaveAnimation } from "../../../utils/animation";
+import { useGateClicked } from "../../../utils/useGateClicked";
 
 const DynamicMidLine: React.FC = (): JSX.Element => {
+
+  const controls = useGateClicked();
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +32,7 @@ const DynamicMidLine: React.FC = (): JSX.Element => {
           filter="url(#sofGlow) url(#inset-shadow3)"
           variants={sportwaveAnimation}
           initial="hidden"
-          animate="visable"
+          animate={controls}
             id="s-Path_1-d1224578"
             d="M1077.0 354.0 L704.5051457975986 354.0000000000001 L646.6972555746142 290.449399656947 L316.76929674099483 272.1200686106348 "
           ></motion.path>
