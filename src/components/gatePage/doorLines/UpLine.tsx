@@ -43,9 +43,9 @@ const UpLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d122"
             fill="none"
-            stroke-width="30.0"
+            strokeWidth="30.0"
             stroke="url(#pat2)"
-            stroke-linecap="square"
+            strokeLinecap="square"
             filter="none"
           ></use>
         </g>

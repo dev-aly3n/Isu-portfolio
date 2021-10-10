@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { sportwaveAnimation } from "../../../utils/animation";
-import { useGateClicked } from "../../../utils/useGateClicked";
+import { useGateClicked } from "../../../hooks/useGateClicked";
 
 const DynamicMidLine: React.FC = (): JSX.Element => {
 
@@ -42,9 +42,9 @@ const DynamicMidLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d1224578"
             fill="none"
-            stroke-width="20.0"
+            strokeWidth="20.0"
             stroke="#16FBFF"
-            stroke-linecap="square"
+            strokeLinecap="square"
             filter="none"
           ></use>
         </g>

@@ -65,9 +65,9 @@ const DynamicUpLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d1224"
             fill="none"
-            stroke-width="20.0"
+            strokeWidth="20.0"
             stroke="#16FBFF"
-            stroke-linecap="square"
+            strokeLinecap="square"
             filter="none"
           ></use>
         </g>

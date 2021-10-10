@@ -24,7 +24,7 @@ const PhLine: React.FC = (): JSX.Element => {
             fill="none"
             className="stroke-[7px] sm:stroke-[10px] md:stroke-[20px] lg:stroke-[30px]"
             stroke="#16FBFF"
-            stroke-linecap="square"
+            strokeLinecap="square"
             filter="none"
           ></use>
         </g>
