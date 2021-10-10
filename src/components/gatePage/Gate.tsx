@@ -5,13 +5,6 @@ import { IsuGateCtxProvider } from "../../store/context/isuGateCtx";
 import { AnimatePresence } from "framer-motion";
 
 const Gate: React.FC = (): JSX.Element => {
-  const [hoverKey, setHoverKey] = useState(false);
-  const hoveredKey = useCallback(
-    (order: boolean) => {
-      setHoverKey(order);
-    },
-    [setHoverKey]
-  );
 
   return (
     <IsuGateCtxProvider>

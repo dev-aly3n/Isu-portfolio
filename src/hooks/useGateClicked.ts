@@ -5,10 +5,10 @@ import { IsuGateCtx } from "../store/context/isuGateCtx";
 export const useGateClicked = () => {
   const gateCtx = useContext(IsuGateCtx);
   const controls = useAnimation();
-  if (gateCtx.isClicked===true) {
+  if (gateCtx.isClicked === true && gateCtx.keyAnimationFinished === true) {
     controls.start("visable");
   } else {
-    controls.start("hidden")
+    controls.start("hidden");
   }
 
   return controls;

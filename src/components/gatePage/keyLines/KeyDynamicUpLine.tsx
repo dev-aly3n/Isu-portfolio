@@ -1,10 +1,19 @@
+//libs
+import { useRef, useEffect, useContext } from "react";
 import { motion } from "framer-motion";
+import type { AnimationControls } from "framer-motion";
+//components
+
+//store
+
+//hooks & animation & utils
 import { sportwaveAnimation } from "../../../utils/animation";
-import { useGateHovered } from "../../../hooks/useGateHovered";
 
-const KeyDynamicUpLine: React.FC = (): JSX.Element => {
-  const controls = useGateHovered();
+interface props {
+  controls: AnimationControls;
+}
 
+const KeyDynamicUpLine: React.FC<props> = ({ controls }): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

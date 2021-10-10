@@ -318,13 +318,13 @@ export const sportwaveAnimation:any = {
     pathLength: 0,
     pathOffset: 0,
     strokeLinecap: "butt",
-    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1] },
   }),
   visable:(custom:number)=>( {
     pathLength: 1,
     pathOffset: 0,
     strokeLinecap: "square",
-    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1] },
   }),
 };
 export const sportwaveAnimation2:any = {
@@ -332,12 +332,12 @@ export const sportwaveAnimation2:any = {
     pathLength: 0,
     pathOffset: 1,
     strokeLinecap: "butt",
-    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1] },
   }),
   visable:(custom:number) =>( {
     pathLength: 1,
     pathOffset: 0,
     strokeLinecap: "square",
-    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1] },
   }),
 };
