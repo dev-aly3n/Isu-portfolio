@@ -38,7 +38,7 @@ const DoorKey: React.FC = (): JSX.Element => {
     });
   }
 
-  }, [keyRef])
+  }, [])
   return (
     <div ref={keyRef} className="cycle-1 absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw] flex justify-center items-center">
       <motion.img

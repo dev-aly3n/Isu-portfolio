@@ -205,7 +205,7 @@ export const twAnimation = {
     opacity: 0,
     x: 300,
   },
-  visable: (custom:number) => ({
+  visable: (custom: number) => ({
     opacity: 1,
     x: 0,
     transition: { duration: 0.9, delay: custom * 0.15 },
@@ -314,7 +314,11 @@ export const uniwaveAnimation = {
 // sportwave
 // sportwave
 export const sportwaveAnimation = {
-  hidden: { pathLength: 0, pathOffset: 0 },
+  hidden: {
+    pathLength: 0,
+    pathOffset: 0,
+    transition: { duration: 3, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+  },
   visable: {
     pathLength: 1,
     pathOffset: 0,
@@ -322,7 +326,11 @@ export const sportwaveAnimation = {
   },
 };
 export const sportwaveAnimation2 = {
-  hidden: { pathLength: 0, pathOffset: 1 },
+  hidden: {
+    pathLength: 0,
+    pathOffset: 1,
+    transition: { duration: 3, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+  },
   visable: {
     pathLength: 1,
     pathOffset: 0,

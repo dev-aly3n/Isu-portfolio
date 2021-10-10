@@ -17,15 +17,19 @@ export const IsuGateCtx = createContext<contextProps>({
 export const IsuGateCtxProvider: React.FC = (props) => {
   const [gate, setGate] = useState({ isHovered: false, isClicked: false });
   const hoverHandler = (order: boolean): void => {
-    setGate({
-      ...gate,
-      isHovered: order,
+    setGate((prev) => {
+      return {
+        isClicked: prev.isClicked,
+        isHovered: order,
+      };
     });
   };
   const clickHandler = (order: boolean): void => {
-    setGate({
-      ...gate,
-      isClicked: order,
+    setGate((prev) => {
+      return {
+        isHovered: prev.isHovered,
+        isClicked: order,
+      };
     });
   };
   const context: contextProps = {

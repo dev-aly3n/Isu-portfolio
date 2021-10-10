@@ -18,11 +18,8 @@ const LeftDoor: React.FC = (): JSX.Element => {
   const gateCtx = useContext(IsuGateCtx);
 
   const controls = useAnimation();
-  if(gateCtx.isHovered){
-    controls.start("visable");
-  }
-  console.log(gateCtx);
 
+console.log(gateCtx);
   return (
     <div className=" w-1/2 h-full relative">
       <img src="/gate1.jpg" className="w-full h-screen object-right" />

@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { sportwaveAnimation } from "../../../utils/animation";
+import { useGateHovered } from "../../../hooks/useGateHovered";
 
 const KeyDynamicMidLine: React.FC = (): JSX.Element => {
-  return (
+  const controls = useGateHovered();
+;  return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="420 530 660 56"
@@ -14,7 +16,7 @@ const KeyDynamicMidLine: React.FC = (): JSX.Element => {
           filter="url(#sofGlow1) url(#inset-shadow5)"
           variants={sportwaveAnimation}
           initial="hidden"
-          animate="visable"
+          animate={controls}
           id="s-Path_1-d4578978"
           d="M736.0 558.0 L387.2667238421957 558.0 "
           ></motion.path>
