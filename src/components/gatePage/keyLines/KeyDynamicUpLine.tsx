@@ -6,9 +6,10 @@ const KeyDynamicUpLine: React.FC = (): JSX.Element => {
   const controls = useGateHovered();
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" 
-    viewBox="250 200 1000 260"
-    className="overflow-visible"
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="250 200 1000 260"
+      className="overflow-visible"
     >
       <g>
         <filter id="sofGlow1" height="300%" width="300%" x="-75%" y="-75%">
@@ -21,17 +22,16 @@ const KeyDynamicUpLine: React.FC = (): JSX.Element => {
           />
 
           {/* <!-- Use a gaussian blur to create the soft blurriness of the glow --> */}
-          <feGaussianBlur in="thicken" stdDeviation="10" result="blurred" >
-          <animate
-            attributeName="stdDeviation"
-            from="5"
-            to="8"
-            dur="3s"
-            repeatCount="indefinite"
-            values="7; 10; 10; 7;"
-            keyTimes="0; 0.33; 0.66; 1"
-
-          />
+          <feGaussianBlur in="thicken" stdDeviation="10" result="blurred">
+            <animate
+              attributeName="stdDeviation"
+              from="5"
+              to="8"
+              dur="3s"
+              repeatCount="indefinite"
+              values="7; 10; 10; 7;"
+              keyTimes="0; 0.33; 0.66; 1"
+            />
           </feGaussianBlur>
 
           {/* <!-- Change the colour --> */}
@@ -45,19 +45,17 @@ const KeyDynamicUpLine: React.FC = (): JSX.Element => {
             result="softGlow_colored"
           />
 
-
-
           {/* <!--	Layer the effects together --> */}
           <feMerge>
             <feMergeNode in="softGlow_colored" />
             <feMergeNode in="SourceGraphic" />
           </feMerge>
-    
         </filter>
         <defs>
           <motion.path
             filter="url(#sofGlow1) url(#inset-shadow)"
             variants={sportwaveAnimation}
+            custom={1}
             initial="hidden"
             animate={controls}
             id="s-Path_1-d122488"

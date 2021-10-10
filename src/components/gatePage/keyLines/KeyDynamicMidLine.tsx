@@ -15,6 +15,7 @@ const KeyDynamicMidLine: React.FC = (): JSX.Element => {
           <motion.path
           filter="url(#sofGlow1) url(#inset-shadow5)"
           variants={sportwaveAnimation}
+          custom={1}
           initial="hidden"
           animate={controls}
           id="s-Path_1-d4578978"

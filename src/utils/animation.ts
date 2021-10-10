@@ -313,27 +313,31 @@ export const uniwaveAnimation = {
 // sportwave
 // sportwave
 // sportwave
-export const sportwaveAnimation = {
-  hidden: {
+export const sportwaveAnimation:any = {
+  hidden:(custom:number)=>( {
     pathLength: 0,
     pathOffset: 0,
-    transition: { duration: 3, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
-  },
-  visable: {
+    strokeLinecap: "butt",
+    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+  }),
+  visable:(custom:number)=>( {
     pathLength: 1,
     pathOffset: 0,
-    transition: { duration: 3, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
-  },
+    strokeLinecap: "square",
+    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+  }),
 };
-export const sportwaveAnimation2 = {
-  hidden: {
+export const sportwaveAnimation2:any = {
+  hidden:(custom:number)=> ({
     pathLength: 0,
     pathOffset: 1,
-    transition: { duration: 3, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
-  },
-  visable: {
+    strokeLinecap: "butt",
+    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+  }),
+  visable:(custom:number) =>( {
     pathLength: 1,
     pathOffset: 0,
-    transition: { duration: 3, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
-  },
+    strokeLinecap: "square",
+    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+  }),
 };
