@@ -14,10 +14,14 @@ import DynamicUpLine from "./doorLines/DynamicUpLine";
 import DynamicMidLine from "./doorLines/DynamicMidLine";
 import DynamicPhLine from "./doorLines/DynamicPhLine";
 
-const LeftDoor: React.FC = (): JSX.Element => {
-  const gateCtx = useContext(IsuGateCtx);
+//hooks
+import { useGateClicked } from "../../hooks/useGateClicked";
 
-  const controls = useAnimation();
+const LeftDoor: React.FC = (): JSX.Element => {
+  // const gateCtx = useContext(IsuGateCtx);
+
+  const controls1 = useGateClicked();
+  const controls2 = useGateClicked();
 
   return (
     <div className=" w-1/2 h-full relative">
@@ -28,7 +32,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
         <PhLine />
       </div>
       <div className="absolute top-0 right-0 w-36 h-[50vh]">
-        <DynamicPhLine />
+        <DynamicPhLine controls={controls2} />
       </div>
       <div
         className="absolute bottom-0 right-0 w-36 h-[50vh]"
@@ -40,31 +44,31 @@ const LeftDoor: React.FC = (): JSX.Element => {
         className="absolute bottom-0 right-0 w-36 h-[50vh]"
         style={{ transform: "scaleY(-1)" }}
       >
-        <DynamicPhLine />
+        <DynamicPhLine controls={controls2} />
       </div>
       <div className="flex flex-col absolute top-1/2 mt-[-40%] right-0 w-full">
         <div className="relative">
           <UpLine />
           <div className="absolute top-0 left-0 w-full h-full">
-            <DynamicUpLine />
+            <DynamicUpLine controls={controls1} />
           </div>
         </div>
         <div className="relative">
           <MidLine />
           <div className="absolute top-0 left-0 w-full h-full ">
-            <DynamicMidLine />
+            <DynamicMidLine controls={controls2} />
           </div>
         </div>
         <div className="relative" style={{ transform: "scaleY(-1)" }}>
           <MidLine />
           <div className="absolute top-0 left-0 w-full h-full">
-            <DynamicMidLine />
+            <DynamicMidLine controls={controls2} />
           </div>
         </div>
         <div className="relative" style={{ transform: "scaleY(-1)" }}>
           <UpLine />
           <div className="absolute top-0 left-0 w-full h-full">
-            <DynamicUpLine />
+            <DynamicUpLine controls={controls2} />
           </div>
         </div>
       </div>

@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { sportwaveAnimation } from "../../../utils/animation";
-import { useGateClicked } from "../../../hooks/useGateClicked";
+import type { AnimationControls } from "framer-motion";
 
-
-const DynamicUpLine: React.FC = (): JSX.Element => {
-  const controls = useGateClicked();
+interface props {
+  controls: AnimationControls;
+}
+const DynamicUpLine: React.FC<props> = ({controls}): JSX.Element => {
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="359 207 812 243"

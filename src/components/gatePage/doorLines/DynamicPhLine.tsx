@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import { sportwaveAnimation2 } from "../../../utils/animation";
 import { useGateClicked } from "../../../hooks/useGateClicked";
+import type { AnimationControls } from "framer-motion";
 
-const PhLine: React.FC = (): JSX.Element => {
-  const controls = useGateClicked();
+interface props {
+  controls: AnimationControls;
+}
+const PhLine: React.FC<props> = ({controls}): JSX.Element => {
 
   return (
     <svg

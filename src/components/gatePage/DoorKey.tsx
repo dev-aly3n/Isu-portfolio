@@ -13,7 +13,6 @@ import KeyDynamicUpLine from "./keyLines/KeyDynamicUpLine";
 import KeyDynamicMidLine from "./keyLines/KeyDynamicMidLine";
 
 //hooks
-import { useGateClicked } from "../../hooks/useGateClicked";
 import { useGateHovered } from "../../hooks/useGateHovered";
 
 const DoorKey: React.FC = (): JSX.Element => {
@@ -22,19 +21,18 @@ const DoorKey: React.FC = (): JSX.Element => {
 
   const gateCtx = useContext(IsuGateCtx);
   const keyRef = useRef<HTMLDivElement>(null);
-  console.log(gateCtx);
+  console.log("hi");
+  
   useEffect(() => {
-    if (keyRef.current) {
-      keyRef.current.addEventListener("mouseover", function () {
+      keyRef.current?.addEventListener("mouseover", function () {
         gateCtx.hovering(true);
       });
-      keyRef.current.addEventListener("mouseleave", function () {
+      keyRef.current?.addEventListener("mouseleave", function () {
         gateCtx.hovering(false);
       });
-      keyRef.current.addEventListener("click", function () {
+      keyRef.current?.addEventListener("click", function () {
         gateCtx.clicking(true);
       });
-    }
   }, []);
   return (
     <div
