@@ -70,8 +70,6 @@ const KeyDynamicUpLine: React.FC<props> = ({
           </feMerge>
         </filter>
         <defs>
-          {/* there is more to do here
-          it is incomplete. when complete and the animation this component will be pass how ever user didnt clicked yet */}
           <motion.path
             onAnimationComplete={() => {
               if (setFinished && logic && clicked) {

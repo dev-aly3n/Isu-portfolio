@@ -347,3 +347,24 @@ export const sportwaveAnimation2:any = {
     transition: { duration: custom, delay: 0, ease: "linear" },
   }),
 };
+
+
+// open door
+export const openDoor:any = {
+  hidden:{
+    transform:"rotateY(0deg)",
+  },
+  visable: {
+    transform:"rotateY(50deg)",
+    transition: { duration: 2 },
+  },
+};
+export const openDoor2:any = {
+  hidden:{
+    transform:"rotateY(0deg)",
+  },
+  visable: {
+    transform:"rotateY(-50deg)",
+    transition: { duration: 2 },
+  },
+};
