@@ -234,8 +234,9 @@ module.exports = {
     },
     fill: { current: "currentColor" },
     grayscale: {
-      0: "0",
-      DEFAULT: "100%",
+      0: "0%",
+      70: "70%",
+      100: "100%",
     },
     hueRotate: {
       "-180": "-180deg",

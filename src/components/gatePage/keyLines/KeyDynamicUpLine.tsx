@@ -12,9 +12,15 @@ import { useGateHovered } from "../../../hooks/useGateHovered";
 
 interface props {
   logic?: boolean;
+  setFinished?: (order: boolean) => void;
+  clicked?: boolean;
 }
 
-const KeyDynamicUpLine: React.FC<props> = ({ logic }): JSX.Element => {
+const KeyDynamicUpLine: React.FC<props> = ({
+  logic,
+  setFinished,
+  clicked
+}): JSX.Element => {
   const controls = useGateHovered(logic);
 
   return (
@@ -64,7 +70,14 @@ const KeyDynamicUpLine: React.FC<props> = ({ logic }): JSX.Element => {
           </feMerge>
         </filter>
         <defs>
+          {/* there is more to do here
+          it is incomplete. when complete and the animation this component will be pass how ever user didnt clicked yet */}
           <motion.path
+            onAnimationComplete={() => {
+              if (setFinished && logic && clicked) {
+                setFinished(true);
+              }
+            }}
             filter="url(#sofGlow1) url(#inset-shadow)"
             variants={sportwaveAnimation}
             custom={1}

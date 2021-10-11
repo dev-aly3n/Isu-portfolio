@@ -5,23 +5,14 @@ import { IsuGateCtx } from "../store/context/isuGateCtx";
 export const useGateHovered = (logic: boolean = false) => {
   const gateCtx = useContext(IsuGateCtx);
   const controls = useAnimation();
-  const [once, setOnce] = useState(true);
+  // const [once, setOnce] = useState(true);
   useEffect(() => {
     if (
       (gateCtx.isHovered === true && gateCtx.isClicked === true) ||
       (gateCtx.isHovered === true && gateCtx.isClicked === false) ||
       (gateCtx.isHovered === false && gateCtx.isClicked === true)
     ) {
-      if (logic) {
-        controls.start("visable").then(() => {
-          if (gateCtx.isClicked && once) {
-            gateCtx.keyFinishing(true);
-            setOnce(false);
-          }
-        });
-      } else {
-        controls.start("visable");
-      }
+      controls.start("visable");
     } else if (gateCtx.isHovered === false && gateCtx.isClicked === false) {
       controls.start("hidden");
     }

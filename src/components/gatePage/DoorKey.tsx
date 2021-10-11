@@ -33,14 +33,16 @@ const DoorKey: React.FC = (): JSX.Element => {
   return (
     <div
       ref={keyRef}
-      className="cycle-1 absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw]
-       flex justify-center items-center group -rotate-45 hover:rotate-0 duration-1500 "
+      className={`cycle-1 absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw]
+       flex justify-center items-center group -rotate-45 hover:rotate-0 duration-1500
+       ${gateCtx.isClicked? "rotate-0": ""} `}
     >
       <motion.img
         src="/door1.png"
         alt=""
-        className="w-[30vw] h-[30vw] rounded-full z-60 absolute top-1/2 left-1/2 mt-[-50%] ml-[-50%] 
-        rotate-90 group-hover:rotate-0 duration-1500"
+        className={`w-[30vw] h-[30vw] rounded-full z-60 absolute top-1/2 left-1/2 mt-[-50%] ml-[-50%] 
+         grayscale-70 group-hover:grayscale-0 rotate-90 group-hover:rotate-0 duration-1500
+        ${gateCtx.isClicked? "rotate-[0] grayscale-[0%]": ""}`}
       />
       <div
         className="w-[22vw] h-[22vw] rounded-full z-40 relative"
@@ -51,7 +53,7 @@ const DoorKey: React.FC = (): JSX.Element => {
           <div className="relative">
             <KeyUpLine />
             <div className="absolute top-0 left-0 w-full h-full">
-              <KeyDynamicUpLine logic={true} />
+              <KeyDynamicUpLine logic={true} setFinished={gateCtx.keyFinishing} clicked={gateCtx.isClicked} />
             </div>
           </div>
           <div className="relative" style={{ transform: "scaleY(-1)" }}>
