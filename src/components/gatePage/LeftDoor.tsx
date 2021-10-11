@@ -19,10 +19,6 @@ import { useGateClicked } from "../../hooks/useGateClicked";
 
 const LeftDoor: React.FC = (): JSX.Element => {
   // const gateCtx = useContext(IsuGateCtx);
-
-  const controls1 = useGateClicked();
-  const controls2 = useGateClicked();
-
   return (
     <div className=" w-1/2 h-full relative">
       <img src="/gate1.jpg" className="w-full h-screen object-right" />
@@ -32,7 +28,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
         <PhLine />
       </div>
       <div className="absolute top-0 right-0 w-36 h-[50vh]">
-        <DynamicPhLine controls={controls2} />
+        <DynamicPhLine  />
       </div>
       <div
         className="absolute bottom-0 right-0 w-36 h-[50vh]"
@@ -44,31 +40,31 @@ const LeftDoor: React.FC = (): JSX.Element => {
         className="absolute bottom-0 right-0 w-36 h-[50vh]"
         style={{ transform: "scaleY(-1)" }}
       >
-        <DynamicPhLine controls={controls2} />
+        <DynamicPhLine  />
       </div>
       <div className="flex flex-col absolute top-1/2 mt-[-40%] right-0 w-full">
         <div className="relative">
           <UpLine />
           <div className="absolute top-0 left-0 w-full h-full">
-            <DynamicUpLine controls={controls1} />
+            <DynamicUpLine  />
           </div>
         </div>
         <div className="relative">
           <MidLine />
           <div className="absolute top-0 left-0 w-full h-full ">
-            <DynamicMidLine controls={controls2} />
+            <DynamicMidLine />
           </div>
         </div>
         <div className="relative" style={{ transform: "scaleY(-1)" }}>
           <MidLine />
           <div className="absolute top-0 left-0 w-full h-full">
-            <DynamicMidLine controls={controls2} />
+            <DynamicMidLine  />
           </div>
         </div>
         <div className="relative" style={{ transform: "scaleY(-1)" }}>
           <UpLine />
           <div className="absolute top-0 left-0 w-full h-full">
-            <DynamicUpLine controls={controls2} />
+            <DynamicUpLine  />
           </div>
         </div>
       </div>

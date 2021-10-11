@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
 import { sportwaveAnimation } from "../../../utils/animation";
 import type { AnimationControls } from "framer-motion";
+import { useGateHovered } from "../../../hooks/useGateHovered";
 
 
 interface props {
-  controls: AnimationControls;
+  logic?: boolean;
 }
-const KeyDynamicMidLine: React.FC<props> = ({controls}): JSX.Element => {
+const KeyDynamicMidLine: React.FC<props> = ({logic}): JSX.Element => {
+  const controls = useGateHovered(logic);
+
 ;  return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

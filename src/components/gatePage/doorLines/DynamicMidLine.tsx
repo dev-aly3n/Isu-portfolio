@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { sportwaveAnimation } from "../../../utils/animation";
 import type { AnimationControls } from "framer-motion";
+import { useGateClicked } from "../../../hooks/useGateClicked";
 interface props {
-  controls: AnimationControls;
+  logic?:boolean;
 }
 
-const DynamicMidLine: React.FC<props> = ({controls}): JSX.Element => {
-
-
+const DynamicMidLine: React.FC<props> = ({logic}): JSX.Element => {
+  const controls = useGateClicked();
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -25,7 +25,7 @@ export const useGateHovered = (logic: boolean = false) => {
     } else if (gateCtx.isHovered === false && gateCtx.isClicked === false) {
       controls.start("hidden");
     }
-  }, [gateCtx.isHovered, gateCtx.isClicked, gateCtx.keyAnimationFinished]);
+  }, [gateCtx.isHovered, gateCtx.isClicked]);
 
   return controls;
 };

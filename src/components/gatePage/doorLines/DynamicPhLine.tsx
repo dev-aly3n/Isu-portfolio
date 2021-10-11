@@ -4,9 +4,10 @@ import { useGateClicked } from "../../../hooks/useGateClicked";
 import type { AnimationControls } from "framer-motion";
 
 interface props {
-  controls: AnimationControls;
+  logic?: boolean;
 }
-const PhLine: React.FC<props> = ({controls}): JSX.Element => {
+const PhLine: React.FC<props> = ({logic}): JSX.Element => {
+  const controls = useGateClicked();
 
   return (
     <svg

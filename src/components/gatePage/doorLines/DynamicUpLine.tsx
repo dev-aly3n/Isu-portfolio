@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import { sportwaveAnimation } from "../../../utils/animation";
 import type { AnimationControls } from "framer-motion";
+import { useGateClicked } from "../../../hooks/useGateClicked";
+import { useContext } from "react";
+import { IsuGateCtx } from "../../../store/context/isuGateCtx";
 
 interface props {
-  controls: AnimationControls;
+  logic?: boolean;
 }
-const DynamicUpLine: React.FC<props> = ({controls}): JSX.Element => {
+const DynamicUpLine: React.FC<props> = ({logic}): JSX.Element => {
+  const controls = useGateClicked();
+
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="359 207 812 243"
@@ -73,7 +78,6 @@ const DynamicUpLine: React.FC<props> = ({controls}): JSX.Element => {
             fill="none"
             strokeWidth="20.0"
             stroke="#16FBFF"
-            strokeLinecap="square"
             filter="none"
           ></use>
         </g>

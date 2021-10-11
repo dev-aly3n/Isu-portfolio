@@ -7,8 +7,6 @@ export const useGateClicked = () => {
   const controls = useAnimation();
   if (gateCtx.isClicked === true && gateCtx.keyAnimationFinished === true) {
     controls.start("visable");
-  } else {
-    controls.start("hidden");
   }
 
   return controls;

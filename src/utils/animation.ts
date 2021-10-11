@@ -316,15 +316,17 @@ export const uniwaveAnimation = {
 export const sportwaveAnimation:any = {
   hidden:(custom:number)=>( {
     pathLength: 0,
-    pathOffset: 0,
-    strokeLinecap: "butt",
-    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1] },
+        transitionEnd:{
+      strokeLinecap: "butt",
+    },
+    transition: { duration: custom, delay: 0, ease: [0,.51,0,.29] },
   }),
   visable:(custom:number)=>( {
     pathLength: 1,
-    pathOffset: 0,
-    strokeLinecap: "square",
-    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1] },
+    transitionEnd:{
+      strokeLinecap: "square",
+    },
+    transition: { duration: custom, delay: 0, ease: [0,.51,0,.29] },
   }),
 };
 export const sportwaveAnimation2:any = {
@@ -332,12 +334,12 @@ export const sportwaveAnimation2:any = {
     pathLength: 0,
     pathOffset: 1,
     strokeLinecap: "butt",
-    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1] },
+    transition: { duration: custom, delay: 0, ease: [0,.51,0,.29] },
   }),
   visable:(custom:number) =>( {
     pathLength: 1,
     pathOffset: 0,
     strokeLinecap: "square",
-    transition: { duration: custom, delay: 0, ease: [0.12, 0.35, 0.9, 1] },
+    transition: { duration: custom, delay: 0, ease: [0,.51,0,.29] },
   }),
 };
