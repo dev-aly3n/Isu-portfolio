@@ -1,12 +1,12 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Gate from '../src/components/gatePage/Gate';
+import GatePage from "../src/components/gatePage/GatePage";
 
-export default function home():JSX.Element {
+export default function gate(): JSX.Element {
   return (
     <Fragment>
       <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>dev Aly3n - JS developer</title>
         <meta
           name="description"
@@ -18,7 +18,7 @@ export default function home():JSX.Element {
         />
         <meta name="author" content="dev aly3n" />
       </Head>
-      <Gate />
+      <GatePage />
     </Fragment>
   );
 }

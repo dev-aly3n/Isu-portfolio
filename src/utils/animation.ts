@@ -321,3 +321,12 @@ export const openDoor2 = {
     transition: { duration: 3.5, delay:0 },
   },
 };
+export const enterToGate = {
+  hidden:{
+    transform:"scale(1)",
+  },
+  visable: {
+    transform:"scale(1.5)",
+    transition: { duration: 3, delay:0 },
+  },
+};

@@ -1,14 +1,32 @@
 import LeftDoor from "./LeftDoor";
 import RightDoor from "./RightDoor";
-import { useState, useCallback } from "react";
-import { IsuGateCtxProvider } from "../../store/context/isuGateCtx";
+import { useState, useCallback, useEffect, useContext } from "react";
+import { IsuGateCtx } from "../../store/context/isuGateCtx";
 import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { useAnimation } from "framer-motion";
+import { enterToGate } from "../../utils/animation";
 
 const Gate: React.FC = (): JSX.Element => {
+const controls = useAnimation();
+const gateCtx = useContext(IsuGateCtx)
+
+const doorIsOpen = gateCtx.doorAnimationFinished;
+console.log(doorIsOpen);
+useEffect(() => {
+  if(doorIsOpen === true){
+setTimeout(() => {
+  controls.start("visable")
+}, 500);
+  }
+}, [doorIsOpen])
   return (
-    <IsuGateCtxProvider>
       <AnimatePresence>
-        <div className="flex flex-col justify-center items-center mx-auto w-screen h-screen overflow-hidden">
+        <motion.div className="flex flex-col justify-center items-center mx-auto w-screen h-screen overflow-hidden"
+        variants={enterToGate}
+        initial="hidden"
+        animate={controls}
+        >
           <div className="flex flex-row items-center justify-between w-full h-full">
             <div
               className="w-1/2 h-full z-20"
@@ -26,9 +44,8 @@ const Gate: React.FC = (): JSX.Element => {
               <RightDoor />
             </div>
           </div>
-        </div>
+        </motion.div>
       </AnimatePresence>
-    </IsuGateCtxProvider>
   );
 };
 
