@@ -11,7 +11,7 @@ const Gate: React.FC = (): JSX.Element => {
         <div className="flex flex-col justify-center items-center mx-auto w-screen h-screen overflow-hidden">
           <div className="flex flex-row items-center justify-between w-full h-full">
             <div
-              className="w-1/2 h-full"
+              className="w-1/2 h-full z-20"
               style={{
                 perspective: "500px",
                 perspectiveOrigin: "left",
@@ -20,7 +20,7 @@ const Gate: React.FC = (): JSX.Element => {
               <LeftDoor />
             </div>
             <div
-              className="w-1/2 h-full"
+              className="w-1/2 h-full z-10"
               style={{ perspective: "500px", perspectiveOrigin: "right" }}
             >
               <RightDoor />

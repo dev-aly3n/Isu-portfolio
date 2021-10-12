@@ -21,7 +21,7 @@ const KeyDynamicUpLine: React.FC<props> = ({
   setFinished,
   clicked
 }): JSX.Element => {
-  const controls = useGateHovered(logic);
+  const controls = useGateHovered();
 
   return (
     <svg

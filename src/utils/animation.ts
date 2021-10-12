@@ -350,21 +350,21 @@ export const sportwaveAnimation2:any = {
 
 
 // open door
-export const openDoor:any = {
+export const openDoor = {
   hidden:{
     transform:"rotateY(0deg)",
   },
   visable: {
     transform:"rotateY(50deg)",
-    transition: { duration: 2 },
+    transition: { duration: 3, delay:0 },
   },
 };
-export const openDoor2:any = {
+export const openDoor2 = {
   hidden:{
     transform:"rotateY(0deg)",
   },
   visable: {
     transform:"rotateY(-50deg)",
-    transition: { duration: 2 },
+    transition: { duration: 3, delay:0 },
   },
 };

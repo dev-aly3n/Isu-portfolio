@@ -1,11 +1,10 @@
 import { useAnimation } from "framer-motion";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { IsuGateCtx } from "../store/context/isuGateCtx";
 
-export const useGateHovered = (logic: boolean = false) => {
+export const useGateHovered = () => {
   const gateCtx = useContext(IsuGateCtx);
   const controls = useAnimation();
-  // const [once, setOnce] = useState(true);
   useEffect(() => {
     if (
       (gateCtx.isHovered === true && gateCtx.isClicked === true) ||

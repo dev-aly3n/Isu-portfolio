@@ -8,7 +8,7 @@ interface props {
   logic?: boolean;
 }
 const KeyDynamicMidLine: React.FC<props> = ({logic}): JSX.Element => {
-  const controls = useGateHovered(logic);
+  const controls = useGateHovered();
 
 ;  return (
     <svg

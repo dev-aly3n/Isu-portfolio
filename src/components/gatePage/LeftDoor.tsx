@@ -13,18 +13,20 @@ import DynamicUpLine from "./doorLines/DynamicUpLine";
 import DynamicMidLine from "./doorLines/DynamicMidLine";
 import DynamicPhLine from "./doorLines/DynamicPhLine";
 //hooks
-import { useGateClicked } from "../../hooks/useGateClicked";
+import { useGateOpened } from "../../hooks/useGateOpened";
 // utils and animation
 import { openDoor } from "../../utils/animation";
 
 const LeftDoor: React.FC = (): JSX.Element => {
-  // const gateCtx = useContext(IsuGateCtx);
+  const controls= useGateOpened();
+  const gateCtx = useContext(IsuGateCtx);
+  console.log(gateCtx);
   return (
     <motion.div
-      className=" h-full relative z-60"
+      className=" h-full relative"
       variants={openDoor}
       initial="hidden"
-      animate="visable"
+      animate={controls}
       style={{transformStyle:"preserve-3d", transformOrigin:"left"}}
     >
       <img src="/gate1.jpg" className="w-full h-screen object-right" />
@@ -52,7 +54,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
         <div className="relative">
           <UpLine />
           <div className="absolute top-0 left-0 w-full h-full">
-            <DynamicUpLine />
+            <DynamicUpLine logic={true} setFinished={gateCtx.doorFinishing} />
           </div>
         </div>
         <div className="relative">

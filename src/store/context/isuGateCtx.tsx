@@ -1,21 +1,26 @@
+import { faTextWidth } from "@fortawesome/free-solid-svg-icons";
 import { createContext, useState } from "react";
 
 type contextProps = {
   isHovered: boolean;
   isClicked: boolean;
   keyAnimationFinished: boolean;
+  doorAnimationFinished: boolean;
   hovering: (order: boolean) => void;
   clicking: (order: boolean) => void;
-  keyFinishing: (order:boolean) => void;
+  keyFinishing: (order: boolean) => void;
+  doorFinishing: (order: boolean) => void;
 };
 
 export const IsuGateCtx = createContext<contextProps>({
   isHovered: false,
   isClicked: false,
   keyAnimationFinished: false,
+  doorAnimationFinished: false,
   hovering: (order: boolean): void => {},
   clicking: (order: boolean): void => {},
   keyFinishing: (order: boolean): void => {},
+  doorFinishing: (order: boolean): void => {},
 });
 
 export const IsuGateCtxProvider: React.FC = (props) => {
@@ -23,6 +28,7 @@ export const IsuGateCtxProvider: React.FC = (props) => {
     isHovered: false,
     isClicked: false,
     keyAnimationFinished: false,
+    doorAnimationFinished: false,
   });
   const hoverHandler = (order: boolean): void => {
     setGate((prev) => {
@@ -40,7 +46,7 @@ export const IsuGateCtxProvider: React.FC = (props) => {
       };
     });
   };
-  const keyAnimationHandler = (order:boolean): void => {
+  const keyAnimationHandler = (order: boolean): void => {
     setGate((prev) => {
       return {
         ...prev,
@@ -48,13 +54,23 @@ export const IsuGateCtxProvider: React.FC = (props) => {
       };
     });
   };
+  const doorAnimationHandler = (order: boolean): void => {
+    setGate((prev) => {
+      return {
+        ...prev,
+        doorAnimationFinished: order,
+      };
+    });
+  };
   const context: contextProps = {
     isHovered: gate.isHovered,
     isClicked: gate.isClicked,
     keyAnimationFinished: gate.keyAnimationFinished,
+    doorAnimationFinished: gate.doorAnimationFinished,
     hovering: hoverHandler,
     clicking: clickHandler,
     keyFinishing: keyAnimationHandler,
+    doorFinishing: doorAnimationHandler,
   };
   return (
     <IsuGateCtx.Provider value={context}>{props.children}</IsuGateCtx.Provider>

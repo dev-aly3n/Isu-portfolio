@@ -7,16 +7,17 @@ import DynamicPhLine from "./doorLines/DynamicPhLine";
 import { motion } from "framer-motion";
 
 //hooks
-import { useGateClicked } from "../../hooks/useGateClicked";
+import { useGateOpened } from "../../hooks/useGateOpened";
 import { openDoor2 } from "../../utils/animation";
 
 const LeftDoor: React.FC = (): JSX.Element => {
+  const controls = useGateOpened();
   return (
     <motion.div
       variants={openDoor2}
       initial="hidden"
-      animate="visable"
-      className=" h-full relative"
+      animate={controls}
+      className="h-full relative"
       style={{transformStyle:"preserve-3d",transformOrigin:"right" }}
     >
       <img

@@ -7,14 +7,19 @@ import { IsuGateCtx } from "../../../store/context/isuGateCtx";
 
 interface props {
   logic?: boolean;
+  setFinished?: (order: boolean) => void;
 }
-const DynamicUpLine: React.FC<props> = ({logic}): JSX.Element => {
+const DynamicUpLine: React.FC<props> = ({
+  logic,
+  setFinished,
+}): JSX.Element => {
   const controls = useGateClicked();
 
-
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="359 207 812 243"
-    className="overflow-visible"
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="359 207 812 243"
+      className="overflow-visible"
     >
       <g>
         <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
@@ -27,17 +32,16 @@ const DynamicUpLine: React.FC<props> = ({logic}): JSX.Element => {
           />
 
           {/* <!-- Use a gaussian blur to create the soft blurriness of the glow --> */}
-          <feGaussianBlur in="thicken" stdDeviation="10" result="blurred" >
-          <animate
-            attributeName="stdDeviation"
-            from="5"
-            to="8"
-            dur="3s"
-            repeatCount="indefinite"
-            values="7; 10; 10; 7;"
-            keyTimes="0; 0.33; 0.66; 1"
-
-          />
+          <feGaussianBlur in="thicken" stdDeviation="10" result="blurred">
+            <animate
+              attributeName="stdDeviation"
+              from="5"
+              to="8"
+              dur="3s"
+              repeatCount="indefinite"
+              values="7; 10; 10; 7;"
+              keyTimes="0; 0.33; 0.66; 1"
+            />
           </feGaussianBlur>
 
           {/* <!-- Change the colour --> */}
@@ -51,17 +55,19 @@ const DynamicUpLine: React.FC<props> = ({logic}): JSX.Element => {
             result="softGlow_colored"
           />
 
-
-
           {/* <!--	Layer the effects together --> */}
           <feMerge>
             <feMergeNode in="softGlow_colored" />
             <feMergeNode in="SourceGraphic" />
           </feMerge>
-    
         </filter>
         <defs>
           <motion.path
+            onAnimationComplete={() => {
+              if (setFinished && logic) {
+                setFinished(true);
+              }
+            }}
             filter="url(#sofGlow)"
             variants={sportwaveAnimation}
             custom={2}
