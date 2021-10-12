@@ -1,6 +1,8 @@
 import type { AppProps } from "next/app";
 import { Fragment } from "react";
-// import Main from "../components/layout/Main";
+import { AnimatePresence } from "framer-motion";
+
+import Main from "../src/components/layout/Main"
 // import Header from "../components/layout/Header";
 // import Footer from "../components/layout/Footer";
 import "../styles/tailwind.css";
@@ -13,9 +15,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       {/* <Header /> */}
-      {/* <Main> */}
+      <Main>
       <Component {...pageProps} />
-      {/* </Main> */}
+      </Main>
       {/* <Footer /> */}
     </Fragment>
   );
