@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { sportwaveAnimation2 } from "../../../utils/animation";
+import { gateLine2 } from "../../../utils/animation";
 import { useGateClicked } from "../../../hooks/useGateClicked";
-import type { AnimationControls } from "framer-motion";
 
 interface props {
   logic?: boolean;
@@ -19,7 +18,7 @@ const PhLine: React.FC<props> = ({logic}): JSX.Element => {
         <defs>
           <motion.path
             filter="url(#sofGlow)"
-            variants={sportwaveAnimation2}
+            variants={gateLine2}
             custom={2}
             initial="hidden"
             animate={controls}

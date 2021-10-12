@@ -7,7 +7,7 @@ import type { AnimationControls } from "framer-motion";
 //store
 
 //hooks & animation & utils
-import { sportwaveAnimation } from "../../../utils/animation";
+import { gateLine } from "../../../utils/animation";
 import { useGateHovered } from "../../../hooks/useGateHovered";
 
 interface props {
@@ -77,7 +77,7 @@ const KeyDynamicUpLine: React.FC<props> = ({
               }
             }}
             filter="url(#sofGlow1) url(#inset-shadow)"
-            variants={sportwaveAnimation}
+            variants={gateLine}
             custom={1}
             initial="hidden"
             animate={controls}

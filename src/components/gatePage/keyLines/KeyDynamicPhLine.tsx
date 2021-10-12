@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { sportwaveAnimation2 } from "../../../utils/animation";
+import { gateLine2 } from "../../../utils/animation";
 
 const PhLine: React.FC = (): JSX.Element => {
   return (
@@ -12,7 +12,7 @@ const PhLine: React.FC = (): JSX.Element => {
         <defs>
           <motion.path
             filter="url(#sofGlow)"
-            variants={sportwaveAnimation2}
+            variants={gateLine2}
             custom={1}
             initial="hidden"
             animate="visable"

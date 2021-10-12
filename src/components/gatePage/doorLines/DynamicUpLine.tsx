@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { sportwaveAnimation } from "../../../utils/animation";
-import type { AnimationControls } from "framer-motion";
+import { useRouter } from 'next/router';
+import { gateLine } from "../../../utils/animation";
 import { useGateClicked } from "../../../hooks/useGateClicked";
-import { useContext } from "react";
-import { IsuGateCtx } from "../../../store/context/isuGateCtx";
+
 
 interface props {
   logic?: boolean;
@@ -13,8 +12,17 @@ const DynamicUpLine: React.FC<props> = ({
   logic,
   setFinished,
 }): JSX.Element => {
+  const router = useRouter();
   const controls = useGateClicked();
 
+  const upLineAnimationHandler = () => {
+      if (setFinished && logic) {
+        setFinished(true);
+        setTimeout(() => {
+          router.push("/career")
+        }, 2000);
+      }
+  }
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -63,13 +71,9 @@ const DynamicUpLine: React.FC<props> = ({
         </filter>
         <defs>
           <motion.path
-            onAnimationComplete={() => {
-              if (setFinished && logic) {
-                setFinished(true);
-              }
-            }}
+            onAnimationComplete={upLineAnimationHandler}
             filter="url(#sofGlow)"
-            variants={sportwaveAnimation}
+            variants={gateLine}
             custom={2}
             initial="hidden"
             animate={controls}

@@ -1,7 +1,10 @@
-//global
-//global
-//global
-export const pageAnimation = {
+// animations for framer motion
+// github.com/dev-aly3n
+
+// Page animations
+// Page animations
+// Page animations
+export const pageFadeUp = {
   hidden: {
     opacity: 0,
     y: 100,
@@ -22,10 +25,11 @@ export const pageAnimation = {
     transition: { duration: 0.5 },
   },
 };
-export const pageAnimation2 = {
+
+export const pageFadeDown = {
   hidden: {
     opacity: 0,
-    y: 10,
+    y: -100,
   },
 
   visable: {
@@ -40,12 +44,60 @@ export const pageAnimation2 = {
   },
   out: {
     opacity: 0,
-    y: 100,
+    y: -100,
+    transition: { duration: 0.5 },
+  },
+};
+export const pageFadeLeft = {
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+
+  visable: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      when: "beforeChildren",
+      staggerChildren: 0.5,
+      delay: 0.7,
+    },
+  },
+  out: {
+    opacity: 0,
+    x: 100,
+    transition: { duration: 0.5 },
+  },
+};
+export const pageFadeRight = {
+  hidden: {
+    opacity: 0,
+    x: -100,
+  },
+
+  visable: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      when: "beforeChildren",
+      staggerChildren: 0.5,
+      delay: 0.7,
+    },
+  },
+  out: {
+    opacity: 0,
+    x: -100,
     transition: { duration: 0.5 },
   },
 };
 
-export const sectionAnimation = {
+
+// section Animations
+// section Animations
+// section Animations
+export const sectionFadeScaleDown = {
   hidden: {
     opacity: 0,
     scale: 1.1,
@@ -61,29 +113,13 @@ export const sectionAnimation = {
     },
   },
 };
-export const sectionAnimation2 = {
-  hidden: {
-    opacity: 0,
-    scale: 1.1,
-  },
-  visable: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.4,
-      ease: "easeInOut",
-      when: "beforeChildren",
-      staggerChildren: 0.4,
-    },
-  },
-};
 
-export const leftToRightAnimation = {
+
+export const sectionLTR = {
   hidden: {
     opacity: 0,
     x: -700,
   },
-
   visable: {
     opacity: 1,
     x: 0,
@@ -99,7 +135,7 @@ export const leftToRightAnimation = {
   },
 };
 
-export const rightToLeftAnimation = {
+export const sectionRTL = {
   hidden: {
     opacity: 0,
     x: 700,
@@ -120,7 +156,8 @@ export const rightToLeftAnimation = {
   },
 };
 
-export const lineAnimation = {
+// for lines
+export const widthUp = {
   hidden: {
     width: "0%",
     opacity: 0,
@@ -132,7 +169,8 @@ export const lineAnimation = {
   },
 };
 
-export const achieveAnimation = {
+
+export const SWtNE = {
   hidden: {
     x: -20,
     y: 20,
@@ -149,17 +187,7 @@ export const achieveAnimation = {
 //home
 //home
 //home
-export const textAnimation = {
-  hidden: {
-    y: 200,
-    opacity: 0,
-  },
-  visable: {
-    transition: { duration: 0.8, ease: "easeOut" },
-    y: 0,
-    opacity: 1,
-  },
-};
+
 export const bioTextAnimation = {
   hidden: {
     y: 50,
@@ -172,35 +200,8 @@ export const bioTextAnimation = {
   },
 };
 
-export const buttonAnimation = {
-  hidden: {
-    scale: 0.85,
-    opacity: 0,
-  },
-  visable: {
-    scale: 1,
-    opacity: 1,
-    transition: { duration: 1 },
-  },
-};
-
-export const photoAnimation = {
-  hidden: {
-    scale: 1.15,
-    opacity: 0,
-  },
-  visable: {
-    scale: 1,
-    opacity: 1,
-    transition: { duration: 0.7 },
-  },
-};
-
-// sport
-// sport
-// sport
-
-export const twAnimation = {
+// to left animation
+export const toLeft = {
   hidden: {
     opacity: 0,
     x: 300,
@@ -212,31 +213,8 @@ export const twAnimation = {
   }),
 };
 
-export const sportImgAnimation = {
-  hidden: {
-    opacity: 0,
-    x: 400,
-  },
-  visable: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 10, ease: [0, 1.1, 0, 0.91] },
-  },
-};
 
-export const sportPhotoAnimation = {
-  hidden: {
-    scale: 1.15,
-    opacity: 0,
-  },
-  visable: {
-    scale: 1,
-    opacity: 1,
-    transition: { duration: 0.8, delay: 1.5 },
-  },
-};
-
-export const borderAnimation = {
+export const borderRising = {
   hidden: {
     opacity: 0,
     scale: 1.1,
@@ -252,11 +230,7 @@ export const borderAnimation = {
   },
 };
 
-//ART
-//ART
-//ART
-
-export const artTranAnimation = {
+export const toRightSkew = {
   hidden: {
     x: "-130%",
     skew: "45deg",
@@ -268,23 +242,7 @@ export const artTranAnimation = {
   },
 };
 
-export const artTranAnimationContainer = {
-  hidden: {},
-  visable: {
-    transition: {
-      when: "beforeChildren",
-      staggerChildren: 0.2,
-      ease: "easeOut",
-      delay: 0,
-    },
-  },
-};
-
-//biography
-//biography
-//biography
-
-export const bioPhotoAnimation = {
+export const scaleDown = {
   hidden: {
     opacity: 0,
     scale: 1.5,
@@ -299,10 +257,7 @@ export const bioPhotoAnimation = {
   },
 };
 
-// uniwave
-// uniwave
-// uniwave
-export const uniwaveAnimation = {
+export const svgAnimation1 = {
   hidden: { pathLength: 0, pathOffset: 1 },
   visable: {
     pathLength: 1,
@@ -310,10 +265,8 @@ export const uniwaveAnimation = {
     transition: { duration: 3.5, delay: 0 },
   },
 };
-// sportwave
-// sportwave
-// sportwave
-export const sportwaveAnimation:any = {
+
+export const gateLine:any = {
   hidden:(custom:number)=>( {
     pathLength: 0,
         transitionEnd:{
@@ -329,7 +282,7 @@ export const sportwaveAnimation:any = {
     transition: { duration: custom, delay: 0, ease: "linear" },
   }),
 };
-export const sportwaveAnimation2:any = {
+export const gateLine2:any = {
   hidden:(custom:number)=> ({
     pathLength: 0,
     pathOffset: 1,
@@ -356,7 +309,7 @@ export const openDoor = {
   },
   visable: {
     transform:"rotateY(50deg)",
-    transition: { duration: 3, delay:0 },
+    transition: { duration: 3.5, delay:0 },
   },
 };
 export const openDoor2 = {
@@ -365,6 +318,6 @@ export const openDoor2 = {
   },
   visable: {
     transform:"rotateY(-50deg)",
-    transition: { duration: 3, delay:0 },
+    transition: { duration: 3.5, delay:0 },
   },
 };

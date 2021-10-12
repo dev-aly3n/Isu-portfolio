@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { sportwaveAnimation } from "../../../utils/animation";
+import { gateLine } from "../../../utils/animation";
 import type { AnimationControls } from "framer-motion";
 import { useGateHovered } from "../../../hooks/useGateHovered";
 
@@ -20,7 +20,7 @@ const KeyDynamicMidLine: React.FC<props> = ({logic}): JSX.Element => {
         <defs>
           <motion.path
           filter="url(#sofGlow1) url(#inset-shadow5)"
-          variants={sportwaveAnimation}
+          variants={gateLine}
           custom={1}
           initial="hidden"
           animate={controls}

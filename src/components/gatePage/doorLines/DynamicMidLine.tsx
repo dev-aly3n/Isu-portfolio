@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { sportwaveAnimation } from "../../../utils/animation";
+import { gateLine } from "../../../utils/animation";
 import type { AnimationControls } from "framer-motion";
 import { useGateClicked } from "../../../hooks/useGateClicked";
 interface props {
@@ -38,7 +38,7 @@ const DynamicMidLine: React.FC<props> = ({logic}): JSX.Element => {
         <defs>
           <motion.path
             filter="url(#sofGlow) url(#inset-shadow3)"
-            variants={sportwaveAnimation}
+            variants={gateLine}
             custom={2}
             initial="hidden"
             animate={controls}
