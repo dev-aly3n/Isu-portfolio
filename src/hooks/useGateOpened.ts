@@ -1,5 +1,5 @@
 import { useAnimation } from "framer-motion";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { IsuGateCtx } from "../store/context/isuGateCtx";
 
 export const useGateOpened = () => {

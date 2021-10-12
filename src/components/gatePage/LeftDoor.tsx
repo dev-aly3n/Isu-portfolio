@@ -1,6 +1,6 @@
 //libs
 import { useContext } from "react";
-import { useAnimation } from "framer-motion";
+import { useRouter } from 'next/router';
 import { motion } from "framer-motion";
 //store
 import { IsuGateCtx } from "../../store/context/isuGateCtx";
@@ -18,6 +18,7 @@ import { useGateOpened } from "../../hooks/useGateOpened";
 import { openDoor } from "../../utils/animation";
 
 const LeftDoor: React.FC = (): JSX.Element => {
+  const router = useRouter();
   const controls= useGateOpened();
   const gateCtx = useContext(IsuGateCtx);
   console.log(gateCtx);
@@ -28,6 +29,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
       initial="hidden"
       animate={controls}
       style={{transformStyle:"preserve-3d", transformOrigin:"left"}}
+      onAnimationComplete={()=>router.push("/")}
     >
       <img src="/gate1.jpg" className="w-full h-screen object-right" />
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home: React.FC = (): JSX.Element => {
+const Career: React.FC = (): JSX.Element => {
   interface person {
     name: string;
     age: number;
@@ -18,4 +18,4 @@ const Home: React.FC = (): JSX.Element => {
   );
 };
 
-export default Home;
+export default Career;
