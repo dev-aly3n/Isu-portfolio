@@ -11,7 +11,7 @@ export const useGateHovered = () => {
       (gateCtx.isHovered === true && gateCtx.isClicked === false) ||
       (gateCtx.isHovered === false && gateCtx.isClicked === true)
     ) {
-      controls.start("visable");
+      controls.start("visible");
     } else if (gateCtx.isHovered === false && gateCtx.isClicked === false) {
       controls.start("hidden");
     }

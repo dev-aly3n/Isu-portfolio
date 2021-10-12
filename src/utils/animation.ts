@@ -10,7 +10,7 @@ export const pageFadeUp = {
     y: 100,
   },
 
-  visable: {
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
@@ -32,7 +32,7 @@ export const pageFadeDown = {
     y: -100,
   },
 
-  visable: {
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
@@ -54,7 +54,7 @@ export const pageFadeLeft = {
     x: 100,
   },
 
-  visable: {
+  visible: {
     opacity: 1,
     x: 0,
     transition: {
@@ -76,7 +76,7 @@ export const pageFadeRight = {
     x: -100,
   },
 
-  visable: {
+  visible: {
     opacity: 1,
     x: 0,
     transition: {
@@ -102,7 +102,7 @@ export const sectionFadeScaleDown = {
     opacity: 0,
     scale: 1.1,
   },
-  visable: {
+  visible: {
     opacity: 1,
     scale: 1,
     transition: {
@@ -120,7 +120,7 @@ export const sectionLTR = {
     opacity: 0,
     x: -700,
   },
-  visable: {
+  visible: {
     opacity: 1,
     x: 0,
     transition: {
@@ -141,7 +141,7 @@ export const sectionRTL = {
     x: 700,
   },
 
-  visable: {
+  visible: {
     opacity: 1,
     x: 0,
     transition: {
@@ -162,7 +162,7 @@ export const widthUp = {
     width: "0%",
     opacity: 0,
   },
-  visable: {
+  visible: {
     transition: { duration: 2, ease: "easeOut" },
     width: "",
     opacity: 1,
@@ -176,7 +176,7 @@ export const SWtNE = {
     y: 20,
     opacity: 0,
   },
-  visable: {
+  visible: {
     transition: { duration: 1 },
     x: 0,
     y: 0,
@@ -193,7 +193,7 @@ export const bioTextAnimation = {
     y: 50,
     opacity: 0,
   },
-  visable: {
+  visible: {
     transition: { duration: 0.8, ease: "easeOut" },
     y: 0,
     opacity: 1,
@@ -206,7 +206,7 @@ export const toLeft = {
     opacity: 0,
     x: 300,
   },
-  visable: (custom: number) => ({
+  visible: (custom: number) => ({
     opacity: 1,
     x: 0,
     transition: { duration: 0.9, delay: custom * 0.15 },
@@ -221,7 +221,7 @@ export const borderRising = {
     borderTopWidth: 0,
     borderRightWidth: 0,
   },
-  visable: {
+  visible: {
     opacity: 1,
     scale: 1,
     borderTopWidth: "4px",
@@ -235,7 +235,7 @@ export const toRightSkew = {
     x: "-130%",
     skew: "45deg",
   },
-  visable: {
+  visible: {
     x: "100%",
     skew: "0deg",
     transition: { duration: 1, ease: "easeOut" },
@@ -247,7 +247,7 @@ export const scaleDown = {
     opacity: 0,
     scale: 1.5,
   },
-  visable: {
+  visible: {
     opacity: 1,
     scale: 1,
     transition: {
@@ -259,7 +259,7 @@ export const scaleDown = {
 
 export const svgAnimation1 = {
   hidden: { pathLength: 0, pathOffset: 1 },
-  visable: {
+  visible: {
     pathLength: 1,
     pathOffset: 0,
     transition: { duration: 3.5, delay: 0 },
@@ -274,7 +274,7 @@ export const gateLine:any = {
     },
     transition: { duration: custom, delay: 0, ease: "linear" },
   }),
-  visable:(custom:number)=>( {
+  visible:(custom:number)=>( {
     pathLength: 1,
     transitionEnd:{
       strokeLinecap: "square",
@@ -291,7 +291,7 @@ export const gateLine2:any = {
     },
     transition: { duration: custom, delay: 0, ease: "linear" },
   }),
-  visable:(custom:number) =>( {
+  visible:(custom:number) =>( {
     pathLength: 1,
     pathOffset: 0,
     transitionEnd:{
@@ -307,7 +307,7 @@ export const openDoor = {
   hidden:{
     transform:"rotateY(0deg)",
   },
-  visable: {
+  visible: {
     transform:"rotateY(50deg)",
     transition: { duration: 3.5, delay:0 },
   },
@@ -316,20 +316,31 @@ export const openDoor2 = {
   hidden:{
     transform:"rotateY(0deg)",
   },
-  visable: {
+  visible: {
     transform:"rotateY(-50deg)",
     transition: { duration: 3.5, delay:0 },
   },
 };
 export const enterToGate = {
-  hidden:{
-  },
-  visable: {
-    transition: { duration: 1.5, delay:0 },
-  },
-  out: {
+  hidden: {
+    transform: "scale(0) ",
     opacity: 0,
-    y: 400,
-    transition: { duration: 2 },
-  }
+    transition: {
+      delay: 0.3,
+    },
+  },
+  visible: {
+    transform: "scale(1) ",
+    opacity: 1,
+    transition: {
+      duration: 2.5,
+    },
+  },
+  exit: {
+    transform: "scale(3) ",
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+    },
+  },
 };

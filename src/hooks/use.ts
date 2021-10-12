@@ -10,7 +10,7 @@ export const useOnScrollAnimation = (tHold:number = 0.3) => {
 
   if (view && !viewed) {
     setViewed(true);
-    controls.start("visable");
+    controls.start("visible");
   }
 
   return [element, controls];

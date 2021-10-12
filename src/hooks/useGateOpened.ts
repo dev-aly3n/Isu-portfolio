@@ -8,7 +8,7 @@ export const useGateOpened = () => {
 
   useEffect(() => {
     if (gateCtx.doorAnimationFinished === true) {
-      controls.start("visable");
+      controls.start("visible");
     }
   }, [gateCtx.doorAnimationFinished]);
   return controls;

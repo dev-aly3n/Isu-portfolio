@@ -1,20 +1,13 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { enterToGate } from "../../utils/animation";
 const Career: React.FC = (): JSX.Element => {
-  interface person {
-    name: string;
-    age: number;
-  }
-  const pit: person = {
-    name: "ali",
-    age: 18,
-  };
 
   return (
-    <div>
+    <motion.div initial="hidden" animate="visible" variants={enterToGate}>
       <div>hello we are in hooommmmmmmmeeeeee body</div>
       <div>we're going to do verrrrrrrrrry interesting stuff interesting </div>
-    </div>
+    </motion.div>
   );
 };
 
