@@ -309,7 +309,7 @@ export const openDoor = {
   },
   visible: {
     transform:"rotateY(50deg)",
-    transition: { duration: 3.5, delay:0 },
+    transition: { duration: 2, delay:0 },
   },
 };
 export const openDoor2 = {
@@ -318,16 +318,13 @@ export const openDoor2 = {
   },
   visible: {
     transform:"rotateY(-50deg)",
-    transition: { duration: 3.5, delay:0 },
+    transition: { duration: 2, delay:0 },
   },
 };
 export const enterToGate = {
   hidden: {
-    transform: "scale(0) ",
-    opacity: 0,
-    transition: {
-      delay: 0.3,
-    },
+    transform: "scale(1.5) ",
+    opacity: 0.5,
   },
   visible: {
     transform: "scale(1) ",
@@ -336,11 +333,11 @@ export const enterToGate = {
       duration: 2.5,
     },
   },
-  exit: {
-    transform: "scale(3) ",
+  out: {
+    transform: "scale(3)",
     opacity: 0,
     transition: {
-      duration: 0.3,
+      duration: 2,
     },
   },
 };

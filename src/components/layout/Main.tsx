@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Main: React.FC = (props) => {
   const router = useRouter();
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence >
       <motion.main key={router.pathname}>{props.children}</motion.main>
     </AnimatePresence>
   );

@@ -17,7 +17,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
       variants={openDoor2}
       initial="hidden"
       animate={controls}
-      className="h-full relative"
+      className="h-full relative opacity-20"
       style={{transformStyle:"preserve-3d",transformOrigin:"right" }}
     >
       <img
