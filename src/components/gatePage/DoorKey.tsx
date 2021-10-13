@@ -1,5 +1,5 @@
 //libs
-import { useContext  } from "react";
+import { useContext } from "react";
 
 //store
 import { IsuGateCtx } from "../../store/context/isuGateCtx";
@@ -10,6 +10,7 @@ import KeyUpLine from "./keyLines/KeyUpLine";
 import KeyMidLine from "./keyLines/KeyMidLine";
 import KeyDynamicUpLine from "./keyLines/KeyDynamicUpLine";
 import KeyDynamicMidLine from "./keyLines/KeyDynamicMidLine";
+import LightKey from "./LightKey";
 
 //hooks
 
@@ -37,17 +38,8 @@ const DoorKey: React.FC = (): JSX.Element => {
       className={`cycle-1 absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw]
        flex justify-center items-center group -rotate-45 hover:rotate-0 duration-1500
        ${gateCtx.isClicked ? "rotate-0" : ""} `}
-       style={{  transformStyle: "preserve-3d",
-        perspective: "5000px"}}
     >
-      <motion.img
-        src="/door1.png"
-        alt=""
-        className={`w-[30vw] h-[30vw] rounded-full z-60 absolute top-1/2 left-1/2 mt-[-50%] ml-[-50%] 
-         grayscale-70 group-hover:grayscale-0 rotate-90 group-hover:rotate-0 duration-1500
-        ${gateCtx.isClicked ? "rotate-[0] grayscale-[0%]" : ""}`}
-        style={{rotateY:"60deg"}}
-      />
+      <LightKey />
       <div
         className="w-[22vw] h-[22vw] rounded-full z-40 relative"
         style={{ backgroundImage: "url(/key.jpg)" }}
