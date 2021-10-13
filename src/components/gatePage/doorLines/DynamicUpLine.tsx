@@ -19,7 +19,7 @@ const DynamicUpLine: React.FC<props> = ({
       if (setFinished && logic) {
         setFinished(true);
         setTimeout(() => {
-          router.push("/career")
+          // router.push("/career")
         }, 3000);
       }
   }

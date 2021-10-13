@@ -36,8 +36,9 @@ const DoorKey: React.FC = (): JSX.Element => {
       onMouseLeave={keyMouseLeaveHandler}
       onClick={keyClickHandler}
       className={`cycle-1 absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw]
-       flex justify-center items-center group -rotate-45 hover:rotate-0 duration-1500
-       ${gateCtx.isClicked ? "rotate-0" : ""} `}
+       flex justify-center items-center group -rotate-45 hover:rotate-0 duration-1500 hover:-translate-y-10
+       ${gateCtx.isClicked ? "rotate-0 !-translate-y-0" : ""} `}
+
     >
       <LightKey />
       <div

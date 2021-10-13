@@ -22,11 +22,12 @@ const LeftDoor: React.FC = (): JSX.Element => {
   console.log(gateCtx);
   return (
     <motion.div
-      className=" h-full relative"
+      className=" h-full relative left-door"
       variants={openDoor}
       initial="hidden"
       animate={controls}
-      style={{transformStyle:"preserve-3d", transformOrigin:"left"}}
+      style={{transformStyle:"preserve-3d", transformOrigin:"left", perspective: "5000px",}}
+
     >
       <img src="/gate1.jpg" className="w-full h-screen object-right" />
 
