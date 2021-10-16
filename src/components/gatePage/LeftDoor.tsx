@@ -32,6 +32,9 @@ const LeftDoor: React.FC = (): JSX.Element => {
       <img src="/gate1.jpg" className="w-full h-screen object-right" />
 
       <DoorKey />
+      <div className="absolute top-0 right-0 w-full h-full overflow-hidden">
+      <div className="relative w-full h-full">
+
       <div className="absolute top-0 right-0 w-36 h-[50vh]">
         <PhLine />
       </div>
@@ -41,15 +44,17 @@ const LeftDoor: React.FC = (): JSX.Element => {
       <div
         className="absolute bottom-0 right-0 w-36 h-[50vh]"
         style={{ transform: "scaleY(-1)" }}
-      >
+        >
         <PhLine />
       </div>
       <div
         className="absolute bottom-0 right-0 w-36 h-[50vh]"
         style={{ transform: "scaleY(-1)" }}
-      >
+        >
         <DynamicPhLine />
       </div>
+        </div>
+        </div>
       <div className="flex flex-col absolute top-1/2 mt-[-40%] right-0 w-full">
         <div className="relative">
           <UpLine />

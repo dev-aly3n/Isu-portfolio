@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { sportwaveAnimation2 } from "../../../utils/animation";
 
 const PhLine: React.FC = (): JSX.Element => {
   return (

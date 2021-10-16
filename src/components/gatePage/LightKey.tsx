@@ -16,8 +16,8 @@ const LightKey: React.FC = () => {
     grayscale-70 group-hover:grayscale-0 rotate-90 group-hover:rotate-0 duration-1500 
    ${gateCtx.isClicked ? " grayscale-[0%] !rotate-[0]" : ""}`}
     >
-      <div className="relative key-door-tickness rounded-full duration-4000"
-      style={{transform:"translate3d(0px,0,0) rotateY(45deg) "}}
+      <div className="relative key-door-tickness rounded-full duration-2000"
+      style={{transform:` ${gateCtx.doorAnimationFinished ? "rotateY(30deg)" : "rotateY(0deg)"} `}}
       >
         <span className="key-thickness-ring"></span>
         <img className="" src="/door1.png" alt="" />

@@ -21,7 +21,7 @@ const Gate: React.FC = (): JSX.Element => {
           <div
             className="w-1/2 h-full z-20"
             style={{
-              perspective: "500px",
+              perspective: "1000px",
               perspectiveOrigin: "left",
             }}
           >
@@ -29,7 +29,7 @@ const Gate: React.FC = (): JSX.Element => {
           </div>
           <div
             className="w-1/2 h-full z-10"
-            style={{ perspective: "500px", perspectiveOrigin: "right" }}
+            style={{ perspective: "1000px", perspectiveOrigin: "right" }}
           >
             <RightDoor />
           </div>
