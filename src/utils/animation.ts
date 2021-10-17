@@ -323,7 +323,10 @@ export const openDoor2 = {
 };
 export const enterToGate = {
   hidden: {
-    scale: 1,
+    scale: 1.5,
+    transition: {
+      duration: 1.5,
+    },
   },
   visible: {
     scale: 1,
@@ -331,7 +334,27 @@ export const enterToGate = {
       duration: 2.5,
     },
   },
-  hoo: {
+  out: {
+    scale: 2,
+    transition: {
+      duration: 1.5,
+    },
+  },
+};
+export const enterToGate2 = {
+  hidden: {
+    scale: 0,
+    transition: {
+      duration: 1.5,
+    },
+  },
+  visible: {
+    scale: 1,
+    transition: {
+      duration: 2.5,
+    },
+  },
+  out: {
     scale: 2,
     transition: {
       duration: 1.5,

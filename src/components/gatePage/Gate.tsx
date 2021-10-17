@@ -13,7 +13,7 @@ const Gate: React.FC = (): JSX.Element => {
         variants={enterToGate}
         initial="hidden"
         animate="visible"
-        exit="hoo"
+        exit="out"
         layout
       >
         <div className="flex flex-row items-center justify-between w-full h-full"
