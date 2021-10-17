@@ -38,14 +38,27 @@ const DoorKey: React.FC = (): JSX.Element => {
       className={`cycle-1 absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw]
        flex justify-center items-center group -rotate-45 hover:rotate-0 duration-1500 hover:-translate-y-10
        ${gateCtx.isClicked ? "rotate-0 !-translate-y-0" : ""} `}
-
     >
       <LightKey />
       <div
         className="w-[22vw] h-[22vw] rounded-full z-40 relative"
         style={{ backgroundImage: "url(/key.jpg)" }}
       >
-        <div className="h-1/2 w-1/2 absolute top-[11vw] left-[11vw] mt-[-5.5vw]  ml-[-5.5vw] rounded-full bg-gray-500 z-50"></div>
+        <div
+          className={`h-1/2 w-1/2 absolute top-[11vw] left-[11vw] mt-[-5.5vw]  ml-[-5.5vw] rounded-full
+          z-50 overflow-hidden duration-1500 flex justify-center items-center rotate-45 group-hover:rotate-0 
+          ${gateCtx.isClicked ? "rotate-0" : ""}`}
+          style={{
+            boxShadow: `${
+              gateCtx.isHovered
+                ? "0px 0px 10px 2px rgba(0,0,0,0.7)"
+                : "0px 0px 10px 5px rgba(0,0,0,0.7)"
+            }`,
+            backgroundImage: "url(/key.jpg)",
+          }}
+        >
+          <div className={`text-white text-5xl font-black text-center`} style={{filter:"url(#inset-shadow)"}}>open<br/>the<br/>gate</div>
+        </div>
         <div className="flex flex-col absolute top-1/2 mt-[-30%] left-1/2 ml-[-47%] w-full z-40">
           <div className="relative">
             <KeyUpLine />

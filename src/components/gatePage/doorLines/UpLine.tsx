@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { sportwaveAnimation } from "../../../utils/animation";
 
 const UpLine: React.FC = (): JSX.Element => {
   return (

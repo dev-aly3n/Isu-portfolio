@@ -335,7 +335,7 @@ export const enterToGate = {
     },
   },
   out: {
-    scale: 2,
+    scale: 3,
     transition: {
       duration: 1.5,
     },
