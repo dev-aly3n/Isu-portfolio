@@ -17,7 +17,7 @@ import { useGateOpened } from "../../hooks/useGateOpened";
 import { openDoor } from "../../utils/animation";
 
 const LeftDoor: React.FC = (): JSX.Element => {
-  const controls= useGateOpened();
+  const controls = useGateOpened();
   const gateCtx = useContext(IsuGateCtx);
   console.log(gateCtx);
   return (
@@ -26,35 +26,37 @@ const LeftDoor: React.FC = (): JSX.Element => {
       variants={openDoor}
       initial="hidden"
       animate={controls}
-      style={{transformStyle:"preserve-3d", transformOrigin:"left", perspective: "5000px",}}
-
+      style={{
+        transformStyle: "preserve-3d",
+        transformOrigin: "left",
+        perspective: "5000px",
+      }}
     >
       <img src="/gate1.jpg" className="w-full h-screen object-right" />
 
       <DoorKey />
       <div className="absolute top-0 right-0 w-full h-full overflow-hidden">
-      <div className="relative w-full h-full">
-
-      <div className="absolute top-0 right-0 w-36 h-[50vh]">
-        <PhLine />
-      </div>
-      <div className="absolute top-0 right-0 w-36 h-[50vh]">
-        <DynamicPhLine />
-      </div>
-      <div
-        className="absolute bottom-0 right-0 w-36 h-[50vh]"
-        style={{ transform: "scaleY(-1)" }}
-        >
-        <PhLine />
-      </div>
-      <div
-        className="absolute bottom-0 right-0 w-36 h-[50vh]"
-        style={{ transform: "scaleY(-1)" }}
-        >
-        <DynamicPhLine />
-      </div>
+        <div className="relative w-full h-full">
+          <div className="absolute top-0 right-0 w-36 h-[50vh]">
+            <PhLine />
+          </div>
+          <div className="absolute top-0 right-0 w-36 h-[50vh]">
+            <DynamicPhLine />
+          </div>
+          <div
+            className="absolute bottom-0 right-0 w-36 h-[50vh]"
+            style={{ transform: "scaleY(-1)" }}
+          >
+            <PhLine />
+          </div>
+          <div
+            className="absolute bottom-0 right-0 w-36 h-[50vh]"
+            style={{ transform: "scaleY(-1)" }}
+          >
+            <DynamicPhLine />
+          </div>
         </div>
-        </div>
+      </div>
       <div className="flex flex-col absolute top-1/2 mt-[-40%] right-0 w-full">
         <div className="relative">
           <UpLine />

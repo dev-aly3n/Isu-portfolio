@@ -323,21 +323,18 @@ export const openDoor2 = {
 };
 export const enterToGate = {
   hidden: {
-    transform: "scale(1) ",
-    opacity: 0.5,
+    scale: 1,
   },
   visible: {
-    transform: "scale(1) ",
-    opacity: 1,
+    scale: 1,
     transition: {
       duration: 2.5,
     },
   },
-  out: {
-    transform: "scale(3)",
-    opacity: 0,
+  hoo: {
+    scale: 2,
     transition: {
-      duration: 2,
+      duration: 1.5,
     },
   },
 };
