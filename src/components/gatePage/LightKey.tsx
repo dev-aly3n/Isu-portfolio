@@ -20,7 +20,7 @@ const LightKey: React.FC = () => {
       style={{transform:` ${gateCtx.doorAnimationFinished ? "rotateY(30deg)" : "rotateY(0deg)"} `}}
       >
         <span className="key-thickness-ring"></span>
-        <img className="" src="/door1.png" alt="" />
+        <img className="overflow-hidden rounded-full" src="/door1.png" alt="" />
         <div className="key-thickness0"></div>
         <div className="key-thickness1"></div>
         <div className="key-thickness2"></div>
