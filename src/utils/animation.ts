@@ -337,15 +337,15 @@ export const enterToGate = {
   out: {
     scale: 3,
     transition: {
-      duration: 1.5,
+      duration: 2.5,
     },
   },
 };
-export const enterToGate2 = {
+export const firstPage = {
   hidden: {
     scale: 0,
     transition: {
-      duration: 1.5,
+      duration: 2.5,
     },
   },
   visible: {
@@ -357,7 +357,7 @@ export const enterToGate2 = {
   out: {
     scale: 2,
     transition: {
-      duration: 1.5,
+      duration: 2.5,
     },
   },
 };

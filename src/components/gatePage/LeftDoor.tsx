@@ -22,7 +22,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
   console.log(gateCtx);
   return (
     <motion.div
-      className=" h-full relative left-door"
+      className=" h-full relative left-door flex justify-center items-center"
       variants={openDoor}
       initial="hidden"
       animate={controls}

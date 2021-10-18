@@ -15,6 +15,7 @@ const Gate: React.FC = (): JSX.Element => {
         animate="visible"
         exit="out"
         layout
+        style={{maxWidth:"1920px"}}
       >
         <div className="flex flex-row items-center justify-between w-full h-full"
               style={{transformStyle:"preserve-3d", perspective: "500px"}}

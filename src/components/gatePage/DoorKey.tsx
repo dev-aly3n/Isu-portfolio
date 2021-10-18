@@ -59,7 +59,7 @@ const DoorKey: React.FC = (): JSX.Element => {
           }}
         >
           <div
-            className={`text-transparent bg-clip-text text-4xl font-black text-center`}
+            className={`text-transparent bg-clip-text text-base md:text-2xl lg:text-3xl xl:text-4xl font-black text-center`}
             style={{
               textShadow: "rgba(0,0,0,0.3) 3px 1px 5px",
               backgroundImage: "url(/keytext.jpg)",
