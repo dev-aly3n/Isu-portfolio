@@ -13,6 +13,10 @@
   @apply mx-auto bg-black overflow-x-hidden;
 } */
 
+body {
+  @apply bg-black;
+}
+
 
 @layer components {
   .key-door-tickness {

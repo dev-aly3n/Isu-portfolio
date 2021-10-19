@@ -361,3 +361,20 @@ export const firstPage = {
     },
   },
 };
+export const backRoadImg = {
+  hidden: {
+    scale: 1,
+
+  },
+  visible: {
+    scale: 1,
+  },
+  out: {
+    scale: 5,
+    translateY:"1000px",
+    transition: {
+      duration: 2.5,
+    },
+  },
+};
+
