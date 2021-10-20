@@ -30,7 +30,6 @@ const LeftDoor: React.FC = (): JSX.Element => {
         transformStyle: "preserve-3d",
         transformOrigin: "left",
         perspective: "5000px",
-        rotateY:"60deg"
         
       }}
     >

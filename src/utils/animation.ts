@@ -344,12 +344,14 @@ export const enterToGate = {
 export const firstPage = {
   hidden: {
     scale: 0,
+    y:-100,
     transition: {
       duration: 2.5,
     },
   },
   visible: {
     scale: 1,
+    y:0,
     transition: {
       duration: 2.5,
     },
@@ -364,14 +366,19 @@ export const firstPage = {
 export const backRoadImg = {
   hidden: {
     scale: 1,
+    translateZ:"0px",
+    translateY:"0px"
 
   },
   visible: {
     scale: 1,
+    translateZ:"0px",
+    translateY:"0px"
   },
   out: {
     scale: 5,
-    translateY:"1000px",
+    translateZ:"1000px",
+    translateY:"500px",
     transition: {
       duration: 2.5,
     },
