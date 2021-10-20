@@ -18,7 +18,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
       initial="hidden"
       animate={controls}
       className="h-full relative right-door overflow-hidden"
-      style={{transformStyle:"preserve-3d",transformOrigin:"right" }}
+      style={{transformStyle:"preserve-3d",transformOrigin:"right", rotateY:"-60deg" }}
     >
       <img
         src="/gate2.jpg"
