@@ -343,7 +343,7 @@ export const enterToGate = {
 };
 export const firstPage = {
   hidden: {
-    scale: 0,
+    scale: 0.3,
     y:-100,
     transition: {
       duration: 2.5,

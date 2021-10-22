@@ -82,6 +82,7 @@ const DoorKey: React.FC = (): JSX.Element => {
                 logic={true}
                 setFinished={gateCtx.keyFinishing}
                 clicked={gateCtx.isClicked}
+                impacting={gateCtx.impacting}
               />
             </div>
           </div>

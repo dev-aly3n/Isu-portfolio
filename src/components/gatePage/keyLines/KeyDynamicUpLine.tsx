@@ -13,12 +13,14 @@ import { useGateHovered } from "../../../hooks/useGateHovered";
 interface props {
   logic?: boolean;
   setFinished?: (order: boolean) => void;
+  impacting?: () => void;
   clicked?: boolean;
 }
 
 const KeyDynamicUpLine: React.FC<props> = ({
   logic,
   setFinished,
+  impacting,
   clicked
 }): JSX.Element => {
   const controls = useGateHovered();
@@ -74,6 +76,9 @@ const KeyDynamicUpLine: React.FC<props> = ({
             onAnimationComplete={() => {
               if (setFinished && logic && clicked) {
                 setFinished(true);
+              }
+              if(impacting){
+              impacting();
               }
             }}
             filter="url(#sofGlow1) url(#inset-shadow)"
