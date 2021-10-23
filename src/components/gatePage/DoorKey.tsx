@@ -36,7 +36,7 @@ const DoorKey: React.FC = (): JSX.Element => {
       onMouseLeave={keyMouseLeaveHandler}
       onClick={keyClickHandler}
       className={`cycle-1 absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw]
-       flex justify-center items-center group -rotate-45 hover:rotate-0 duration-1500 hover:-translate-y-10
+       flex justify-center items-center group rotate-[-25deg] hover:rotate-0 duration-1600 hover:-translate-y-10
        hover:scale-110
        ${gateCtx.isClicked ? "rotate-0 !-translate-y-0 !scale-100" : ""} `}
     >
@@ -47,7 +47,7 @@ const DoorKey: React.FC = (): JSX.Element => {
       >
         <div
           className={`h-1/2 w-1/2 absolute top-[11vw] left-[11vw] mt-[-5.5vw]  ml-[-5.5vw] rounded-full
-          z-50 overflow-hidden duration-1500 flex justify-center items-center rotate-45 group-hover:rotate-0 
+          z-50 overflow-hidden duration-1500 flex justify-center items-center rotate-[25deg] group-hover:rotate-0 
           ${gateCtx.isClicked ? "!rotate-0" : ""}`}
           style={{
             boxShadow: `${

@@ -8,10 +8,11 @@ const GatePage: React.FC = () => {
   return (
     <IsuGateCtxProvider>
       <Audio />
+      <div className="relative w-screen h-screen overflow-hidden" id="titop">
+
       <motion.div
-        className="w-[100%] h-[100%] fixed top-0 left-[0%] flex justify-center items-center"
+        className="w-[100%] h-[100%] absolute top-0 left-0 flex justify-center items-center"
         style={{
-          zIndex: 0,
           perspective: "30px",
           transformStyle: "preserve-3d",
         }}
@@ -19,18 +20,7 @@ const GatePage: React.FC = () => {
         initial="hidden"
         animate="visible"
         exit="out"
-      >
-        <motion.img
-          src="back.jpg"
-          className="absolute top-0 left-0 justify-center items-center w-[1000px]"
-          style={{
-            transformOrigin: "center bottom",
-            rotateX: "0deg",
-            translateZ: "-700px",
-            translateY: "-400px",
-            scale: 3,
-          }}
-        />
+        >
         <motion.img
           src="/backroad.jpg"
           className="!min-w-[10000px] h-[300%] "
@@ -39,8 +29,11 @@ const GatePage: React.FC = () => {
             rotateX: "55deg",
           }}
         />
+
       </motion.div>
       <Gate />
+      </div>
+
     </IsuGateCtxProvider>
   );
 };

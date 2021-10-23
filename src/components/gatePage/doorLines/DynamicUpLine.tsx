@@ -18,9 +18,9 @@ const DynamicUpLine: React.FC<props> = ({
   const upLineAnimationHandler = () => {
       if (setFinished && logic) {
         setFinished(true);
-        setTimeout(() => {
-          router.push("/career")
-        }, 1000);
+        // setTimeout(() => {
+        //   router.push("/career")
+        // }, 2000);
       }
   }
   return (
@@ -74,7 +74,7 @@ const DynamicUpLine: React.FC<props> = ({
             onAnimationComplete={upLineAnimationHandler}
             filter="url(#sofGlow)"
             variants={gateLine}
-            custom={2}
+            custom={3}
             initial="hidden"
             animate={controls}
             id="s-Path_1-d1224f"

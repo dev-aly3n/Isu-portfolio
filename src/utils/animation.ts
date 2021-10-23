@@ -309,7 +309,7 @@ export const openDoor = {
   },
   visible: {
     transform:"rotateY(50deg)",
-    transition: { duration: 2, delay:0 },
+    transition: { duration: 2.5, delay:0 },
   },
 };
 export const openDoor2 = {
@@ -318,12 +318,18 @@ export const openDoor2 = {
   },
   visible: {
     transform:"rotateY(-50deg)",
-    transition: { duration: 2, delay:0 },
+    transition: { duration: 2.5, delay:0 },
   },
+  out:{
+    x:100,
+    transition: {
+      duration: 2.5,
+    },
+  }
 };
 export const enterToGate = {
   hidden: {
-    scale: 1.5,
+    scale: 1,
     transition: {
       duration: 1.5,
     },
@@ -367,13 +373,18 @@ export const backRoadImg = {
   hidden: {
     scale: 1,
     translateZ:"0px",
-    translateY:"0px"
-
+    translateY:"0px",
+    transition: {
+      delay:0
+    },
   },
   visible: {
     scale: 1,
     translateZ:"0px",
-    translateY:"0px"
+    translateY:"0px",
+    transition: {
+      delay:0,
+    },
   },
   out: {
     scale: 5,

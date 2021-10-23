@@ -19,7 +19,7 @@ const PhLine: React.FC<props> = ({logic}): JSX.Element => {
           <motion.path
             filter="url(#sofGlow)"
             variants={gateLine2}
-            custom={2}
+            custom={3}
             initial="hidden"
             animate={controls}
             id="s-Path_1-d1221"

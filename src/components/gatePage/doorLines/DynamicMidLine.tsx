@@ -39,7 +39,7 @@ const DynamicMidLine: React.FC<props> = ({logic}): JSX.Element => {
           <motion.path
             filter="url(#sofGlow) url(#inset-shadow3)"
             variants={gateLine}
-            custom={2}
+            custom={3}
             initial="hidden"
             animate={controls}
             id="s-Path_1-d1224578"

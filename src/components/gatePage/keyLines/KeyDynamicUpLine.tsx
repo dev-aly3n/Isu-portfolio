@@ -1,5 +1,5 @@
 //libs
-import { useRef, useEffect, useContext } from "react";
+import { useRef, useEffect, useContext, useState } from "react";
 import { motion } from "framer-motion";
 import type { AnimationControls } from "framer-motion";
 //components
@@ -24,6 +24,8 @@ const KeyDynamicUpLine: React.FC<props> = ({
   clicked
 }): JSX.Element => {
   const controls = useGateHovered();
+
+  const [once, setOnce] = useState(false);
 
   return (
     <svg
@@ -74,11 +76,15 @@ const KeyDynamicUpLine: React.FC<props> = ({
         <defs>
           <motion.path
             onAnimationComplete={() => {
+              console.log("anim finished")
               if (setFinished && logic && clicked) {
                 setFinished(true);
               }
-              if(impacting){
+              if(impacting && once){
               impacting();
+              }
+              if(once===false){
+                setOnce(true);
               }
             }}
             filter="url(#sofGlow1) url(#inset-shadow)"

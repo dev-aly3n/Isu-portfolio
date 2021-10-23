@@ -9,7 +9,7 @@ const Gate: React.FC = (): JSX.Element => {
 
   return (
       <motion.div
-        className="fixed top-0 left-0 flex flex-col justify-center items-center mx-auto w-screen h-screen overflow-hidden"
+        className="absolute top-0 left-0 flex flex-col justify-center items-center mx-auto w-screen h-screen overflow-hidden z-10"
         variants={enterToGate}
         initial="hidden"
         animate="visible"
