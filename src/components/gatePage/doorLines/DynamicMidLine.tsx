@@ -3,38 +3,14 @@ import { gateLine } from "../../../utils/animation";
 import type { AnimationControls } from "framer-motion";
 import { useGateClicked } from "../../../hooks/useGateClicked";
 interface props {
-  logic?:boolean;
+  logic?: boolean;
 }
 
-const DynamicMidLine: React.FC<props> = ({logic}): JSX.Element => {
+const DynamicMidLine: React.FC<props> = (): JSX.Element => {
   const controls = useGateClicked();
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="315 271 812 83"
-      className="overflow-visible"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="315 271 812 83">
       <g>
-        <filter
-          id="inset-shadow3"
-          x="-100%"
-          y="-100%"
-          width="200%"
-          height="200%"
-        >
-          <feComponentTransfer in="SourceAlpha">
-            <feFuncA type="table" tableValues="1 0" />
-          </feComponentTransfer>
-          <feGaussianBlur stdDeviation="5" />
-          <feOffset dx="0" dy="0" result="offsetblur" />
-          <feFlood floodColor="#16FBFF" result="color" />
-          <feComposite in2="offsetblur" operator="in" />
-          <feComposite in2="SourceAlpha" operator="in" />
-          <feMerge>
-            <feMergeNode in="SourceGraphic" />
-            <feMergeNode />
-          </feMerge>
-        </filter>
         <defs>
           <motion.path
             filter="url(#sofGlow) url(#inset-shadow3)"

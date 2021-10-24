@@ -3,29 +3,24 @@ import { gateLine } from "../../../utils/animation";
 import type { AnimationControls } from "framer-motion";
 import { useGateHovered } from "../../../hooks/useGateHovered";
 
-
 interface props {
   logic?: boolean;
 }
-const KeyDynamicMidLine: React.FC<props> = ({logic}): JSX.Element => {
+const KeyDynamicMidLine: React.FC<props> = (): JSX.Element => {
   const controls = useGateHovered();
 
-;  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="420 530 660 56"
-      className="overflow-visible"
-    >
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="420 530 660 56">
       <g>
         <defs>
           <motion.path
-          filter="url(#sofGlow1) url(#inset-shadow5)"
-          variants={gateLine}
-          custom={1}
-          initial="hidden"
-          animate={controls}
-          id="s-Path_1-d4578978"
-          d="M736.0 558.0 L387.2667238421957 558.0 "
+            filter="url(#sofGlow1) url(#inset-shadow5)"
+            variants={gateLine}
+            custom={1}
+            initial="hidden"
+            animate={controls}
+            id="s-Path_1-d4578978"
+            d="M736.0 558.0 L387.2667238421957 558.0 "
           ></motion.path>
         </defs>
         <g>

@@ -5,15 +5,11 @@ import { useGateClicked } from "../../../hooks/useGateClicked";
 interface props {
   logic?: boolean;
 }
-const PhLine: React.FC<props> = ({logic}): JSX.Element => {
+const PhLine: React.FC<props> = (): JSX.Element => {
   const controls = useGateClicked();
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="227 26 250 900"
-      className="overflow-visible"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="227 26 250 900">
       <g>
         <defs>
           <motion.path

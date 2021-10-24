@@ -31,7 +31,7 @@ const Audio: React.FC = () => {
     key1AudioRef.current.pause();
     if (once) {
       key2AudioRef.current.currentTime = 0.2;
-      key2AudioRef.current.volume = 0.1;
+      key2AudioRef.current.volume = 0.03;
       key2AudioRef.current?.play();
     }
     if (once === false) {
@@ -56,6 +56,7 @@ const Audio: React.FC = () => {
   useEffect(() => {
     if (once) {
       openGateRef.current.currentTime = 0;
+      openGateRef.current.volume = 0.3;
       openGateRef.current?.play();
       setTimeout(() => {
         openGateRef.current.volume = 0;

@@ -13,10 +13,17 @@
   @apply mx-auto bg-black overflow-x-hidden;
 } */
 
+
+
 body {
   @apply bg-black;
 }
 
+@layer base {
+  svg {
+    @apply overflow-visible;
+  }
+}
 
 @layer components {
   .key-door-tickness {

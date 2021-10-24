@@ -1,0 +1,5 @@
+@layer components {
+  .door-ph-line {
+    @apply stroke-[15px] sm:stroke-[20px] md:stroke-[30px] lg:stroke-[40px];
+  }
+}

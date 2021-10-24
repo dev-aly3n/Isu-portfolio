@@ -2,21 +2,9 @@ import { motion } from "framer-motion";
 
 const PhLine: React.FC = (): JSX.Element => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="227 26 250 900"
-      className="overflow-visible"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="227 26 250 900">
       <g>
         <defs>
-          <pattern
-            id="pat3"
-            patternUnits="userSpaceOnUse"
-            width="1500"
-            height="1500"
-          >
-            <image xlinkHref="/gate1.jpg" width="1500" height="1500" />
-          </pattern>
           <motion.path
             filter="url(#inset-shadow)"
             id="s-Path_1-d122469"
@@ -28,7 +16,7 @@ const PhLine: React.FC = (): JSX.Element => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="#s-Path_1-d122469"
             fill="none"
-            className="stroke-[15px] sm:stroke-[20px] md:stroke-[30px] lg:stroke-[40px]"
+            className="door-ph-line"
             stroke="url(#pat3)"
             strokeLinecap="square"
             filter="none"

@@ -2,34 +2,8 @@ import { motion } from "framer-motion";
 
 const KeyUpLine: React.FC = (): JSX.Element => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="250 200 1000 260"
-      className="overflow-visible"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="250 200 1000 260">
       <g>
-        <pattern
-          id="pat4"
-          patternUnits="userSpaceOnUse"
-          width="400"
-          height="400"
-        >
-          <image xlinkHref="/key.jpg" width="400" height="400" />
-        </pattern>
-        <filter id="inset-shadow4" x="-50%" y="-50%" width="200%" height="200%">
-          <feComponentTransfer in="SourceAlpha">
-            <feFuncA type="table" tableValues="1 0" />
-          </feComponentTransfer>
-          <feGaussianBlur stdDeviation="5" />
-          <feOffset dx="7" dy="-7" result="offsetblur" />
-          <feFlood floodColor="rgb(0, 0, 0)" result="color" />
-          <feComposite in2="offsetblur" operator="in" />
-          <feComposite in2="SourceAlpha" operator="in" />
-          <feMerge>
-            <feMergeNode in="SourceGraphic" />
-            <feMergeNode />
-          </feMerge>
-        </filter>
         <defs>
           <motion.path
             filter="url(#inset-shadow4)"
