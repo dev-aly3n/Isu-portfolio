@@ -18,7 +18,9 @@ export default function career():JSX.Element {
         />
         <meta name="author" content="dev aly3n" />
       </Head>
+      <div className="z-0">
       <Career />
+      </div>
     </Fragment>
   );
 }

@@ -18,7 +18,7 @@ export default function gate(): JSX.Element {
         />
         <meta name="author" content="dev aly3n" />
       </Head>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden w-screen h-screen fixed top-0 left-0 z-10">
       <GatePage />
       </div>
     </Fragment>

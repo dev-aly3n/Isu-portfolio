@@ -344,6 +344,7 @@ export const enterToGate = {
     scale: 3,
     transition: {
       duration: 2.5,
+      delay:2
     },
   },
 };
@@ -353,6 +354,7 @@ export const firstPage = {
     y:-100,
     transition: {
       duration: 2.5,
+
     },
   },
   visible: {
@@ -360,6 +362,7 @@ export const firstPage = {
     y:0,
     transition: {
       duration: 2.5,
+      delay:2
     },
   },
   out: {
@@ -392,6 +395,7 @@ export const backRoadImg = {
     translateY:"500px",
     transition: {
       duration: 2.5,
+      delay:2
     },
   },
 };

@@ -18,9 +18,9 @@ const DynamicUpLine: React.FC<props> = ({
   const upLineAnimationHandler = () => {
       if (setFinished && logic) {
         setFinished(true);
-        // setTimeout(() => {
-        //   router.push("/career")
-        // }, 2000);
+        setTimeout(() => {
+           router.push("/career")
+         }, 1);
       }
   }
   return (
