@@ -1,42 +1,32 @@
+// libs
+import { motion } from "framer-motion";
+// components
 import LeftDoor from "./LeftDoor";
 import RightDoor from "./RightDoor";
-import { motion } from "framer-motion";
+// hooks
+// store
+// utils & animation
 import { enterToGate } from "../../utils/animation";
 
 const Gate: React.FC = (): JSX.Element => {
-
-
-
   return (
-      <motion.div
-        className="absolute top-0 left-0 flex flex-col justify-center items-center mx-auto w-screen h-screen overflow-hidden z-10"
-        variants={enterToGate}
-        initial="hidden"
-        animate="visible"
-        exit="out"
-        layout
-        style={{maxWidth:"1920px"}}
-      >
-        <div className="flex flex-row items-center justify-between w-full h-full"
-              style={{transformStyle:"preserve-3d", perspective: "500px"}}
-              >
-          <div
-            className="w-1/2 h-full z-20"
-            style={{
-              perspective: "1000px",
-              perspectiveOrigin: "left",
-            }}
-          >
-            <LeftDoor />
-          </div>
-          <div
-            className="w-1/2 h-full z-10"
-            style={{ perspective: "1000px", perspectiveOrigin: "right" }}
-          >
-            <RightDoor />
-          </div>
+    <motion.div
+      className="gate-container"
+      variants={enterToGate}
+      initial="hidden"
+      animate="visible"
+      exit="out"
+      layout
+    >
+      <div>
+        <div>
+          <LeftDoor />
         </div>
-      </motion.div>
+        <div>
+          <RightDoor />
+        </div>
+      </div>
+    </motion.div>
   );
 };
 

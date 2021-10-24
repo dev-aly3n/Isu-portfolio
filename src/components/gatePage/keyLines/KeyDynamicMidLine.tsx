@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { gateLine } from "../../../utils/animation";
-import type { AnimationControls } from "framer-motion";
 import { useGateHovered } from "../../../hooks/useGateHovered";
 
 interface props {

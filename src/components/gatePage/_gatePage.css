@@ -1,3 +1,21 @@
-@import './_gate.css';
+@import "./_gate.css";
 @import "./doorLines/_doorLines.css";
-@import './keyLines/_keyLines.css';
+@import "./keyLines/_keyLines.css";
+
+
+
+
+@layer components {
+  .titop {
+    @apply relative w-screen h-screen overflow-hidden;
+    > div:first-of-type {
+      transform-style: preserve-3d;
+      perspective: 30px;
+      @apply w-[100%] h-[100%] absolute top-0 left-0 flex justify-center items-center;
+      > img {
+        transform-origin: center bottom;
+        @apply !min-w-[10000px] h-[300%];
+      }
+    }
+  }
+}

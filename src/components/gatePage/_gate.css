@@ -1,0 +1,20 @@
+@layer components {
+  .gate-container {
+    @apply absolute top-0 left-0 flex flex-col justify-center items-center mx-auto w-screen h-screen overflow-hidden z-10;
+    > div {
+      transform-style: preserve-3d;
+      perspective: 500px;
+      @apply flex flex-row items-center justify-between w-full h-full;
+      > div:first-of-type {
+        perspective-origin: left;
+        perspective: 1000px;
+        @apply w-1/2 h-full z-20;
+      }
+      > div:last-of-type {
+        perspective-origin: right;
+        perspective: 1000px;
+        @apply w-1/2 h-full z-10;
+      }
+    }
+  }
+}
