@@ -3,6 +3,7 @@
 @import "./keyLines/_keyLines.css";
 @import "./_LeftDoor.css";
 @import "./_RightDoor.css";
+@import './_DoorKey.css';
 
 
 
