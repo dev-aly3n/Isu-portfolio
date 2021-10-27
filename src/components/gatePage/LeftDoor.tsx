@@ -19,66 +19,54 @@ import { openDoor } from "../../utils/animation";
 const LeftDoor: React.FC = (): JSX.Element => {
   const controls = useGateOpened();
   const gateCtx = useContext(IsuGateCtx);
-  console.log(gateCtx);
   return (
     <motion.div
-      className=" h-full relative left-door flex justify-center items-center"
+      className="left-door-container"
       variants={openDoor}
       initial="hidden"
       animate={controls}
-      style={{
-        transformStyle: "preserve-3d",
-        transformOrigin: "left",
-        perspective: "5000px",
-      }}
     >
-      <img src="/gate1.jpg" className="w-full h-screen object-right" />
+      <img src="/gate1.jpg" />
 
       <DoorKey />
-      <div className="absolute top-0 right-0 w-full h-full overflow-hidden">
-        <div className="relative w-full h-full">
-          <div className="absolute top-0 right-0 w-36 h-[50vh]">
+      <div className="left-ph">
+        <div>
+          <div>
             <PhLine />
           </div>
-          <div className="absolute top-0 right-0 w-36 h-[50vh]">
+          <div>
             <DynamicPhLine />
           </div>
-          <div
-            className="absolute bottom-0 right-0 w-36 h-[50vh]"
-            style={{ transform: "scaleY(-1)" }}
-          >
+          <div style={{ transform: "scaleY(-1)" }}>
             <PhLine />
           </div>
-          <div
-            className="absolute bottom-0 right-0 w-36 h-[50vh]"
-            style={{ transform: "scaleY(-1)" }}
-          >
+          <div style={{ transform: "scaleY(-1)" }}>
             <DynamicPhLine />
           </div>
         </div>
       </div>
-      <div className="flex flex-col absolute top-1/2 mt-[-40%] right-0 w-full">
-        <div className="relative">
+      <div className="left-lines">
+        <div>
           <UpLine />
-          <div className="absolute top-0 left-0 w-full h-full">
+          <div>
             <DynamicUpLine logic={true} setFinished={gateCtx.doorFinishing} />
           </div>
         </div>
-        <div className="relative">
+        <div>
           <MidLine />
-          <div className="absolute top-0 left-0 w-full h-full ">
+          <div>
             <DynamicMidLine />
           </div>
         </div>
-        <div className="relative" style={{ transform: "scaleY(-1)" }}>
+        <div style={{ transform: "scaleY(-1)" }}>
           <MidLine />
-          <div className="absolute top-0 left-0 w-full h-full">
+          <div>
             <DynamicMidLine />
           </div>
         </div>
-        <div className="relative" style={{ transform: "scaleY(-1)" }}>
+        <div style={{ transform: "scaleY(-1)" }}>
           <UpLine />
-          <div className="absolute top-0 left-0 w-full h-full">
+          <div>
             <DynamicUpLine />
           </div>
         </div>

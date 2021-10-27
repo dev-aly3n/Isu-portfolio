@@ -1,0 +1,61 @@
+@layer components {
+  .left-door {
+    position: relative;
+    -webkit-transform: perspective(1000px) rotateY(-70deg);
+    transform: perspective(1000px) rotateY(-70deg);
+  }
+  .left-door::after,
+  .left-door::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    margin-right: 0px;
+    height: 100%;
+    background: transparent;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 15px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .left-door-container {
+    transform-style: preserve-3d;
+    transform-origin: left;
+    perspective: 5000px;
+    @apply h-full relative left-door flex justify-center items-center;
+    > img {
+      @apply w-full h-screen object-right;
+    }
+    > .left-ph {
+      @apply absolute top-0 right-0 w-full h-full overflow-hidden;
+      > div {
+        @apply relative w-full h-full;
+        > div:nth-child(1) {
+          @apply absolute top-0 right-0 w-36 h-[50vh];
+        }
+        > div:nth-child(2) {
+          @apply absolute top-0 right-0 w-36 h-[50vh];
+        }
+        > div:nth-child(3) {
+          @apply absolute bottom-0 right-0 w-36 h-[50vh];
+        }
+        > div:nth-child(4) {
+          @apply absolute bottom-0 right-0 w-36 h-[50vh];
+        }
+      }
+    }
+    > .left-lines {
+      @apply flex flex-col absolute top-1/2 mt-[-40%] right-0 w-full;
+      > div {
+        @apply relative;
+        > div:last-of-type {
+          @apply absolute top-0 left-0 w-full h-full;
+        }
+      }
+    }
+  }
+}
+
+.l {
+}
