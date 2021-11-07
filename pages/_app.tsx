@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { AnimatePresence } from "framer-motion";
 
 import Main from "../src/components/layout/Main"
-// import Header from "../components/layout/Header";
+import Header from "../src/components/layout/Header";
 // import Footer from "../components/layout/Footer";
 import "../styles/tailwind.css";
 import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
@@ -15,7 +15,7 @@ fontawesomeConfig.autoAddCss = false;
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
-      {/* <Header /> */}
+      <Header />
       <Main>
       <Component {...pageProps} />
       </Main>

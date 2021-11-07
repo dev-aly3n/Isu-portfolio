@@ -38,7 +38,7 @@ const DoorKey: React.FC = (): JSX.Element => {
       <LightKey />
       <div>
         <div
-          className={`group-hover:rotate-0 
+          className={`group-hover:!rotate-0 
           ${gateCtx.isClicked ? "!rotate-0" : ""}`}
           style={{
             boxShadow: `${
