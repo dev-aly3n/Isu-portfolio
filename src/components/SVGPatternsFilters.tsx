@@ -1,6 +1,6 @@
 const SVGPatternsFilters: React.FC = () => {
   return (
-    <svg>
+    <svg className="w-0 h-0">
       <g>
         {/* Patterns */}
         {/* Patterns */}

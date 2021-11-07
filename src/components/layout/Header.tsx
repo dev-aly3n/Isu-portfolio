@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import React from "react";
 
 interface Links {
   ref: string;
@@ -24,6 +25,7 @@ const headerLinks: Links[] = [
 const Header: React.FC = () => {
   const router = useRouter();
   return (
+     router.pathname !== "/" ? (
     <div className="header-container">
       <h1>
         <Link href="/">Aly3n</Link>
@@ -47,7 +49,10 @@ const Header: React.FC = () => {
           );
         })}
       </ul>
-    </div>
+    </div>):
+    <React.Fragment>
+    </React.Fragment>
+      
   );
 };
 
