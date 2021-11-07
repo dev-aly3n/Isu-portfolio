@@ -351,7 +351,7 @@ export const enterToGate = {
 export const firstPage = {
   hidden: {
     scale: 0.3,
-    y:-100,
+    y:-300,
     transition: {
       duration: 2.5,
 
