@@ -32,7 +32,7 @@ module.exports = {
       purple: colors.violet,
       pink: colors.pink,
 
-      promary: {
+      primary: {
         100: "#d2dbdc",
         200: "#a6b6b9",
         300: "#799295",
