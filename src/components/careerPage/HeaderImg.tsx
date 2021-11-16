@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 const HeaderImg: React.FC = () => {
   return (
-    <div className="flex relative w-full h-full">
+    <motion.div layout className="flex relative w-full h-full">
       <img
         alt=""
         src="/aly3n.jpg"
@@ -30,7 +31,7 @@ const HeaderImg: React.FC = () => {
       >
         <p className="-rotate-45 ">Education</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

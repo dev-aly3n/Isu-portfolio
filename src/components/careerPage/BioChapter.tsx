@@ -22,11 +22,11 @@ const BioChapter: React.FC<props> = ({ chap, firstChap }) => {
       >
         <FontAwesomeIcon className={isExpanded ? "rotate-90":"rotate-0"} icon={faAngleRight} />{" "}{chap.title}
       </motion.h3>
-      <div className="w-full h-px bg-white my-2" />
+      <motion.div layout className="w-full h-px bg-white my-2" />
       <motion.p
         layout
         className={`text-base first-letter:text-primary-200 first-letter:font-semibold first-letter:text-5xl overflow-hidden
-       ${isExpanded ? "h-full" : "h-0"}`}
+       ${isExpanded ? "" : "h-0"}`}
       >
         {chap.desc}
       </motion.p>
