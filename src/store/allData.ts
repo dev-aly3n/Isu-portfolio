@@ -16,3 +16,37 @@ export const biochapters: { title: string; desc: string }[] = [
       desc: "After all Aly completed 8 creative project with different technologies that he learnt and he is still learning. But the most important thing that will happen in this chapter is finding a job. Yes Aly will find a nice job at this chapter.  He think that he is ready to work with a good team.",
     },
   ];
+
+
+  export const skillList: {name:string; icon:string; perc:number;}[] = [
+    {
+      name:"Javascript" ,
+      icon:"js" ,
+      perc: 70,
+    },
+    {
+      name: "HTML",
+      icon: "HTML",
+      perc: 90,
+    },
+    {
+      name: "CSS",
+      icon: "CSS",
+      perc: 90,
+    },
+    {
+      name: "TailWind",
+      icon: "tw",
+      perc: 90,
+    },
+    {
+      name: "React",
+      icon: "react",
+      perc: 80,
+    },
+    {
+      name: "Redux",
+      icon: "redux",
+      perc: 70,
+    },
+  ]
