@@ -11,7 +11,7 @@ import {biochapters} from '../../store/allData';
 
 const Biography: React.FC = () => {
   return (
-    <div className="flex flex-col relative w-full h-full py-20 px-60">
+    <div className="flex flex-col mx-auto relative w-8/12 h-full py-20 ">
         {biochapters[0] && biochapters.map((chap,index)=>{
             return <BioChapter chap={chap} firstChap={index === 0 ? true : false} />
         })}

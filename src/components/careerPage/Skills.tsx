@@ -8,9 +8,9 @@ import Skill from "./Skill";
 
 const Skills: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center w-8/12 mx-auto">
       <h2>Skills</h2>
-      <div className="flex flex-col justify-center items-start">
+      <div className="flex flex-wrap justify-center items-start">
         {skillList.map((skill, index) => {
           return <Skill skill={skill} index={index} />;
         })}

@@ -14,7 +14,7 @@ const Career: React.FC = (): JSX.Element => {
         animate="visible"
         variants={firstPage}
         exit="out"
-        className=" w-full h-full bg-secondary-800 text-white flex flex-col justify-between "
+        className=" w-full h-full bg-secondary-800/60 text-white flex flex-col justify-between "
       >
         {/* first */}
         <HeaderImg />
@@ -24,6 +24,9 @@ const Career: React.FC = (): JSX.Element => {
 
         {/* Third */}
         <Skills />
+
+
+        <div className="h-96"></div>
       </motion.div>
     </AnimateSharedLayout>
   );

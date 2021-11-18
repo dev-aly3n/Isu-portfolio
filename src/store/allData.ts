@@ -1,3 +1,4 @@
+
 export const biochapters: { title: string; desc: string }[] = [
     {
       title: "Chapter One: The Beginning",
@@ -21,32 +22,32 @@ export const biochapters: { title: string; desc: string }[] = [
   export const skillList: {name:string; icon:string; perc:number;}[] = [
     {
       name:"Javascript" ,
-      icon:"js" ,
+      icon:"faJs" ,
       perc: 70,
     },
     {
       name: "HTML",
-      icon: "HTML",
+      icon: "faJs",
       perc: 90,
     },
     {
       name: "CSS",
-      icon: "CSS",
+      icon: "faJs",
       perc: 90,
     },
     {
-      name: "TailWind",
-      icon: "tw",
+      name: "TailWindCSS",
+      icon: "faJs",
       perc: 90,
     },
     {
       name: "React",
-      icon: "react",
+      icon: "faJs",
       perc: 80,
     },
     {
       name: "Redux",
-      icon: "redux",
+      icon: "faJs",
       perc: 70,
     },
   ]
