@@ -33,13 +33,13 @@ export const biochapters: { title: string; desc: string }[] = [
       color:"(97,218,251)",
     },
     {
-      name: "typescript",
+      name: "Typescript",
       icon: "typescript.png",
       perc: 60,
       color:"(49,120,198)",
     },
     {
-      name: "nextJS",
+      name: "NextJS",
       icon: "nextjs.png",
       perc: 70,
       color:"(118,212,207)",
@@ -59,7 +59,7 @@ export const biochapters: { title: string; desc: string }[] = [
     {
       name: "TailWindCSS",
       icon: "tailwindcss.png",
-      perc: 90,
+      perc: 85,
       color:"(6,182,212)",
     },
     {
@@ -77,45 +77,74 @@ export const biochapters: { title: string; desc: string }[] = [
     {
       name: "FramerMotion",
       icon: "framermotion.png",
-      perc: 90,
+      perc: 88,
       color:"(242,0,175)",
+    },
+    {
+      name: "Git",
+      icon: "git.png",
+      perc: 60,
+      color:"(240,81,51)",
+    },
+    {
+      name: "Webpack",
+      icon: "webpack.png",
+      perc: 60,
+      color:"(142,214,251)",
+    },
+    {
+      name: "Joomla",
+      icon: "joomla.png",
+      perc: 90,
+      color:"(90,164,38)",
     },
   ]
   export const SoftSkillList: {name:string; icon:string; perc:number;color:string;}[] = [
     {
       name:"Adaptability" ,
       icon:"adaptability.png" ,
-      perc: 90,
-    color:"(247,223,30)",
+      perc:85,
+    color:"(1,1,1)",
     },
     {
       name: "Creativity",
       icon: "creativity.png",
       perc: 300,
-      color:"(49,120,198)",
+      color:"(242,183,7)",
     },
     {
       name: "Communications",
       icon: "communications.png",
-      perc: 80,
-      color:"(97,218,251)",
+      perc:70,
+      color:"(37,185,84)",
     },
     {
       name: "Responsibility",
       icon: "responsibility.png",
-      perc: 70,
-      color:"(118,212,207)",
+      perc:89,
+      color:"(253,236,166)",
     },
     {
       name: "Self-motivation",
       icon: "selfmotivation.png",
-      perc: 100,
-      color:"(228,79,38)",
+      perc: 90,
+      color:"(143,255,171)",
     },
     {
       name: "Team work",
       icon: "teamwork.png",
-      perc: 90,
-      color:"(21,114,182)",
+      perc:90,
+      color:"(62,135,200)",
     },
-  ]
+  ];
+
+  export const eduSkillList:string[] = [
+    "Airplane structural design",
+    "Airplane numerical design",
+    "Aerodynamics calculation of subsonic and hypersonic on 2d rigid bodies",
+    "Space missions calculation",
+    "turbine design for turbojet and turbofan engines",
+    "modeling and study on rigid bodies in SolidWorks",
+    "modeling and Study on rigid bodies in ABAQUS",
+    "modeling and study on flow in COMSOL",
+  ];
