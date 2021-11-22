@@ -19,35 +19,103 @@ export const biochapters: { title: string; desc: string }[] = [
   ];
 
 
-  export const skillList: {name:string; icon:string; perc:number;}[] = [
+  export const hardSkillList: {name:string; icon:string; perc:number;color:string;}[] = [
     {
       name:"Javascript" ,
-      icon:"faJs" ,
+      icon:"Javascript.png" ,
       perc: 70,
-    },
-    {
-      name: "HTML",
-      icon: "faJs",
-      perc: 90,
-    },
-    {
-      name: "CSS",
-      icon: "faJs",
-      perc: 90,
-    },
-    {
-      name: "TailWindCSS",
-      icon: "faJs",
-      perc: 90,
+    color:"(247,223,30)",
     },
     {
       name: "React",
-      icon: "faJs",
-      perc: 80,
+      icon: "react.png",
+      perc: 70,
+      color:"(97,218,251)",
+    },
+    {
+      name: "typescript",
+      icon: "typescript.png",
+      perc: 60,
+      color:"(49,120,198)",
+    },
+    {
+      name: "nextJS",
+      icon: "nextjs.png",
+      perc: 70,
+      color:"(118,212,207)",
+    },
+    {
+      name: "HTML",
+      icon: "html.png",
+      perc: 90,
+      color:"(228,79,38)",
+    },
+    {
+      name: "CSS",
+      icon: "css.png",
+      perc: 90,
+      color:"(21,114,182)",
+    },
+    {
+      name: "TailWindCSS",
+      icon: "tailwindcss.png",
+      perc: 90,
+      color:"(6,182,212)",
     },
     {
       name: "Redux",
-      icon: "faJs",
+      icon: "redux.png",
       perc: 70,
+      color:"(118,74,188)",
+    },
+    {
+      name: "ApolloClient",
+      icon: "apolloclient.png",
+      perc: 70,
+      color:"(44,16,158)",
+    },
+    {
+      name: "FramerMotion",
+      icon: "framermotion.png",
+      perc: 90,
+      color:"(242,0,175)",
+    },
+  ]
+  export const SoftSkillList: {name:string; icon:string; perc:number;color:string;}[] = [
+    {
+      name:"Adaptability" ,
+      icon:"adaptability.png" ,
+      perc: 90,
+    color:"(247,223,30)",
+    },
+    {
+      name: "Creativity",
+      icon: "creativity.png",
+      perc: 300,
+      color:"(49,120,198)",
+    },
+    {
+      name: "Communications",
+      icon: "communications.png",
+      perc: 80,
+      color:"(97,218,251)",
+    },
+    {
+      name: "Responsibility",
+      icon: "responsibility.png",
+      perc: 70,
+      color:"(118,212,207)",
+    },
+    {
+      name: "Self-motivation",
+      icon: "selfmotivation.png",
+      perc: 100,
+      color:"(228,79,38)",
+    },
+    {
+      name: "Team work",
+      icon: "teamwork.png",
+      perc: 90,
+      color:"(21,114,182)",
     },
   ]
