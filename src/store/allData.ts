@@ -146,7 +146,7 @@ export const biochapters: { title: string; desc: string }[] = [
     "turbine design for turbojet and turbofan engines",
     "designing high pressure water rocket",
     "designing multi-angle launchers for rockets",
-    "designing solid-propellant rocket rockets",
+    "designing solid-propellant rockets",
     "modeling and study on rigid bodies in SolidWorks",
     "modeling and Study on rigid bodies in ABAQUS",
     "modeling and study on flow in COMSOL",
