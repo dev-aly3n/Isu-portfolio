@@ -1,18 +1,43 @@
-const Edu: React.FC = () => {
+// libs
+import { useState } from "react";
+// components
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+// hooks
+// store
+// utils & animation
+
+interface props {
+  education: { name: string; field: string; about: string; image: string };
+}
+
+const Edu: React.FC<props> = ({ education }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <div className="flex flex-col">
-      <div className="flex justify-start items-center">
-        <img src="/media/logos/kntu.png" className="block w-56" />
-        <div className="flex flex-col">
-          <h3 className="text-3xl font-semibold w-96 mb-10">
-            Khaje Nasir Toosi University Of Technology
-          </h3>
-          <p>2016-2020 Bachelor Degree - Aerospace Engineering</p>
+    <div className="flex flex-col my-3">
+      <div
+        className="flex justify-start items-center flex-wrap hover:cursor-pointer hover:bg-gray-500/10 duration-1000"
+        onClick={() => setIsExpanded((prevState) => !prevState)}
+      >
+        <span className="text-3xl">
+          <FontAwesomeIcon icon={faAngleRight} />{" "}
+        </span>
+        <img
+          src={`/media/logos/${education.image}.png`}
+          className="block w-[10vw]"
+        />
+        <div className="flex flex-col ml-2">
+          <h3 className="text-2xl font-semibold mb-10">{education.name}</h3>
+          <p>{education.field}</p>
         </div>
       </div>
       <div className="w-full h-1 bg-white" />
-      <div className="flex flex-col m-2 p-5">
-      K. N. Toosi University of Technology, made up of eleven academic faculties, opens doors to top talents in engineering and science. It brings together all levels of education and offers innovative training to its 7000|+ students.
+      <div
+        className={`flex flex-col mx-2 my-3 px-5 overflow-hidden ${
+          isExpanded ? "h-full" : "h-0"
+        }`}
+      >
+        {education.about}
       </div>
     </div>
   );
