@@ -24,10 +24,10 @@ const Career: React.FC = (): JSX.Element => {
         <Biography />
 
         {/* Third */}
-        <Skills />
+        <EduList />
 
         {/* 4th */}
-        <EduList />
+        <Skills />
         <div className="h-96"></div>
       </motion.div>
     </AnimateSharedLayout>
