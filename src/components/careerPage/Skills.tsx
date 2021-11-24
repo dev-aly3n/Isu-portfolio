@@ -1,4 +1,5 @@
 // libs
+import { motion } from "framer-motion";
 // components
 // hooks
 // store
@@ -12,7 +13,7 @@ import Skill from "./Skill";
 
 const Skills: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-8/12 mx-auto">
+    <motion.div layout className="flex flex-col justify-center items-center w-8/12 mx-auto">
       <h2 className=" my-5 font-black text-3xl">Hard Skills</h2>
       <div className="flex flex-wrap justify-start items-start">
         {hardSkillList.map((skill, index) => {
@@ -35,7 +36,7 @@ const Skills: React.FC = () => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
