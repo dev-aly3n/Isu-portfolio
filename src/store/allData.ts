@@ -181,3 +181,15 @@ export const eduData: {
     image: "ut",
   },
 ];
+
+export const contactList: { site: string; username: string; logo: string; link:string; }[] = [
+  { site: "LinkedIn", username: "", logo: "", link:"" },
+  { site: "", username: "", logo: "", link:"" },
+  { site: "", username: "", logo: "", link:"" },
+  { site: "", username: "", logo: "", link:"" },
+  { site: "", username: "", logo: "", link:"" },
+  { site: "", username: "", logo: "", link:"" },
+  { site: "", username: "", logo: "", link:"" },
+  { site: "", username: "", logo: "", link:"" },
+
+];
