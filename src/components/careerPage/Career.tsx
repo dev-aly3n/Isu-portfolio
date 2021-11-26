@@ -6,6 +6,7 @@ import Biography from "./Biography";
 import { AnimateSharedLayout } from "framer-motion";
 import Skills from "./Skills";
 import EduList from "./EduList";
+import Contacts from "./Contacts";
 const Career: React.FC = (): JSX.Element => {
   return (
     <AnimateSharedLayout>
@@ -28,6 +29,9 @@ const Career: React.FC = (): JSX.Element => {
 
         {/* 4th */}
         <Skills />
+
+        {/* 5th */}
+        <Contacts />  
         <div className="h-96"></div>
       </motion.div>
     </AnimateSharedLayout>
