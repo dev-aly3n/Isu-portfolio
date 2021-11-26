@@ -183,13 +183,11 @@ export const eduData: {
 ];
 
 export const contactList: { site: string; username: string; logo: string; link:string; }[] = [
-  { site: "LinkedIn", username: "", logo: "", link:"" },
-  { site: "", username: "", logo: "", link:"" },
-  { site: "", username: "", logo: "", link:"" },
-  { site: "", username: "", logo: "", link:"" },
-  { site: "", username: "", logo: "", link:"" },
-  { site: "", username: "", logo: "", link:"" },
-  { site: "", username: "", logo: "", link:"" },
-  { site: "", username: "", logo: "", link:"" },
+  { site: "LinkedIn", username: "aly-mohamadi", logo: "linkedin", link:"https://www.linkedin.com/in/aly-mohamadi-4bb966212/" },
+  { site: "GitHub", username: "dev-aly3n", logo: "github", link:"https://github.com/dev-aly3n" },
+  { site: "Gmail", username: "dev.aly3n", logo: "gmail", link:"mailto:dev.aly3n@gmail.com" },
+  { site: "Telegram", username: "aly3n", logo: "telegram", link:"https://t.me/aly3n" },
+  { site: "WhatsApp", username: "", logo: "whatsapp", link:"https://wa.me/989152539070?text=Hello%20Aly!%20I%20reach%20you%20through%20your%20personal%20website." },
+  { site: "Instagram", username: "aly3n", logo: "instagram", link:"https://www.instagram.com/aly.3n/" },
 
 ];
