@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 
 import Main from "../src/components/layout/Main"
 import Header from "../src/components/layout/Header";
-// import Footer from "../components/layout/Footer";
+import Footer from "../src/components/layout/Footer";
 import "../styles/tailwind.css";
 import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Main>
       <Component {...pageProps} />
       </Main>
-      {/* <Footer /> */}
+      <Footer />
       <SVGPatternsFilters />
     </Fragment>
   );
