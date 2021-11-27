@@ -19,13 +19,11 @@ const headerLinks: Links[] = [
     ref: "/",
     text: "ToTheGate",
   },
-
 ];
 
 const Header: React.FC = () => {
   const router = useRouter();
-  return (
-     router.pathname !== "/" ? (
+  return router.pathname !== "/" ? (
     <div className="header-container">
       <h1>
         <Link href="/">Aly3n</Link>
@@ -49,10 +47,9 @@ const Header: React.FC = () => {
           );
         })}
       </ul>
-    </div>):
-    <React.Fragment>
-    </React.Fragment>
-      
+    </div>
+  ) : (
+    <React.Fragment></React.Fragment>
   );
 };
 

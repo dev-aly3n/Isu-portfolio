@@ -26,25 +26,25 @@ export const hardSkillList: {
   {
     name: "Javascript",
     icon: "Javascript.png",
-    perc: 70,
+    perc: 75,
     color: "(247,223,30)",
   },
   {
     name: "React",
     icon: "react.png",
-    perc: 70,
+    perc: 80,
     color: "(97,218,251)",
   },
   {
     name: "Typescript",
     icon: "typescript.png",
-    perc: 60,
+    perc: 70,
     color: "(49,120,198)",
   },
   {
     name: "NextJS",
     icon: "nextjs.png",
-    perc: 70,
+    perc: 75,
     color: "(118,212,207)",
   },
   {
@@ -68,13 +68,13 @@ export const hardSkillList: {
   {
     name: "Redux",
     icon: "redux.png",
-    perc: 70,
+    perc: 80,
     color: "(118,74,188)",
   },
   {
     name: "ApolloClient",
     icon: "apolloclient.png",
-    perc: 70,
+    perc: 80,
     color: "(44,16,158)",
   },
   {
@@ -86,7 +86,7 @@ export const hardSkillList: {
   {
     name: "Git",
     icon: "git.png",
-    perc: 60,
+    perc: 65,
     color: "(240,81,51)",
   },
   {
@@ -111,7 +111,7 @@ export const SoftSkillList: {
   {
     name: "Adaptability",
     icon: "adaptability.png",
-    perc: 85,
+    perc: 88,
     color: "(1,1,1)",
   },
   {
@@ -121,27 +121,27 @@ export const SoftSkillList: {
     color: "(242,183,7)",
   },
   {
-    name: "Communications",
-    icon: "communications.png",
+    name: "comunication",
+    icon: "comunication.png",
     perc: 70,
     color: "(37,185,84)",
   },
   {
     name: "Responsibility",
     icon: "responsibility.png",
-    perc: 89,
+    perc: 88,
     color: "(253,236,166)",
   },
   {
-    name: "Self-motivation",
+    name: "Self Motivation",
     icon: "selfmotivation.png",
-    perc: 90,
+    perc: 88,
     color: "(143,255,171)",
   },
   {
     name: "Team work",
     icon: "teamwork.png",
-    perc: 90,
+    perc: 88,
     color: "(62,135,200)",
   },
 ];
