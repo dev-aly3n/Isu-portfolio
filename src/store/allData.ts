@@ -146,6 +146,32 @@ export const SoftSkillList: {
   },
 ];
 
+export const langList: {
+  name: string;
+  icon: string;
+  perc: number;
+  color: string;
+}[] = [
+  {
+    name: "Persian",
+    icon: "farsi.png",
+    perc: 90,
+    color: "(192,192,192)",
+  },
+  {
+    name: "English",
+    icon: "english.png",
+    perc: 60,
+    color: "(192,192,192)",
+  },
+  {
+    name: "Arabic",
+    icon: "arabic.png",
+    perc: 35,
+    color: "(192,192,192)",
+  },
+]
+
 export const eduSkillList: string[] = [
   "Airplane structural design",
   "Airplane numerical design",

@@ -7,6 +7,7 @@ import {
   hardSkillList,
   SoftSkillList,
   eduSkillList,
+  langList
 } from "../../store/allData";
 import Skill from "./Skill";
 // utils & animation
@@ -26,6 +27,12 @@ const Skills: React.FC = () => {
           return <Skill skill={skill} index={index} />;
         })}
       </div>
+      <h2 className=" mt-10 mb-5 font-black text-3xl">Languages</h2>
+      <div className="flex flex-wrap justify-start items-start w-full">
+        {langList.map((skill, index) => {
+          return <Skill skill={skill} index={index} />;
+        })}
+      </div>
       <h2 className=" mt-10 mb-5 font-black text-3xl">Educational Skills</h2>
       <div className="flex flex-wrap">
         {eduSkillList.map((skillName) => {
@@ -36,6 +43,7 @@ const Skills: React.FC = () => {
           );
         })}
       </div>
+
     </motion.div>
   );
 };
