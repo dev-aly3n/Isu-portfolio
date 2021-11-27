@@ -13,7 +13,7 @@ const BioChapter: React.FC<props> = ({ chap, firstChap }) => {
   return (
     <motion.div
       layout
-      className="flex flex-col justify-center items-center w-full my-3"
+      className="flex flex-col justify-center items-center w-10/12 sm:w-full my-3"
     >
       <motion.h3
         layout
