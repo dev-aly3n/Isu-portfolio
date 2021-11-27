@@ -1,0 +1,12 @@
+@layer components {
+    .skills-container{
+        @apply flex flex-col justify-center items-center w-full;
+        >h2{
+            @apply mt-10 mb-5 font-black text-3xl;
+        }
+        >div{
+            @apply flex flex-col md:flex-row flex-wrap w-full gap-5 justify-around content-center;
+        }
+
+    }
+}

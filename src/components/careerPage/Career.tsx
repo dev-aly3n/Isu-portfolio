@@ -16,7 +16,7 @@ const Career: React.FC = (): JSX.Element => {
         animate="visible"
         variants={firstPage}
         exit="out"
-        className=" w-full h-full bg-secondary-800/60 text-white flex flex-col justify-between "
+        className="career-container "
       >
         {/* first */}
         <HeaderImg />
@@ -31,8 +31,9 @@ const Career: React.FC = (): JSX.Element => {
         <Skills />
 
         {/* 5th */}
-        <Contacts />  
-        <div className="h-96"></div>
+        <Contacts />
+
+
       </motion.div>
     </AnimateSharedLayout>
   );

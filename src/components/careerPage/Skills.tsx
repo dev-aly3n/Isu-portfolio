@@ -14,27 +14,27 @@ import Skill from "./Skill";
 
 const Skills: React.FC = () => {
   return (
-    <motion.div layout className="flex flex-col justify-center items-center w-8/12 mx-auto">
-      <h2 className=" my-5 font-black text-3xl">Hard Skills</h2>
-      <div className="flex flex-wrap justify-start items-start">
+    <motion.div layout className="skills-container">
+      <h2>Hard Skills</h2>
+      <div>
         {hardSkillList.map((skill, index) => {
           return <Skill skill={skill} index={index} />;
         })}
       </div>
-      <h2 className=" mt-10 mb-5 font-black text-3xl">Soft Skills</h2>
-      <div className="flex flex-wrap justify-start items-start">
+      <h2>Soft Skills</h2>
+      <div>
         {SoftSkillList.map((skill, index) => {
           return <Skill skill={skill} index={index} />;
         })}
       </div>
-      <h2 className=" mt-10 mb-5 font-black text-3xl">Languages</h2>
-      <div className="flex flex-wrap justify-start items-start w-full">
+      <h2>Languages</h2>
+      <div>
         {langList.map((skill, index) => {
           return <Skill skill={skill} index={index} />;
         })}
       </div>
-      <h2 className=" mt-10 mb-5 font-black text-3xl">Educational Skills</h2>
-      <div className="flex flex-wrap">
+      <h2>Educational Skills</h2>
+      <div className="flex flex-wrap ">
         {eduSkillList.map((skillName) => {
           return (
             <span className="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm">

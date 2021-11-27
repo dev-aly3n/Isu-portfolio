@@ -8,7 +8,7 @@ import {contactList} from '../../store/allData'
 
 const Contacts: React.FC = () => {
   return (
-    <div className="flex flex-col w-8/12 mx-auto my-10">
+    <div >
       <h2 className="text-5xl text-gray-300 mb-10 mx-auto">Contacts</h2>
       <div className="flex flex-wrap">
       {contactList.map((cont)=>{

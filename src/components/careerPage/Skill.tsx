@@ -5,7 +5,8 @@ interface props {
 
 const Skill: React.FC<props> = ({ skill, index }) => {
   return (
-    <div className="relative flex justify-between items-center bg-gray-600 rounded-full w-[46%] mx-5 h-12  my-2">
+    <div className="flex justify-center items-center relative bg-gray-600 rounded-full w-[85%] md:w-[45%] h-12 
+    self-start justify-self-start place-self-start">
       <h3 className="w-44 h-full bg-gray-800 flex justify-center items-center rounded-l-full text-sm font-bold">
         {skill.name}
       </h3>
