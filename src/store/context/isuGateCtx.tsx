@@ -43,36 +43,36 @@ export const IsuGateCtxProvider: React.FC = (props) => {
     });
   };
   const clickHandler = (order: boolean): void => {
-    setGate((prev) => {
-      return {
-        ...prev,
-        isClicked: order,
-      };
-    });
+    // setGate((prev) => {
+    //   return {
+    //     ...prev,
+    //     isClicked: order,
+    //   };
+    // });
   };
   const keyAnimationHandler = (order: boolean): void => {
-    setGate((prev) => {
-      return {
-        ...prev,
-        keyAnimationFinished: order,
-      };
-    });
+    // setGate((prev) => {
+    //   return {
+    //     ...prev,
+    //     keyAnimationFinished: order,
+    //   };
+    // });
   };
   const doorAnimationHandler = (order: boolean): void => {
-    setGate((prev) => {
-      return {
-        ...prev,
-        doorAnimationFinished: order,
-      };
-    });
+    // setGate((prev) => {
+    //   return {
+    //     ...prev,
+    //     doorAnimationFinished: order,
+    //   };
+    // });
   };
   const impactHandler = (): void => {
-    setGate((prev) => {
-      return {
-        ...prev,
-        impact: !prev.impact,
-      };
-    });
+    // setGate((prev) => {
+    //   return {
+    //     ...prev,
+    //     impact: !prev.impact,
+    //   };
+    // });
   };
   const context: contextProps = {
     isHovered: gate.isHovered,
