@@ -9,7 +9,7 @@ const PhLine: React.FC<props> = (): JSX.Element => {
   const controls = useGateClicked();
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="227 26 250 900">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="227 26 250 900" className="shadow-svgs">
       <g>
         <defs>
           <motion.path

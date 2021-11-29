@@ -58,3 +58,9 @@ body {
   90% { transform: translate(0.25px, 0.25px) rotate(0deg); }
   100% { transform: translate(0.25px, -0.5px) rotate(-0.1deg); }
 } */
+
+.shadow-svgs {
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  /* Similar syntax to box-shadow */
+}

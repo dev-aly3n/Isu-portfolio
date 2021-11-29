@@ -9,7 +9,7 @@ const KeyDynamicMidLine: React.FC<props> = (): JSX.Element => {
   const controls = useGateHovered();
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="420 530 660 56">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="420 530 660 56" className="shadow-svgs">
       <g>
         <defs>
           <motion.path

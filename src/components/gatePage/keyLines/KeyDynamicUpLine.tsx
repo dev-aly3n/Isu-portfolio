@@ -27,7 +27,7 @@ const KeyDynamicUpLine: React.FC<props> = ({
   const [once, setOnce] = useState(false);
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="250 200 1000 260">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="250 200 1000 260" className="shadow-svgs">
       <g>
         <defs>
           <motion.path

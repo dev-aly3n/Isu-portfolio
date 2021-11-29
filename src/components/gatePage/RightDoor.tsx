@@ -21,19 +21,16 @@ const LeftDoor: React.FC = (): JSX.Element => {
       initial="hidden"
       animate={controls}
       className="right-door-container"
+      
     >
       <img src="/gate2.jpg" />
       <div>
-        <PhLine />
       </div>
       <div>
-        <DynamicPhLine />
       </div>
       <div>
-        <PhLine />
       </div>
       <div>
-        <DynamicPhLine />
       </div>
       <div>
         <div>

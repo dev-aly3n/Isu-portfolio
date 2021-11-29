@@ -30,7 +30,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
 
       <DoorKey />
       <div className="left-ph">
-        <div>
+        <div className="hidden">
           <div>
             <PhLine />
           </div>
