@@ -6,7 +6,7 @@ const KeyUpLine: React.FC = (): JSX.Element => {
       <g>
         <defs>
           <motion.path
-            filter="url(#inset-shadow4)"
+            filter="url(#inset-shadow)"
             id="s-Path_1-d12200"
             d="M727.0 455.0 L570.5600343053175 229.82161234991406 L368.9373927958836 136.76500857632914  "
           ></motion.path>

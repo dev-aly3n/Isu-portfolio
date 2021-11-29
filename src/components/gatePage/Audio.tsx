@@ -44,7 +44,7 @@ const Audio: React.FC = () => {
       lineFillRef.current?.play();
       // @ts-ignore
       const titop = document?.querySelector("#titop") as HTMLElement;
-      titop!.style.animation = "shake 0.2s infinite";
+      // titop!.style.animation = "shake 0.2s infinite";
       setTimeout(() => {
         titop!.style.animation = "";
       }, 7000);

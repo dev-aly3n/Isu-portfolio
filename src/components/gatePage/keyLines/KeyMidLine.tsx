@@ -6,7 +6,7 @@ const KeyMidLine: React.FC = (): JSX.Element => {
       <g>
         <defs>
           <motion.path
-            filter="url(#inset-shadow4) url()"
+            filter="url(#inset-shadow)"
             id="s-Path_1-d1224577987"
             d="M736.0 558.0 L387.2667238421957 558.0 "
           ></motion.path>

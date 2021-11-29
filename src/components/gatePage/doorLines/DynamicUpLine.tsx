@@ -28,7 +28,6 @@ const DynamicUpLine: React.FC<props> = ({
         <defs>
           <motion.path
             onAnimationComplete={upLineAnimationHandler}
-            filter="url(#sofGlow)"
             variants={gateLine}
             custom={3}
             initial="hidden"

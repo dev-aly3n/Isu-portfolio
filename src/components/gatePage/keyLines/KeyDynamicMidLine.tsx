@@ -13,7 +13,6 @@ const KeyDynamicMidLine: React.FC<props> = (): JSX.Element => {
       <g>
         <defs>
           <motion.path
-            filter="url(#sofGlow1) url(#inset-shadow5)"
             variants={gateLine}
             custom={1}
             initial="hidden"

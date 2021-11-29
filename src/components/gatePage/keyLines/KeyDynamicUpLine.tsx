@@ -43,7 +43,6 @@ const KeyDynamicUpLine: React.FC<props> = ({
                 setOnce(true);
               }
             }}
-            filter="url(#sofGlow1) url(#inset-shadow)"
             variants={gateLine}
             custom={1}
             initial="hidden"

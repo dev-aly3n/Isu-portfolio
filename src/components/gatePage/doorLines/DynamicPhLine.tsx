@@ -13,7 +13,6 @@ const PhLine: React.FC<props> = (): JSX.Element => {
       <g>
         <defs>
           <motion.path
-            filter="url(#sofGlow)"
             variants={gateLine2}
             custom={3}
             initial="hidden"
