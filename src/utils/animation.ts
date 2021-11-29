@@ -351,7 +351,7 @@ export const enterToGate = {
 export const firstPage = {
   hidden: {
     scale: 0.3,
-    y:-300,
+    y:-1300,
     transition: {
       duration: 2.5,
 
@@ -365,12 +365,7 @@ export const firstPage = {
       delay:2
     },
   },
-  out: {
-    scale: 2,
-    transition: {
-      duration: 2.5,
-    },
-  },
+
 };
 export const backRoadImg = {
   hidden: {
