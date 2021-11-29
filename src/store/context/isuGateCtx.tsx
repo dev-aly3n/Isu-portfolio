@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useCallback } from "react";
 
 type contextProps = {
   isHovered: boolean;
@@ -32,59 +32,71 @@ export const IsuGateCtxProvider: React.FC = (props) => {
     isClicked: false,
     keyAnimationFinished: false,
     doorAnimationFinished: false,
-    impact:false,
+    impact: false,
   });
-  const hoverHandler = (order: boolean): void => {
-    setGate((prev) => {
-      return {
-        ...prev,
-        isHovered: order,
-      };
-    });
-  };
-  const clickHandler = (order: boolean): void => {
-    setGate((prev) => {
-      return {
-        ...prev,
-        isClicked: order,
-      };
-    });
-  };
-  const keyAnimationHandler = (order: boolean): void => {
-    setGate((prev) => {
-      return {
-        ...prev,
-        keyAnimationFinished: order,
-      };
-    });
-  };
-  const doorAnimationHandler = (order: boolean): void => {
-    setGate((prev) => {
-      return {
-        ...prev,
-        doorAnimationFinished: order,
-      };
-    });
-  };
-  const impactHandler = (): void => {
+  const hoverHandler = useCallback(
+    (order: boolean): void => {
+      setGate((prev) => {
+        return {
+          ...prev,
+          isHovered: order,
+        };
+      });
+    },
+    [setGate]
+  );
+  const clickHandler = useCallback(
+    (order: boolean): void => {
+      setGate((prev) => {
+        return {
+          ...prev,
+          isClicked: order,
+        };
+      });
+    },
+    [setGate]
+  );
+  const keyAnimationHandler = useCallback(
+    (order: boolean): void => {
+      setGate((prev) => {
+        return {
+          ...prev,
+          keyAnimationFinished: order,
+        };
+      });
+    },
+    [setGate]
+  );
+  const doorAnimationHandler = useCallback(
+    (order: boolean): void => {
+      setGate((prev) => {
+        return {
+          ...prev,
+          doorAnimationFinished: order,
+        };
+      });
+    },
+    [setGate]
+  );
+  const impactHandler = useCallback((): void => {
     setGate((prev) => {
       return {
         ...prev,
         impact: !prev.impact,
       };
     });
-  };
+  }, [setGate]);
   const context: contextProps = {
     isHovered: gate.isHovered,
     isClicked: gate.isClicked,
     keyAnimationFinished: gate.keyAnimationFinished,
     doorAnimationFinished: gate.doorAnimationFinished,
-    impact: gate.impact ,
+    impact: gate.impact,
     hovering: hoverHandler,
     clicking: clickHandler,
     keyFinishing: keyAnimationHandler,
     doorFinishing: doorAnimationHandler,
-    impacting: impactHandler
+    impacting: impactHandler,
   };
   return (
     <IsuGateCtx.Provider value={context}>{props.children}</IsuGateCtx.Provider>
