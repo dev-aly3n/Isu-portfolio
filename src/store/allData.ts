@@ -25,7 +25,7 @@ export const hardSkillList: {
 }[] = [
   {
     name: "Javascript",
-    icon: "Javascript.png",
+    icon: "javascript.png",
     perc: 75,
     color: "(247,223,30)",
   },
