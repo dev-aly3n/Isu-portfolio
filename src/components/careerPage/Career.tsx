@@ -9,15 +9,14 @@ import EduList from "./EduList";
 import Contacts from "./Contacts";
 const Career: React.FC = (): JSX.Element => {
   return (
-    <AnimateSharedLayout>
-      <motion.div
-        layout
-        initial="hidden"
-        animate="visible"
-        variants={firstPage}
-        exit="out"
-        className="career-container "
-      >
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={firstPage}
+    exit="out"
+    className="career-container "
+    >
+        <AnimateSharedLayout>
         {/* first */}
         <HeaderImg />
 
@@ -34,8 +33,8 @@ const Career: React.FC = (): JSX.Element => {
         <Contacts />
 
 
-      </motion.div>
     </AnimateSharedLayout>
+      </motion.div>
   );
 };
 

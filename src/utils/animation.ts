@@ -351,15 +351,14 @@ export const enterToGate = {
 export const firstPage = {
   hidden: {
     scale: 0.3,
-    y:-1300,
+    translateY:"-1200px",
     transition: {
       duration: 2.5,
-
     },
   },
   visible: {
     scale: 1,
-    y:0,
+    translateY:"0px",
     transition: {
       duration: 2.5,
       delay:2
