@@ -22,7 +22,7 @@ const LightKey: React.FC = () => {
         }}
       >
         <span className="key-thickness-ring"></span>
-        <img src="/door1.png" alt="" />
+        <img src="/media/gate/door1.png" alt="" />
         <div className="key-thickness0"></div>
         <div className="key-thickness1"></div>
         <div className="key-thickness2"></div>

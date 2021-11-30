@@ -12,7 +12,7 @@ const SVGPatternsFilters: React.FC = () => {
           width="1200"
           height="700"
         >
-          <image xlinkHref="/gate.jpg" width="1200" height="700" />
+          <image xlinkHref="/media/gate/gate.jpg" width="1200" height="700" />
         </pattern>
         <pattern
           id="pat2"
@@ -20,7 +20,7 @@ const SVGPatternsFilters: React.FC = () => {
           width="1200"
           height="700"
         >
-          <image xlinkHref="/gate.jpg" width="1200" height="700" />
+          <image xlinkHref="/media/gate/gate.jpg" width="1200" height="700" />
         </pattern>
 
         <pattern
@@ -29,7 +29,7 @@ const SVGPatternsFilters: React.FC = () => {
           width="1500"
           height="1500"
         >
-          <image xlinkHref="/gate1.jpg" width="1500" height="1500" />
+          <image xlinkHref="/media/gate/gate1.jpg" width="1500" height="1500" />
         </pattern>
 
         <pattern
@@ -38,7 +38,7 @@ const SVGPatternsFilters: React.FC = () => {
           width="400"
           height="400"
         >
-          <image xlinkHref="/key.jpg" width="400" height="400" />
+          <image xlinkHref="/media/gate/key.jpg" width="400" height="400" />
         </pattern>
 
         {/* Filters */}

@@ -23,7 +23,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
       className="right-door-container"
       
     >
-      <img src="/gate2.jpg" />
+      <img src="/media/gate/gate2.jpg" />
       <div>
       </div>
       <div>

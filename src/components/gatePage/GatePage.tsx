@@ -15,7 +15,7 @@ const GatePage: React.FC = () => {
           animate="visible"
           exit="out"
         >
-          <motion.img src="/backroad.jpg" style={{ rotateX: "55deg" }} />
+          <motion.img src="/media/gate/backroad.jpg" style={{ rotateX: "55deg" }} />
         </motion.div>
         <Gate />
       </div>

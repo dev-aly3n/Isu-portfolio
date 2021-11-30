@@ -4,7 +4,7 @@ const HeaderImg: React.FC = () => {
     <motion.div layout className="flex relative w-full h-full">
       <img
         alt=""
-        src="/aly3n.jpg"
+        src="/media/aly3n.jpg"
         className="w-full h-full mx-auto rounded-b-2xl shadow-2xl"
       />
       <div

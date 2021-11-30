@@ -26,7 +26,7 @@ const LeftDoor: React.FC = (): JSX.Element => {
       initial="hidden"
       animate={controls}
     >
-      <img src="/gate1.jpg" />
+      <img src="/media/gate/gate1.jpg" />
 
       <DoorKey />
       <div className="left-ph">

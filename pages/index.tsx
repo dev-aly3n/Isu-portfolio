@@ -6,6 +6,7 @@ export default function gate(): JSX.Element {
   return (
     <Fragment>
       <Head>
+      <link rel="preload" as="image" href="/media/uni/unifirst.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>dev Aly3n - JS developer</title>
         <meta

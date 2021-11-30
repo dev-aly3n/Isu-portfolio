@@ -4,15 +4,15 @@
         flex justify-center items-center  rotate-[-25deg] hover:rotate-0 duration-1600 hover:-translate-y-10
         hover:scale-110;
     > div:last-child {
-      background-image: url("/key.jpg");
+      background-image: url("/media/gate/key.jpg");
       @apply w-[22vw] h-[22vw] rounded-full z-40 relative;
       > div:nth-of-type(1) {
-        background-image: url("/key.jpg");
+        background-image: url("/media/gate/key.jpg");
         @apply h-1/2 w-1/2 absolute top-[11vw] left-[11vw] mt-[-5.5vw]  ml-[-5.5vw] rounded-full
           z-50 overflow-hidden duration-1500 flex justify-center items-center rotate-[25deg];
         > div {
           text-shadow: rgba(0, 0, 0, 0.3) 3px 1px 5px;
-          background-image: url("/keytext.jpg");
+          background-image: url("/media/gate/keytext.jpg");
           background-position: center;
           background-size: fill;
           @apply text-transparent bg-clip-text text-base md:text-2xl lg:text-3xl xl:text-4xl font-black text-center;
