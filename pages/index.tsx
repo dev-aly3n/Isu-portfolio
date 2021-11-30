@@ -6,7 +6,14 @@ export default function gate(): JSX.Element {
   return (
     <Fragment>
       <Head>
-      <link rel="preload" as="image" href="/media/uni/unifirst.png" />
+      <link rel="preload" as="image" href="/media/gate/gate.jpg" />
+      <link rel="preload" as="image" href="/media/gate/gate1.jpg" />
+      <link rel="preload" as="image" href="/media/gate/gate2.jpg" />
+      <link rel="preload" as="image" href="/media/gate/key.jpg" />
+      <link rel="preload" as="image" href="/media/gate/keytext.jpg" />
+      <link rel="preload" as="image" href="/media/gate/backroad.jpg" />
+      <link rel="preload" as="image" href="/media/gate/door1.png" />
+    
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>dev Aly3n - JS developer</title>
         <meta
