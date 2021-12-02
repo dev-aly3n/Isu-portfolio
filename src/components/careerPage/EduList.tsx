@@ -1,5 +1,6 @@
 // libs
 import { motion } from "framer-motion";
+import { RefObject } from "react";
 // components
 import Edu from "./Edu";
 // hooks
@@ -7,11 +8,13 @@ import Edu from "./Edu";
 import {eduData} from '../../store/allData'
 // utils & animation
 
-
-const EduList: React.FC = () => {
+interface props {
+  eduRef:RefObject<HTMLDivElement>;
+}
+const EduList: React.FC<props> = ({eduRef}) => {
   return (
-    <div  >
-        <motion.h2 layout  className="text-5xl text-gray-300 mb-10 mx-auto">Education</motion.h2>
+    <div  ref={eduRef}>
+        <motion.h2  layout  className="text-5xl text-gray-300 mb-10 mx-auto">Education</motion.h2>
       {eduData.map((education)=>{
           return <Edu key={education.name} education={education} />
       })}

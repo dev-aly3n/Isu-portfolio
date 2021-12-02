@@ -12,7 +12,7 @@ interface props {
 }
 
 const BioChapter: React.FC<props> = ({ chap, firstChap }) => {
-  const [sec,controls] = useOnScrollAnimation(1);
+  const [sec,controls] = useOnScrollAnimation();
   const [isExpanded, setIsExpanded] = useState(firstChap ? true : false);
   return (
     <motion.div

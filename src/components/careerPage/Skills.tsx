@@ -1,5 +1,6 @@
 // libs
 import { motion } from "framer-motion";
+import { RefObject } from "react";
 // components
 // hooks
 // store
@@ -12,9 +13,13 @@ import {
 import Skill from "./Skill";
 // utils & animation
 
-const Skills: React.FC = () => {
+interface props {
+  skillsRef:RefObject<HTMLDivElement>;
+}
+
+const Skills: React.FC<props> = ({skillsRef}) => {
   return (
-    <motion.div layout className="skills-container">
+    <motion.div ref={skillsRef} layout className="skills-container">
       <h2>Hard Skills</h2>
       <div>
         {hardSkillList.map((skill, index) => {

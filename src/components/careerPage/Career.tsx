@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import { motion } from "framer-motion";
 import { firstPage } from "../../utils/animation";
 import HeaderImg from "./HeaderImg";
@@ -8,6 +8,10 @@ import Skills from "./Skills";
 import EduList from "./EduList";
 import Contacts from "./Contacts";
 const Career: React.FC = (): JSX.Element => {
+  const bioRef = useRef(null);
+  const eduRef = useRef(null);
+  const skillsRef = useRef(null);
+  const contactRef = useRef(null);
   return (
     <motion.div
     initial="hidden"
@@ -18,19 +22,19 @@ const Career: React.FC = (): JSX.Element => {
     >
         <AnimateSharedLayout>
         {/* first */}
-        <HeaderImg />
+        <HeaderImg allRefs={{bioRef,eduRef,skillsRef,contactRef}} />
 
         {/* second */}
-        <Biography />
+        <Biography bioRef={bioRef} />
 
         {/* Third */}
-        <EduList />
+        <EduList eduRef={eduRef} />
 
         {/* 4th */}
-        <Skills />
+        <Skills skillsRef={skillsRef} />
 
         {/* 5th */}
-        <Contacts />
+        <Contacts contactRef={contactRef} />
 
 
     </AnimateSharedLayout>
