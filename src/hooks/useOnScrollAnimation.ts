@@ -1,7 +1,8 @@
 import { useAnimation } from "framer-motion";
 import type {AnimationControls} from 'framer-motion';
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
+import React, { ElementRef, Ref, useState } from "react";
+import type {InViewHookResponse} from 'react-intersection-observer';
 
 export const useOnScrollAnimation = (tHold:number = 0.3) => {
   const [viewed, setViewed] = useState(false);
@@ -11,7 +12,11 @@ export const useOnScrollAnimation = (tHold:number = 0.3) => {
   if (view && !viewed) {
     setViewed(true);
     controls.start("visible");
+  } else if (!view && viewed) {
+    setViewed(false);
+    controls.start("hidden");
   }
+  console.log(viewed)
 
-  return [element, controls];
+  return [element, controls] as [any,AnimationControls];
 };

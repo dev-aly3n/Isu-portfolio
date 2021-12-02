@@ -43,7 +43,7 @@ const GatePage: React.FC = () => {
         <Gate />
         <div
           ref={muteRef}
-          className="w-screen h-screen absolute top-0 left-0 bg-gray-900/95 z-100 flex justify-center items-center"
+          className="w-screen h-screen absolute top-0 left-0 bg-black/90 z-100 flex justify-center items-center"
         >
           <div className="bg-gray-300 w-11/12 sm:w-8/12 lg:w-1/2 h-1/2 rounded-2xl
            flex flex-col justify-center items-center text-2xl font-medium px-4 sm:px-10">

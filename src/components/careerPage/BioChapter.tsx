@@ -1,7 +1,10 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion , useAnimation} from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { firstPageBio } from "../../utils/animation";
+import {useOnScrollAnimation} from '../../hooks/useOnScrollAnimation';
+
 
 interface props {
   chap: { title: string; desc: string };
@@ -9,10 +12,15 @@ interface props {
 }
 
 const BioChapter: React.FC<props> = ({ chap, firstChap }) => {
+  const [sec,controls] = useOnScrollAnimation(1);
   const [isExpanded, setIsExpanded] = useState(firstChap ? true : false);
   return (
     <motion.div
-      layout
+    ref={sec}
+    variants={firstPageBio}
+    initial="hidden"
+    animate={controls}
+    exit="out"
       className="flex flex-col justify-center items-center w-10/12 sm:w-full my-3"
     >
       <motion.h3

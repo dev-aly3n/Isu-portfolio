@@ -351,17 +351,16 @@ export const enterToGate = {
 export const firstPage = {
   hidden: {
     scale: 0.3,
-    translateY:"-1200px",
-    transition: {
-      duration: 2.5,
-    },
+    translateY:"-1300px",
   },
   visible: {
     scale: 1,
     translateY:"0px",
     transition: {
       duration: 2.5,
-      delay:2
+      delay:2,
+      when: "beforeChildren",
+      staggerChildren: 0.7,
     },
   },
 
@@ -390,6 +389,21 @@ export const backRoadImg = {
     transition: {
       duration: 2.5,
       delay:2
+    },
+  },
+};
+export const firstPageBio = {
+  hidden: {
+    opacity:0,
+    transition: {
+      delay:0,
+      duration:1
+    },
+  },
+  visible: {
+    opacity:1,
+    transition: {
+      duration:1
     },
   },
 };

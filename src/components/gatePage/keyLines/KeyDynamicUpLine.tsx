@@ -57,12 +57,13 @@ const KeyDynamicUpLine: React.FC<props> = ({
             xlinkHref="#s-Path_1-d122488"
             fill="none"
             strokeWidth="55.0"
-            stroke="#A0FFFF"
+            stroke="#16FBFF"
             strokeLinecap="square"
             filter="none"
           ></use>
         </g>
       </g>
+
     </svg>
   );
 };

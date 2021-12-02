@@ -27,7 +27,7 @@ const KeyDynamicMidLine: React.FC<props> = (): JSX.Element => {
             xlinkHref="#s-Path_1-d4578978"
             fill="none"
             strokeWidth="40.0"
-            stroke="#A0FFFF"
+            stroke="#16FBFF"
             strokeLinecap="square"
             filter="none"
           ></use>
