@@ -307,27 +307,22 @@ export const gateLine2:any = {
 // open door
 export const openDoor = {
   hidden:{
-    transform:"rotateY(0deg)",
+    translateX:"0",
   },
   visible: {
-    transform:"rotateY(50deg)",
+    translateX:"-80%",
     transition: { duration: 2.5, delay:0 },
   },
 };
 export const openDoor2 = {
   hidden:{
-    transform:"rotateY(0deg)",
+    translateX:"0",
   },
   visible: {
-    transform:"rotateY(-50deg)",
+    translateX:"80%",
     transition: { duration: 2.5, delay:0 },
   },
-  out:{
-    x:100,
-    transition: {
-      duration: 2.5,
-    },
-  }
+
 };
 export const enterToGate = {
   hidden: {
