@@ -16,7 +16,6 @@ export const useOnScrollAnimation = (tHold:number = 0.3) => {
     setViewed(false);
     controls.start("hidden");
   }
-  console.log(viewed)
 
   return [element, controls] as [any,AnimationControls];
 };

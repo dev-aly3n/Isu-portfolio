@@ -1,6 +1,8 @@
 // animations for framer motion
 // github.com/dev-aly3n
 
+import { Variants } from "framer-motion";
+
 // Page animations
 // Page animations
 // Page animations
@@ -343,7 +345,7 @@ export const enterToGate = {
   out: {
     scale: 3,
     transition: {
-      duration: 2.5,
+      duration: 2,
       delay:2
     },
   },
@@ -357,10 +359,10 @@ export const firstPage = {
     scale: 1,
     translateY:"0px",
     transition: {
-      duration: 2.5,
+      duration: 2,
       delay:2,
       when: "beforeChildren",
-      staggerChildren: 0.7,
+      staggerChildren: 0.01,
     },
   },
 
@@ -387,7 +389,7 @@ export const backRoadImg = {
     translateZ:"1000px",
     translateY:"500px",
     transition: {
-      duration: 2.5,
+      duration: 2,
       delay:2
     },
   },
@@ -406,5 +408,38 @@ export const firstPageBio = {
       duration:1
     },
   },
+};
+export const fancyBtns:Variants = {
+  hidden:(custom:number)=>( {
+    opacity:0,
+    translateY:`-${custom * 100}px`,
+    rotateY:"0deg",
+    rotateZ:"45deg",
+    transition: {
+      delay:0,
+      duration:1
+    },
+    
+  }),
+  visible: (custom:number)=>( {
+    opacity:1,
+    translateY:"0px",
+    rotateY:"360deg",
+    rotateZ:"45deg",
+    transition: {
+      duration:1.5,
+      delay:custom * 0.02,
+    },
+  }),
+  clicked:{
+    y:1000,
+    transition:{
+      duration:1,
+      type:"spring"
+    },
+    transitionEnd:{
+      y:0
+    }
+  }
 };
 
