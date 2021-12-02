@@ -13,7 +13,7 @@ const EduList: React.FC = () => {
     <div  >
         <motion.h2 layout  className="text-5xl text-gray-300 mb-10 mx-auto">Education</motion.h2>
       {eduData.map((education)=>{
-          return <Edu education={education} />
+          return <Edu key={education.name} education={education} />
       })}
     </div>
   );

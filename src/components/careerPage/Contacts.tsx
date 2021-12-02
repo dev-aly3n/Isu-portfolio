@@ -12,7 +12,7 @@ const Contacts: React.FC = () => {
       <h2 className="text-5xl text-gray-300 mb-10 mx-auto">Contacts</h2>
       <div className="flex flex-wrap justify-center items-center w-full">
       {contactList.map((cont)=>{
-          return <Contact contact={cont} />
+          return <Contact key={cont.logo} contact={cont} />
         })}
         </div>
     </div>

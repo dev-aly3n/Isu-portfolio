@@ -14,7 +14,7 @@ const Biography: React.FC = () => {
     <div>
       <motion.h2 layout  className="text-5xl text-gray-300 mb-10 mx-auto">Biography</motion.h2>
         {biochapters[0] && biochapters.map((chap,index)=>{
-            return <BioChapter chap={chap} firstChap={index === 0 ? true : false} />
+            return <BioChapter key={chap.title} chap={chap} firstChap={index === 0 ? true : false} />
         })}
     </div>
   );
