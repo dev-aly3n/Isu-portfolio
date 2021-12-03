@@ -59,17 +59,3 @@ body {
   /* Similar syntax to box-shadow */
 }
 
-@keyframes fancyBtnAnim {
-  0% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-  10% {
-    transform: translate(0, -50px) rotateZ(45deg) skew(15deg, 15deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0, 1500px);
-    opacity: 0;
-  }
-}

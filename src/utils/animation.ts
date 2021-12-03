@@ -422,19 +422,9 @@ export const fancyBtns:Variants = {
     rotateY:"360deg",
     rotateZ:"45deg",
     transition: {
-      duration:1.5,
+      duration:0.2,
       delay:custom * 0.02,
     },
   }),
-  clicked:{
-    y:1000,
-    transition:{
-      duration:1,
-      type:"spring"
-    },
-    transitionEnd:{
-      y:0
-    }
-  }
 };
 
