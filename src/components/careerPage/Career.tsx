@@ -15,7 +15,7 @@ const Career: React.FC = (): JSX.Element => {
   return (
     <motion.div
     initial="hidden"
-    animate="visible"
+    animate={"visible"}
     variants={firstPage}
     exit="out"
     className="career-container "

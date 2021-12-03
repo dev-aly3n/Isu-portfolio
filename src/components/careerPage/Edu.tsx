@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 // components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
+import { firstPageEdu } from "../../utils/animation";
 // hooks
 // store
 // utils & animation
@@ -14,8 +16,16 @@ interface props {
 
 const Edu: React.FC<props> = ({ education }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [sec,controls] = useOnScrollAnimation();
+
   return (
-    <motion.div layout className="flex flex-col my-3 w-11/12 sm:w-full ">
+    <motion.div 
+    ref={sec}
+    variants={firstPageEdu}
+    initial="hidden"
+    animate={controls}
+    
+    className="flex flex-col my-3 w-11/12 sm:w-full ">
       <div
         className="flex flex-col sm:flex-row justify-start items-center hover:cursor-pointer hover:bg-gray-500/5 duration-1000 relative"
         onClick={() => setIsExpanded((prevState) => !prevState)}

@@ -21,7 +21,7 @@ const BioChapter: React.FC<props> = ({ chap, firstChap }) => {
     initial="hidden"
     animate={controls}
     exit="out"
-      className="flex flex-col justify-center items-center w-10/12 sm:w-full my-3"
+    className="flex flex-col justify-center items-center w-10/12 sm:w-full my-3"
     >
       <motion.h3
         layout

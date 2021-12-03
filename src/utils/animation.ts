@@ -389,9 +389,10 @@ export const backRoadImg = {
     },
   },
 };
-export const firstPageBio = {
+export const firstPageBio:Variants = {
   hidden: {
     opacity:0,
+    translateX:"50px",
     transition: {
       delay:0,
       duration:1
@@ -399,8 +400,11 @@ export const firstPageBio = {
   },
   visible: {
     opacity:1,
+    translateX:"0px",
     transition: {
-      duration:1
+      duration:1,
+      
+      
     },
   },
 };
@@ -428,3 +432,19 @@ export const fancyBtns:Variants = {
   }),
 };
 
+export const firstPageEdu:Variants = {
+  hidden: {
+    opacity:0,
+    translateX:"-50px",
+    transition: {
+      duration:1
+    },
+  },
+  visible: {
+    opacity:1,
+    translateX:"0px",
+    transition: {
+      duration:1
+    },
+  },
+};
