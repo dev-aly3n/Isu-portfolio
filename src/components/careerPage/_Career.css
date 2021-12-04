@@ -1,5 +1,6 @@
 @layer components {
     .career-container {
+        transform-origin:top center;
         @apply flex flex-col justify-center items-center mx-auto relative w-full h-full
             bg-secondary-800/60 text-white;
         >div:nth-child(n+2){

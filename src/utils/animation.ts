@@ -348,11 +348,9 @@ export const enterToGate = {
 export const firstPage = {
   hidden: {
     scale: 0.3,
-    translateY:"-1300px",
   },
   visible: {
     scale: 1,
-    translateY:"0px",
     transition: {
       duration: 2,
       delay:2,

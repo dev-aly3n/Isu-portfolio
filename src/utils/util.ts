@@ -1,3 +1,4 @@
+import { RefObject } from "react";
 
 // shimmer effect for image placeholder
 export const shimmer = (w:number, h:number):string => `
@@ -18,3 +19,23 @@ export const toBase64 = (str:string):string =>
   typeof window === "undefined"
     ? Buffer.from(str).toString("base64")
     : window.btoa(str);
+
+
+
+    export const fancyBtnHandler = (
+      btnRef: RefObject<HTMLButtonElement>,
+      sectionRef: RefObject<HTMLDivElement>,
+      timer: number = 1100
+    ) => {
+      return () => {
+        btnRef.current!.style.top = sectionRef.current?.offsetTop + "px";
+        setTimeout(() => {
+          btnRef.current!.style.opacity = `0`;
+        }, timer);
+        sectionRef.current!.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      };
+    };
