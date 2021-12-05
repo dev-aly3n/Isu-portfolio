@@ -7,7 +7,7 @@ interface props {
   index: number;
 }
 
-const Skill: React.FC<props> = ({ skill, index }) => {
+const Skill: React.FC<props> = ({ skill }) => {
   return (
     <div className="flex justify-center items-center relative bg-gray-600 rounded-full w-[88%] md:w-[45%] h-12 
     self-start justify-self-start place-self-start">
@@ -23,7 +23,8 @@ const Skill: React.FC<props> = ({ skill, index }) => {
             backgroundColor: `rgb${skill.color}`,
           }}
         ></motion.div>
-        <img
+        <motion.img
+        variants={skillImgAnimation}
                   style={{left:`${skill.perc - 7}%`}}
           src={`/media/logos/${skill.icon}`}
           className="absolute top-[50%] left-0 mt-[-14px] block h-7 ml-px"

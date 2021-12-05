@@ -390,7 +390,6 @@ export const backRoadImg = {
 export const secFadingToR:Variants = {
   hidden: {
     opacity:0,
-    translateX:"50px",
     transition: {
       delay:0,
       duration:1
@@ -398,7 +397,6 @@ export const secFadingToR:Variants = {
   },
   visible: {
     opacity:1,
-    translateX:"0px",
     transition: {
       duration:1,
       staggerChildren:0.03
@@ -409,7 +407,7 @@ export const secFadingToR:Variants = {
 export const secFadingToL:Variants = {
   hidden: {
     opacity:0,
-    translateX:"-50px",
+    translateX:"-5px",
     transition: {
       duration:1
     },
@@ -482,17 +480,17 @@ export const skillAnimation:Variants = {
 };
 export const skillImgAnimation:Variants = {
   hidden: {
-    left:0,
+    opacity:0,
     transition: {
       duration:1
     },
   },
-  visible:(custom:string)=>( {
-    left:custom,
+  visible: {
+    opacity:1,
     transition: {
       duration:1.2
     },
-  })
+  }
 };
 export const skillExplosionAnimation:Variants = {
   hidden: {
