@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { motion , useAnimation} from "framer-motion";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { firstPageBio } from "../../utils/animation";
+import { secFadingToL } from "../../utils/animation";
 import {useOnScrollAnimation} from '../../hooks/useOnScrollAnimation';
 
 
@@ -17,7 +17,7 @@ const BioChapter: React.FC<props> = ({ chap, firstChap }) => {
   return (
     <motion.div
     ref={sec}
-    variants={firstPageBio}
+    variants={secFadingToL}
     initial="hidden"
     animate={controls}
     exit="out"

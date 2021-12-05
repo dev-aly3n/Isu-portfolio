@@ -1,3 +1,7 @@
+import {motion} from 'framer-motion';
+import { skillAnimation, skillExplosionAnimation, skillImgAnimation } from '../../utils/animation';
+
+
 interface props {
   skill: { name: string; icon: string; perc: number; color: string };
   index: number;
@@ -11,20 +15,23 @@ const Skill: React.FC<props> = ({ skill, index }) => {
         {skill.name}
       </h3>
       <div className="relative flex w-full h-full bg-gray-500 rounded-r-full">
-        <div
-          className="absolute top-[50%] mt-[-10px] left-0  h-5 overflow-hidden rounded-r-full pos-dash-style "
+        <motion.div
+          className="absolute top-[50%] mt-[-10px] left-0  h-5 overflow-hidden rounded-r-full pos-dash-style"
+          variants={skillAnimation}
+          custom={`${skill.perc - 7}%`}
           style={{
-            width: `${skill.perc - 7}%`,
             backgroundColor: `rgb${skill.color}`,
           }}
-        ></div>
-        <img
+        ></motion.div>
+        <motion.img
+                  variants={skillImgAnimation}
+                  custom={`${skill.perc - 7}%`}
           src={`/media/logos/${skill.icon}`}
-          style={{ left: `${skill.perc - 7}%` }}
-          className="absolute top-[50%] mt-[-14px] block h-7 ml-px"
+          className="absolute top-[50%] left-0 mt-[-14px] block h-7 ml-px"
         />
         {skill.name === "Creativity" && (
-          <img
+          <motion.img
+          variants={skillExplosionAnimation}
             src={`/media/logos/explosion.png`}
             style={{ left: `100%` }}
             className="absolute top-[50%] mt-[-30px] block "

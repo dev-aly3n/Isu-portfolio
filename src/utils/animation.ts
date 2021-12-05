@@ -387,7 +387,7 @@ export const backRoadImg = {
     },
   },
 };
-export const firstPageBio:Variants = {
+export const secFadingToR:Variants = {
   hidden: {
     opacity:0,
     translateX:"50px",
@@ -401,11 +401,29 @@ export const firstPageBio:Variants = {
     translateX:"0px",
     transition: {
       duration:1,
-      
-      
+      staggerChildren:0.03
     },
   },
 };
+
+export const secFadingToL:Variants = {
+  hidden: {
+    opacity:0,
+    translateX:"-50px",
+    transition: {
+      duration:1
+    },
+  },
+  visible: {
+    opacity:1,
+    translateX:"0px",
+    transition: {
+      duration:0.5,
+      staggerChildren:0.03
+    },
+  },
+};
+
 export const fancyBtns:Variants = {
   hidden:(custom:number)=>( {
     opacity:0,
@@ -430,19 +448,55 @@ export const fancyBtns:Variants = {
   }),
 };
 
-export const firstPageEdu:Variants = {
+
+export const skillAnimation:Variants = {
   hidden: {
-    opacity:0,
-    translateX:"-50px",
+    opacity:0.3,
+    width:0,
     transition: {
       duration:1
+    },
+  },
+  visible:(custom:string)=>( {
+    opacity:1,
+    width:custom,
+    transition: {
+      duration:1.2
+    },
+  })
+};
+export const skillImgAnimation:Variants = {
+  hidden: {
+    left:0,
+    transition: {
+      duration:1
+    },
+  },
+  visible:(custom:string)=>( {
+    left:custom,
+    transition: {
+      duration:1.2
+    },
+  })
+};
+export const skillExplosionAnimation:Variants = {
+  hidden: {
+    opacity:0,
+    scale:0.5,
+    transition: {
+      duration:0.1
     },
   },
   visible: {
     opacity:1,
-    translateX:"0px",
+    scale:1,
     transition: {
-      duration:1
+      duration:0.8,
+      delay:0.5,
+      type:"spring",
+      bounce: 0.7,
+      stiffness:5000
     },
-  },
+  }
 };
+

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
-import { firstPageEdu } from "../../utils/animation";
+import { secFadingToR } from "../../utils/animation";
 // hooks
 // store
 // utils & animation
@@ -21,7 +21,7 @@ const Edu: React.FC<props> = ({ education }) => {
   return (
     <motion.div 
     ref={sec}
-    variants={firstPageEdu}
+    variants={secFadingToR}
     initial="hidden"
     animate={controls}
     
