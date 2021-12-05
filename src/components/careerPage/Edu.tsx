@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
-import { secFadingToR } from "../../utils/animation";
+import { secFading } from "../../utils/animation";
 // hooks
 // store
 // utils & animation
@@ -21,13 +21,13 @@ const Edu: React.FC<props> = ({ education }) => {
   return (
     <motion.div 
     ref={sec}
-    variants={secFadingToR}
+    variants={secFading}
     initial="hidden"
     animate={controls}
     
     className="flex flex-col my-3 w-11/12 sm:w-full ">
       <div
-        className="flex flex-col sm:flex-row justify-start items-center hover:cursor-pointer hover:bg-gray-500/5 duration-1000 relative"
+        className="no-select-a-tag flex flex-col sm:flex-row justify-start items-center hover:cursor-pointer hover:bg-gray-500/5 duration-1000 relative"
         onClick={() => setIsExpanded((prevState) => !prevState)}
       >
         <motion.span layout className="text-3xl absolute left-0 top-[50%] mt-[-18px] flex justify-center items-center">

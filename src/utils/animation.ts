@@ -387,40 +387,7 @@ export const backRoadImg = {
     },
   },
 };
-export const secFadingToR:Variants = {
-  hidden: {
-    opacity:0,
-    transition: {
-      delay:0,
-      duration:1
-    },
-  },
-  visible: {
-    opacity:1,
-    transition: {
-      duration:1,
-      staggerChildren:0.03
-    },
-  },
-};
 
-export const secFadingToL:Variants = {
-  hidden: {
-    opacity:0,
-    translateX:"-5px",
-    transition: {
-      duration:1
-    },
-  },
-  visible: {
-    opacity:1,
-    translateX:"0px",
-    transition: {
-      duration:0.5,
-      staggerChildren:0.03
-    },
-  },
-};
 export const secFading:Variants = {
   hidden: {
     opacity:0,

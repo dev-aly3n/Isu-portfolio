@@ -1,10 +1,13 @@
 // libs
 import { RefObject } from "react";
+import { motion } from "framer-motion";
 // components
 import Contact from "./Contact";
 // hooks
+import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
 // store
 import {contactList} from '../../store/allData'
+import { secFading } from "../../utils/animation";
 // utils & animation
 
 interface props {
@@ -12,14 +15,15 @@ interface props {
 }
 
 const Contacts: React.FC<props> = ({contactRef}) => {
+  const [sec,controls] = useOnScrollAnimation();
   return (
     <div ref={contactRef}>
       <h2 className="text-5xl text-gray-300 mb-10 mx-auto">Contacts</h2>
-      <div className="flex flex-wrap justify-center items-center w-full">
+      <motion.div ref={sec} initial="hidden" animate={controls} variants={secFading} className="flex flex-wrap justify-center items-center w-full">
       {contactList.map((cont)=>{
           return <Contact key={cont.logo} contact={cont} />
         })}
-        </div>
+        </motion.div>
     </div>
   );
 };

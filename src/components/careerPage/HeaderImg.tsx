@@ -37,7 +37,7 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
       <motion.button
         variants={fancyBtns}
         custom={4}
-        className=" w-[13.6vw] h-[14.85vw] top-[9.2vw] left-[9.5vw]  text-[3.4vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
+        className="no-select-a-tag w-[13.6vw] h-[14.85vw] top-[9.2vw] left-[9.5vw]  text-[3.4vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
         duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={bioHandler}
         ref={bioBtnRef}
@@ -47,7 +47,7 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
       <motion.button
         variants={fancyBtns}
         custom={8}
-        className=" w-[13.5vw] h-[13.6vw]  top-[39.9vw] left-[19.1vw] text-[3.2vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
+        className="no-select-a-tag w-[13.5vw] h-[13.6vw]  top-[39.9vw] left-[19.1vw] text-[3.2vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
         duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={eduHandler}
         ref={eduBtnRef}
@@ -57,7 +57,7 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
       <motion.button
         variants={fancyBtns}
         custom={5}
-        className=" w-[13.5vw] h-[14.6vw] top-[18vw] left-[60.4vw] text-[5.5vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
+        className="no-select-a-tag w-[13.5vw] h-[14.6vw] top-[18vw] left-[60.4vw] text-[5.5vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
         duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={skillsHandler}
         ref={skillsBtnRef}
@@ -67,7 +67,7 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
       <motion.button
         variants={fancyBtns}
         custom={5}
-        className=" w-[13.5vw] h-[14.6vw] top-[17.5vw] left-[80.7vw] text-[3.9vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
+        className="no-select-a-tag w-[13.5vw] h-[14.6vw] top-[17.5vw] left-[80.7vw] text-[3.9vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
         duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={contactHandler}
         ref={contactBtnRef}
@@ -77,7 +77,7 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
       <motion.button
         variants={fancyBtns}
         custom={8}
-        className=" w-[13.4vw] h-[14.8vw] top-[37.9vw] left-[79.8vw] text-[4.1vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
+        className="no-select-a-tag w-[13.4vw] h-[14.8vw] top-[37.9vw] left-[79.8vw] text-[4.1vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
         duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={projectHandler}
       >

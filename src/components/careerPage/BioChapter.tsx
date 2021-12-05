@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { secFadingToL } from "../../utils/animation";
+import { secFading } from "../../utils/animation";
 import {useOnScrollAnimation} from '../../hooks/useOnScrollAnimation';
 
 
@@ -17,7 +17,7 @@ const BioChapter: React.FC<props> = ({ chap, firstChap }) => {
   return (
     <motion.div
     ref={sec}
-    variants={secFadingToL}
+    variants={secFading}
     initial="hidden"
     animate={controls}
     exit="out"
@@ -26,7 +26,7 @@ const BioChapter: React.FC<props> = ({ chap, firstChap }) => {
       <motion.h3
         layout
         onClick={() => setIsExpanded((prev) => !prev)}
-        className="text-2xl font-bold self-start pl-5 cursor-pointer"
+        className="no-select-a-tag text-2xl font-bold self-start pl-5 cursor-pointer"
       >
         <FontAwesomeIcon className={isExpanded ? "rotate-90":"rotate-0"} icon={faAngleRight} />{" "}{chap.title}
       </motion.h3>
