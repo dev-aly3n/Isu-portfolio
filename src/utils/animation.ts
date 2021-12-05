@@ -423,6 +423,21 @@ export const secFadingToL:Variants = {
     },
   },
 };
+export const secFading:Variants = {
+  hidden: {
+    opacity:0,
+    transition: {
+      duration:1
+    },
+  },
+  visible: {
+    opacity:1,
+    transition: {
+      duration:0.5,
+      staggerChildren:0.03
+    },
+  },
+};
 
 export const fancyBtns:Variants = {
   hidden:(custom:number)=>( {

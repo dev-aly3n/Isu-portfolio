@@ -23,8 +23,9 @@ const Skill: React.FC<props> = ({ skill, index }) => {
             backgroundColor: `rgb${skill.color}`,
           }}
         ></motion.div>
-        <img
-                  style={{left:`${skill.perc - 7}%`}}
+        <motion.img
+                  variants={skillImgAnimation}
+                  custom={`${skill.perc - 7}%`}
           src={`/media/logos/${skill.icon}`}
           className="absolute top-[50%] left-0 mt-[-14px] block h-7 ml-px"
         />

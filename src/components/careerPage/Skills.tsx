@@ -13,7 +13,7 @@ import {
 } from "../../store/allData";
 import Skill from "./Skill";
 // utils & animation
-import { secFadingToL, secFadingToR } from "../../utils/animation";
+import { secFading } from "../../utils/animation";
 
 
 interface props {
@@ -32,7 +32,7 @@ const Skills: React.FC<props> = ({skillsRef}) => {
       ref={sec1}
       initial="hidden"
       animate={controls1}
-      variants={secFadingToL}
+      variants={secFading}
       >
         {hardSkillList.map((skill, index) => {
           return <Skill key={skill.name} skill={skill} index={index} />;
@@ -43,7 +43,7 @@ const Skills: React.FC<props> = ({skillsRef}) => {
            ref={sec2}
            initial="hidden"
            animate={controls2}
-           variants={secFadingToR}>
+           variants={secFading}>
         {SoftSkillList.map((skill, index) => {
           return <Skill key={skill.name} skill={skill} index={index} />;
         })}
@@ -53,7 +53,7 @@ const Skills: React.FC<props> = ({skillsRef}) => {
            ref={sec3}
            initial="hidden"
            animate={controls3}
-           variants={secFadingToL}>
+           variants={secFading}>
         {langList.map((skill, index) => {
           return <Skill key={skill.name} skill={skill} index={index} />;
         })}
@@ -63,7 +63,7 @@ const Skills: React.FC<props> = ({skillsRef}) => {
            ref={sec4}
            initial="hidden"
            animate={controls4}
-           variants={secFadingToR} className="flex flex-wrap ">
+           variants={secFading} className="flex flex-wrap ">
         {eduSkillList.map((skillName) => {
           return (
             <span key={skillName} className="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm">
