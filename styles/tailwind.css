@@ -73,4 +73,8 @@ body {
   .no-select-a-tag:focus {
     outline: none !important;
   }
+
+  .iframe-loader {
+    background:url(/media/loader.gif) center center no-repeat;
+  }
 }

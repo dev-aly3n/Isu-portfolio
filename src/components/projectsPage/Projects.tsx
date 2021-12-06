@@ -38,13 +38,14 @@ const Projects: React.FC = () => {
             >
               <div
                 onClick={() => {
+                    document.body.style.overflow = "auto";
                   setUrlID(null);
                   window.history.pushState({}, "", "/projects");
                 }}
                 className="h-16 w-full bg-green-900 "
               ></div>
-              <div className="w-full h-full bg-red-500 opacity-25 ">
-                <iframe ref={iframeRef} src="" className="w-full h-full" />
+              <div className="w-full h-full bg-white iframe-loader" style={{zIndex:110}}>
+                <iframe ref={iframeRef} className="w-full h-full"  />
               </div>
             </motion.div>
           )}

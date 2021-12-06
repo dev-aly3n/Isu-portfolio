@@ -14,7 +14,7 @@ const Proj: React.FC<props> = ({ settingID,project }) => {
 
   const projClickHandler = () => {
     document.body.style.overflow = "hidden";
-    settingID("iddd");
+    settingID(project.url);
     setTimeout(() => {
       router.push(`?ID=${project.url}`);
     }, 100);
