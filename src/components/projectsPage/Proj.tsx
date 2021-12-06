@@ -2,13 +2,15 @@ import { RefObject } from "react";
 
 interface props {
     iframeRef:RefObject<HTMLIFrameElement>;
-
+    ifrExpanding:(isExpanded:boolean)=>void;
 }
 
-const Proj:React.FC<props> = ({iframeRef}) => {
+const Proj:React.FC<props> = ({iframeRef,ifrExpanding}) => {
 
     const projClickHandler = () => {
-        iframeRef.current!.src = "https://atefeh-hasani.vercel.app/"
+        document.body.style.overflow = "hidden";
+        iframeRef.current!.src = "https://atefeh-hasani.vercel.app/";
+        ifrExpanding(true);
     }
     return(
         <div className="w-96 h-[calc(100vh-160px)] flex flex-col bg-gray-50 rounded-xl overflow-hidden border-4
