@@ -170,7 +170,7 @@ export const langList: {
     perc: 35,
     color: "(192,192,192)",
   },
-]
+];
 
 export const eduSkillList: string[] = [
   "Airplane structural design",
@@ -208,12 +208,66 @@ export const eduData: {
   },
 ];
 
-export const contactList: { site: string; username: string; logo: string; link:string; }[] = [
-  { site: "LinkedIn", username: "aly-mohamadi", logo: "linkedin", link:"https://www.linkedin.com/in/aly-mohamadi-4bb966212/" },
-  { site: "GitHub", username: "dev-aly3n", logo: "github", link:"https://github.com/dev-aly3n" },
-  { site: "Gmail", username: "dev.aly3n", logo: "gmail", link:"mailto:dev.aly3n@gmail.com" },
-  { site: "Telegram", username: "aly3n", logo: "telegram", link:"https://t.me/aly3n" },
-  { site: "WhatsApp", username: "", logo: "whatsapp", link:"https://wa.me/989152539070?text=Hello%20Aly!%20I've%20reached%20you%20through%20your%20personal%20website." },
-  { site: "Instagram", username: "aly3n", logo: "instagram", link:"https://www.instagram.com/aly.3n/" },
+export const contactList: {
+  site: string;
+  username: string;
+  logo: string;
+  link: string;
+}[] = [
+  {
+    site: "LinkedIn",
+    username: "aly-mohamadi",
+    logo: "linkedin",
+    link: "https://www.linkedin.com/in/aly-mohamadi-4bb966212/",
+  },
+  {
+    site: "GitHub",
+    username: "dev-aly3n",
+    logo: "github",
+    link: "https://github.com/dev-aly3n",
+  },
+  {
+    site: "Gmail",
+    username: "dev.aly3n",
+    logo: "gmail",
+    link: "mailto:dev.aly3n@gmail.com",
+  },
+  {
+    site: "Telegram",
+    username: "aly3n",
+    logo: "telegram",
+    link: "https://t.me/aly3n",
+  },
+  {
+    site: "WhatsApp",
+    username: "",
+    logo: "whatsapp",
+    link: "https://wa.me/989152539070?text=Hello%20Aly!%20I've%20reached%20you%20through%20your%20personal%20website.",
+  },
+  {
+    site: "Instagram",
+    username: "aly3n",
+    logo: "instagram",
+    link: "https://www.instagram.com/aly.3n/",
+  },
+];
 
+export const projectList: {
+  name: string;
+  desc: string;
+  url: string;
+  image: string;
+}[] = [
+  {
+    name: "wiki anime",
+    desc: "about :Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.",
+    url: "wikianime.vercel.app",
+    image: "wikianime.png",
+  },
+  {
+    name: "AeroSpace Portfolio",
+    desc: "   about :Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.",
+    url: "atefeh-hasani.vercel.app",
+    image: "atefeh-hasani.png",
+  },
 ];
