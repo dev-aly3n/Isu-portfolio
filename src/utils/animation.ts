@@ -433,9 +433,7 @@ export const skillAnimation:Variants = {
   hidden: {
     opacity:0.3,
     width:0,
-    transition: {
-      duration:1
-    },
+
   },
   visible:(custom:string)=>( {
     opacity:1,
