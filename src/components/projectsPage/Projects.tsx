@@ -24,34 +24,46 @@ const Projects: React.FC = () => {
     if (window.history?.state?.as?.includes("projects?ID")) {
       let id = window.history?.state.as.split("/projects?ID=")[1];
       setUrlID(id);
+      projectsRef.current!.style.height = "70vh";
     }
     if (urlID) {
       iframeRef.current!.src = `https://${urlID}/`;
     }
   }, [urlID]);
 
-
   // To have a nice transition between two component we need to wrap <AnimatePresence></AnimatePresence> around the destination component
   // ... and wrap <AnimateSharedLayout></AnimateSharedLayout> around both destination and origin component
   // ... after that we just need to give them same layout id
   // ... here LiveProject is destination and proj is origin
   return (
-    <div ref={projectsRef} className="flex flex-col justify-between items-center h-full w-full py-5">
+    <div
+      ref={projectsRef}
+      className="flex flex-col justify-between items-center h-full w-full py-5"
+    >
       <AnimateSharedLayout>
         <AnimatePresence>
           {urlID && (
             <motion.div
               layoutId={urlID}
-              className="fixed top-0 left-0 w-screen h-screen flex flex-col justify-between z-100"
+              className="live-project-container"
             >
-              <LiveProject projectsRef={projectsRef} settingID={settingID} iframeRef={iframeRef} />
+              <LiveProject
+                projectsRef={projectsRef}
+                settingID={settingID}
+                iframeRef={iframeRef}
+              />
             </motion.div>
           )}
         </AnimatePresence>
         <div className="w-full h-full flex flex-wrap gap-5 justify-center items-center mt-3">
           {projectList.map((project) => {
             return (
-              <Proj key={project.url} project={project} projectsRef={projectsRef} settingID={settingID} />
+              <Proj
+                key={project.url}
+                project={project}
+                projectsRef={projectsRef}
+                settingID={settingID}
+              />
             );
           })}
         </div>
