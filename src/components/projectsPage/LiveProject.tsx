@@ -41,7 +41,7 @@ const LiveProject: React.FC<props> = ({
     } else {
       const scaleRate: number = viewPortWidth / size;
       iframeRef.current!.style.width = `${size}px`;
-      iframeRef.current!.style.height = `${viewPortHeight / scaleRate}px`;
+      iframeRef.current!.style.height = `${viewPortHeight / scaleRate - 150}px`;
       iframeRef.current!.style.transform = `scale(${scaleRate})`;
     }
     iframeRef.current!.setAttribute("sizeID",`${size}`);
