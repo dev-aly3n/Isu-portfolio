@@ -1,16 +1,20 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { RefObject } from "react";
 
 interface props {
   settingID: (id: string | null) => void;
   project: { name: string; desc: string; url: string; image: string };
+  projectsRef:RefObject<HTMLDivElement>;
 }
 
-const Proj: React.FC<props> = ({ settingID, project }) => {
+const Proj: React.FC<props> = ({ settingID, project, projectsRef }) => {
   const router = useRouter();
 
   const projClickHandler = () => {
-    document.body.style.overflow = "hidden";
+   setTimeout(() => {
+    projectsRef.current!.style.height = "70vh";
+   }, 500);
     settingID(project.url);
     setTimeout(() => {
       router.push(`?ID=${project.url}`);

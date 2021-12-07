@@ -10,6 +10,7 @@ import LiveProject from "./LiveProject";
 // utils & animation
 
 const Projects: React.FC = () => {
+  const projectsRef = useRef<HTMLDivElement>(null);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [urlID, setUrlID] = useState<null | string>(null);
   const settingID = useCallback(
@@ -35,7 +36,7 @@ const Projects: React.FC = () => {
   // ... after that we just need to give them same layout id
   // ... here LiveProject is destination and proj is origin
   return (
-    <div className="flex flex-col justify-between items-center h-full w-full pb-96">
+    <div ref={projectsRef} className="flex flex-col justify-between items-center h-full w-full py-5">
       <AnimateSharedLayout>
         <AnimatePresence>
           {urlID && (
@@ -43,14 +44,14 @@ const Projects: React.FC = () => {
               layoutId={urlID}
               className="fixed top-0 left-0 w-screen h-screen flex flex-col justify-between z-100"
             >
-              <LiveProject settingID={settingID} iframeRef={iframeRef} />
+              <LiveProject projectsRef={projectsRef} settingID={settingID} iframeRef={iframeRef} />
             </motion.div>
           )}
         </AnimatePresence>
         <div className="w-full h-full flex flex-wrap gap-5 justify-center items-center mt-3">
           {projectList.map((project) => {
             return (
-              <Proj key={project.url} project={project} settingID={settingID} />
+              <Proj key={project.url} project={project} projectsRef={projectsRef} settingID={settingID} />
             );
           })}
         </div>

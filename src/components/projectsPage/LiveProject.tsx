@@ -10,9 +10,11 @@ import {
 interface props {
   settingID: (id: null | string) => void;
   iframeRef: RefObject<HTMLIFrameElement>;
+  projectsRef:RefObject<HTMLDivElement>;
 }
-const LiveProject: React.FC<props> = ({ iframeRef, settingID }) => {
+const LiveProject: React.FC<props> = ({ iframeRef, settingID, projectsRef }) => {
   const closeHandler = () => {
+    projectsRef.current!.style.height = "100%";
     document.body.style.overflow = "auto";
     settingID(null);
     window.history.pushState({}, "", "/projects");
@@ -28,7 +30,7 @@ const LiveProject: React.FC<props> = ({ iframeRef, settingID }) => {
     if(size<=viewPortWidth){
     iframeRef.current!.style.width = `${size}px`;
     iframeRef.current!.style.transform = `scale(1)`;
-
+    iframeRef.current!.style.height = `${viewPortHeight}px`;
   } else {
     const scaleRate:number = viewPortWidth/size;
     iframeRef.current!.style.width = `${size}px`;
@@ -64,7 +66,7 @@ const LiveProject: React.FC<props> = ({ iframeRef, settingID }) => {
         className="w-full h-full bg-gray-900 iframe-loader"
         style={{ zIndex: 110 }}
       >
-        <iframe ref={iframeRef} className="w-full h-full duration-1000 mx-auto"
+        <iframe ref={iframeRef} className="w-full h-full duration-1000 mx-auto border-8 border-primary-800 rounded-2xl"
         style={{transformOrigin:"left top"}}  />
       </div>
     </Fragment>
