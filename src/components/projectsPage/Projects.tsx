@@ -5,7 +5,8 @@ import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
 import Proj from "./Proj";
 // hooks
 // store
-import {projectList} from '../../store/allData';
+import { projectList } from "../../store/allData";
+import LiveProject from "./LiveProject";
 // utils & animation
 
 const Projects: React.FC = () => {
@@ -27,6 +28,12 @@ const Projects: React.FC = () => {
       iframeRef.current!.src = `https://${urlID}/`;
     }
   }, [urlID]);
+
+
+  // To have a nice transition between two component we need to wrap <AnimatePresence></AnimatePresence> around the destination component
+  // ... and wrap <AnimateSharedLayout></AnimateSharedLayout> around both destination and origin component
+  // ... after that we just need to give them same layout id
+  // ... here LiveProject is destination and proj is origin
   return (
     <div className="flex flex-col justify-between items-center h-full w-full pb-96">
       <AnimateSharedLayout>
@@ -36,23 +43,15 @@ const Projects: React.FC = () => {
               layoutId={urlID}
               className="fixed top-0 left-0 w-screen h-screen flex flex-col justify-between z-100"
             >
-              <div
-                onClick={() => {
-                    document.body.style.overflow = "auto";
-                  setUrlID(null);
-                  window.history.pushState({}, "", "/projects");
-                }}
-                className="h-16 w-full bg-green-900 "
-              ></div>
-              <div className="w-full h-full bg-white iframe-loader" style={{zIndex:110}}>
-                <iframe ref={iframeRef} className="w-full h-full"  />
-              </div>
+              <LiveProject settingID={settingID} iframeRef={iframeRef} />
             </motion.div>
           )}
         </AnimatePresence>
         <div className="w-full h-full flex flex-wrap gap-5 justify-center items-center mt-3">
-          { projectList.map((project)=>{
-              return <Proj key={project.url} project={project} settingID={settingID} />;
+          {projectList.map((project) => {
+            return (
+              <Proj key={project.url} project={project} settingID={settingID} />
+            );
           })}
         </div>
       </AnimateSharedLayout>
