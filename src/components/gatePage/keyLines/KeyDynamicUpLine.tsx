@@ -32,7 +32,6 @@ const KeyDynamicUpLine: React.FC<props> = ({
         <defs>
           <motion.path
             onAnimationComplete={() => {
-              console.log("anim finished");
               if (setFinished && logic && clicked) {
                 setFinished(true);
               }

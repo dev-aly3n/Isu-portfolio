@@ -1,13 +1,21 @@
-import React,{useRef} from "react";
+// libs
+import React,{useRef,useEffect} from "react";
+import { useRouter } from "next/router";
 import { motion } from "framer-motion";
-import { firstPage } from "../../utils/animation";
+import { AnimateSharedLayout } from "framer-motion";
+// components
 import HeaderImg from "./HeaderImg";
 import Biography from "./Biography";
-import { AnimateSharedLayout } from "framer-motion";
-import Skills from "./Skills";
 import EduList from "./EduList";
+import Skills from "./Skills";
 import Contacts from "./Contacts";
+// hooks
+// store
+// utils & animation
+import { firstPage } from "../../utils/animation";
+
 const Career: React.FC = (): JSX.Element => {
+  const router = useRouter();
   const bioRef = useRef(null);
   const eduRef = useRef(null);
   const skillsRef = useRef(null);

@@ -360,6 +360,22 @@ export const firstPage = {
   },
 
 };
+
+export const firstPage2 = {
+  hidden: {
+    y:100
+  },
+  visible: {
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay:0,
+      when: "beforeChildren",
+      staggerChildren: 0.01,
+    },
+  },
+};
+
 export const backRoadImg = {
   hidden: {
     scale: 1,
