@@ -86,7 +86,7 @@ const LiveProject: React.FC<props> = ({
         </div>
       </div>
       <div
-        className="w-full h-full bg-gray-900 iframe-loader"
+        className="w-full h-full bg-primary-900 iframe-loader"
         style={{ zIndex: 110 }}
       >
         <iframe

@@ -257,17 +257,56 @@ export const projectList: {
   desc: string;
   url: string;
   image: string;
+  techs: { name: string; color: string }[];
 }[] = [
   {
     name: "wiki anime",
-    desc: "about :Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui ",
+    desc: "This single Page Application built by the power of React, graphQL and Tailwind css and ect... I didn't use any pre-built components or ui library and all of these stuff has been built from the scratch. It has been taken 60 days time from me to build, however I learnt a lot at this time beside working on my application anyway thank you to visiting my app and a big thanks to anilist graphQL server.",
     url: "wikianime.vercel.app",
     image: "wikianime.png",
+    techs: [
+      { name: "React", color: "#61D9FA" },
+      { name: "GarphQL", color: "#290BA0" },
+      { name: "Tailwindcss", color: "#06B6D4" },
+      { name: "FramerMotion", color: "#EC00C1" },
+      { name: "intersection-observer", color: "#7BB651" },
+      { name: "JavaScript", color: "#F7DF1E" },
+      { name: "CSS", color: "#1572B6" },
+      { name: "HTML", color: "#E44F26" },
+    ],
   },
   {
-    name: "AeroSpace Portfolio",
-    desc: "about :Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui",
+    name: "Atefeh Hasani",
+    desc: "This was a gift to my girl as a birthday presence. I made it in 15 days how ever the data-entry and fixing bugs took another 15 days. the project has been built as a template. so you can easily change the achievementData file and add your achievement how ever you still need to change other file to add your text and picture.",
     url: "atefeh-hasani.vercel.app",
     image: "atefeh-hasani.png",
+    techs: [
+      { name: "React", color: "#61D9FA" },
+      { name: "NextJS", color: "#081722" },
+      { name: "Tailwindcss", color: "#06B6D4" },
+      { name: "FramerMotion", color: "#EC00C1" },
+      { name: "PostCSS", color: "#DD3A0A" },
+      { name: "intersection-observer", color: "#7BB651" },
+      { name: "JavaScript", color: "#F7DF1E" },
+      { name: "CSS", color: "#1572B6" },
+      { name: "HTML", color: "#E44F26" },
+    ],
+  },
+  {
+    name: "Atefeh Hasani",
+    desc: "This was a gift to my girl as a birthday presence. I made it in 15 days how ever the data-entry and fixing bugs took another 15 days. the project has been built as a template. so you can easily change the achievementData file and add your achievement how ever you still need to change other file to add your text and picture.",
+    url: "atefeh-hasani.vercel.app",
+    image: "music-player.png",
+    techs: [
+      { name: "React", color: "#61D9FA" },
+      { name: "NextJS", color: "#081722" },
+      { name: "Tailwindcss", color: "#06B6D4" },
+      { name: "FramerMotion", color: "#EC00C1" },
+      { name: "PostCSS", color: "#DD3A0A" },
+      { name: "intersection-observer", color: "#7BB651" },
+      { name: "JavaScript", color: "#F7DF1E" },
+      { name: "CSS", color: "#1572B6" },
+      { name: "HTML", color: "#E44F26" },
+    ],
   },
 ];

@@ -16,10 +16,10 @@
       > div:nth-of-type(2) {
         @apply flex justify-center gap-x-3 w-1/3 ssm:w-1/4 lg:w-[10%] text-3xl;
         > span:first-child {
-          @apply w-16 text-center py-1 rounded-md bg-blue-500 hover:bg-blue-800 text-white duration-500 cursor-pointer hover:scale-105 my-2;
+          @apply w-16 text-center px-2 py-1 rounded-md bg-blue-500 hover:bg-blue-800 text-white duration-500 cursor-pointer hover:scale-105 my-2;
         }
         > span:last-child {
-          @apply w-16 text-center py-1 rounded-md bg-red-400 hover:bg-red-600 text-white duration-500 cursor-pointer hover:scale-105 my-2;
+          @apply w-16 text-center px-2 py-1 rounded-md bg-red-400 hover:bg-red-600 text-white duration-500 cursor-pointer hover:scale-105 my-2;
         }
       }
     }
