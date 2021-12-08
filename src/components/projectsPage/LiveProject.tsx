@@ -21,8 +21,6 @@ const LiveProject: React.FC<props> = ({
   const [selected, setSelected] = useState<number|null>(null);
 
   const closeHandler = () => {
-    projectsRef.current!.style.height = "100%";
-    document.body.style.overflow = "auto";
     settingID(null);
     window.history.pushState({}, "", "/projects");
   };
@@ -91,7 +89,7 @@ const LiveProject: React.FC<props> = ({
       >
         <iframe
           ref={iframeRef}
-          className="w-full h-full duration-1000 mx-auto border-8 border-primary-800 rounded-2xl"
+          className="w-full h-full duration-1000 mx-auto border-8 border-primary-800 rounded-2xl overscroll-none"
           style={{ transformOrigin: "left top" }}
         />
       </div>

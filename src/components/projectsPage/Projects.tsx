@@ -24,7 +24,6 @@ const Projects: React.FC = () => {
     if (window.history?.state?.as?.includes("projects?ID")) {
       let id = window.history?.state.as.split("/projects?ID=")[1];
       setUrlID(id);
-      projectsRef.current!.style.height = "70vh";
     }
     if (urlID) {
       iframeRef.current!.src = `https://${urlID}/`;
@@ -38,14 +37,14 @@ const Projects: React.FC = () => {
   return (
     <div
       ref={projectsRef}
-      className="flex flex-col justify-between items-center h-full w-full py-5"
+      className="flex flex-col justify-between items-center h-full w-full py-5 overflow-hidden"
     >
       <AnimateSharedLayout>
         <AnimatePresence>
           {urlID && (
             <motion.div
               layoutId={urlID}
-              className="live-project-container"
+              className="live-project-container !overscroll-y-contain"
             >
               <LiveProject
                 projectsRef={projectsRef}
