@@ -18,13 +18,17 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
   const eduBtnRef = useRef<HTMLButtonElement>(null);
   const skillsBtnRef = useRef<HTMLButtonElement>(null);
   const contactBtnRef = useRef<HTMLButtonElement>(null);
+  const projectBtnRef = useRef<HTMLButtonElement>(null);
 
   const bioHandler = fancyBtnHandler(bioBtnRef, allRefs.bioRef);
   const skillsHandler = fancyBtnHandler(skillsBtnRef, allRefs.skillsRef);
   const eduHandler = fancyBtnHandler(eduBtnRef, allRefs.eduRef);
   const contactHandler = fancyBtnHandler(contactBtnRef, allRefs.contactRef);
   const projectHandler = () => {
-    router.push("/projects");
+    projectBtnRef.current!.style.transform="translateX(50vw)";
+    setTimeout(() => {
+      router.push("/projects");
+    }, 200);
   };
 
   return (
@@ -80,6 +84,7 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
         className="no-select-a-tag w-[13.4vw] h-[14.8vw] top-[37.9vw] left-[79.8vw] text-[4.1vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
         duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={projectHandler}
+        ref={projectBtnRef}
       >
         <h3 className="-rotate-45 ">Project</h3>
       </motion.button>
