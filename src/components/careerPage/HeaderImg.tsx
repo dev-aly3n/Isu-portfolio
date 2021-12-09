@@ -25,10 +25,10 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
   const eduHandler = fancyBtnHandler(eduBtnRef, allRefs.eduRef);
   const contactHandler = fancyBtnHandler(contactBtnRef, allRefs.contactRef);
   const projectHandler = () => {
-    projectBtnRef.current!.style.transform="translateX(50vw)";
+    projectBtnRef.current!.style.left="120%";
     setTimeout(() => {
       router.push("/projects");
-    }, 200);
+    }, 100);
   };
 
   return (
