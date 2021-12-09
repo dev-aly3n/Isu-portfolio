@@ -12,21 +12,17 @@ import SVGPatternsFilters from "../src/components/SVGPatternsFilters";
 // utils & animation
 import "../styles/tailwind.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { PrevUrlCtx, PrevUrlCtxProvider } from "../src/store/context/prevUrlCts";
 
 
 fontawesomeConfig.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const prevUrlctx = useContext(PrevUrlCtx);
 
   return (
     <Fragment>
       <Header />
       <Main>
-        <PrevUrlCtxProvider>
       <Component {...pageProps} />
-      </PrevUrlCtxProvider>
       </Main>
       <Footer />
       <SVGPatternsFilters />
