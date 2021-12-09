@@ -1,8 +1,6 @@
 import type { AppProps } from "next/app";
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 // libs
-import { useState,useEffect } from "react";
-import { useRouter } from "next/router";
 import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
 // components
 import Main from "../src/components/layout/Main"
@@ -14,22 +12,21 @@ import SVGPatternsFilters from "../src/components/SVGPatternsFilters";
 // utils & animation
 import "../styles/tailwind.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { PrevUrlCtx, PrevUrlCtxProvider } from "../src/store/context/prevUrlCts";
 
 
 fontawesomeConfig.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-  useEffect(() => {
-    router.events.on("beforeHistoryChange", function(e){
-      console.log(e)
-    })
-  }, [])
+  const prevUrlctx = useContext(PrevUrlCtx);
+
   return (
     <Fragment>
       <Header />
       <Main>
+        <PrevUrlCtxProvider>
       <Component {...pageProps} />
+      </PrevUrlCtxProvider>
       </Main>
       <Footer />
       <SVGPatternsFilters />
