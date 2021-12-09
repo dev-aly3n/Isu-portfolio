@@ -30,7 +30,7 @@ const Proj: React.FC<props> = ({ settingID, project, projectsRef }) => {
       <div className="flex flex-col mt-2 px-3">
           <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
           <p className="text-base font-medium leading-5 mt-1">{project.desc}</p>
-        <div className="flex flex-wrap gap-1 mt-2">
+        <div className="flex flex-wrap gap-1 my-2">
           {project.techs.map((tech)=> {
             return (<span key={tech.name} className="px-2 py-px rounded-full text-white contrast-[0.9] font-semibold text-sm
              duration-500 filter grayscale-[0.3] group-hover:grayscale-0 shadow-lg ring-1 ring-offset-primary-600"
