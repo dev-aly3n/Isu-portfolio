@@ -12,6 +12,7 @@ import SVGPatternsFilters from "../src/components/SVGPatternsFilters";
 // utils & animation
 import "../styles/tailwind.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { GlobalCtxProvider } from "../src/store/context/globalCtx";
 
 
 fontawesomeConfig.autoAddCss = false;
@@ -20,11 +21,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <Fragment>
+      <GlobalCtxProvider>
       <Header />
       <Main>
       <Component {...pageProps} />
       </Main>
       <Footer />
+      </GlobalCtxProvider>
       <SVGPatternsFilters />
     </Fragment>
   );

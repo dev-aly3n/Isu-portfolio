@@ -1,28 +1,40 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { MouseEventHandler, useContext } from "react";
+import { GlobalCtx } from "../../store/context/globalCtx";
 
 interface Links {
   ref: string;
   text: string;
+  handler?:MouseEventHandler<HTMLLIElement> | undefined;
 }
-const headerLinks: Links[] = [
-  {
-    ref: "/career",
-    text: "Career",
-  },
-  {
-    ref: "/projects",
-    text: "Projects",
-  },
-  {
-    ref: "/",
-    text: "ToTheGate",
-  },
-];
+
 
 const Header: React.FC = () => {
+  
+  const globCtx = useContext(GlobalCtx);
   const router = useRouter();
+
+  const toCareerFunc = ()=> {
+    globCtx.toCareerHandler(0);
+  }
+  const headerLinks: Links[] = [
+    {
+      ref: "/career",
+      text: "Career",
+      handler:toCareerFunc,
+    },
+    {
+      ref: "/projects",
+      text: "Projects",
+    },
+    {
+      ref: "/",
+      text: "ToTheGate",
+    },
+  ];
+
+
   return router.pathname !== "/" ? (
     <div className="header-container">
       <h1>
@@ -31,7 +43,7 @@ const Header: React.FC = () => {
       <ul>
         {headerLinks.map((headLink) => {
           return (
-            <li key={headLink.text}>
+            <li key={headLink.text} onClick={headLink.handler}>
               <Link href={headLink.ref}>
                 <a
                   className={`${

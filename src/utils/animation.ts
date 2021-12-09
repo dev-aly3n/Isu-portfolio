@@ -358,20 +358,47 @@ export const firstPage = {
       staggerChildren: 0.01,
     },
   },
-
 };
 
 export const firstPage2 = {
   hidden: {
-    y:100
+    x:"-100%"
   },
   visible: {
-    y: 0,
+    x: 0,
     transition: {
       duration: 0.5,
       delay:0,
       when: "beforeChildren",
       staggerChildren: 0.01,
+    },
+  },
+  out: {
+    x: "-100%",
+    transition: {
+      duration: 0.5,
+      delay:0,
+    },
+  },
+};
+export const seconPage = {
+  hidden: {
+    x:"100%"
+  },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 0.5,
+      delay:0,
+      when: "beforeChildren",
+      staggerChildren: 0.01,
+    },
+  },
+  out: {
+    x: "100%",
+    transition: {
+      duration: 0.5,
+      delay:0,
     },
   },
 };

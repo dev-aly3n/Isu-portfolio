@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { gateLine } from "../../../utils/animation";
 import { useGateClicked } from "../../../hooks/useGateClicked";
+import { useContext } from "react";
+import { GlobalCtx } from "../../../store/context/globalCtx";
 
 interface props {
   logic?: boolean;
@@ -11,15 +13,17 @@ const DynamicUpLine: React.FC<props> = ({
   logic,
   setFinished,
 }): JSX.Element => {
+  const globCtx = useContext(GlobalCtx);
   const router = useRouter();
   const controls = useGateClicked();
 
   const upLineAnimationHandler = () => {
     if (setFinished && logic) {
       setFinished(true);
+      globCtx.toCareerHandler(1);
       setTimeout(() => {
         router.push("/career");
-      }, 1);
+      }, 100);
     }
   };
   return (

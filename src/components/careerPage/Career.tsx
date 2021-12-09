@@ -1,6 +1,5 @@
 // libs
-import React,{useRef,useEffect} from "react";
-import { useRouter } from "next/router";
+import React,{useRef, useContext} from "react";
 import { motion } from "framer-motion";
 import { AnimateSharedLayout } from "framer-motion";
 // components
@@ -12,21 +11,24 @@ import Contacts from "./Contacts";
 // hooks
 // store
 // utils & animation
-import { firstPage } from "../../utils/animation";
+import { firstPage, firstPage2 } from "../../utils/animation";
+import { GlobalCtx } from "../../store/context/globalCtx";
 
 const Career: React.FC = (): JSX.Element => {
-  const router = useRouter();
+  const globCtx = useContext(GlobalCtx);
+
   const bioRef = useRef(null);
   const eduRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
+
   return (
     <motion.div
     initial="hidden"
-    animate={"visible"}
-    variants={firstPage}
+    animate="visible"
     exit="out"
-    className="career-container "
+    variants={globCtx.toCareer === 1 ? firstPage : firstPage2}
+    className="career-container"
     >
         <AnimateSharedLayout>
         {/* first */}

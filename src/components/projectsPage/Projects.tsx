@@ -7,6 +7,7 @@ import Proj from "./Proj";
 // store
 import { projectList } from "../../store/allData";
 import LiveProject from "./LiveProject";
+import { seconPage } from "../../utils/animation";
 // utils & animation
 
 const Projects: React.FC = () => {
@@ -35,9 +36,13 @@ const Projects: React.FC = () => {
   // ... after that we just need to give them same layout id
   // ... here LiveProject is destination and proj is origin
   return (
-    <div
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    exit="out"
+    variants={seconPage}
       ref={projectsRef}
-      className="flex flex-col justify-between items-center h-full w-full py-5 overflow-hidden"
+      className="flex flex-col justify-between items-center h-full w-full py-5 overflow-hidden fixed top-0 left-0"
     >
       <AnimateSharedLayout>
         <AnimatePresence>
@@ -67,7 +72,7 @@ const Projects: React.FC = () => {
           })}
         </div>
       </AnimateSharedLayout>
-    </div>
+    </motion.div>
   );
 };
 
