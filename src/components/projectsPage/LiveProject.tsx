@@ -35,7 +35,7 @@ const LiveProject: React.FC<props> = ({
     if (size <= viewPortWidth) {
       iframeRef.current!.style.width = `${size}px`;
       iframeRef.current!.style.transform = `scale(1)`;
-      iframeRef.current!.style.height = `100%`;
+      iframeRef.current!.style.height = `90%`;
     } else {
       const scaleRate: number = viewPortWidth / size;
       iframeRef.current!.style.width = `${size}px`;
@@ -89,7 +89,7 @@ const LiveProject: React.FC<props> = ({
       >
         <iframe
           ref={iframeRef}
-          className="w-full h-full duration-1000 mx-auto border-8 border-primary-800 rounded-2xl overscroll-none"
+          className="w-full h-full duration-1000 mx-auto border-r-8 border-l-8 border-primary-800 rounded-2xl overscroll-none"
           style={{ transformOrigin: "left top" }}
         />
       </div>

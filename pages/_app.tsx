@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Main>
       <Component {...pageProps} />
       </Main>
-      <Footer />
+      {/* <Footer /> */}
       </GlobalCtxProvider>
       <SVGPatternsFilters />
     </Fragment>

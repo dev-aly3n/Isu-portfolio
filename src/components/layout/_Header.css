@@ -1,7 +1,7 @@
 @layer components {
   .header-container {
     z-index: 100;
-    @apply h-full w-full flex flex-col sm:flex-row justify-evenly items-center bg-gray-900 relative;
+    @apply  w-full flex flex-col sm:flex-row justify-evenly items-center bg-gray-900 relative h-20 sm:h-16 overflow-hidden;
     > h1 {
       font-family: "Berkshire Swash", cursive;
       @apply text-xl sm:text-2xl md:text-3xl pt-2 whitespace-nowrap text-white hover:text-pink-200 duration-2000;

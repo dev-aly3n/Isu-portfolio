@@ -8,6 +8,7 @@ import Proj from "./Proj";
 import { projectList } from "../../store/allData";
 import LiveProject from "./LiveProject";
 import { seconPage } from "../../utils/animation";
+import Footer from "../layout/Footer";
 // utils & animation
 
 const Projects: React.FC = () => {
@@ -41,8 +42,10 @@ const Projects: React.FC = () => {
     animate="visible"
     exit="out"
     variants={seconPage}
+    className="fixed top-0 left-0 z-100 h-full w-screen overflow-hidden mt-20 sm:mt-16 pb-20 sm:pb-16">
+    <motion.div
       ref={projectsRef}
-      className="flex flex-col justify-between items-center h-full w-full py-5 overflow-hidden fixed top-0 left-0"
+      className="flex flex-col justify-between items-center h-full w-full overflow-y-scroll py-5 "
     >
       <AnimateSharedLayout>
         <AnimatePresence>
@@ -70,8 +73,12 @@ const Projects: React.FC = () => {
               />
             );
           })}
+          <span>
+          <Footer />
+          </span>
         </div>
       </AnimateSharedLayout>
+    </motion.div>
     </motion.div>
   );
 };

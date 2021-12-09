@@ -13,6 +13,7 @@ import Contacts from "./Contacts";
 // utils & animation
 import { firstPage, firstPage2 } from "../../utils/animation";
 import { GlobalCtx } from "../../store/context/globalCtx";
+import Footer from "../layout/Footer";
 
 const Career: React.FC = (): JSX.Element => {
   const globCtx = useContext(GlobalCtx);
@@ -48,6 +49,9 @@ const Career: React.FC = (): JSX.Element => {
 
 
     </AnimateSharedLayout>
+    <span className="w-screen h-full">
+    <Footer />
+    </span>
       </motion.div>
   );
 };

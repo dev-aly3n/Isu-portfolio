@@ -23,7 +23,7 @@ const Proj: React.FC<props> = ({ settingID, project, projectsRef }) => {
     <motion.div
       layoutId={project.url}
       className="w-96 min-h-[600px] flex flex-col bg-purple-50 rounded-xl overflow-hidden 
-         border-gray-300 duration-500 cursor-pointer hover:scale-105 group !overscroll-contain"
+         border-gray-300 duration-500 cursor-pointer hover:scale-105 group !overscroll-contain mx-1"
       onClick={projClickHandler}
     >
       <img className="rounded-b-xl shadow-2xl" src={`/media/projects/${project.image}`} />
