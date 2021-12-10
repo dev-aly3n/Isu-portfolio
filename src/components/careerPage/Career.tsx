@@ -14,6 +14,7 @@ import Contacts from "./Contacts";
 import { firstPage, firstPage2 } from "../../utils/animation";
 import { GlobalCtx } from "../../store/context/globalCtx";
 import Footer from "../layout/Footer";
+import ActivityChart from "./ActivityChart";
 
 const Career: React.FC = (): JSX.Element => {
   const globCtx = useContext(GlobalCtx);
@@ -47,6 +48,8 @@ const Career: React.FC = (): JSX.Element => {
         {/* 5th */}
         <Contacts contactRef={contactRef} />
 
+        {/* 6th */}
+        <ActivityChart />
 
     </AnimateSharedLayout>
     <span className="w-screen h-full">
