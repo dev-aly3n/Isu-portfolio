@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
+import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
+import { secFading } from "../../utils/animation";
+
 const ActivityChart: React.FC = () => {
+    const [sec,controls] = useOnScrollAnimation();
   return (
-    <div>
+    <motion.div ref={sec} initial="hidden" animate={controls} variants={secFading}>
       <h2 className="text-5xl text-gray-300 mb-10 mx-auto text-center mt-5">
         Coding Activity
       </h2>
@@ -16,7 +21,7 @@ const ActivityChart: React.FC = () => {
       <figure className="w-full  my-10 px-5 md:w-[768px]">
         <embed src="https://wakatime.com/share/@aly3n/7b14775a-13a0-4884-a8f3-a4f40b134860.svg"></embed>
       </figure>
-    </div>
+    </motion.div>
   );
 };
 
