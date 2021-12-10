@@ -35,7 +35,7 @@ const Header: React.FC = () => {
   return router.pathname !== "/" ? (
     <div className="header-container">
       <h1>
-        <Link href="/">Aly3n</Link>
+        <Link href="/career">Aly3n</Link>
       </h1>
       <ul>
         {headerLinks.map((headLink) => {
