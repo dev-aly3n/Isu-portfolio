@@ -6,34 +6,31 @@ import { GlobalCtx } from "../../store/context/globalCtx";
 interface Links {
   ref: string;
   text: string;
-  handler?:MouseEventHandler<HTMLLIElement> | undefined;
+  handler?: MouseEventHandler<HTMLLIElement> | undefined;
 }
 
-
 const Header: React.FC = () => {
-  
   const globCtx = useContext(GlobalCtx);
   const router = useRouter();
 
-  const toCareerFunc = ()=> {
+  const toCareerFunc = () => {
     globCtx.toCareerHandler(0);
-  }
+  };
   const headerLinks: Links[] = [
     {
       ref: "/career",
       text: "Career",
-      handler:toCareerFunc,
+      handler: toCareerFunc,
     },
     {
       ref: "/projects",
       text: "Projects",
     },
-    {
-      ref: "/",
-      text: "ToTheGate",
-    },
   ];
 
+  const toTheGateHandler = () => {
+    globCtx.toGateHandler(1);
+  };
 
   return router.pathname !== "/" ? (
     <div className="header-container">
@@ -58,6 +55,9 @@ const Header: React.FC = () => {
             </li>
           );
         })}
+        <li className="text-white" onClick={toTheGateHandler}>
+          <a onClick={(e) => e.preventDefault()}>ToTheGate</a>
+        </li>
       </ul>
     </div>
   ) : (

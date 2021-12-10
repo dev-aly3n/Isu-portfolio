@@ -9,7 +9,7 @@
     ul {
       @apply w-full ssm:w-auto flex justify-between ssm:justify-center items-stretch sm:text-xl font-bold;
       > li {
-        @apply w-full ssm:w-auto text-center;
+        @apply w-full ssm:w-auto text-center cursor-pointer;
         > a {
           @apply hover:bg-gray-100 hover:text-black px-3 md:px-6 lg:px-10 py-3 md:py-5 block duration-700 w-full ssm:w-auto;
         }
