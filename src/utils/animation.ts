@@ -358,6 +358,13 @@ export const firstPage = {
       staggerChildren: 0.01,
     },
   },
+  out:{
+    x: "-100%",
+    transition: {
+      duration: 0.5,
+      delay:0,
+    },
+  },
 };
 
 export const firstPage2 = {
