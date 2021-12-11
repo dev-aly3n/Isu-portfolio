@@ -1,6 +1,5 @@
 // libs
 import { motion } from "framer-motion";
-import { RefObject } from "react";
 // components
 import Link from "next/link";
 // hooks
@@ -8,11 +7,12 @@ import Link from "next/link";
 // utils & animation
 
 interface props {
-  settingID: (id: string | null) => void;
+  settingID: (id: string | null, git: string | null) => void;
   project: {
     name: string;
     desc: string;
     url: string;
+    gitHub: string;
     image: string;
     techs: { name: string; color: string }[];
   };
@@ -20,13 +20,12 @@ interface props {
 
 const Proj: React.FC<props> = ({ settingID, project }) => {
   const projClickHandler = () => {
-    setTimeout(() => {}, 500);
-    settingID(project.url);
+    settingID(project.url, project.gitHub);
   };
 
   return (
     <Link
-      href={`?ID=${project.url}`}
+      href={`?ID=${project.url}?ID=${project.gitHub}`}
       scroll={false}
       prefetch={false}
       shallow={true}
@@ -43,7 +42,11 @@ const Proj: React.FC<props> = ({ settingID, project }) => {
           <div className="">
             {project.techs.map((tech) => {
               return (
-                <span key={tech.name} style={{ backgroundColor: tech.color }} className="group-hover:grayscale-0">
+                <span
+                  key={tech.name}
+                  style={{ backgroundColor: tech.color }}
+                  className="group-hover:grayscale-0"
+                >
                   {tech.name}
                 </span>
               );

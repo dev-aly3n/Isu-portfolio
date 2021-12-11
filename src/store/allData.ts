@@ -256,6 +256,7 @@ export const projectList: {
   name: string;
   desc: string;
   url: string;
+  gitHub: string;
   image: string;
   techs: { name: string; color: string }[];
 }[] = [
@@ -263,6 +264,7 @@ export const projectList: {
     name: "Atefeh Hasani",
     desc: "This was a gift to my girl as a birthday presence. I made it in 15 days how ever the data-entry and fixing bugs took another 15 days. the project has been built as a template. so you can easily change the achievementData file and add your achievement how ever you still need to change other file to add your text and picture.",
     url: "atefeh-hasani.vercel.app",
+    gitHub: "github.com/dev-aly3n/aerospace-engineer-portfolio",
     image: "atefeh-hasani.png",
     techs: [
       { name: "React", color: "#61D9FA" },
@@ -280,6 +282,7 @@ export const projectList: {
     name: "wiki anime",
     desc: "This single Page Application built by the power of React, graphQL and Tailwind css and ect... I didn't use any pre-built components or ui library and all of these stuff has been built from the scratch. It has been taken 60 days time from me to build, however I learnt a lot at this time beside working on my application anyway thank you to visiting my app and a big thanks to anilist graphQL server.",
     url: "wikianime.vercel.app",
+    gitHub: "github.com/dev-aly3n/wikianime",
     image: "wikianime.png",
     techs: [
       { name: "React", color: "#61D9FA" },
@@ -296,6 +299,7 @@ export const projectList: {
     name: "music-player",
     desc: "This was my first React app that I made by props drilling (to face the prop drilling hell). These musics haven't any copy right and I got them from chillhop that is a free right music application. there is nothing fancy about this project. I just like it.",
     url: "aly3n-music.vercel.app",
+    gitHub: "github.com/dev-aly3n/music-player",
     image: "music-player.png",
     techs: [
       { name: "React", color: "#61D9FA" },
@@ -309,6 +313,7 @@ export const projectList: {
     name: "Beat Maker",
     desc: "This is last vanillaJS project that I made. no framework and js library. just html css js and creativity. click on Load/Sample button to load a sample & hit play to hear some beautiful pieces. I hope you enjoy it while you can.",
     url: "aly3n-beatmaker.vercel.app",
+    gitHub: "github.com/dev-aly3n/beatmaker",
     image: "beat-maker.png",
     techs: [
       { name: "Tailwindcss", color: "#06B6D4" },
@@ -321,6 +326,7 @@ export const projectList: {
     name: "icecream shop",
     desc: "This was my second web project that I used css html and js. I waste a lot of time on functionality of Cart / calculation and ect... It was so fun and excited to me. it's a super light responsive website how ever the pictures are so huge. ",
     url: "aly3n-icecream.vercel.app",
+    gitHub: "github.com/dev-aly3n/ice-cream-online-shop",
     image: "icecream-shop.png",
     techs: [
       { name: "Tailwindcss", color: "#06B6D4" },
@@ -333,6 +339,7 @@ export const projectList: {
     name: "flash card online",
     desc: "This is my first project, my hello word in js. I very like it. it is a nice and easy to use flash card that save your card on your local machine. you can edit your card, delete them or change their color. everyone wants to make a todo list for first project but I hate copy pasting and like to be creative.",
     url: "flash-card-online.vercel.app",
+    gitHub: "github.com/dev-aly3n/flash-card-online",
     image: "flash-card-online.png",
     techs: [
       { name: "Tailwindcss", color: "#06B6D4" },

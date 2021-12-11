@@ -14,23 +14,27 @@ import Footer from "../layout/Footer";
 const Projects: React.FC = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
   const iframeRef = useRef<HTMLIFrameElement>(null);
-  const [urlID, setUrlID] = useState<null | string>(null);
+  const [urlID, setUrlID] = useState<{
+    ID: string | null;
+    gitHub: string | null;
+  }>({ ID: null, gitHub: null });
   const settingID = useCallback(
-    (iframeID: string | null) => {
-      setUrlID(iframeID);
+    (iframeID: string | null, github: string | null) => {
+      setUrlID({ ID: iframeID, gitHub: github });
     },
     [setUrlID]
   );
 
   useEffect(() => {
     if (window.history?.state?.as?.includes("projects?ID")) {
-      let id = window.history?.state.as.split("/projects?ID=")[1];
-      setUrlID(id);
+      let id = window.history?.state.as.split("?ID=")[1];
+      let gh = window.history?.state.as.split("?ID=")[2];
+      setUrlID({ ID: id, gitHub: gh });
     }
-    if (urlID) {
-      iframeRef.current!.src = `https://${urlID}/`;
+    if (urlID.ID) {
+      iframeRef.current!.src = `https://${urlID.ID}/`;
     }
-  }, [urlID]);
+  }, [urlID.ID]);
 
   // To have a nice transition between two component we need to wrap <AnimatePresence></AnimatePresence> around the destination component
   // ... and wrap <AnimateSharedLayout></AnimateSharedLayout> around both destination and origin component
@@ -38,47 +42,45 @@ const Projects: React.FC = () => {
   // ... here LiveProject is destination and proj is origin
   return (
     <motion.div
-    initial="hidden"
-    animate="visible"
-    exit="out"
-    variants={seconPage}
-    className="fixed top-0 left-0 z-100 h-full w-screen overflow-hidden mt-20 sm:mt-16 pb-20 sm:pb-16">
-    <motion.div
-      ref={projectsRef}
-      className="flex flex-col justify-between items-center h-full w-full overflow-y-scroll py-5 "
+      initial="hidden"
+      animate="visible"
+      exit="out"
+      variants={seconPage}
+      className="projects-container"
     >
-      <AnimateSharedLayout>
-        <AnimatePresence>
-          {urlID && (
-            <motion.div
-              layoutId={urlID}
-              className="live-project-container !overscroll-y-contain"
-            >
-              <LiveProject
-                projectsRef={projectsRef}
-                settingID={settingID}
-                iframeRef={iframeRef}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
-        <div className="w-full h-full flex flex-wrap gap-5 justify-center items-center mt-3">
-          {projectList.map((project) => {
-            return (
-              <Proj
-                key={project.url}
-                project={project}
-                projectsRef={projectsRef}
-                settingID={settingID}
-              />
-            );
-          })}
-          <span>
-          <Footer />
-          </span>
-        </div>
-      </AnimateSharedLayout>
-    </motion.div>
+      <motion.div ref={projectsRef}>
+        <AnimateSharedLayout>
+          <AnimatePresence>
+            {urlID.ID && (
+              <motion.div
+                layoutId={urlID.ID}
+                className="live-project-container"
+              >
+                <LiveProject
+                  projectsRef={projectsRef}
+                  urlID={urlID}
+                  settingID={settingID}
+                  iframeRef={iframeRef}
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <div className="proj-list">
+            {projectList.map((project) => {
+              return (
+                <Proj
+                  key={project.url}
+                  project={project}
+                  settingID={settingID}
+                />
+              );
+            })}
+            <span>
+              <Footer />
+            </span>
+          </div>
+        </AnimateSharedLayout>
+      </motion.div>
     </motion.div>
   );
 };

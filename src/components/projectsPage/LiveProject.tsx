@@ -7,25 +7,31 @@ import {
   faExternalLinkAlt,
   faWindowClose,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 interface props {
-  settingID: (id: null | string) => void;
+  urlID: { ID: string | null; gitHub: string | null };
+  settingID: (id: null | string, git: string | null) => void;
   iframeRef: RefObject<HTMLIFrameElement>;
   projectsRef: RefObject<HTMLDivElement>;
 }
 const LiveProject: React.FC<props> = ({
   iframeRef,
+  urlID,
   settingID,
   projectsRef,
 }) => {
   const [selected, setSelected] = useState<number | null>(null);
 
   const closeHandler = () => {
-    settingID(null);
+    settingID(null, null);
     window.history.pushState({}, "", "/projects");
   };
 
   const externalLinkHandler = () => {
-    window.open(iframeRef.current?.src);
+    window.open(`https://${urlID.ID}/`);
+  };
+  const githubHandler = () => {
+    window.open(`https://${urlID.gitHub}/`);
   };
 
   const resizeHandler = useCallback((size: number) => {
@@ -69,7 +75,10 @@ const LiveProject: React.FC<props> = ({
             <FontAwesomeIcon icon={faDesktop} />
           </span>
         </div>
-        <div className="">
+        <div>
+          <span onClick={githubHandler} className="">
+            <FontAwesomeIcon icon={faGithubAlt} />
+          </span>
           <span onClick={externalLinkHandler} className="">
             <FontAwesomeIcon icon={faExternalLinkAlt} />
           </span>
