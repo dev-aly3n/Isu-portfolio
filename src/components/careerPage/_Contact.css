@@ -1,3 +1,20 @@
 @layer components {
-
+  .contact-container {
+    @apply p-2 hover:ring-4 ring-yellow-50 shadow-none rounded-full  duration-300;
+    > a {
+      @apply no-select-a-tag flex justify-start h-24 w-72 bg-primary-400/30 pr-5 rounded-full !overflow-hidden;
+      > img {
+        @apply h-[95%] object-cover object-center rounded-full ml-0.5 mt-0.5;
+      }
+      > div {
+        @apply flex flex-col ml-2 h-full justify-around  pr-2;
+        > h4 {
+          @apply text-3xl font-bold;
+        }
+        > p {
+          @apply text-lg font-medium;
+        }
+      }
+    }
+  }
 }
