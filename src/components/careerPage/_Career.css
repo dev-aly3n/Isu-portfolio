@@ -1,11 +1,14 @@
 @layer components {
-    .career-container {
-        transform-origin:top center;
-        @apply flex flex-col justify-center items-center mx-auto relative w-full h-full
+  .career-container {
+    transform-origin: top center;
+    @apply flex flex-col justify-center items-center mx-auto relative w-full h-full
             bg-secondary-800/60 text-white;
-        >div:nth-child(n+2){
-            @apply flex flex-wrap justify-center items-center mx-auto relative w-[96%] ssm:w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 h-full py-10
+    > div:nth-child(n + 2) {
+      @apply flex flex-wrap justify-center items-center mx-auto relative w-[96%] ssm:w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 h-full py-10
              text-white;
-        }
+      > h2 {
+        @apply text-5xl text-gray-300 mb-10 mx-auto;
+      }
     }
+  }
 }

@@ -27,7 +27,7 @@ const Skills: React.FC<props> = ({skillsRef}) => {
   const [sec4,controls4]= useOnScrollAnimation();
   return (
     <motion.div ref={skillsRef} layout className="skills-container">
-      <h2>Hard Skills</h2>
+      <h3>Hard Skills</h3>
       <motion.div
       ref={sec1}
       initial="hidden"
@@ -38,7 +38,7 @@ const Skills: React.FC<props> = ({skillsRef}) => {
           return <Skill key={skill.name} skill={skill} index={index} />;
         })}
       </motion.div>
-      <h2>Soft Skills</h2>
+      <h3>Soft Skills</h3>
       <motion.div
            ref={sec2}
            initial="hidden"
@@ -48,7 +48,7 @@ const Skills: React.FC<props> = ({skillsRef}) => {
           return <Skill key={skill.name} skill={skill} index={index} />;
         })}
       </motion.div>
-      <h2>Languages</h2>
+      <h3>Languages</h3>
       <motion.div
            ref={sec3}
            initial="hidden"
@@ -58,7 +58,7 @@ const Skills: React.FC<props> = ({skillsRef}) => {
           return <Skill key={skill.name} skill={skill} index={index} />;
         })}
       </motion.div>
-      <h2>Educational Skills</h2>
+      <h3>Educational Skills</h3>
       <motion.div
            ref={sec4}
            initial="hidden"

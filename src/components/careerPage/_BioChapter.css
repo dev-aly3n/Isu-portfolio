@@ -1,0 +1,14 @@
+@layer components {
+  .bio-chapter-container {
+    @apply flex flex-col justify-center items-center w-10/12 sm:w-full my-3;
+    > h3 {
+      @apply no-select-a-tag text-2xl font-bold self-start pl-5 cursor-pointer w-full;
+    }
+    > div {
+      @apply w-full h-px bg-white my-2;
+    }
+    > p {
+      @apply text-base first-letter:text-primary-200 first-letter:font-semibold first-letter:text-5xl overflow-hidden;
+    }
+  }
+}
