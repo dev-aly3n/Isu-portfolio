@@ -1,5 +1,5 @@
 @layer components {
-     /* adding dash to progressbar */
+  /* adding dash to progressbar */
   .pos-dash-style::after {
     content: "";
     position: absolute;
@@ -24,5 +24,26 @@
     border-bottom-right-radius: 8px;
 
     /* animation: progressMove 2s linear infinite; */
+  }
+
+  .skill-container {
+    @apply flex justify-center items-center relative bg-gray-600 rounded-full w-[88%] md:w-[45%] h-12 
+    self-start justify-self-start place-self-start;
+    > h3 {
+      @apply w-32 h-full bg-gray-800 flex justify-center items-center rounded-l-full text-xs font-bold break-words text-center;
+    }
+    > div {
+      @apply relative flex w-full h-full bg-gray-500 rounded-r-full;
+      > div {
+        @apply absolute top-[50%] mt-[-10px] left-0  h-5 overflow-hidden rounded-r-full pos-dash-style;
+      }
+      > img:first-of-type {
+        @apply absolute top-[50%] left-0 mt-[-14px] block h-7 ml-px;
+      }
+      .creativity-explosion {
+        left: 100%;
+        @apply absolute top-[50%] mt-[-30px] block;
+      }
+    }
   }
 }
