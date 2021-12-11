@@ -5,8 +5,8 @@
       @apply w-full h-full mx-auto rounded-b-2xl shadow-2xl;
     }
     > button {
-      @apply bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer no-select-a-tag
-            duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium;
+      @apply bg-secondary-400/50 rotate-45 absolute  flex justify-center items-center cursor-pointer no-select-a-tag
+            duration-1000 rounded-md hover:bg-secondary-400 hover:text-primary-500 shadow-2xl  font-medium;
       > h3 {
         @apply -rotate-45;
       }

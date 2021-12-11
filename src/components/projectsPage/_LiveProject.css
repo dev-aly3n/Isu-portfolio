@@ -27,7 +27,7 @@
       }
     }
     .iframe-container {
-      @apply w-full h-full mt-0 bg-primary-900 iframe-loader;
+      @apply w-full h-full mt-0 !bg-primary-900 iframe-loader;
       > iframe {
         transform-origin: left top;
         @apply w-full h-[calc(100vh-128px)] duration-1000 mx-auto border-r-8 border-l-8 border-primary-800 rounded-2xl overscroll-none;
