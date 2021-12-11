@@ -1,4 +1,4 @@
-import { RefObject, Fragment, useCallback,useEffect, useState } from "react";
+import { RefObject, Fragment, useCallback, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMobileAlt,
@@ -17,8 +17,7 @@ const LiveProject: React.FC<props> = ({
   settingID,
   projectsRef,
 }) => {
-
-  const [selected, setSelected] = useState<number|null>(null);
+  const [selected, setSelected] = useState<number | null>(null);
 
   const closeHandler = () => {
     settingID(null);
@@ -39,59 +38,48 @@ const LiveProject: React.FC<props> = ({
     } else {
       const scaleRate: number = viewPortWidth / size;
       iframeRef.current!.style.width = `${size}px`;
-      iframeRef.current!.style.height = `${(viewPortHeight- 128) / scaleRate }px`;
+      iframeRef.current!.style.height = `${
+        (viewPortHeight - 128) / scaleRate
+      }px`;
       iframeRef.current!.style.transform = `scale(${scaleRate})`;
     }
-    iframeRef.current!.setAttribute("sizeID",`${size}`);
+    iframeRef.current!.setAttribute("sizeID", `${size}`);
     setSelected(size);
   }, []);
   return (
     <Fragment>
       <div className="header">
-        <div >
+        <div>
           <span
             onClick={() => resizeHandler(320)}
-            className={`${selected===320?"active":""}`}
+            className={`${selected === 320 ? "active" : ""}`}
           >
             <FontAwesomeIcon icon={faMobileAlt} />
           </span>
           <span
             onClick={() => resizeHandler(768)}
-            className={`${selected===768?"active":""}`}
+            className={`${selected === 768 ? "active" : ""}`}
           >
             <FontAwesomeIcon icon={faTabletAlt} />
           </span>
           <span
             onClick={() => resizeHandler(1280)}
-            className={`${selected===1280?"active":""}`}
+            className={`${selected === 1280 ? "active" : ""}`}
           >
             <FontAwesomeIcon icon={faDesktop} />
           </span>
         </div>
         <div className="">
-          <span
-            onClick={externalLinkHandler}
-            className=""
-          >
+          <span onClick={externalLinkHandler} className="">
             <FontAwesomeIcon icon={faExternalLinkAlt} />
           </span>
-          <span
-            onClick={closeHandler}
-            className=""
-          >
+          <span onClick={closeHandler} className="">
             <FontAwesomeIcon icon={faWindowClose} />
           </span>
         </div>
       </div>
-      <div
-        className="w-full h-full mt-0 bg-primary-900 iframe-loader"
-        style={{ zIndex: 110 }}
-      >
-        <iframe
-          ref={iframeRef}
-          className="w-full h-[calc(100vh-128px)] duration-1000 mx-auto border-r-8 border-l-8 border-primary-800 rounded-2xl overscroll-none"
-          style={{ transformOrigin: "left top" }}
-        />
+      <div className="iframe-container" style={{ zIndex: 110 }}>
+        <iframe ref={iframeRef} />
       </div>
     </Fragment>
   );

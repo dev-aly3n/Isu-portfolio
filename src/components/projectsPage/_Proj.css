@@ -1,0 +1,25 @@
+@layer components {
+  .proj-container {
+    @apply w-96 min-h-[600px] flex flex-col bg-purple-50 rounded-xl overflow-hidden 
+        border-gray-300 duration-500 cursor-pointer hover:scale-105 !overscroll-contain mx-1;
+    > img {
+      @apply rounded-b-xl shadow-2xl;
+    }
+    > div:first-of-type {
+      @apply flex flex-col mt-2 px-3;
+      > h3 {
+        @apply text-2xl font-bold mb-2;
+      }
+      > p {
+        @apply text-base font-medium leading-5 mt-1;
+      }
+      > div {
+        @apply flex flex-wrap gap-1 my-2;
+        > span {
+          @apply px-2 py-px rounded-full text-white contrast-[0.9] font-semibold text-sm
+                    duration-500 filter grayscale-[0.3]  shadow-lg ring-1 ring-offset-primary-600;
+        }
+      }
+    }
+  }
+}
