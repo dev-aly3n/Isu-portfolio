@@ -25,68 +25,54 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
   const eduHandler = fancyBtnHandler(eduBtnRef, allRefs.eduRef);
   const contactHandler = fancyBtnHandler(contactBtnRef, allRefs.contactRef);
   const projectHandler = () => {
-    projectBtnRef.current!.style.left="120%";
+    projectBtnRef.current!.style.left = "120%";
     setTimeout(() => {
       router.push("/projects");
     }, 100);
   };
 
   return (
-    <motion.div layout className="flex relative w-full h-full">
-      <img
-        alt=""
-        src="/media/aly3n.jpg"
-        className="w-full h-full mx-auto rounded-b-2xl shadow-2xl"
-      />
+    <motion.div layout className="header-img-container">
+      <img alt="" src="/media/aly3n.jpg" />
       <motion.button
         variants={fancyBtns}
         custom={4}
-        className="no-select-a-tag w-[13.6vw] h-[14.85vw] top-[9.2vw] left-[9.5vw]  text-[3.4vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
-        duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={bioHandler}
         ref={bioBtnRef}
       >
-        <h3 className="-rotate-45 ">Biography</h3>
+        <h3>Biography</h3>
       </motion.button>
       <motion.button
         variants={fancyBtns}
         custom={8}
-        className="no-select-a-tag w-[13.5vw] h-[13.6vw]  top-[39.9vw] left-[19.1vw] text-[3.2vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
-        duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={eduHandler}
         ref={eduBtnRef}
       >
-        <h3 className="-rotate-45 ">Education</h3>
+        <h3>Education</h3>
       </motion.button>
       <motion.button
         variants={fancyBtns}
         custom={5}
-        className="no-select-a-tag w-[13.5vw] h-[14.6vw] top-[18vw] left-[60.4vw] text-[5.5vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
-        duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={skillsHandler}
         ref={skillsBtnRef}
       >
-        <h3 className="-rotate-45 ">Skills</h3>
+        <h3>Skills</h3>
       </motion.button>
       <motion.button
         variants={fancyBtns}
         custom={5}
-        className="no-select-a-tag w-[13.5vw] h-[14.6vw] top-[17.5vw] left-[80.7vw] text-[3.9vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
-        duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={contactHandler}
         ref={contactBtnRef}
       >
-        <h3 className="-rotate-45 ">Contact</h3>
+        <h3>Contact</h3>
       </motion.button>
       <motion.button
         variants={fancyBtns}
         custom={8}
-        className="no-select-a-tag w-[13.4vw] h-[14.8vw] top-[37.9vw] left-[79.8vw] text-[4.1vw] bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer
-        duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium"
         onClick={projectHandler}
         ref={projectBtnRef}
       >
-        <h3 className="-rotate-45 ">Project</h3>
+        <h3>Project</h3>
       </motion.button>
     </motion.div>
   );

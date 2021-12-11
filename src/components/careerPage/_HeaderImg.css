@@ -1,0 +1,30 @@
+@layer components {
+  .header-img-container {
+    @apply flex relative w-full h-full;
+    > img {
+      @apply w-full h-full mx-auto rounded-b-2xl shadow-2xl;
+    }
+    > button {
+      @apply bg-secondary-400/80 rotate-45 absolute  flex justify-center items-center cursor-pointer no-select-a-tag
+            duration-1000 rounded-md hover:bg-secondary-400/30 hover:text-primary-200 shadow-2xl  font-medium;
+      > h3 {
+        @apply -rotate-45;
+      }
+    }
+    > button:nth-of-type(1) {
+      @apply w-[13.6vw] h-[14.85vw] top-[9.2vw] left-[9.5vw]  text-[3.4vw];
+    }
+    > button:nth-of-type(2) {
+      @apply w-[13.5vw] h-[13.6vw]  top-[39.9vw] left-[19.1vw] text-[3.2vw];
+    }
+    > button:nth-of-type(3) {
+      @apply w-[13.5vw] h-[14.6vw] top-[18vw] left-[60.4vw] text-[5.5vw];
+    }
+    > button:nth-of-type(4) {
+      @apply w-[13.5vw] h-[14.6vw] top-[17.5vw] left-[80.7vw] text-[3.9vw];
+    }
+    > button:nth-of-type(5) {
+      @apply w-[13.4vw] h-[14.8vw] top-[37.9vw] left-[79.8vw] text-[4.1vw];
+    }
+  }
+}
