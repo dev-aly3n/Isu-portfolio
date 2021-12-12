@@ -32,7 +32,7 @@ const DoorKey: React.FC = (): JSX.Element => {
       onMouseLeave={keyMouseLeaveHandler}
       onClick={keyClickHandler}
       className={`door-key-container group ${
-        gateCtx.isClicked ? "rotate-0 !-translate-y-0 !scale-100" : ""
+        gateCtx.isClicked ? "!rotate-0 !-translate-y-0 !scale-100" : ""
       } `}
     >
       <LightKey />
