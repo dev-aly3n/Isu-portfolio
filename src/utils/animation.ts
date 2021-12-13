@@ -345,6 +345,22 @@ export const enterToGate = {
     },
   },
 };
+
+
+export const enterToHeader:Variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay:3.2,
+    },
+  },
+};
+
+
 export const firstPage = {
   hidden: {
     scale: 0.3,

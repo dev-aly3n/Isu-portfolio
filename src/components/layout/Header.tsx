@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { MouseEventHandler, useContext } from "react";
 import { GlobalCtx } from "../../store/context/globalCtx";
+import {motion } from 'framer-motion';
+import { enterToHeader } from "../../utils/animation";
 
 interface Links {
   ref: string;
@@ -33,7 +35,11 @@ const Header: React.FC = () => {
   };
 
   return router.pathname !== "/" ? (
-    <div className="header-container">
+    <motion.div className="header-container"
+    initial="hidden"
+    animate="visible"
+    variants={globCtx.toCareer === 1 ? enterToHeader: {}}
+    >
       <h1>
         <Link href="/career">Aly3n</Link>
       </h1>
@@ -59,7 +65,7 @@ const Header: React.FC = () => {
           <a onClick={(e) => e.preventDefault()}>ToTheGate</a>
         </li>
       </ul>
-    </div>
+    </motion.div>
   ) : (
     <React.Fragment></React.Fragment>
   );
