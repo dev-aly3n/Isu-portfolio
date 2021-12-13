@@ -25,12 +25,16 @@ const LeftDoor: React.FC = (): JSX.Element => {
     >
       <img src="/media/gate/gate2.jpg" />
       <div>
+      <PhLine />
       </div>
       <div>
+      <DynamicPhLine />
       </div>
       <div>
+      <PhLine />
       </div>
       <div>
+      <DynamicPhLine />
       </div>
       <div>
         <div>

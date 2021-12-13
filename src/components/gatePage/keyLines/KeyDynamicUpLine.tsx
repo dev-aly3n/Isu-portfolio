@@ -26,22 +26,26 @@ const KeyDynamicUpLine: React.FC<props> = ({
 
   const [once, setOnce] = useState(false);
 
+  const keyMidAnimHandler = () => {
+    if (setFinished && logic && clicked) {
+      setFinished(true);
+    }
+    if (impacting && once) {
+      impacting();
+    }
+    if (once === false) {
+      setOnce(true);
+    }
+  }
+
+
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="250 200 1000 260" className="shadow-svgs">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="250 200 1000 260">
       <g>
         <defs>
           <motion.path
-            onAnimationComplete={() => {
-              if (setFinished && logic && clicked) {
-                setFinished(true);
-              }
-              if (impacting && once) {
-                impacting();
-              }
-              if (once === false) {
-                setOnce(true);
-              }
-            }}
+            onAnimationComplete={keyMidAnimHandler}
+            filter="url(#sofGlow1) url(#inset-shadow)"
             variants={gateLine}
             custom={1}
             initial="hidden"

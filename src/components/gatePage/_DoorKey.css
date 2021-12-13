@@ -2,7 +2,7 @@
   .door-key-container {
     @apply absolute left-full ml-[-15vw] top-1/2 mt-[-15vw] z-20 rounded-full w-[30vw] h-[30vw]
         flex justify-center items-center !rotate-[-25deg] hover:!rotate-0 duration-1600 hover:-translate-y-10
-        hover:scale-110 ;
+        hover:scale-110 cursor-pointer;
     > div:last-child {
       background-image: url("/media/gate/key.jpg");
       @apply w-[22vw] h-[22vw] rounded-full z-40 relative;

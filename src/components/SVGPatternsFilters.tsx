@@ -47,7 +47,83 @@ const SVGPatternsFilters: React.FC = () => {
         {/* INSET SHADOW */}
         {/* INSET SHADOW */}
         {/* INSET SHADOW */}
-        {/* INSET SHADOW */}
+        <filter
+          id="inset-shadow2"
+          x="-100%"
+          y="-100%"
+          width="200%"
+          height="200%"
+        >
+          <feComponentTransfer in="SourceAlpha">
+            <feFuncA type="table" tableValues="1 0" />
+          </feComponentTransfer>
+          <feGaussianBlur stdDeviation="2" />
+          <feOffset dx="0" dy="5" result="offsetblur" />
+          <feFlood floodColor="rgb(0, 0, 0)" result="color" />
+          <feComposite in2="offsetblur" operator="in" />
+          <feComposite in2="SourceAlpha" operator="in" />
+          <feMerge>
+            <feMergeNode in="SourceGraphic" />
+            <feMergeNode />
+          </feMerge>
+        </filter>
+
+        <filter
+          id="inset-shadow3"
+          x="-100%"
+          y="-100%"
+          width="200%"
+          height="200%"
+        >
+          <feComponentTransfer in="SourceAlpha">
+            <feFuncA type="table" tableValues="1 0" />
+          </feComponentTransfer>
+          <feGaussianBlur stdDeviation="5" />
+          <feOffset dx="0" dy="0" result="offsetblur" />
+          <feFlood floodColor="#16FBFF" result="color" />
+          <feComposite in2="offsetblur" operator="in" />
+          <feComposite in2="SourceAlpha" operator="in" />
+          <feMerge>
+            <feMergeNode in="SourceGraphic" />
+            <feMergeNode />
+          </feMerge>
+        </filter>
+
+        <filter id="inset-shadow4" x="-50%" y="-50%" width="200%" height="200%">
+          <feComponentTransfer in="SourceAlpha">
+            <feFuncA type="table" tableValues="1 0" />
+          </feComponentTransfer>
+          <feGaussianBlur stdDeviation="5" />
+          <feOffset dx="7" dy="-7" result="offsetblur" />
+          <feFlood floodColor="rgb(0, 0, 0)" result="color" />
+          <feComposite in2="offsetblur" operator="in" />
+          <feComposite in2="SourceAlpha" operator="in" />
+          <feMerge>
+            <feMergeNode in="SourceGraphic" />
+            <feMergeNode />
+          </feMerge>
+        </filter>
+
+        <filter
+          id="inset-shadow5"
+          x="-100%"
+          y="-100%"
+          width="200%"
+          height="200%"
+        >
+          <feComponentTransfer in="SourceAlpha">
+            <feFuncA type="table" tableValues="1 0" />
+          </feComponentTransfer>
+          <feGaussianBlur stdDeviation="5" />
+          <feOffset dx="0" dy="5" result="offsetblur" />
+          <feFlood floodColor="rgb(0, 0, 0)" result="color" />
+          <feComposite in2="offsetblur" operator="in" />
+          <feComposite in2="SourceAlpha" operator="in" />
+          <feMerge>
+            <feMergeNode in="SourceGraphic" />
+            <feMergeNode />
+          </feMerge>
+        </filter>
 
 
         
@@ -55,6 +131,65 @@ const SVGPatternsFilters: React.FC = () => {
         {/* SOFT GLOW */}
         {/* SOFT GLOW */}
         {/* SOFT GLOW */}
+        <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
+          {/* <!-- Thicken out the original shape --> */}
+          <feMorphology
+            operator="dilate"
+            radius="3"
+            in="SourceAlpha"
+            result="thicken"
+          />
+
+          {/* <!-- Use a gaussian blur to create the soft blurriness of the glow --> */}
+          <feGaussianBlur in="thicken" stdDeviation="10" result="blurred">
+
+          </feGaussianBlur>
+
+          {/* <!-- Change the colour --> */}
+          <feFlood floodColor="rgb(0,186,255)" result="glowColor" />
+
+          {/* <!-- Color in the glows --> */}
+          <feComposite
+            in="glowColor"
+            in2="blurred"
+            operator="in"
+            result="softGlow_colored"
+          />
+
+          {/* <!--	Layer the effects together --> */}
+          <feMerge>
+            <feMergeNode in="softGlow_colored" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+
+        <filter id="sofGlow1" height="300%" width="300%" x="-75%" y="-75%">
+          {/* <!-- Thicken out the original shape --> */}
+          <feMorphology
+            operator="dilate"
+            radius="9"
+            in="SourceAlpha"
+            result="thicken"
+          />
+          {/* <!-- Use a gaussian blur to create the soft blurriness of the glow --> */}
+          <feGaussianBlur in="thicken" stdDeviation="10" result="blurred">
+
+          </feGaussianBlur>
+          {/* <!-- Change the colour --> */}
+          <feFlood floodColor="rgb(160,255,255)" result="glowColor" />
+          {/* <!-- Color in the glows --> */}
+          <feComposite
+            in="glowColor"
+            in2="blurred"
+            operator="in"
+            result="softGlow_colored"
+          />
+          {/* <!--	Layer the effects together --> */}
+          <feMerge>
+            <feMergeNode in="softGlow_colored" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
         </defs>
       </g>
     </svg>

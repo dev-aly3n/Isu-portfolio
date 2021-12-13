@@ -23,7 +23,7 @@ const DynamicUpLine: React.FC<props> = ({
       globCtx.toCareerHandler(1);
       setTimeout(() => {
         router.push("/career");
-      }, 100);
+      }, 0);
     }
   };
   return (
@@ -31,6 +31,7 @@ const DynamicUpLine: React.FC<props> = ({
       <g>
         <defs>
           <motion.path
+          filter="url(#sofGlow)"
             onAnimationComplete={upLineAnimationHandler}
             variants={gateLine}
             custom={3}

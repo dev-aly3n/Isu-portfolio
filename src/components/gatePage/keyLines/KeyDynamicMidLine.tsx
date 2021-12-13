@@ -9,10 +9,11 @@ const KeyDynamicMidLine: React.FC<props> = (): JSX.Element => {
   const controls = useGateHovered();
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="420 530 660 56" className="shadow-svgs">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="420 530 660 56">
       <g>
         <defs>
           <motion.path
+          filter="url(#sofGlow1) url(#inset-shadow5)"
             variants={gateLine}
             custom={1}
             initial="hidden"

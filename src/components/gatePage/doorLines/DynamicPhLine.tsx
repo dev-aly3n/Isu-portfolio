@@ -9,10 +9,11 @@ const PhLine: React.FC<props> = (): JSX.Element => {
   const controls = useGateClicked();
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="227 26 250 900" className="shadow-svgs">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="227 26 250 900" >
       <g>
         <defs>
           <motion.path
+          filter="url(#sofGlow)"
             variants={gateLine2}
             custom={3}
             initial="hidden"

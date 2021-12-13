@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 
 const KeyUpLine: React.FC = (): JSX.Element => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="250 200 1000 260" className="shadow-svgs">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="250 200 1000 260">
       <g>
         <defs>
           <motion.path
+          filter="url(#inset-shadow4)"
             id="s-Path_1-d12200"
             d="M727.0 455.0 L570.5600343053175 229.82161234991406 L368.9373927958836 136.76500857632914  "
           ></motion.path>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { MouseEventHandler, useContext } from "react";
+import React, { MouseEventHandler, useContext, useLayoutEffect, useState } from "react";
 import { GlobalCtx } from "../../store/context/globalCtx";
 import {motion } from 'framer-motion';
 import { enterToHeader } from "../../utils/animation";
@@ -33,12 +33,26 @@ const Header: React.FC = () => {
   const toTheGateHandler = () => {
     globCtx.toGateHandler(1);
   };
+  const [varMotion, setVarMotion] = useState( {
+    hidden:"",
+    visible:"",
+    variant:{}
+  });
+  useLayoutEffect(() => {
+    if(globCtx.toCareer === 1){
+      setVarMotion( {
+        hidden:"hidden",
+        visible:"visible",
+        variant:enterToHeader
+      })
+    }
+  }, [globCtx.toCareer])
 
   return router.pathname !== "/" ? (
     <motion.div className="header-container"
-    initial="hidden"
-    animate="visible"
-    variants={globCtx.toCareer === 1 ? enterToHeader: {}}
+    initial={varMotion.hidden}
+    animate={varMotion.visible}
+    variants={varMotion.variant}
     >
       <h1>
         <Link href="/career">Aly3n</Link>
