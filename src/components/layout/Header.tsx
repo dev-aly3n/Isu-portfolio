@@ -4,6 +4,7 @@ import React, { MouseEventHandler, useContext, useLayoutEffect, useState } from 
 import { GlobalCtx } from "../../store/context/globalCtx";
 import {motion } from 'framer-motion';
 import { enterToHeader } from "../../utils/animation";
+import { topLogo } from "../../store/allData";
 
 interface Links {
   ref: string;
@@ -55,7 +56,7 @@ const Header: React.FC = () => {
     variants={varMotion.variant}
     >
       <h1>
-        <Link href="/career">Aly3n</Link>
+        <Link href="/career">{topLogo}</Link>
       </h1>
       <ul>
         {headerLinks.map((headLink) => {

@@ -1,8 +1,15 @@
+// libs
 import { motion } from "framer-motion";
 import { RefObject, useRef } from "react";
 import { useRouter } from "next/router";
+// components
+// hooks
+// store
+import { careerHeaderImage } from "../../store/allData";
+// utils & animation
 import { fancyBtns } from "../../utils/animation";
 import { fancyBtnHandler } from "../../utils/util";
+
 interface props {
   allRefs: {
     bioRef: RefObject<HTMLDivElement>;
@@ -33,7 +40,7 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
 
   return (
     <motion.div layout className="header-img-container">
-      <img alt="" src="/media/aly3n.jpg" />
+      <img alt={careerHeaderImage.alt} src={careerHeaderImage.src} />
       <motion.button
         variants={fancyBtns}
         custom={4}

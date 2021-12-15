@@ -349,3 +349,19 @@ export const projectList: {
     ],
   },
 ];
+
+
+
+// GLOBAL 
+// GLOBAL 
+// GLOBAL 
+export const careerHeaderImage:{src:string; alt:string} ={
+  src:"/media/aly3n.jpg",
+  alt:"dev aly3n javascript developer"
+};
+
+export const topLogo:string = "Aly3n";
+
+// for changing the color palete just go to root/tailwind.config.js and edit the primary and secondary colors...
+// ...you also need to change the gray color cause I used it for background colors
+
