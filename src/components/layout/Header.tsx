@@ -55,8 +55,8 @@ const Header: React.FC = () => {
     animate={varMotion.visible}
     variants={varMotion.variant}
     >
-      <h1>
-        <Link href="/career">{topLogo}</Link>
+      <h1 onClick={toCareerFunc}>
+        <Link href="/career" >{topLogo}</Link>
       </h1>
       <ul>
         {headerLinks.map((headLink) => {
