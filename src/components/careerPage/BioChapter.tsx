@@ -24,7 +24,7 @@ const BioChapter: React.FC<props> = ({ chap, firstChap }) => {
     >
       <motion.h3 layout onClick={() => setIsExpanded((prev) => !prev)}>
         <FontAwesomeIcon
-          className={isExpanded ? "rotate-90" : "rotate-0"}
+          className={isExpanded ? "rotate-90 duration-500" : "rotate-0 duration-500"}
           icon={faAngleRight}
         />{" "}
         {chap.title}
