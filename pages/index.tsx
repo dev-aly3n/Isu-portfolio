@@ -1,33 +1,23 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import GatePage from "../src/components/gatePage/GatePage";
+import { indexMeta } from "../src/store/allData";
 
 export default function gate(): JSX.Element {
   return (
     <Fragment>
       <Head>
-      <link rel="preload" as="image" href="/media/gate/gate.jpg" />
-      <link rel="preload" as="image" href="/media/gate/gate1.jpg" />
-      <link rel="preload" as="image" href="/media/gate/gate2.jpg" />
-      <link rel="preload" as="image" href="/media/gate/key.jpg" />
-      <link rel="preload" as="image" href="/media/gate/keytext.jpg" />
-      <link rel="preload" as="image" href="/media/gate/backroad.jpg" />
-      <link rel="preload" as="image" href="/media/gate/door1.png" />
-    
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>dev Aly3n - JS developer</title>
-        <meta
-          name="description"
-          content="dev Aly3n is a javascript developer especially at front-end who is also an aerospace engineer and editor-in-chief at aspad scientific magazine."
-        />
-        <meta
-          name="keywords"
-          content="dev aly3n, aly3n, aly3n developer, aly3n javascript, aly3n front-end, javascript, front-end, web development, software engineer, ali mohamadi, علی محمدی, علی محمدی برنامه نویس فرانت اند"
-        />
-        <meta name="author" content="dev aly3n" />
+        {indexMeta.preload.map((src) => (
+          <link rel="preload" as="image" href={src} />
+        ))}
+        <title>{indexMeta.title}</title>
+        <meta name="description" content={indexMeta.description} />
+        <meta name="keywords" content={indexMeta.keywords} />
+        <meta name="author" content={indexMeta.author} />
       </Head>
       <div className="overflow-hidden w-screen h-screen fixed top-0 left-0 z-10">
-      <GatePage />
+        <GatePage />
       </div>
     </Fragment>
   );

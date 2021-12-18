@@ -350,18 +350,41 @@ export const projectList: {
   },
 ];
 
-
-
-// GLOBAL 
-// GLOBAL 
-// GLOBAL 
-export const careerHeaderImage:{src:string; alt:string} ={
-  src:"/media/aly3n.jpg",
-  alt:"dev aly3n javascript developer"
+// GLOBAL
+// GLOBAL
+// GLOBAL
+export const careerHeaderImage: { src: string; alt: string } = {
+  src: "/media/aly3n.jpg",
+  alt: "dev aly3n javascript developer",
 };
 
-export const topLogo:string = "Aly3n";
+export const topLogo: string = "Aly3n";
 
 // for changing the color palete just go to root/tailwind.config.js and edit the primary and secondary colors...
 // ...you also need to change the gray color cause I used it for background colors
 
+// META DATA
+export const indexMeta: {
+  title: string;
+  description: string;
+  keywords: string;
+  author: string;
+  preload: string[];
+} = {
+  title: "dev Aly3n - JS developer",
+  description:
+    "dev Aly3n is a javascript developer especially at front-end who is also an aerospace engineer and editor-in-chief at aspad scientific magazine.",
+  keywords:
+    "dev aly3n, aly3n, aly3n developer, aly3n javascript, aly3n front-end, javascript, front-end, web development, software engineer, ali mohamadi, علی محمدی, علی محمدی برنامه نویس فرانت اند",
+  author: "dev aly3n",
+  preload: [
+    "/media/gate/gate.jpg",
+    "/media/gate/gate1.jpg",
+    "/media/gate/gate2.jpg",
+    "/media/gate/key.jpg",
+    "/media/gate/keytext.jpg",
+    "/media/gate/backroad.jpg",
+    "/media/gate/door1.png",
+    "/media/aly3n.jpg",
+  ],
+};
