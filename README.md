@@ -1,29 +1,28 @@
-# Next.js + Tailwind CSS Example
+This is a nextJS template.
+Live: https://aly3n.vercel.app
+ A real template that all you need is to follow these simple steps:
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+1.Fork this repository. then clone your forked repo and run this command to install dependencies: "npm install"
 
-## Preview
+2.Run the app by this command: "npm run dev"
+so you can see the live app at port 3000. open this address in your browser: https://localhost:3000
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+3.Now you just need to change 1 single file to change the entire project. no coding require.
+just open and edit allData.ts file in this directory: root/src/store/allData.ts
+-./
+---src/
+------store/
+-----------/allData.ts
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+You also need to change the photos in the media folder at this directory:
+-./
+---public/
+---------media/
 
-## Deploy your own
+don't forget to change the image's address to the new image's name in the allData.ts file to make it works.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+4.go to https://vercel.com/ and sign-up. so you can simply follow the vercel guide and select your repo to deploy it and make it online.
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+5.please don't remove or change the copy-right sign at the bottom.
