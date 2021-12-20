@@ -36,6 +36,7 @@ const Edu: React.FC<props> = ({ education }) => {
         </motion.span>
         <motion.span layout>
           <Image
+          quality={100}
             layout="fill"
             objectFit="cover"
             src={`/media/logos/${education.image}.png`}

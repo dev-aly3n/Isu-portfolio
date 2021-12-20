@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   skillAnimation,
   skillExplosionAnimation,
@@ -22,11 +23,18 @@ const Skill: React.FC<props> = ({ skill }) => {
             backgroundColor: `rgb${skill.color}`,
           }}
         ></motion.div>
-        <motion.img
+        <motion.span
           variants={skillImgAnimation}
           style={{ left: `${skill.perc - 7}%` }}
-          src={`/media/logos/${skill.icon}`}
-        />
+        >
+          <Image
+            alt={skill.name}
+            src={`/media/logos/${skill.icon}`}
+            layout="fill"
+            objectFit="cover"
+          />
+        </motion.span>
+
         {skill.name === "Creativity" && (
           <motion.img
             variants={skillExplosionAnimation}

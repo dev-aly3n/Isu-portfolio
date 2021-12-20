@@ -37,8 +37,8 @@
       > div {
         @apply absolute top-[50%] mt-[-10px] left-0  h-5 overflow-hidden rounded-r-full pos-dash-style;
       }
-      > img:first-of-type {
-        @apply absolute top-[50%] left-0 mt-[-14px] block h-7 ml-px;
+      > span {
+        @apply relative w-7 h-7 top-[50%] left-0 mt-[-14px] block  ml-px;
       }
       .creativity-explosion {
         left: 100%;
