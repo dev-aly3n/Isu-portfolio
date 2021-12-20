@@ -38,6 +38,7 @@ const Proj: React.FC<props> = ({ settingID, project }) => {
       >
         <span>
           <Image
+            priority
             alt={project.name}
             src={`/media/projects/${project.image}`}
             layout="fill"
