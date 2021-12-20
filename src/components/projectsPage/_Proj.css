@@ -2,8 +2,8 @@
   .proj-container {
     @apply w-96 min-h-[600px] flex flex-col bg-purple-50 rounded-xl overflow-hidden 
         border-gray-300 duration-500 cursor-pointer hover:scale-105 !overscroll-contain mx-1;
-    > img {
-      @apply rounded-b-xl shadow-2xl;
+    > span {
+      @apply relative max-w-[400px] aspect-[4/3.13] rounded-b-xl shadow-xl shadow-gray-300 overflow-hidden;
     }
     > div:first-of-type {
       @apply flex flex-col mt-2 px-3;

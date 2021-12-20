@@ -1,5 +1,6 @@
 // libs
 import { motion } from "framer-motion";
+import Image from "next/image";
 // components
 import Link from "next/link";
 // hooks
@@ -35,11 +36,19 @@ const Proj: React.FC<props> = ({ settingID, project }) => {
         className="proj-container group"
         onClick={projClickHandler}
       >
-        <img src={`/media/projects/${project.image}`} />
+        <span>
+          <Image
+            alt={project.name}
+            src={`/media/projects/${project.image}`}
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
+        </span>
         <div>
           <h3>{project.name}</h3>
           <p>{project.desc}</p>
-          <div className="">
+          <div>
             {project.techs.map((tech) => {
               return (
                 <span
