@@ -1,22 +1,26 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import Career from "../src/components/careerPage/Career";
+import { careerMeta } from "../src/store/allData";
 
 export default function career():JSX.Element {
   return (
     <Fragment>
       <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>dev Aly3n - JS developer</title>
+      {careerMeta.preload.map((src) => (
+          <link key={src} rel="preload" as="image" href={src} />
+        ))}
+        <title>{careerMeta.title}</title>
         <meta
           name="description"
-          content="dev Aly3n is a javascript developer especially at front-end who is also an aerospace engineer and editor-in-chief at aspad scientific magazine."
+          content={careerMeta.description}
         />
         <meta
           name="keywords"
-          content="dev aly3n, aly3n, aly3n developer, aly3n javascript, aly3n front-end, javascript, front-end, web development, software engineer, ali mohamadi, علی محمدی, علی محمدی برنامه نویس فرانت اند"
+          content={careerMeta.keywords}
         />
-        <meta name="author" content="dev aly3n" />
+        <meta name="author" content={careerMeta.author} />
       </Head>
       <div className="z-0">
       <Career />

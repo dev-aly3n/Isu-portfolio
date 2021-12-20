@@ -9,7 +9,7 @@ export default function gate(): JSX.Element {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {indexMeta.preload.map((src) => (
-          <link rel="preload" as="image" href={src} />
+          <link key={src} rel="preload" as="image" href={src} />
         ))}
         <title>{indexMeta.title}</title>
         <meta name="description" content={indexMeta.description} />

@@ -5,7 +5,6 @@ import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
 // components
 import Main from "../src/components/layout/Main"
 import Header from "../src/components/layout/Header";
-import Footer from "../src/components/layout/Footer";
 import SVGPatternsFilters from "../src/components/SVGPatternsFilters";
 // hooks
 // store
