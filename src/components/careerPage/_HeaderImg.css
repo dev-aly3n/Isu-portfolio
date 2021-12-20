@@ -1,8 +1,8 @@
 @layer components {
   .header-img-container {
     @apply flex relative w-full h-full;
-    > img {
-      @apply w-full h-full mx-auto rounded-b-2xl shadow-2xl;
+    > span {
+      @apply relative w-screen aspect-[2/1.333] shadow-lg shadow-primary-500 rounded-b-xl overflow-hidden;
     }
     > button {
       @apply bg-secondary-400/50 rotate-45 absolute  flex justify-center items-center cursor-pointer no-select-a-tag
@@ -18,13 +18,13 @@
       @apply w-[13.5vw] h-[13.6vw]  top-[39.9vw] left-[19.1vw] text-[3.2vw];
     }
     > button:nth-of-type(3) {
-      @apply w-[13.5vw] h-[14.6vw] top-[18vw] left-[60.4vw] text-[5.5vw];
+      @apply w-[13.5vw] h-[14.6vw] top-[18vw] left-[60.47vw] text-[5.5vw];
     }
     > button:nth-of-type(4) {
-      @apply w-[13.5vw] h-[14.6vw] top-[17.5vw] left-[80.7vw] text-[3.9vw];
+      @apply w-[13.5vw] h-[14.6vw] top-[17.25vw] left-[80.75vw] text-[3.9vw];
     }
     > button:nth-of-type(5) {
-      @apply w-[13.4vw] h-[14.8vw] top-[37.9vw] left-[79.8vw] text-[4.1vw];
+      @apply w-[13.4vw] h-[14.8vw] top-[37.85vw] left-[79.85vw] text-[4.1vw];
     }
   }
 }

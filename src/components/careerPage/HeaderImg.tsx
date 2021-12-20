@@ -9,6 +9,7 @@ import { careerHeaderImage } from "../../store/allData";
 // utils & animation
 import { fancyBtns } from "../../utils/animation";
 import { fancyBtnHandler } from "../../utils/util";
+import Image from "next/image";
 
 interface props {
   allRefs: {
@@ -40,7 +41,15 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
 
   return (
     <motion.div layout className="header-img-container">
-      <img alt={careerHeaderImage.alt} src={careerHeaderImage.src} />
+      <span>
+        <Image
+          quality={100}
+          layout="fill"
+          objectFit="cover"
+          alt={careerHeaderImage.alt}
+          src={careerHeaderImage.src}
+        />
+      </span>
       <motion.button
         variants={fancyBtns}
         custom={4}
