@@ -405,3 +405,25 @@ export const careerMeta: {
     "/media/aly3n.jpg",
   ],
 };
+export const projectMeta: {
+  title: string;
+  description: string;
+  keywords: string;
+  author: string;
+  preload: string[];
+} = {
+  title: "dev Aly3n - project",
+  description:
+    "dev Aly3n is a javascript developer especially at front-end who is also an aerospace engineer and editor-in-chief at aspad scientific magazine.",
+  keywords:
+    "dev aly3n, aly3n, aly3n developer, aly3n javascript, aly3n front-end, javascript, front-end, web development, software engineer, ali mohamadi, react project, reactjs project, reactjs, nextjs project, علی محمدی, علی محمدی برنامه نویس فرانت اند",
+  author: "dev aly3n",
+  preload: [
+    "/media/projects/atefeh-hasani.png",
+    "/media/projects/beat-maker.png",
+    "/media/projects/flash-card-online.png",
+    "/media/projects/icecream-shop.png",
+    "/media/projects/music-player.png",
+    "/media/projects/wikianime.png",
+  ],
+};
