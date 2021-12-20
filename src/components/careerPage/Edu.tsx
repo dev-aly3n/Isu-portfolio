@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
 import { secFading } from "../../utils/animation";
+import Image from "next/image";
 // hooks
 // store
 // utils & animation
@@ -33,7 +34,13 @@ const Edu: React.FC<props> = ({ education }) => {
             icon={faAngleRight}
           />{" "}
         </motion.span>
-        <motion.img layout src={`/media/logos/${education.image}.png`} />
+        <motion.span layout>
+          <Image
+            layout="fill"
+            objectFit="cover"
+            src={`/media/logos/${education.image}.png`}
+          />
+        </motion.span>
         <motion.div layout>
           <h3>{education.name}</h3>
           <p>{education.field}</p>

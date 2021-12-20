@@ -3,11 +3,11 @@
     @apply flex flex-col my-3 w-11/12 sm:w-full;
     > div:nth-of-type(1) {
       @apply no-select-a-tag flex flex-col sm:flex-row justify-start items-center hover:cursor-pointer duration-1000 relative;
-      > span {
+      > span:first-of-type {
         @apply text-3xl absolute left-0 top-[50%] mt-[-18px] flex justify-center items-center;
       }
-      > img {
-        @apply block w-[100px] md:w-[10vw] ml-4;
+      > span:last-of-type {
+        @apply relative w-[100px] md:w-[10vw] ml-4 aspect-[1/1];
       }
       > div {
         @apply flex flex-col ml-5 sm:ml-2;
