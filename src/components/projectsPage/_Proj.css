@@ -4,6 +4,9 @@
         border-gray-300 duration-500 cursor-pointer hover:scale-105 !overscroll-contain mx-1;
     > span {
       @apply relative max-w-[400px] aspect-[4/3.13] rounded-b-xl shadow-xl shadow-gray-300 overflow-hidden;
+      >img {
+        @apply absolute top-0 left-0 h-full w-full object-fill;
+      }
     }
     > div:first-of-type {
       @apply flex flex-col mt-2 px-3;

@@ -1,6 +1,5 @@
 // libs
 import { motion } from "framer-motion";
-import Image from "next/image";
 // components
 import Link from "next/link";
 // hooks
@@ -37,14 +36,9 @@ const Proj: React.FC<props> = ({ settingID, project }) => {
         onClick={projClickHandler}
       >
         <span>
-          <Image
-          loading="eager"
-            priority
+          <img
             alt={project.name}
             src={`/media/projects/${project.image}`}
-            layout="fill"
-            objectFit="cover"
-            quality={100}
           />
         </span>
         <div>
