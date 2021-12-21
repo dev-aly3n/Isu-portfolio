@@ -457,18 +457,28 @@ export const backRoadImg = {
 export const secFading:Variants = {
   hidden: {
     opacity:0,
+    scale:0.93,
     transition: {
       duration:1
     },
   },
   visible: {
     opacity:1,
+    scale:1,
     transition: {
       duration:0.5,
       staggerChildren:0.03
     },
   },
 };
+const string:string = `
+This site can’t provide a secure connection
+This site can’t provide a secure connection
+This site can’t provide a secure connection
+This site can’t provide a secure connection
+This site can’t provide a secure connection
+This site can’t provide a secure connection
+`
 
 export const fancyBtns:Variants = {
   hidden:(custom:number)=>( {
