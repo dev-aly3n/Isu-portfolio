@@ -3,6 +3,9 @@
     @apply flex relative w-full h-full;
     > span {
       @apply relative w-screen aspect-[2/1.333] shadow-lg shadow-primary-500 rounded-b-xl overflow-hidden;
+      >img {
+        @apply absolute top-0 left-0 w-full h-full object-fill;
+      }
     }
     > button {
       @apply bg-secondary-400/50 rotate-45 absolute  flex justify-center items-center cursor-pointer no-select-a-tag
