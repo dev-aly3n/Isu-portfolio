@@ -36,6 +36,7 @@ const Edu: React.FC<props> = ({ education }) => {
         </motion.span>
         <motion.span layout>
           <Image
+          loading="eager"
           quality={100}
             layout="fill"
             objectFit="cover"

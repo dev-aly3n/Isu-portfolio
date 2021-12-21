@@ -38,6 +38,7 @@ const Proj: React.FC<props> = ({ settingID, project }) => {
       >
         <span>
           <Image
+          loading="eager"
             priority
             alt={project.name}
             src={`/media/projects/${project.image}`}

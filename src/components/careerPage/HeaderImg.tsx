@@ -43,6 +43,7 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
     <motion.div layout className="header-img-container">
       <span>
         <Image
+        loading="eager"
           priority
           quality={100}
           layout="fill"
