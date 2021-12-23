@@ -457,18 +457,15 @@ export const backRoadImg = {
 export const secFading:Variants = {
   hidden: {
     opacity:0,
-    scale:0.9,
     transition: {
       duration:1
     },
   },
   visible: {
     opacity:1,
-    scale:1,
     transition: {
       duration:0.5,
-      delayChildren:0.3,
-      staggerChildren:0.03
+      staggerChildren:0.04
     },
   },
 };
