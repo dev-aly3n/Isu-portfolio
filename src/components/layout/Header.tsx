@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { MouseEventHandler, useContext, useLayoutEffect, useState } from "react";
+import React, {
+  MouseEventHandler,
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useState,
+} from "react";
 import { GlobalCtx } from "../../store/context/globalCtx";
-import {motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import { enterToHeader } from "../../utils/animation";
 import { topLogo } from "../../store/allData";
 
@@ -34,29 +40,30 @@ const Header: React.FC = () => {
   const toTheGateHandler = () => {
     globCtx.toGateHandler(1);
   };
-  const [varMotion, setVarMotion] = useState( {
-    hidden:"",
-    visible:"",
-    variant:{}
+  const [varMotion, setVarMotion] = useState({
+    hidden: "",
+    visible: "",
+    variant: {},
   });
-  useLayoutEffect(() => {
-    if(globCtx.toCareer === 1){
-      setVarMotion( {
-        hidden:"hidden",
-        visible:"visible",
-        variant:enterToHeader
-      })
+  useEffect(() => {
+    if (globCtx.toCareer === 1) {
+      setVarMotion({
+        hidden: "hidden",
+        visible: "visible",
+        variant: enterToHeader,
+      });
     }
-  }, [globCtx.toCareer])
+  }, [globCtx.toCareer]);
 
   return router.pathname !== "/gate" ? (
-    <motion.div className="header-container"
-    initial={varMotion.hidden}
-    animate={varMotion.visible}
-    variants={varMotion.variant}
+    <motion.div
+      className="header-container"
+      initial={varMotion.hidden}
+      animate={varMotion.visible}
+      variants={varMotion.variant}
     >
       <h1 onClick={toCareerFunc}>
-        <Link href="/" >{topLogo}</Link>
+        <Link href="/">{topLogo}</Link>
       </h1>
       <ul>
         {headerLinks.map((headLink) => {
