@@ -4,7 +4,7 @@
         >div:first-of-type {
             @apply flex flex-col justify-between items-center h-full w-full overflow-y-scroll py-5 ;
             >.proj-list {
-                @apply w-full h-full flex flex-wrap gap-5 justify-center items-center mt-3;
+                @apply w-full h-full flex flex-wrap gap-10 justify-center items-center mt-3 px-3;
             }
         }
     }

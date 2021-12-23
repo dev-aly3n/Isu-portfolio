@@ -536,7 +536,7 @@ export const skillExplosionAnimation:Variants = {
     scale:1,
     transition: {
       duration:0.8,
-      delay:0.6,
+      delay:0.65,
       type:"spring",
       bounce: 0.7,
       stiffness:5000
