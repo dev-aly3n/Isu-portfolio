@@ -457,7 +457,7 @@ export const backRoadImg = {
 export const secFading:Variants = {
   hidden: {
     opacity:0,
-    scale:0.93,
+    scale:0.9,
     transition: {
       duration:1
     },
@@ -467,18 +467,11 @@ export const secFading:Variants = {
     scale:1,
     transition: {
       duration:0.5,
+      delayChildren:0.3,
       staggerChildren:0.03
     },
   },
 };
-const string:string = `
-This site can’t provide a secure connection
-This site can’t provide a secure connection
-This site can’t provide a secure connection
-This site can’t provide a secure connection
-This site can’t provide a secure connection
-This site can’t provide a secure connection
-`
 
 export const fancyBtns:Variants = {
   hidden:(custom:number)=>( {
