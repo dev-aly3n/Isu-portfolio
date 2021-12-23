@@ -21,7 +21,7 @@ const Header: React.FC = () => {
   };
   const headerLinks: Links[] = [
     {
-      ref: "/career",
+      ref: "/",
       text: "Career",
       handler: toCareerFunc,
     },
@@ -49,14 +49,14 @@ const Header: React.FC = () => {
     }
   }, [globCtx.toCareer])
 
-  return router.pathname !== "/" ? (
+  return router.pathname !== "/gate" ? (
     <motion.div className="header-container"
     initial={varMotion.hidden}
     animate={varMotion.visible}
     variants={varMotion.variant}
     >
       <h1 onClick={toCareerFunc}>
-        <Link href="/career" >{topLogo}</Link>
+        <Link href="/" >{topLogo}</Link>
       </h1>
       <ul>
         {headerLinks.map((headLink) => {

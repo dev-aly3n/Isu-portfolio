@@ -1,23 +1,23 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import GatePage from "../src/components/gatePage/GatePage";
-import { indexMeta } from "../src/store/allData";
+import Career from "../src/components/careerPage/Career";
+import { careerMeta } from "../src/store/allData";
 
-export default function gate(): JSX.Element {
+export default function career(): JSX.Element {
   return (
     <Fragment>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {indexMeta.preload.map((src) => (
+        {careerMeta.preload.map((src) => (
           <link key={src} rel="preload" as="image" href={src} />
         ))}
-        <title>{indexMeta.title}</title>
-        <meta name="description" content={indexMeta.description} />
-        <meta name="keywords" content={indexMeta.keywords} />
-        <meta name="author" content={indexMeta.author} />
+        <title>{careerMeta.title}</title>
+        <meta name="description" content={careerMeta.description} />
+        <meta name="keywords" content={careerMeta.keywords} />
+        <meta name="author" content={careerMeta.author} />
       </Head>
-      <div className="overflow-hidden w-screen h-screen fixed top-0 left-0 z-10">
-        <GatePage />
+      <div className="z-0">
+        <Career />
       </div>
     </Fragment>
   );

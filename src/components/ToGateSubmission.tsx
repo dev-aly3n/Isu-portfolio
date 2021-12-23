@@ -11,7 +11,7 @@ const ToGateSubmission: React.FC = () => {
   const yesBtnHandler = () => {
     globCtx.toGateHandler(0);
     setTimeout(() => {
-      router.push("/");
+      router.push("/gate");
     }, 100);
   };
 

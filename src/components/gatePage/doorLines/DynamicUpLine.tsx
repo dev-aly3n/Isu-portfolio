@@ -22,7 +22,7 @@ const DynamicUpLine: React.FC<props> = ({
       setFinished(true);
       globCtx.toCareerHandler(1);
       setTimeout(() => {
-        router.push("/career");
+        router.push("/");
       }, 0);
     }
   };

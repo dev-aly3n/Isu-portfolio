@@ -364,7 +364,7 @@ export const topLogo: string = "Aly3n";
 // ...you also need to change the gray color cause I used it for background colors
 
 // META DATA
-export const indexMeta: {
+export const gateMeta: {
   title: string;
   description: string;
   keywords: string;
