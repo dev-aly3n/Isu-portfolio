@@ -16,10 +16,10 @@ const ActivityChart: React.FC = () => {
         coding activity.
       </p>
       <figure className="w-full  my-10 px-5 md:w-[768px]">
-        <embed src="https://wakatime.com/share/@aly3n/7db21f10-1621-4333-8f9b-0a9a49fa6a54.svg"></embed>
+        <embed src="https://wakatime.com/share/@aly3n/28c1bd08-d655-4249-a17e-a985ff32f4d9.svg"></embed>
       </figure>
       <figure className="w-full  my-10 px-5 md:w-[768px]">
-        <embed src="https://wakatime.com/share/@aly3n/7b14775a-13a0-4884-a8f3-a4f40b134860.svg"></embed>
+        <embed src="https://wakatime.com/share/@aly3n/d6968611-fd97-4c0d-8ba1-1fd7e69ba510.svg"></embed>
       </figure>
     </motion.div>
   );
