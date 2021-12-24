@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 // components
 import Link from "next/link";
+import LoadingRing from "../LoadingRing";
 // hooks
 // store
 // utils & animation
@@ -36,10 +37,7 @@ const Proj: React.FC<props> = ({ settingID, project }) => {
         onClick={projClickHandler}
       >
         <span>
-          <img
-            alt={project.name}
-            src={`/media/projects/${project.image}`}
-          />
+          <img alt={project.name} src={`/media/projects/${project.image}`} />
         </span>
         <div>
           <h3>{project.name}</h3>
