@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 // components
 import Link from "next/link";
-import LoadingRing from "../LoadingRing";
 // hooks
 // store
 // utils & animation
