@@ -196,14 +196,14 @@ export const eduData: {
     name: "Khaje Nasir Toosi University Of Technology",
     field: "(2016-2020) Bachelor Degree - Aerospace Engineering",
     about:
-      "K. N. Toosi University of Technology, made up of eleven academic faculties, opens doors to top talents in engineering and science. It brings together all levels of education and offers innovative training to its 7000|+ students.",
+      "K. N. Toosi University of Technology, made up of eleven academic faculties, opens doors to top talents of engineering and science. It brings together all levels of education and offers innovative training to its 7000|+ students.",
     image: "kntu",
   },
   {
     name: "University of Tehran",
     field: "(2021-present) Master of Engineering - Space Engineering",
     about:
-      "The University of Tehran is the oldest modern university located in Tehran, Iran. It is also one of the most prestigious universities in the Middle East. Based on its historical, socio-cultural, and political pedigree, as well as its research and teaching profile, UT has been nicknamed `The Mother University of Iran`.",
+      "The University of Tehran is the oldest modern university located in Tehran, Iran. It is also one of the most prestigious universities in the Middle East. Based on its historical, socio-cultural, political pedigree as well as its research and teaching profile, UT has been nicknamed “The Mother University of Iran”.",
     image: "ut",
   },
 ];
