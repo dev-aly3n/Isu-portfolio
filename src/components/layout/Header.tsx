@@ -23,7 +23,9 @@ const Header: React.FC = () => {
   const router = useRouter();
 
   const toCareerFunc = () => {
-    globCtx.toCareerHandler(0);
+    if(router.asPath !== "/"){
+      globCtx.toCareerHandler(0);
+    }
   };
   const headerLinks: Links[] = [
     {

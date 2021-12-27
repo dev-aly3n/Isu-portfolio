@@ -351,13 +351,10 @@ export const projectList: {
   },
 ];
 
-
-
 export const ActivityChartData: string[] = [
-"https://wakatime.com/share/@aly3n/28c1bd08-d655-4249-a17e-a985ff32f4d9.svg",
-"https://wakatime.com/share/@aly3n/d6968611-fd97-4c0d-8ba1-1fd7e69ba510.svg"
+  "https://wakatime.com/share/@aly3n/28c1bd08-d655-4249-a17e-a985ff32f4d9.svg",
+  "https://wakatime.com/share/@aly3n/d6968611-fd97-4c0d-8ba1-1fd7e69ba510.svg",
 ];
-
 
 // GLOBAL
 // GLOBAL
@@ -434,4 +431,3 @@ export const projectMeta: {
     "/media/projects/wikianime.png",
   ],
 };
-
