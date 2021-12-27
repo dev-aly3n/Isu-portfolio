@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   const router = useRouter();
 
   const toCareerFunc = () => {
-    if(router.asPath !== "/"){
+    if (router.asPath !== "/") {
       globCtx.toCareerHandler(0);
     }
   };
