@@ -177,15 +177,16 @@ export const eduSkillList: string[] = [
   "Airplane numerical design",
   "Aerodynamics calculation of subsonic and hypersonic on 2d rigid bodies",
   "Space missions calculation",
-  "turbine design for turbojet and turbofan engines",
-  "designing high pressure water rocket",
-  "designing multi-angle launchers for rockets",
-  "designing solid-propellant rockets",
-  "modeling and study on rigid bodies in SolidWorks",
-  "modeling and Study on rigid bodies in ABAQUS",
-  "modeling and study on flow in COMSOL",
+  "Turbine design for turbojet and turbofan engines",
+  "Designing high pressure water rocket",
+  "Designing multi-angle launchers for rockets",
+  "Designing solid-propellant rockets",
+  "Modeling and study on rigid bodies in SolidWorks",
+  "Modeling and Study on rigid bodies in ABAQUS",
+  "Modeling and study on flow in COMSOL",
 ];
 
+// image must be png format in media/logos/
 export const eduData: {
   name: string;
   field: string;
@@ -218,7 +219,7 @@ export const contactList: {
     site: "LinkedIn",
     username: "aly-mohamadi",
     logo: "linkedin",
-    link: "https://www.linkedin.com/in/aly-mohamadi-4bb966212/",
+    link: "https://www.linkedin.com/in/aly-mohamadi/",
   },
   {
     site: "GitHub",
