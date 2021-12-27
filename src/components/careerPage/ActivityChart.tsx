@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
 import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
 import { secFading } from "../../utils/animation";
+import { ActivityChartData } from "../../store/allData";
 
 const ActivityChart: React.FC = () => {
-    const [sec,controls] = useOnScrollAnimation();
+  const [sec, controls] = useOnScrollAnimation();
   return (
-    <motion.div ref={sec} initial="hidden" animate={controls} variants={secFading}>
+    <motion.div
+      ref={sec}
+      initial="hidden"
+      animate={controls}
+      variants={secFading}
+    >
       <h2 className="text-5xl text-gray-300 mb-10 mx-auto text-center mt-5">
         Coding Activity
       </h2>
@@ -15,12 +21,14 @@ const ActivityChart: React.FC = () => {
         even reading the docs. Maybe multiply it by 2 or 3 can show my real
         coding activity.
       </p>
-      <figure className="w-full  my-10 px-5 md:w-[768px]">
-        <embed src="https://wakatime.com/share/@aly3n/28c1bd08-d655-4249-a17e-a985ff32f4d9.svg"></embed>
-      </figure>
-      <figure className="w-full  my-10 px-5 md:w-[768px]">
-        <embed src="https://wakatime.com/share/@aly3n/d6968611-fd97-4c0d-8ba1-1fd7e69ba510.svg"></embed>
-      </figure>
+      {ActivityChartData[0] &&
+        ActivityChartData.map((chart) => {
+          return (
+            <figure className="w-full  my-10 px-5 md:w-[768px]">
+              <embed src={chart}></embed>
+            </figure>
+          );
+        })}
     </motion.div>
   );
 };
