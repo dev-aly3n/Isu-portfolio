@@ -28,7 +28,7 @@ const GatePage: React.FC = () => {
   return (
     <IsuGateCtxProvider>
       {muteSound && <Audio />}
-      <div className="titop" id="titop">
+      <div className="titop z-10" id="titop">
         <motion.div
           variants={backRoadImg}
           initial="hidden"

@@ -24,7 +24,7 @@ const ActivityChart: React.FC = () => {
       {ActivityChartData[0] &&
         ActivityChartData.map((chart) => {
           return (
-            <figure className="w-full  my-10 px-5 md:w-[768px]">
+            <figure key={chart} className="w-full  my-10 px-5 md:w-[768px]">
               <embed src={chart}></embed>
             </figure>
           );
