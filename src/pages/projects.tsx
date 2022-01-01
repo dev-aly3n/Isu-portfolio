@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Projects from "../src/components/projectsPage/Projects";
-import { projectMeta } from "../src/store/allData";
+import Projects from "../components/projectsPage/Projects";
+import { projectMeta } from "../store/allData";
 
 export default function career(): JSX.Element {
   return (

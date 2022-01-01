@@ -1,17 +1,17 @@
 import type { AppProps } from "next/app";
-import { Fragment, useContext } from "react";
+import { Fragment } from "react";
 // libs
 import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
 // components
-import Main from "../src/components/layout/Main"
-import Header from "../src/components/layout/Header";
-import SVGPatternsFilters from "../src/components/SVGPatternsFilters";
+import Main from "../components/layout/Main"
+import Header from "../components/layout/Header";
+import SVGPatternsFilters from "../components/SVGPatternsFilters";
 // hooks
 // store
 // utils & animation
-import "../styles/tailwind.css";
+import "../../styles/tailwind.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { GlobalCtxProvider } from "../src/store/context/globalCtx";
+import { GlobalCtxProvider } from "../store/context/globalCtx";
 
 
 fontawesomeConfig.autoAddCss = false;

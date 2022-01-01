@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Career from "../src/components/careerPage/Career";
-import { careerMeta } from "../src/store/allData";
+import Career from "../components/careerPage/Career";
+import { careerMeta } from "../store/allData";
 
 export default function career(): JSX.Element {
   return (

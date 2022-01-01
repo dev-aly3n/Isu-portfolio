@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import GatePage from "../src/components/gatePage/GatePage";
-import { gateMeta } from "../src/store/allData";
+import GatePage from "../components/gatePage/GatePage";
+import { gateMeta } from "../store/allData";
 
 export default function gate(): JSX.Element {
   return (

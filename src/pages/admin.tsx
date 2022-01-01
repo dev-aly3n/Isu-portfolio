@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Admin from "../src/components/adminPage/Admin";
+import Admin from "../components/adminPage/Admin";
 
 export default function admin():JSX.Element {
   return (
