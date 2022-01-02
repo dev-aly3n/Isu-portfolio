@@ -34,7 +34,7 @@ const Skills: React.FC<props> = ({ skillsRef }) => {
         variants={secFading}
       >
         {hardSkillList.map((skill, index) => {
-          return <Skill key={skill.name} skill={skill} index={index} />;
+          return <Skill key={skill.name} skill={skill}  />;
         })}
       </motion.div>
       <h3>Soft Skills</h3>
@@ -45,7 +45,7 @@ const Skills: React.FC<props> = ({ skillsRef }) => {
         variants={secFading}
       >
         {SoftSkillList.map((skill, index) => {
-          return <Skill key={skill.name} skill={skill} index={index} />;
+          return <Skill key={skill.name} skill={skill}  />;
         })}
       </motion.div>
       <h3>Languages</h3>
@@ -56,7 +56,7 @@ const Skills: React.FC<props> = ({ skillsRef }) => {
         variants={secFading}
       >
         {langList.map((skill, index) => {
-          return <Skill key={skill.name} skill={skill} index={index} />;
+          return <Skill key={skill.name} skill={skill}  />;
         })}
       </motion.div>
       <h3>Educational Skills</h3>

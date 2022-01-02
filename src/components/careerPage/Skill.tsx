@@ -8,7 +8,6 @@ import {
 
 interface props {
   skill: { name: string; icon: string; perc: number; color: string };
-  index: number;
 }
 
 const Skill: React.FC<props> = ({ skill }) => {
