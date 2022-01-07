@@ -13,7 +13,7 @@ interface props {
 const Skill: React.FC<props> = ({ skill }) => {
   return (
     <div className="skill-container">
-      <h3>{skill.name}</h3>
+      <h3 data-testid="heading">{skill.name}</h3>
       <div>
         <motion.div
           variants={skillAnimation}
@@ -31,10 +31,11 @@ const Skill: React.FC<props> = ({ skill }) => {
             src={`/media/logos/${skill.icon}`}
             layout="fill"
             objectFit="cover"
+            data-testid="skill-img"
           />
         </motion.span>
 
-        {skill.name === "Creativity" && (
+        {skill.perc === 300 && (
           <motion.img
             variants={skillExplosionAnimation}
             src={`/media/logos/explosion.png`}

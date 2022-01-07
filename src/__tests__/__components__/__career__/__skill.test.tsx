@@ -2,13 +2,12 @@ import { render, screen } from "@testing-library/react";
 import Skill from "../../../components/careerPage/Skill";
 import { skillMock } from "../../../__mock__";
 
-const eduRef = document.getElementsByClassName("w-full");
-describe("careerPage", () => {
-  it("render education heading", () => {
+describe("career/Skill", () => {
+  it("render name and img", () => {
     render(<Skill skill={skillMock} />);
-
-    const eduHeading = screen.getByText("Javascript");
-
-    expect(eduHeading).toBeInTheDocument();
+    const skillName = screen.getByTestId('heading');
+    const skillImg = screen.getByTestId('skill-img');
+    expect(skillName).toBeInTheDocument();
+    expect(skillImg).toBeInTheDocument();
   });
 });

@@ -17,6 +17,11 @@ export const biochapters: { title: string; desc: string }[] = [
   },
 ];
 
+
+
+// if you master in any of your skill you just need to set "perc" of that skill to 300. it will add an explosion effect to that skill
+// and make sure you put that skill in the even row: 2,4,6,...
+
 export const hardSkillList: {
   name: string;
   icon: string;
@@ -145,6 +150,9 @@ export const SoftSkillList: {
     color: "(62,135,200)",
   },
 ];
+
+
+
 
 export const langList: {
   name: string;
