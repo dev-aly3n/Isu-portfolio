@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 import BioChapter from "./BioChapter";
 // hooks
 // store
-import {biochapters} from '../../store/allData';
+import {biochapters} from '../../../store/allData';
 import { RefObject } from 'react';
 // utils & animation
 

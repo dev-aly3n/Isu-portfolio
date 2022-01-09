@@ -5,7 +5,7 @@ import { RefObject } from "react";
 import Edu from "./Edu";
 // hooks
 // store
-import { eduData } from "../../store/allData";
+import { eduData } from "../../../store/allData";
 // utils & animation
 
 interface props {

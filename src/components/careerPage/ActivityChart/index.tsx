@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
-import { secFading } from "../../utils/animation";
-import { ActivityChartData } from "../../store/allData";
+import { useOnScrollAnimation } from "../../../hooks/useOnScrollAnimation";
+import { secFading } from "../../../utils/animation";
+import { ActivityChartData } from "../../../store/allData";
 
 const ActivityChart: React.FC = () => {
   const [sec, controls] = useOnScrollAnimation();

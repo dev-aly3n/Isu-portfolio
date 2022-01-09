@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import HeaderImg from "../../../components/careerPage/HeaderImg";
+import HeaderImg from ".";
 import React, { useRef } from "react";
 import { RefObject } from "react";
 

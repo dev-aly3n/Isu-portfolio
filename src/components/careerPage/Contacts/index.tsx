@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 // components
 import Contact from "./Contact";
 // hooks
-import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
+import { useOnScrollAnimation } from "../../../hooks/useOnScrollAnimation";
 // store
-import { contactList } from "../../store/allData";
-import { secFading } from "../../utils/animation";
+import { contactList } from "../../../store/allData";
+import { secFading } from "../../../utils/animation";
 // utils & animation
 
 interface props {

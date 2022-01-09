@@ -4,7 +4,7 @@ import {
   skillAnimation,
   skillExplosionAnimation,
   skillImgAnimation,
-} from "../../utils/animation";
+} from "../../../utils/animation";
 
 interface props {
   skill: { name: string; icon: string; perc: number; color: string };

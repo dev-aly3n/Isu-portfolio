@@ -5,10 +5,10 @@ import { useRouter } from "next/router";
 // components
 // hooks
 // store
-import { careerHeaderImage } from "../../store/allData";
+import { careerHeaderImage } from "../../../store/allData";
 // utils & animation
-import { fancyBtns } from "../../utils/animation";
-import { fancyBtnHandler } from "../../utils/util";
+import { fancyBtns } from "../../../utils/animation";
+import { fancyBtnHandler } from "../../../utils/util";
 import Image from "next/image";
 
 interface props {

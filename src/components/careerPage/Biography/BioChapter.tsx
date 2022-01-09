@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { secFading } from "../../utils/animation";
-import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
+import { secFading } from "../../../utils/animation";
+import { useOnScrollAnimation } from "../../../hooks/useOnScrollAnimation";
 
 interface props {
   chap: { title: string; desc: string };

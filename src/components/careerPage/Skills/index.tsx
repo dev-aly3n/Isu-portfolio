@@ -3,17 +3,17 @@ import { motion } from "framer-motion";
 import { RefObject } from "react";
 // components
 // hooks
-import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
+import { useOnScrollAnimation } from "../../../hooks/useOnScrollAnimation";
 // store
 import {
   hardSkillList,
   SoftSkillList,
   eduSkillList,
   langList,
-} from "../../store/allData";
+} from "../../../store/allData";
 import Skill from "./Skill";
 // utils & animation
-import { secFading } from "../../utils/animation";
+import { secFading } from "../../../utils/animation";
 
 interface props {
   skillsRef: RefObject<HTMLDivElement>;

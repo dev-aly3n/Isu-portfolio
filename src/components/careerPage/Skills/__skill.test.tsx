@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Skill from "../../../components/careerPage/Skill";
+import Skill from "./Skill";
 import { skillMock } from "../../../__mock__";
 
 describe("career/Skill", () => {

@@ -1,7 +1,7 @@
 @import './_Career.css';
-@import './_Skill.css';
-@import './_Skills.css';
-@import './_Contact.css';
-@import './_BioChapter.css';
-@import './_Edu.css';
-@import './_HeaderImg.css';
+@import './Skills/_Skill.css';
+@import './Skills/_Skills.css';
+@import './Contacts/_Contact.css';
+@import './Biography/_BioChapter.css';
+@import './EduList/_Edu.css';
+@import './HeaderImg/_HeaderImg.css';

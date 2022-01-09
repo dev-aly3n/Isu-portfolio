@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 // components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { useOnScrollAnimation } from "../../hooks/useOnScrollAnimation";
-import { secFading } from "../../utils/animation";
+import { useOnScrollAnimation } from "../../../hooks/useOnScrollAnimation";
+import { secFading } from "../../../utils/animation";
 import Image from "next/image";
 // hooks
 // store
