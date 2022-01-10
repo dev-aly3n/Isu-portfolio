@@ -52,25 +52,26 @@ const LiveProject: React.FC<props> = ({
     iframeRef.current!.setAttribute("sizeID", `${size}`);
     setSelected(size);
   }, []);
+  // 320 + 30 = 350 . 30 px is the scrollbar width
   return (
     <Fragment>
       <div className="header">
         <div>
           <span
-            onClick={() => resizeHandler(320)}
-            className={`${selected === 320 ? "active" : ""}`}
+            onClick={() => resizeHandler(350)}
+            className={`${selected === 350 ? "active" : ""}`}
           >
             <FontAwesomeIcon icon={faMobileAlt} />
           </span>
           <span
-            onClick={() => resizeHandler(768)}
-            className={`${selected === 768 ? "active" : ""}`}
+            onClick={() => resizeHandler(798)}
+            className={`${selected === 798 ? "active" : ""}`}
           >
             <FontAwesomeIcon icon={faTabletAlt} />
           </span>
           <span
-            onClick={() => resizeHandler(1280)}
-            className={`${selected === 1280 ? "active" : ""}`}
+            onClick={() => resizeHandler(1310)}
+            className={`${selected === 1310 ? "active" : ""}`}
           >
             <FontAwesomeIcon icon={faDesktop} />
           </span>
