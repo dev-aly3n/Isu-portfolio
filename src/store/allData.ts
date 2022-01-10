@@ -290,7 +290,7 @@ export const projectList: {
   {
     name: "wiki anime",
     desc: "This single page application has been built by the power of React, graphQL, Tailwind css and ect. I didn't use any pre-built components or ui library and all of these stuff has been built from the scratch. It has been taken 60 days to build, however I learnt a lot at this time beside working on my application. Anyway thank you to visit my app and a big thanks to anilist graphQL server.",
-    url: "wikianime.vercel.app",
+    url: "wikianime.aly3n.dev",
     gitHub: "github.com/dev-aly3n/wikianime",
     image: "wikianime.png",
     techs: [
@@ -307,7 +307,7 @@ export const projectList: {
   {
     name: "music-player",
     desc: "This is my first React app that I made by props drilling (to face the prop drilling hell). These musics don't have any copy right and I got them from chillhop that is a free right music application. There is nothing fancy about this project, I just like it.",
-    url: "aly3n-music.vercel.app",
+    url: "music.aly3n.dev",
     gitHub: "github.com/dev-aly3n/music-player",
     image: "music-player.png",
     techs: [
@@ -321,7 +321,7 @@ export const projectList: {
   {
     name: "Beat Maker",
     desc: "This is the last vanillaJS project that I made. No framework and js library used, just html css js and creativity. Click on “Load/Sample” button to load a sample and hit “play” to hear some beautiful opus. I hope you enjoy it.",
-    url: "aly3n-beatmaker.vercel.app",
+    url: "beatmaker.aly3n.dev",
     gitHub: "github.com/dev-aly3n/beatmaker",
     image: "beat-maker.png",
     techs: [
@@ -334,7 +334,7 @@ export const projectList: {
   {
     name: "icecream shop",
     desc: "This is my second web project that I used css, html and js. I wasted a lot of time on functionality of Cart / calculation and ect. It was so fun and exciting to me. lt's a super light responsive website however the pictures are so huge.",
-    url: "aly3n-icecream.vercel.app",
+    url: "ice-cream.aly3n.dev",
     gitHub: "github.com/dev-aly3n/ice-cream-online-shop",
     image: "icecream-shop.png",
     techs: [
@@ -347,7 +347,7 @@ export const projectList: {
   {
     name: "flash card online",
     desc: "This is my first project, my hello world in js. I like it so much. It is nice and easy to use flash card that save your card on your local machine. You can edit your card, delete them or change their color. Everyone wants to make a todo list for first project but I hate copy pasting and like to be creative.",
-    url: "flash-card-online.vercel.app",
+    url: "flash-card.aly3n.dev",
     gitHub: "github.com/dev-aly3n/flash-card-online",
     image: "flash-card-online.png",
     techs: [
