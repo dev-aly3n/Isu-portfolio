@@ -51,7 +51,7 @@ const KeyDynamicUpLine: React.FC<props> = ({
             initial="hidden"
             animate={controls}
             id="s-Path_1-d122488"
-            d="M727.0 455.0 L570.5600343053175 229.82161234991406 L368.9373927958836 136.76500857632914"
+            d="M727 455 L571 230 L369 137"
           ></motion.path>
         </defs>
         <g>

@@ -38,7 +38,7 @@ const DynamicUpLine: React.FC<props> = ({
             initial="hidden"
             animate={controls}
             id="s-Path_1-d1224f"
-            d="M1171.0 450.0 L824.3507718696401 315.82847341337913 L735.5240137221272 362.35677530017153 L360.4777015437396 208.6723842195541 "
+            d="M1171 450 L824 316 L736 362 L360 209"
           ></motion.path>
         </defs>
         <g>

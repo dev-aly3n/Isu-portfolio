@@ -19,7 +19,7 @@ const DynamicMidLine: React.FC<props> = (): JSX.Element => {
             initial="hidden"
             animate={controls}
             id="s-Path_1-d1224578"
-            d="M1077.0 354.0 L704.5051457975986 354.0000000000001 L646.6972555746142 290.449399656947 L316.76929674099483 272.1200686106348 "
+            d="M1077 354 L705 354 L647 290 L318 272"
           ></motion.path>
         </defs>
         <g>
