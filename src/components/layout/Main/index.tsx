@@ -1,7 +1,7 @@
 import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
-import ToGateSubmission from "../ToGateSubmission";
+import ToGateSubmission from "../../ToGateSubmission";
 
 const Main: React.FC = (props) => {
   const router = useRouter();

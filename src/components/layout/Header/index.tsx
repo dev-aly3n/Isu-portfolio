@@ -7,10 +7,10 @@ import React, {
   useLayoutEffect,
   useState,
 } from "react";
-import { GlobalCtx } from "../../store/context/globalCtx";
+import { GlobalCtx } from "../../../store/context/globalCtx";
 import { motion } from "framer-motion";
-import { enterToHeader } from "../../utils/animation";
-import { topLogo } from "../../store/allData";
+import { enterToHeader } from "../../../utils/animation";
+import { topLogo } from "../../../store/allData";
 
 interface Links {
   ref: string;
