@@ -1,12 +1,12 @@
 // libs
 import { useState, useContext, useEffect, useRef } from "react";
-import { IsuGateCtx } from "../../store/context/isuGateCtx";
+import { IsuGateCtx } from "../../../store/context/isuGateCtx";
 // components
 // hooks
 // store
 // utils & animation
 
-const Audio: React.FC = () => {
+const AudioPlay: React.FC = () => {
   const [once, setOnce] = useState(false);
 
   const key1AudioRef = useRef<any>(null);
@@ -77,4 +77,4 @@ const Audio: React.FC = () => {
   );
 };
 
-export default Audio;
+export default AudioPlay;

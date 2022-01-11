@@ -1,17 +1,17 @@
 // libs
 import { motion } from "framer-motion";
 // components
-import UpLine from "./doorLines/UpLine";
-import MidLine from "./doorLines/MidLine";
-import PhLine from "./doorLines/PhLine";
-import DynamicUpLine from "./doorLines/DynamicUpLine";
-import DynamicMidLine from "./doorLines/DynamicMidLine";
-import DynamicPhLine from "./doorLines/DynamicPhLine";
+import UpLine from "../doorLines/UpLine";
+import MidLine from "../doorLines/MidLine";
+import PhLine from "../doorLines/PhLine";
+import DynamicUpLine from "../doorLines/DynamicUpLine";
+import DynamicMidLine from "../doorLines/DynamicMidLine";
+import DynamicPhLine from "../doorLines/DynamicPhLine";
 // hooks
-import { useGateOpened } from "../../hooks/useGateOpened";
+import { useGateOpened } from "../../../hooks/useGateOpened";
 // store
 // utils & animation
-import { openDoor2 } from "../../utils/animation";
+import { openDoor2 } from "../../../utils/animation";
 
 const LeftDoor: React.FC = (): JSX.Element => {
   const controls = useGateOpened();

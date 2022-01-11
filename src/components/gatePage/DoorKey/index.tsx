@@ -1,13 +1,13 @@
 //libs
 import { useContext } from "react";
 //store
-import { IsuGateCtx } from "../../store/context/isuGateCtx";
+import { IsuGateCtx } from "../../../store/context/isuGateCtx";
 //components
-import KeyUpLine from "./keyLines/KeyUpLine";
-import KeyMidLine from "./keyLines/KeyMidLine";
-import KeyDynamicUpLine from "./keyLines/KeyDynamicUpLine";
-import KeyDynamicMidLine from "./keyLines/KeyDynamicMidLine";
-import LightKey from "./LightKey";
+import KeyUpLine from "../keyLines/KeyUpLine";
+import KeyMidLine from "../keyLines/KeyMidLine";
+import KeyDynamicUpLine from "../keyLines/KeyDynamicUpLine";
+import KeyDynamicMidLine from "../keyLines/KeyDynamicMidLine";
+import LightKey from "../LightKey";
 //hooks
 
 const DoorKey: React.FC = (): JSX.Element => {

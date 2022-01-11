@@ -2,7 +2,7 @@ import { IsuGateCtxProvider } from "../../store/context/isuGateCtx";
 import Gate from "./Gate";
 import { motion } from "framer-motion";
 import { backRoadImg } from "../../utils/animation";
-import Audio from "./Audio";
+import AudioPlay from "./AudioPlay";
 
 import { faVolumeMute, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,7 +27,7 @@ const GatePage: React.FC = () => {
 
   return (
     <IsuGateCtxProvider>
-      {muteSound && <Audio />}
+      {muteSound && <AudioPlay />}
       <div className="titop z-10" id="titop">
         <motion.div
           variants={backRoadImg}

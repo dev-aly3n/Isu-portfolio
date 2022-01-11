@@ -1,10 +1,10 @@
 @import "./_gate.css";
 @import "./doorLines/_doorLines.css";
 @import "./keyLines/_keyLines.css";
-@import "./_LeftDoor.css";
-@import "./_RightDoor.css";
-@import './_DoorKey.css';
-@import './_LightKey.css';
+@import "./LeftDoor/_LeftDoor.css";
+@import "./RightDoor/_RightDoor.css";
+@import './DoorKey/_DoorKey.css';
+@import './LightKey/_LightKey.css';
 
 
 

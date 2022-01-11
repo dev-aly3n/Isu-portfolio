@@ -4,7 +4,7 @@ import { useContext } from "react";
 // components
 // hooks
 // store
-import { IsuGateCtx } from "../../store/context/isuGateCtx";
+import { IsuGateCtx } from "../../../store/context/isuGateCtx";
 // utils & animation
 
 const LightKey: React.FC = () => {

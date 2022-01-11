@@ -2,19 +2,19 @@
 import { useContext } from "react";
 import { motion } from "framer-motion";
 //store
-import { IsuGateCtx } from "../../store/context/isuGateCtx";
+import { IsuGateCtx } from "../../../store/context/isuGateCtx";
 //components
-import UpLine from "./doorLines/UpLine";
-import MidLine from "./doorLines/MidLine";
-import PhLine from "./doorLines/PhLine";
-import DoorKey from "./DoorKey";
-import DynamicUpLine from "./doorLines/DynamicUpLine";
-import DynamicMidLine from "./doorLines/DynamicMidLine";
-import DynamicPhLine from "./doorLines/DynamicPhLine";
+import UpLine from "../doorLines/UpLine";
+import MidLine from "../doorLines/MidLine";
+import PhLine from "../doorLines/PhLine";
+import DoorKey from "../DoorKey";
+import DynamicUpLine from "../doorLines/DynamicUpLine";
+import DynamicMidLine from "../doorLines/DynamicMidLine";
+import DynamicPhLine from "../doorLines/DynamicPhLine";
 //hooks
-import { useGateOpened } from "../../hooks/useGateOpened";
+import { useGateOpened } from "../../../hooks/useGateOpened";
 // utils and animation
-import { openDoor } from "../../utils/animation";
+import { openDoor } from "../../../utils/animation";
 
 const LeftDoor: React.FC = (): JSX.Element => {
   const controls = useGateOpened();
