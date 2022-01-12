@@ -1,0 +1,781 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`career/Skills skills snap 1`] = `
+<div>
+  <div
+    class="skills-container"
+  >
+    <h3>
+      Hard Skills
+    </h3>
+    <div
+      style="opacity: 0;"
+    >
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Javascript
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(247, 223, 30); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 68%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Javascript"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          React
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(97, 218, 251); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 73%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="React"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Typescript
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(49, 120, 198); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 63%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Typescript"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          NextJS
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(118, 212, 207); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 68%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="NextJS"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          HTML
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(228, 79, 38); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 83%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="HTML"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          CSS
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(21, 114, 182); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 83%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="CSS"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          TailWindCSS
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(6, 182, 212); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 78%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="TailWindCSS"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Redux
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(118, 74, 188); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 73%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Redux"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          ApolloClient
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(44, 16, 158); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 73%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="ApolloClient"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          FramerMotion
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(242, 0, 175); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 81%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="FramerMotion"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Git
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(240, 81, 51); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 58%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Git"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Webpack
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(142, 214, 251); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 53%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Webpack"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Joomla
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(90, 164, 38); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 83%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Joomla"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <h3>
+      Soft Skills
+    </h3>
+    <div
+      style="opacity: 0;"
+    >
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Adaptability
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(1, 1, 1); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 81%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Adaptability"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Creativity
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(242, 183, 7); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 293%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Creativity"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+          <img
+            class="creativity-explosion"
+            src="/media/logos/explosion.png"
+            style="opacity: 0; transform: scale(0.5) translateZ(0);"
+          />
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          comunication
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(37, 185, 84); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 63%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="comunication"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Responsibility
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(253, 236, 166); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 81%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Responsibility"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Self Motivation
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(143, 255, 171); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 81%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Self Motivation"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Team work
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(62, 135, 200); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 81%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Team work"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <h3>
+      Languages
+    </h3>
+    <div
+      style="opacity: 0;"
+    >
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Persian
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(192, 192, 192); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 83%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Persian"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          English
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(192, 192, 192); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 53%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="English"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="skill-container"
+      >
+        <h3
+          data-testid="heading"
+        >
+          Arabic
+        </h3>
+        <div>
+          <div
+            style="background-color: rgb(192, 192, 192); opacity: 0.3; width: 0px;"
+          />
+          <span
+            style="left: 28%; opacity: 0;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Arabic"
+                data-nimg="fill"
+                data-testid="skill-img"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <h3>
+      Educational Skills
+    </h3>
+    <div
+      class="flex flex-wrap "
+      style="opacity: 0;"
+    >
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Airplane structural design
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Airplane numerical design
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Aerodynamics calculation of subsonic and hypersonic on 2d rigid bodies
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Space missions calculation
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Turbine design for turbojet and turbofan engines
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Designing high pressure water rocket
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Designing multi-angle launchers for rockets
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Designing solid-propellant rockets
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Modeling and study on rigid bodies in SolidWorks
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Modeling and Study on rigid bodies in ABAQUS
+      </span>
+      <span
+        class="bg-gray-500 py-2 px-4 m-2 rounded-full text-sm"
+      >
+        Modeling and study on flow in COMSOL
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`career/Edu eduList snap 1`] = `
+<div>
+  <div>
+    <h2>
+      Education
+    </h2>
+    <div
+      class="edu-container"
+      style="opacity: 0;"
+    >
+      <div>
+        <span>
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-angle-right fa-w-8 duration-500 rotate-0"
+            data-icon="angle-right"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 256 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+              fill="currentColor"
+            />
+          </svg>
+           
+        </span>
+        <span>
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              data-nimg="fill"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+            />
+            <noscript />
+          </span>
+        </span>
+        <div>
+          <h3>
+            Khaje Nasir Toosi University Of Technology
+          </h3>
+          <p>
+            (2016-2020) Bachelor Degree - Aerospace Engineering
+          </p>
+        </div>
+      </div>
+      <div />
+      <div
+        class=" h-0"
+      >
+        K. N. Toosi University of Technology, made up of eleven academic faculties, opens doors to top talents of engineering and science. It brings together all levels of education and offers innovative training to its 7000|+ students.
+      </div>
+    </div>
+    <div
+      class="edu-container"
+      style="opacity: 0;"
+    >
+      <div>
+        <span>
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-angle-right fa-w-8 duration-500 rotate-0"
+            data-icon="angle-right"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 256 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+              fill="currentColor"
+            />
+          </svg>
+           
+        </span>
+        <span>
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              data-nimg="fill"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+            />
+            <noscript />
+          </span>
+        </span>
+        <div>
+          <h3>
+            University of Tehran
+          </h3>
+          <p>
+            (2021-present) Master of Engineering - Space Engineering
+          </p>
+        </div>
+      </div>
+      <div />
+      <div
+        class=" h-0"
+      >
+        The University of Tehran is the oldest modern university located in Tehran, Iran. It is also one of the most prestigious universities in the Middle East. Based on its historical, socio-cultural, political pedigree as well as its research and teaching profile, UT has been nicknamed “The Mother University of Iran”.
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`career/Skill render heads 1`] = `
+<div>
+  <div
+    class="header-img-container"
+  >
+    <span>
+      <img
+        alt="dev aly3n javascript developer"
+        src="/media/aly3n.jpg"
+      />
+    </span>
+    <button>
+      <h3>
+        Biography
+      </h3>
+    </button>
+    <button>
+      <h3>
+        Education
+      </h3>
+    </button>
+    <button>
+      <h3>
+        Skills
+      </h3>
+    </button>
+    <button>
+      <h3>
+        Contact
+      </h3>
+    </button>
+    <button>
+      <h3>
+        Project
+      </h3>
+    </button>
+  </div>
+</div>
+`;
