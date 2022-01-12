@@ -40,7 +40,7 @@ const LiveProject: React.FC<props> = ({
     if (size <= viewPortWidth) {
       iframeRef.current!.style.width = `${size}px`;
       iframeRef.current!.style.transform = `scale(1)`;
-      iframeRef.current!.style.height = `100%`;
+      iframeRef.current!.style.height = `90%`;
     } else {
       const scaleRate: number = viewPortWidth / size;
       iframeRef.current!.style.width = `${size}px`;
