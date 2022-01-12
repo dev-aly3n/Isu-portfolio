@@ -9,7 +9,12 @@ import { RefObject } from "react";
 
 const ref = new Object() as RefObject<HTMLDivElement>;
 
-describe("career/Skill", () => {
+describe("career/Skills", () => {
+
+  it("skills snap",()=>{
+    const {container} =  render(<Skills skillsRef={ref} />);
+    expect(container).toMatchSnapshot();
+  })
 
     it("render heads", () => {
 

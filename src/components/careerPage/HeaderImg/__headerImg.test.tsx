@@ -13,8 +13,7 @@ const allRefs = {
 
 describe("career/Skill", () => {
   it("render heads", () => {
-    render(<HeaderImg allRefs={allRefs} />);
-    const skillHead = screen.getByText("Education");
-    expect(skillHead).toBeInTheDocument();
+   const {container} = render(<HeaderImg allRefs={allRefs} />);
+   expect(container).toMatchSnapshot();
   });
 });

@@ -3,6 +3,10 @@ import Skill from "./Skill";
 import { skillMock } from "../../../__mock__";
 
 describe("career/Skill", () => {
+  it("skill snap", ()=>{
+    const {container} = render(<Skill skill={skillMock} />)
+    expect(container).toMatchSnapshot();
+  })
   it("render name and img", () => {
     render(<Skill skill={skillMock} />);
     const skillName = screen.getByTestId('heading');
