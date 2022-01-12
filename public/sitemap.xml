@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"> 
+<url>
+<loc>https://aly3n.dev</loc>
+<image:image>
+<image:loc>https://aly3n.dev/media/aly3n.jpg</image:loc>
+<image:title>dev aly3n javascript developer</image:title>
+</image:image>
+<image:image>
+<image:loc>https://aly3n.dev/media/logos/explosion.png</image:loc>
+</image:image>
+</url>
+<url>
+<loc>https://aly3n.dev/projects</loc>
+<image:image>
+<image:loc>https://aly3n.dev/media/projects/atefeh-hasani.png</image:loc>
+<image:title>Atefeh Hasani</image:title>
+</image:image>
+<image:image>
+<image:loc>https://aly3n.dev/media/projects/wikianime.png</image:loc>
+<image:title>wiki anime</image:title>
+</image:image>
+<image:image>
+<image:loc>https://aly3n.dev/media/projects/music-player.png</image:loc>
+<image:title>music-player</image:title>
+</image:image>
+<image:image>
+<image:loc>https://aly3n.dev/media/projects/beat-maker.png</image:loc>
+<image:title>Beat Maker</image:title>
+</image:image>
+<image:image>
+<image:loc>https://aly3n.dev/media/projects/icecream-shop.png</image:loc>
+<image:title>icecream shop</image:title>
+</image:image>
+<image:image>
+<image:loc>https://aly3n.dev/media/projects/flash-card-online.png</image:loc>
+<image:title>flash card online</image:title>
+</image:image>
+</url>
+</urlset>
