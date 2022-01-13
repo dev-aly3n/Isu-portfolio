@@ -7,7 +7,7 @@ import { RefObject } from "react";
 
 
 
-const ref = new Object() as RefObject<HTMLDivElement>;
+const ref = React.createRef<HTMLDivElement>();
 
 describe("career/Skills", () => {
 

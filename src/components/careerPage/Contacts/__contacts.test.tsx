@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { RefObject } from "react";
 import Contacts from ".";
 
-const ref = new Object() as RefObject<HTMLDivElement>;
+const ref = React.createRef<HTMLDivElement>();
 
 
 describe("career/contacts", () => {

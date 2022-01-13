@@ -3,7 +3,7 @@ import HeaderImg from ".";
 import React, { useRef } from "react";
 import { RefObject } from "react";
 
-const ref = new Object() as RefObject<HTMLDivElement>;
+const ref = React.createRef<HTMLDivElement>();
 const allRefs = {
   bioRef: ref,
   eduRef: ref,
