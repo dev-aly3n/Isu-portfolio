@@ -4,13 +4,13 @@ import React, {
   MouseEventHandler,
   useContext,
   useEffect,
-  useLayoutEffect,
   useState,
 } from "react";
 import { GlobalCtx } from "../../../store/context/globalCtx";
 import { motion } from "framer-motion";
 import { enterToHeader } from "../../../utils/animation";
 import { topLogo } from "../../../store/allData";
+import Head from "next/head";
 
 interface Links {
   ref: string;
@@ -58,40 +58,50 @@ const Header: React.FC = () => {
   }, [globCtx.toCareer]);
 
   return router.pathname !== "/gate" ? (
-    <motion.div
-      className="header-container"
-      initial={varMotion.hidden}
-      animate={varMotion.visible}
-      variants={varMotion.variant}
-    >
-      <h1 onClick={toCareerFunc}>
-        <Link href="/">{topLogo}</Link>
-      </h1>
-      <ul>
-        {headerLinks.map((headLink) => {
-          return (
-            <li key={headLink.text} onClick={headLink.handler}>
-              <Link href={headLink.ref}>
-                <a
-                  className={`${
-                    router.pathname === headLink.ref
-                      ? "bg-gray-100 text-gray-900"
-                      : "text-white"
-                  }`}
-                >
-                  {headLink.text}
-                </a>
-              </Link>
-            </li>
-          );
-        })}
-        <li className="text-white" onClick={toTheGateHandler}>
-          <a onClick={(e) => e.preventDefault()}>ToTheGate</a>
-        </li>
-      </ul>
-    </motion.div>
+    <>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <motion.div
+        className="header-container"
+        initial={varMotion.hidden}
+        animate={varMotion.visible}
+        variants={varMotion.variant}
+      >
+        <h1 onClick={toCareerFunc}>
+          <Link href="/">{topLogo}</Link>
+        </h1>
+        <ul>
+          {headerLinks.map((headLink) => {
+            return (
+              <li key={headLink.text} onClick={headLink.handler}>
+                <Link href={headLink.ref}>
+                  <a
+                    className={`${
+                      router.pathname === headLink.ref
+                        ? "bg-gray-100 text-gray-900"
+                        : "text-white"
+                    }`}
+                  >
+                    {headLink.text}
+                  </a>
+                </Link>
+              </li>
+            );
+          })}
+          <li className="text-white" onClick={toTheGateHandler}>
+            <a onClick={(e) => e.preventDefault()}>ToTheGate</a>
+          </li>
+        </ul>
+      </motion.div>
+    </>
   ) : (
-    <React.Fragment></React.Fragment>
+    <></>
   );
 };
 
