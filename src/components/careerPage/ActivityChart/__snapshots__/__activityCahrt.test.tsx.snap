@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`career/contacts snap 1`] = `
+<div>
+  <div
+    style="opacity: 0;"
+  >
+    <h2
+      class="text-5xl text-gray-300 mb-10 mx-auto text-center mt-5"
+    >
+      Coding Activity
+    </h2>
+    <p
+      class="w-10/12"
+    >
+      This chart just showing the TIME of TYPING code. So it not considering the time of thinking, searching at google, watching video about code or even reading the docs. Maybe multiply it by 2 or 3 can show my real coding activity.
+    </p>
+    <figure
+      class="w-full my-10 px-5 md:w-[768px]"
+    >
+      <embed
+        src="https://wakatime.com/share/@aly3n/28c1bd08-d655-4249-a17e-a985ff32f4d9.svg"
+      />
+    </figure>
+    <figure
+      class="w-full my-10 px-5 md:w-[768px]"
+    >
+      <embed
+        src="https://wakatime.com/share/@aly3n/d6968611-fd97-4c0d-8ba1-1fd7e69ba510.svg"
+      />
+    </figure>
+  </div>
+</div>
+`;

@@ -11,8 +11,8 @@ const allRefs = {
   contactRef: ref,
 };
 
-describe("career/Skill", () => {
-  it("render heads", () => {
+describe("career/headerImg", () => {
+  it("snap", () => {
    const {container} = render(<HeaderImg allRefs={allRefs} />);
    expect(container).toMatchSnapshot();
   });

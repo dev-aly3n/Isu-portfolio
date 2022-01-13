@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`career/Skill render heads 1`] = `
+exports[`career/headerImg snap 1`] = `
 <div>
   <div
     class="header-img-container"

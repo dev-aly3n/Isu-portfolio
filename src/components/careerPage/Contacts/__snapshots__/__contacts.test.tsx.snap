@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`career/contacts snap 1`] = `
+<div>
+  <div>
+    <h2>
+      Contacts
+    </h2>
+    <div
+      class="flex flex-wrap justify-center items-center w-full"
+      style="opacity: 0;"
+    >
+      <div
+        class="contact-container"
+      >
+        <a
+          href="https://www.linkedin.com/in/aly-mohamadi/"
+          target="_blank"
+        >
+          <span>
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="LinkedIn"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+          <div>
+            <h4>
+              LinkedIn
+            </h4>
+            <p>
+              aly-mohamadi
+            </p>
+          </div>
+        </a>
+      </div>
+      <div
+        class="contact-container"
+      >
+        <a
+          href="https://github.com/dev-aly3n"
+          target="_blank"
+        >
+          <span>
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="GitHub"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+          <div>
+            <h4>
+              GitHub
+            </h4>
+            <p>
+              dev-aly3n
+            </p>
+          </div>
+        </a>
+      </div>
+      <div
+        class="contact-container"
+      >
+        <a
+          href="mailto:dev.aly3n@gmail.com"
+          target="_blank"
+        >
+          <span>
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Gmail"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+          <div>
+            <h4>
+              Gmail
+            </h4>
+            <p>
+              dev.aly3n
+            </p>
+          </div>
+        </a>
+      </div>
+      <div
+        class="contact-container"
+      >
+        <a
+          href="https://t.me/aly3n"
+          target="_blank"
+        >
+          <span>
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Telegram"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+          <div>
+            <h4>
+              Telegram
+            </h4>
+            <p>
+              aly3n
+            </p>
+          </div>
+        </a>
+      </div>
+      <div
+        class="contact-container"
+      >
+        <a
+          href="https://wa.me/989152539070?text=Hello%20Aly!%20I've%20reached%20you%20through%20your%20personal%20website."
+          target="_blank"
+        >
+          <span>
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="WhatsApp"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+          <div>
+            <h4>
+              WhatsApp
+            </h4>
+            <p />
+          </div>
+        </a>
+      </div>
+      <div
+        class="contact-container"
+      >
+        <a
+          href="https://www.instagram.com/aly.3n/"
+          target="_blank"
+        >
+          <span>
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Instagram"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </span>
+          <div>
+            <h4>
+              Instagram
+            </h4>
+            <p>
+              aly3n
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
