@@ -446,7 +446,7 @@ export const backRoadImg = {
   out: {
     scale: 5,
     translateZ:"1000px",
-    translateY:"500px",
+    translateY:"700px",
     transition: {
       duration: 2,
       delay:2
