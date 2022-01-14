@@ -101,6 +101,18 @@ export const hardSkillList: {
     color: "(142,214,251)",
   },
   {
+    name: "Jest",
+    icon: "jest.png",
+    perc: 60,
+    color: "(148,64,88)",
+  },
+  {
+    name: "RTL(testing)",
+    icon: "rtl.png",
+    perc: 60,
+    color: "(252,69,68)",
+  },
+  {
     name: "Joomla",
     icon: "joomla.png",
     perc: 90,
