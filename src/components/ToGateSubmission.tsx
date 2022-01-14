@@ -31,6 +31,7 @@ const ToGateSubmission: React.FC = () => {
           <span className="text-green-500 text-xl">minimum requirement:</span>
           <span>Core i7 +9000series</span>
           <span>GTX 1050</span>
+          <span>Chromium Browser</span>
         </div>
         <p>We still working on it to improve the performance.</p>
         <p>If you met the requirement select YES.</p>
