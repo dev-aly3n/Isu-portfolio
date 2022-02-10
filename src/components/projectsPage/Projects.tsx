@@ -12,6 +12,7 @@ import Footer from "../layout/Footer";
 // utils & animation
 
 const Projects: React.FC = () => {
+  const projectsPageRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [urlID, setUrlID] = useState<{
@@ -30,9 +31,11 @@ const Projects: React.FC = () => {
       let id = window.history?.state.as.split("?ID=")[1];
       let gh = window.history?.state.as.split("?ID=")[2];
       setUrlID({ ID: id, gitHub: gh });
+      projectsPageRef.current!.style.zIndex = "100";
     }
     if (urlID.ID) {
       iframeRef.current!.src = `https://${urlID.ID}/`;
+      projectsPageRef.current!.style.zIndex = "100";
     }
   }, [urlID.ID]);
 
@@ -47,6 +50,7 @@ const Projects: React.FC = () => {
       exit="out"
       variants={seconPage}
       className="projects-container"
+      ref={projectsPageRef}
     >
       <motion.div ref={projectsRef}>
         <AnimateSharedLayout>
@@ -57,6 +61,7 @@ const Projects: React.FC = () => {
                 className="live-project-container"
               >
                 <LiveProject
+                  projectsPageRef={projectsPageRef}
                   projectsRef={projectsRef}
                   urlID={urlID}
                   settingID={settingID}

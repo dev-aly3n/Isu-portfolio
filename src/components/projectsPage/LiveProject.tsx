@@ -1,4 +1,4 @@
-import { RefObject, Fragment, useCallback, useEffect, useState } from "react";
+import { RefObject, Fragment, useCallback, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMobileAlt,
@@ -13,18 +13,21 @@ interface props {
   settingID: (id: null | string, git: string | null) => void;
   iframeRef: RefObject<HTMLIFrameElement>;
   projectsRef: RefObject<HTMLDivElement>;
+  projectsPageRef: RefObject<HTMLDivElement>;
 }
 const LiveProject: React.FC<props> = ({
   iframeRef,
   urlID,
   settingID,
   projectsRef,
+  projectsPageRef,
 }) => {
   const [selected, setSelected] = useState<number | null>(null);
 
   const closeHandler = () => {
     settingID(null, null);
     window.history.pushState({}, "", "/projects");
+    projectsPageRef.current!.style.zIndex = "50";
   };
 
   const externalLinkHandler = () => {
@@ -40,14 +43,13 @@ const LiveProject: React.FC<props> = ({
     if (size <= viewPortWidth) {
       iframeRef.current!.style.width = `${size}px`;
       iframeRef.current!.style.transform = `scale(1)`;
-      iframeRef.current!.style.height = `90%`;
     } else {
       const scaleRate: number = viewPortWidth / size;
       iframeRef.current!.style.width = `${size}px`;
-      iframeRef.current!.style.height = `${
-        (viewPortHeight - 128) / scaleRate
-      }px`;
       iframeRef.current!.style.transform = `scale(${scaleRate})`;
+      iframeRef.current!.style.height = `${
+        (viewPortHeight - 50) / scaleRate
+      }px`;
     }
     iframeRef.current!.setAttribute("sizeID", `${size}`);
     setSelected(size);

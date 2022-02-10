@@ -2,7 +2,7 @@
   .live-project-container {
     @apply fixed top-0 left-0 w-screen h-screen flex flex-col justify-between z-100 !overscroll-y-contain;
     > .header {
-      @apply !h-12 w-full bg-primary-800 flex justify-around items-center;
+      @apply !h-16 w-full bg-primary-800 flex justify-around items-center;
       > div:nth-of-type(1) {
         @apply flex justify-center gap-x-1 ssm:gap-x-3 w-1/2 text-3xl;
         > span {
@@ -30,7 +30,7 @@
       @apply w-full h-full mt-0 !bg-primary-900 iframe-loader;
       > iframe {
         transform-origin: left top;
-        @apply w-full h-[calc(100vh-128px)] duration-1000 mx-auto border-r-8 border-l-8 border-primary-800 rounded-2xl overscroll-none;
+        @apply w-full h-full duration-1000 mx-auto border-r-8 border-l-8 border-primary-800 rounded-2xl overscroll-none;
       }
     }
   }

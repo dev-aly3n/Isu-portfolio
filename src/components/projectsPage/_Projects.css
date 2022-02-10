@@ -1,11 +1,11 @@
 @layer components {
-    .projects-container {
-        @apply fixed top-0 left-0 z-100 h-full w-screen overflow-hidden mt-20 sm:mt-16 pb-20 sm:pb-16;
-        >div:first-of-type {
-            @apply flex flex-col justify-between items-center h-full w-full overflow-y-scroll py-5 ;
-            >.proj-list {
-                @apply w-full h-full flex flex-wrap gap-10 justify-center items-center mt-3 px-3;
-            }
-        }
+  .projects-container {
+    @apply fixed top-0 left-0 z-50 h-full w-screen overflow-hidden;
+    > div:first-of-type {
+      @apply flex flex-col justify-between items-center h-full w-full overflow-y-scroll pt-24;
+      > .proj-list {
+        @apply w-full h-full flex flex-wrap gap-10 justify-center items-center mt-3 px-3;
+      }
     }
+  }
 }
