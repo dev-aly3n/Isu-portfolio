@@ -5,7 +5,6 @@ import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
 // components
 import Main from "../components/layout/Main"
 import Header from "../components/layout/Header";
-import SVGPatternsFilters from "../components/SVGPatternsFilters";
 // hooks
 // store
 // utils & animation
@@ -27,7 +26,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Main>
       {/* <Footer /> */}
       </GlobalCtxProvider>
-      <SVGPatternsFilters />
     </Fragment>
   );
 }

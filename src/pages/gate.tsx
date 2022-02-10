@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import GatePage from "../components/gatePage/GatePage";
+import SVGPatternsFilters from "../components/SVGPatternsFilters";
 import { gateMeta } from "../store/allData";
 
 export default function gate(): JSX.Element {
@@ -18,6 +19,7 @@ export default function gate(): JSX.Element {
       </Head>
       <div className="overflow-hidden w-screen h-screen fixed top-0 left-0 z-10">
         <GatePage />
+        <SVGPatternsFilters />
       </div>
     </Fragment>
   );
