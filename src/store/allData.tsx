@@ -1,4 +1,4 @@
-import { projectType } from "../types/allTypes";
+import { achievementType, projectType } from "../types/allTypes";
 
 export const biochapters: { title: string; desc: string }[] = [
   {
@@ -425,3 +425,40 @@ export const projectMeta: {
     "/media/projects/wikianime.png",
   ],
 };
+
+export const uniAchievementData: achievementType[] = [
+  {
+    id: "000",
+    title: "Academic AeroSpace magazine called ASPAD [2020]",
+    desc: "I have participated in producing an academic aerospace magazine as writer and editor and this is the picture of our first magazine",
+  },
+  {
+    id: "001",
+    title: "Participating in holding academic competition [2019]",
+    desc: "This is one of my precious achievement which has been given to me as a member of executive staff at holding solidworks competition at KNTU university",
+  },
+  {
+    id: "002",
+    title:
+      "Teaching English Language - Caspian English Language Academy [2019]",
+    desc: "This is my TTC(Teacher Training Course) certificate for learning how to teach English language from Caspian English Language Academy under the Ministry of Education",
+  },
+  {
+    id: "003",
+
+    title: "Teaching English Language - SPEAKON LANGUAGE INSTITUTE [2019]",
+    desc: "This is my TTC(Teacher Training Course) certificate for learning how to teach English language from SPEAKON LANGUAGE INSTITUTE",
+  },
+  {
+    id: "004",
+
+    title: "Working on a new drone [2018]",
+    desc: " This certificate has given to me for working on a vertical flight drone(VTOL) as a member of manufacture team at KNTU university",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
+  },
+];

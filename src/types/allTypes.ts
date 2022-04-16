@@ -9,3 +9,10 @@ export interface projectType {
   techs: { name: string; color: string }[];
   fullText:ReactElement<any,any>
 }
+
+
+export interface achievementType {
+  id:string;
+  title:string;
+  desc:string;
+}
