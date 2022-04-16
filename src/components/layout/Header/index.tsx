@@ -37,6 +37,10 @@ const Header: React.FC = () => {
       ref: "/projects",
       text: "Projects",
     },
+    {
+      ref: "/honors",
+      text: "Honors",
+    },
   ];
 
   const toTheGateHandler = () => {
