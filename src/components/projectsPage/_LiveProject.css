@@ -31,6 +31,15 @@
       > .live-iframe {
         transform-origin: left top;
         @apply w-full h-full duration-1000 mx-auto border-r-8 border-l-8 border-primary-800 rounded-2xl overscroll-none;
+        > h1 {
+          @apply text-white text-5xl font-bold my-10;
+        }
+        > div {
+          @apply flex flex-col justify-start items-center text-justify text-white sm:w-9/12 px-10  py-20  text-base;
+          > img {
+            @apply my-10 w-full sm:min-w-[50%] max-w-full;
+          }
+        }
       }
     }
   }

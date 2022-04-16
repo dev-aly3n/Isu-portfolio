@@ -7,7 +7,7 @@ import {
   faExternalLinkAlt,
   faWindowClose,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import { faGithubAlt, faResearchgate } from "@fortawesome/free-brands-svg-icons";
 import { projectType } from "../../types/allTypes";
 interface props {
   urlID: { ID: string | null; gitHub: string | null };
@@ -61,7 +61,7 @@ const LiveProject: React.FC<props> = ({
     <Fragment>
       <div className="header">
         <div>
-          <span
+          {/* <span
             onClick={() => resizeHandler(350)}
             className={`${selected === 350 ? "active" : ""}`}
           >
@@ -78,11 +78,11 @@ const LiveProject: React.FC<props> = ({
             className={`${selected === 1310 ? "active" : ""}`}
           >
             <FontAwesomeIcon icon={faDesktop} />
-          </span>
+          </span> */}
         </div>
         <div>
           <span onClick={githubHandler} className="">
-            <FontAwesomeIcon icon={faGithubAlt} />
+            <FontAwesomeIcon icon={faResearchgate} />
           </span>
           <span onClick={externalLinkHandler} className="">
             <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -94,9 +94,9 @@ const LiveProject: React.FC<props> = ({
       </div>
       <div className="iframe-container" style={{ zIndex: 110 }}>
         {/* <iframe ref={iframeRef} /> */}
-        <div className="live-iframe flex flex-col justify-start items-center overflow-y-scroll" ref={iframeRef}>
-          <h1 className="text-7xl text-white ">{activeData?.name}</h1>
-          <div className="flex flex-col justify-start items-center text-justify text-white w-1/2 px-10  py-20 ">
+        <div className="live-iframe flex flex-col justify-start items-center overflow-y-scroll " ref={iframeRef}>
+          <h1 className="">{activeData?.name}</h1>
+          <div className="">
             {activeData?.fullText}
           </div>
         </div>
