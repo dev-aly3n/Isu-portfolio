@@ -1,3 +1,5 @@
+import { projectType } from "../types/allTypes";
+
 export const biochapters: { title: string; desc: string }[] = [
   {
     title: "Chapter One: The Beginning",
@@ -273,14 +275,7 @@ export const contactList: {
   },
 ];
 
-export const projectList: {
-  name: string;
-  desc: string;
-  url: string;
-  gitHub: string;
-  image: string;
-  techs: { name: string; color: string }[];
-}[] = [
+export const projectList: projectType[] = [
   {
     name: "Atefeh Hasani",
     desc: "This is a birthday gift to my girl. I made it in 15 days how ever the data-entry and fixing bugs took another 15 days. The project has been built as a template, so you can easily change the achievement data file and add your achievement however you still need to change other file to add your text and picture.",

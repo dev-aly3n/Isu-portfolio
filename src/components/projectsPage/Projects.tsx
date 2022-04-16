@@ -9,12 +9,14 @@ import { projectList } from "../../store/allData";
 import LiveProject from "./LiveProject";
 import { seconPage } from "../../utils/animation";
 import Footer from "../layout/Footer";
+import { projectType } from "../../types/allTypes";
 // utils & animation
 
 const Projects: React.FC = () => {
+  const [activeData,setActiveData] = useState<projectType|null>(null);
   const projectsPageRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
-  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const iframeRef = useRef<HTMLDivElement>(null);
   const [urlID, setUrlID] = useState<{
     ID: string | null;
     gitHub: string | null;
@@ -34,7 +36,7 @@ const Projects: React.FC = () => {
       projectsPageRef.current!.style.zIndex = "100";
     }
     if (urlID.ID) {
-      iframeRef.current!.src = `https://${urlID.ID}/`;
+      // iframeRef.current!.src = `https://${urlID.ID}/`;
       projectsPageRef.current!.style.zIndex = "100";
     }
   }, [urlID.ID]);
@@ -66,6 +68,7 @@ const Projects: React.FC = () => {
                   urlID={urlID}
                   settingID={settingID}
                   iframeRef={iframeRef}
+                  activeData={activeData}
                 />
               </motion.div>
             )}
@@ -77,6 +80,7 @@ const Projects: React.FC = () => {
                   key={project.url}
                   project={project}
                   settingID={settingID}
+                  setActiveData={setActiveData}
                 />
               );
             })}

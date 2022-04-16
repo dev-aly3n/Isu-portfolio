@@ -8,19 +8,21 @@ import {
   faWindowClose,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import { projectType } from "../../types/allTypes";
 interface props {
   urlID: { ID: string | null; gitHub: string | null };
   settingID: (id: null | string, git: string | null) => void;
-  iframeRef: RefObject<HTMLIFrameElement>;
+  iframeRef: RefObject<HTMLDivElement>;
   projectsRef: RefObject<HTMLDivElement>;
   projectsPageRef: RefObject<HTMLDivElement>;
+  activeData:projectType | null;
 }
 const LiveProject: React.FC<props> = ({
   iframeRef,
   urlID,
   settingID,
-  projectsRef,
   projectsPageRef,
+  activeData
 }) => {
   const [selected, setSelected] = useState<number | null>(null);
 
@@ -91,7 +93,10 @@ const LiveProject: React.FC<props> = ({
         </div>
       </div>
       <div className="iframe-container" style={{ zIndex: 110 }}>
-        <iframe ref={iframeRef} />
+        {/* <iframe ref={iframeRef} /> */}
+        <div className="live-iframe flex flex-col justify-start items-center" ref={iframeRef}>
+          <h1 className="text-7xl text-white ">sjklfakjdf</h1>
+        </div>
       </div>
     </Fragment>
   );

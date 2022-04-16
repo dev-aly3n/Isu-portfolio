@@ -2,25 +2,22 @@
 import { motion } from "framer-motion";
 // components
 import Link from "next/link";
+import { Dispatch, SetStateAction } from "react";
+import { projectType } from "../../types/allTypes";
 // hooks
 // store
 // utils & animation
 
 interface props {
   settingID: (id: string | null, git: string | null) => void;
-  project: {
-    name: string;
-    desc: string;
-    url: string;
-    gitHub: string;
-    image: string;
-    techs: { name: string; color: string }[];
-  };
+  project:projectType;
+  setActiveData : Dispatch<SetStateAction<projectType | null>>
 }
 
-const Proj: React.FC<props> = ({ settingID, project }) => {
+const Proj: React.FC<props> = ({ settingID, project, setActiveData }) => {
   const projClickHandler = () => {
     settingID(project.url, project.gitHub);
+    setActiveData(project)
   };
 
   return (
