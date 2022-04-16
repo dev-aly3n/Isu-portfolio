@@ -15,7 +15,7 @@ interface props {
   iframeRef: RefObject<HTMLDivElement>;
   projectsRef: RefObject<HTMLDivElement>;
   projectsPageRef: RefObject<HTMLDivElement>;
-  activeData:projectType | null;
+  activeData:projectType | undefined;
 }
 const LiveProject: React.FC<props> = ({
   iframeRef,
@@ -94,8 +94,11 @@ const LiveProject: React.FC<props> = ({
       </div>
       <div className="iframe-container" style={{ zIndex: 110 }}>
         {/* <iframe ref={iframeRef} /> */}
-        <div className="live-iframe flex flex-col justify-start items-center" ref={iframeRef}>
-          <h1 className="text-7xl text-white ">sjklfakjdf</h1>
+        <div className="live-iframe flex flex-col justify-start items-center overflow-y-scroll" ref={iframeRef}>
+          <h1 className="text-7xl text-white ">{activeData?.name}</h1>
+          <div className="flex flex-col justify-start items-center text-justify text-white w-1/2 px-10  py-20 ">
+            {activeData?.fullText}
+          </div>
         </div>
       </div>
     </Fragment>

@@ -11,13 +11,11 @@ import { projectType } from "../../types/allTypes";
 interface props {
   settingID: (id: string | null, git: string | null) => void;
   project:projectType;
-  setActiveData : Dispatch<SetStateAction<projectType | null>>
 }
 
-const Proj: React.FC<props> = ({ settingID, project, setActiveData }) => {
+const Proj: React.FC<props> = ({ settingID, project }) => {
   const projClickHandler = () => {
     settingID(project.url, project.gitHub);
-    setActiveData(project)
   };
 
   return (

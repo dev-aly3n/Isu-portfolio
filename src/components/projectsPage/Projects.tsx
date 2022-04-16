@@ -13,7 +13,7 @@ import { projectType } from "../../types/allTypes";
 // utils & animation
 
 const Projects: React.FC = () => {
-  const [activeData,setActiveData] = useState<projectType|null>(null);
+  const [activeData, setActiveData] = useState<projectType>();
   const projectsPageRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const iframeRef = useRef<HTMLDivElement>(null);
@@ -32,12 +32,15 @@ const Projects: React.FC = () => {
     if (window.history?.state?.as?.includes("projects?ID")) {
       let id = window.history?.state.as.split("?ID=")[1];
       let gh = window.history?.state.as.split("?ID=")[2];
+
       setUrlID({ ID: id, gitHub: gh });
       projectsPageRef.current!.style.zIndex = "100";
     }
     if (urlID.ID) {
       // iframeRef.current!.src = `https://${urlID.ID}/`;
       projectsPageRef.current!.style.zIndex = "100";
+      const currentID = projectList.find((el) => el.url === urlID.ID);
+      setActiveData(currentID);
     }
   }, [urlID.ID]);
 
@@ -80,7 +83,6 @@ const Projects: React.FC = () => {
                   key={project.url}
                   project={project}
                   settingID={settingID}
-                  setActiveData={setActiveData}
                 />
               );
             })}
