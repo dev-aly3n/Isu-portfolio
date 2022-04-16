@@ -516,3 +516,12 @@ export const achievementData: achievementType[] = [
     desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
   },
 ];
+
+export const publicationsData: string[] = [
+  "  Marjani, M., Ebadi, H. & Ghorbani, F. (2020, December). 3D change detection in urban point cloud based on the developed Octree method using variance index. In 2020 1st National Conference on Data Mining in Earth Sciences in Iran.",
+  "Yarmohamadi, M. & Marjani, M. (2021, September). Performance comparison of the multi layer perceptron network, recurrent neural network and long-short term memory in spatio-temporal prediction of taxi demand. In 2021 the second National Conference on Data Mining in Earth Sciences in Iran.",
+  "Yarmohamadi, M., Marjani, M. & Sadeghi-Niaraki, A (2021, September)Using space-time analysis to evaluate the relationship between cultural, social and economic indicators and Corona mortality rate using comparison of Iran and other countries.;Human Geography Research (under review).",
+  "Marjani, M., Mesgari, M. & Yarmohamadi, M. (2021, October)Spatio-temporal prediction of crime based on a deep network gated recurrent unit. In 2021 the second National Conference on Data Mining in Earth Sciences in Iran.",
+  "Marjani, M., Yarmohamadi, M. & Sadeghi-Niaraki, A. (2021, October). Earthquake risk assessment using integrated artificial neural network and machine learning with analytic hierarchy process(case study: Khuzestan province, Iran).;Journal of Geomatics Science and Technology (under review)",
+  "Marjani, M. & Mesgari, M. (2022, March). A novel hybrid deep learning model for predicting spread of wildfire.;Environmental Modelling & Software (under review)",
+];
