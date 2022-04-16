@@ -426,7 +426,7 @@ export const projectMeta: {
   ],
 };
 
-export const uniAchievementData: achievementType[] = [
+export const achievementData: achievementType[] = [
   {
     id: "000",
     title: "Academic AeroSpace magazine called ASPAD [2020]",
@@ -454,6 +454,60 @@ export const uniAchievementData: achievementType[] = [
 
     title: "Working on a new drone [2018]",
     desc: " This certificate has given to me for working on a vertical flight drone(VTOL) as a member of manufacture team at KNTU university",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
+  },
+  {
+    id: "005",
+
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
   },
   {
     id: "005",
