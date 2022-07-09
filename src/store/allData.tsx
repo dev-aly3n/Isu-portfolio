@@ -373,6 +373,25 @@ export const projectList: {
   techs: { name: string; color: string }[];
 }[] = [
   {
+    name: "DeDogmaDAO",
+    desc: "This is a Nextjs application that offers a decentralized economic solution based on Ethereum. Here you can mint nft, play lottery and etc. I was the only frontend developer at dedogmadao's technical team. you can also find more link to staging phase in biography, chapter five.",
+    url: "dedogmadao.com/",
+    gitHub: "github.com/DeDogmaDao",
+    image: "dedogmadao.png",
+    techs: [
+      { name: "React", color: "#61D9FA" },
+      { name: "NextJS", color: "#081722" },
+      { name: "Tailwindcss", color: "#06B6D4" },
+      { name: "FramerMotion", color: "#EC00C1" },
+      { name: "PostCSS", color: "#DD3A0A" },
+      { name: "WAGMI-hook", color: "#7BB651" },
+      { name: "Ethers", color: "#1fB251" },
+      { name: "JavaScript", color: "#F7DF1E" },
+      { name: "CSS", color: "#1572B6" },
+      { name: "HTML", color: "#E44F26" },
+    ],
+  },
+  {
     name: "Atefeh Hasani",
     desc: "This is a birthday gift to my girl. I made it in 15 days how ever the data-entry and fixing bugs took another 15 days. The project has been built as a template, so you can easily change the achievement data file and add your achievement however you still need to change other file to add your text and picture.",
     url: "atefeh.aly3n.dev",
