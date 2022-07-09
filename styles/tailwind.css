@@ -13,7 +13,7 @@
 } */
 
 .link-inside-text {
-  @apply !text-primary-200 !underline hover:!text-secondary-500 duration-500; 
+  @apply !text-blue-500 !underline hover:!text-purple-500 duration-500; 
 }
 
 body {
