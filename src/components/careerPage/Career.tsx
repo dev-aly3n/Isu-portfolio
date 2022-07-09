@@ -15,6 +15,7 @@ import { firstPage, firstPage2 } from "../../utils/animation";
 import { GlobalCtx } from "../../store/context/globalCtx";
 import Footer from "../layout/Footer";
 import ActivityChart from "./ActivityChart";
+import Recommendation from "./Recommendation";
 
 const Career: React.FC = (): JSX.Element => {
   const globCtx = useContext(GlobalCtx);
@@ -51,6 +52,7 @@ const Career: React.FC = (): JSX.Element => {
         {/* 6th */}
         <ActivityChart />
 
+<Recommendation/>
     </AnimateSharedLayout>
     <span className="w-screen h-full">
     <Footer />
