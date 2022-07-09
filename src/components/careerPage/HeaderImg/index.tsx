@@ -17,6 +17,7 @@ interface props {
     eduRef: RefObject<HTMLDivElement>;
     skillsRef: RefObject<HTMLDivElement>;
     contactRef: RefObject<HTMLDivElement>;
+    recomRef: RefObject<HTMLDivElement>;
   };
 }
 
@@ -26,12 +27,14 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
   const eduBtnRef = useRef<HTMLButtonElement>(null);
   const skillsBtnRef = useRef<HTMLButtonElement>(null);
   const contactBtnRef = useRef<HTMLButtonElement>(null);
+  const recomBtnRef = useRef<HTMLButtonElement>(null);
   const projectBtnRef = useRef<HTMLButtonElement>(null);
 
   const bioHandler = fancyBtnHandler(bioBtnRef, allRefs.bioRef);
   const skillsHandler = fancyBtnHandler(skillsBtnRef, allRefs.skillsRef);
   const eduHandler = fancyBtnHandler(eduBtnRef, allRefs.eduRef);
   const contactHandler = fancyBtnHandler(contactBtnRef, allRefs.contactRef);
+  const recomHandler = fancyBtnHandler(recomBtnRef, allRefs.recomRef);
   const projectHandler = () => {
     projectBtnRef.current!.style.left = "120%";
     setTimeout(() => {
@@ -86,6 +89,14 @@ const HeaderImg: React.FC<props> = ({ allRefs }) => {
         ref={projectBtnRef}
       >
         <h3>Project</h3>
+      </motion.button>
+      <motion.button
+        variants={fancyBtns}
+        custom={8}
+        onClick={recomHandler}
+        ref={recomBtnRef}
+      >
+        <h3>Recommendation</h3>
       </motion.button>
     </motion.div>
   );

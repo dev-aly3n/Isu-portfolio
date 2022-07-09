@@ -24,6 +24,7 @@ const Career: React.FC = (): JSX.Element => {
   const eduRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
+  const recomRef = useRef(null);
 
   return (
     <motion.div
@@ -35,7 +36,7 @@ const Career: React.FC = (): JSX.Element => {
     >
         <AnimateSharedLayout>
         {/* first */}
-        <HeaderImg allRefs={{bioRef,eduRef,skillsRef,contactRef}} />
+        <HeaderImg allRefs={{bioRef,eduRef,skillsRef,contactRef,recomRef}} />
 
         {/* second */}
         <Biography bioRef={bioRef} />
@@ -52,7 +53,7 @@ const Career: React.FC = (): JSX.Element => {
         {/* 6th */}
         <ActivityChart />
 
-<Recommendation/>
+<Recommendation recomRef={recomRef} />
     </AnimateSharedLayout>
     <span className="w-screen h-full">
     <Footer />

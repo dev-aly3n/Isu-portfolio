@@ -29,5 +29,8 @@
     > button:nth-of-type(5) {
       @apply w-[13.4vw] h-[14.8vw] top-[37.85vw] left-[79.85vw] text-[4.1vw];
     }
+    > button:nth-of-type(6) {
+      @apply w-[13.5vw] h-[13.7vw] top-[30vw] left-[9.2vw] text-[1.9vw];
+    }
   }
 }
