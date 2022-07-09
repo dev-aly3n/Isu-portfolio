@@ -1,3 +1,7 @@
+import { motion } from "framer-motion";
+import { useOnScrollAnimation } from "../../../hooks/useOnScrollAnimation";
+import { secFading } from "../../../utils/animation";
+
 interface props {
     recom: {
         name: string;
@@ -10,9 +14,15 @@ interface props {
 }
 
 const Recom:React.FC<props> = ({recom}) =>{
-
+    const [sec, controls] = useOnScrollAnimation();
     return (
-        <a href={recom.url} target="_blank" className="h-full w-full group">
+        <motion.a
+        ref={sec}
+        variants={secFading}
+        initial="hidden"
+        animate={controls}
+        exit="out"
+        href={recom.url} target="_blank" className="h-full w-full group">
         <div className=" flex w-full h-full bg-primary-500/10 group-hover:bg-primary-500/40 duration-300 p-5 rounded-3xl gap-5">
         <img
           src={recom.image}
@@ -29,7 +39,7 @@ const Recom:React.FC<props> = ({recom}) =>{
         </p>
       </div>
     </div>
-    </a>
+    </motion.a>
     )
 }
 export default Recom;
