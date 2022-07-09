@@ -165,6 +165,24 @@ export const hardSkillList: {
     color: "(6,182,212)",
   },
   {
+    name: "wagmi-hook",
+    icon: "wagmi.png",
+    perc: 90,
+    color: "(46,45,44)",
+  },
+  {
+    name: "Ethers",
+    icon: "ethers.png",
+    perc: 70,
+    color: "(13,42,148)",
+  },
+  {
+    name: "Web3",
+    icon: "web3.png",
+    perc: 70,
+    color: "(171,108,36)",
+  },
+  {
     name: "Redux",
     icon: "redux.png",
     perc: 80,
