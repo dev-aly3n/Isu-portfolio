@@ -1,5 +1,5 @@
 // libs
-import React,{useRef, useContext} from "react";
+import React, { useRef, useContext } from "react";
 import { motion } from "framer-motion";
 import { AnimateSharedLayout } from "framer-motion";
 // components
@@ -28,37 +28,40 @@ const Career: React.FC = (): JSX.Element => {
 
   return (
     <motion.div
-    initial="hidden"
-    animate="visible"
-    exit="out"
-    variants={globCtx.toCareer === 1 ? firstPage : firstPage2}
-    className="career-container"
+      initial="hidden"
+      animate="visible"
+      exit="out"
+      variants={globCtx.toCareer === 1 ? firstPage : firstPage2}
+      className="career-container"
     >
-        <AnimateSharedLayout>
+      <AnimateSharedLayout>
         {/* first */}
-        <HeaderImg allRefs={{bioRef,eduRef,skillsRef,contactRef,recomRef}} />
+        <HeaderImg
+          allRefs={{ bioRef, eduRef, skillsRef, contactRef, recomRef }}
+        />
 
         {/* second */}
         <Biography bioRef={bioRef} />
 
         {/* Third */}
+        <Recommendation recomRef={recomRef} />
+        {/* 4th */}
         <EduList eduRef={eduRef} />
 
-        {/* 4th */}
+        {/* 5th */}
         <Skills skillsRef={skillsRef} />
 
-        {/* 5th */}
+        {/* 6th */}
         <Contacts contactRef={contactRef} />
 
-        {/* 6th */}
+        {/* 7th */}
         <ActivityChart />
 
-<Recommendation recomRef={recomRef} />
-    </AnimateSharedLayout>
-    <span className="w-screen h-full">
-    <Footer />
-    </span>
-      </motion.div>
+      </AnimateSharedLayout>
+      <span className="w-screen h-full">
+        <Footer />
+      </span>
+    </motion.div>
   );
 };
 

@@ -34,7 +34,7 @@ const Recom:React.FC<props> = ({recom}) =>{
         <p className="text-white/70 ">
           {recom.type}
         </p>
-        <p className="text-sm mt-3">
+        <p className="text-sm mt-7">
           {recom.desc}
         </p>
       </div>
