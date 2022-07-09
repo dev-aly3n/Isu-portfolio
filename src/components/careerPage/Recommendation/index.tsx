@@ -5,7 +5,7 @@ const Recommendation: React.FC = () => {
   return (
     <div>
       <motion.h2 layout>Recommendations</motion.h2>
-      <div className="w-9/12 h-full flex flex-col justify-center items-center">
+      <div className="w-9/12 h-full flex flex-col justify-center items-center gap-5">
         {recomData.map((recom) => {
           return <Recom recom={recom} />;
         })}
