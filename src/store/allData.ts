@@ -17,8 +17,6 @@ export const biochapters: { title: string; desc: string }[] = [
   },
 ];
 
-
-
 // if you master in any of your skill you just need to set "perc" of that skill to 300. it will add an explosion effect to that skill
 // and make sure you put that skill in the even row: 2,4,6,...
 
@@ -162,9 +160,6 @@ export const SoftSkillList: {
     color: "(62,135,200)",
   },
 ];
-
-
-
 
 export const langList: {
   name: string;
@@ -451,3 +446,29 @@ export const projectMeta: {
     "/media/projects/wikianime.png",
   ],
 };
+
+export const recomData: {
+  name: string;
+  job: string;
+  type: string;
+  desc: string;
+  image: string;
+  url: string;
+}[] = [
+  {
+    name: "Hamidreza Moradi (FlokiBB.eth)",
+    job: "Blockchain Integration Engineering | Blockchain researcher | Dapp engineer",
+    type: "July 4, 2022, Hamidreza Moradi worked with Aly on the same team",
+    desc: "Aly is one of the best among all people I have ever met and is a loyal colleague, understands complex matters. Aly is a strong and goal oriented team player; with every problem there was a solution.",
+    image: "/media/recom/hamidreza.jpg",
+    url: "https://www.linkedin.com/in/hamidreza-moradi-flokibb-eth-2b07581a7/",
+  },
+  {
+    name: "Hamidreza Moradi (FlokiBB.eth)",
+    job: "Blockchain Integration Engineering | Blockchain researcher | Dapp engineer",
+    type: "July 4, 2022, Hamidreza Moradi worked with Aly on the same team",
+    desc: "Aly is one of the best among all people I have ever met and is a loyal colleague, understands complex matters. Aly is a strong and goal oriented team player; with every problem there was a solution.",
+    image: "/media/recom/hamidreza.jpg",
+    url: "https://www.linkedin.com/in/hamidreza-moradi-flokibb-eth-2b07581a7/",
+  },
+];
