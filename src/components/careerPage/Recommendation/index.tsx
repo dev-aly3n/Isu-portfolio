@@ -4,7 +4,7 @@ const Recommendation: React.FC = () => {
   return (
     <div>
       <motion.h2 layout>Recommendations</motion.h2>
-      <div className=" flex w-9/12 h-full bg-primary-500/20 p-5 rounded-3xl gap-5">
+      <div className=" flex w-9/12 h-full bg-primary-500/10 p-5 rounded-3xl gap-5">
           <img
             src={"/media/recom/hamidreza.jpg"}
             className="w-28 h-28 rounded-full"
