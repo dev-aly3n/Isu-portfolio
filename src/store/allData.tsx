@@ -92,7 +92,7 @@ export const biochapters: { title: string; desc: React.ReactElement<any> }[] = [
         hook for interacting with Web3 and Ethereum chains. The big challenge
         here was implementing the{" "}
         <a
-          href="https://staging.demmortaltreasure.com/gameboard"
+          href="https://staging.demmortaltreasure.com/auction"
           target="_blank"
           className="link-inside-text"
         >
@@ -101,7 +101,7 @@ export const biochapters: { title: string; desc: React.ReactElement<any> }[] = [
         that needed a huge knowledge of web3 concepts, you can mint a NFT in
         this page. Another fun and big challenge was implementing{" "}
         <a
-          href="https://dedogmadao.com/"
+          href="https://staging.demmortaltreasure.com/gameboard"
           target="_blank"
           className="link-inside-text"
         >

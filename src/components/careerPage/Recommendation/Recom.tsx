@@ -17,6 +17,7 @@ const Recom:React.FC<props> = ({recom}) =>{
     const [sec, controls] = useOnScrollAnimation();
     return (
         <motion.a
+        layout
         ref={sec}
         variants={secFading}
         initial="hidden"
