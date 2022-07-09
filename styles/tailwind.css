@@ -12,6 +12,10 @@
   @apply mx-auto bg-black overflow-x-hidden;
 } */
 
+.link-inside-text {
+  @apply !text-primary-200 !underline hover:!text-secondary-500 duration-500; 
+}
+
 body {
   @apply bg-black;
 }

@@ -6,7 +6,7 @@ import { secFading } from "../../../utils/animation";
 import { useOnScrollAnimation } from "../../../hooks/useOnScrollAnimation";
 
 interface props {
-  chap: { title: string; desc: string };
+  chap: { title: string; desc: React.ReactElement<any> };
   firstChap: boolean;
 }
 
