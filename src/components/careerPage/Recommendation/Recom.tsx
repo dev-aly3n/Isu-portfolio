@@ -23,7 +23,7 @@ const Recom:React.FC<props> = ({recom}) =>{
         initial="hidden"
         animate={controls}
         exit="out"
-        href={recom.url} target="_blank" className="h-full w-full group">
+        href={recom.url} target="_blank" className="h-full w-full group no-select-a-tag">
         <div className="flex flex-col ssm:flex-row items-center ssm:items-start w-full h-full bg-primary-500/10 group-hover:bg-primary-500/40 duration-300 p-5 rounded-3xl gap-5">
         <img
           src={recom.image}
