@@ -99,7 +99,7 @@ export const biochapters: { title: string; desc: React.ReactElement<any> }[] = [
           Dutch Auction
         </a>{" "}
         that needed a huge knowledge of web3 concepts, you can mint a NFT in
-        this page. Another fun and big challenge was implementing{" "}
+        this page. Another fun big challenge was implementing{" "}
         <a
           href="https://staging.demmortaltreasure.com/gameboard"
           target="_blank"
