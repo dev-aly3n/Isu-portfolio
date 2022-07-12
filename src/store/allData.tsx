@@ -87,7 +87,7 @@ export const biochapters: { title: string; desc: React.ReactElement<any> }[] = [
           DeDogmaDAO
         </a>{" "}
         at Feb 2022. It was exactly what he wanted. A brilliant team with an
-        awesome and unique product. He worked as a Front-End developer on a
+        awesome unique product. He worked as a Front-End developer on a
         NextJS project with typescript, tailwindcss, framer-motion and WAGMI
         hook for interacting with Web3 and Ethereum chains. The big challenge
         here was implementing the{" "}
@@ -107,7 +107,7 @@ export const biochapters: { title: string; desc: React.ReactElement<any> }[] = [
         >
           gameboard
         </a>{" "}
-        that is a non-realtime browser's card game for lottery.
+        that is a non-realtime browser card game for lottery.
       </>
     ),
   },
