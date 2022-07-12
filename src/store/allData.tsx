@@ -589,12 +589,12 @@ export const recomData: {
   url: string;
 }[] = [
   {
-    name: "Hamidreza Moradi (FlokiBB.eth)",
-    job: "Blockchain Integration Engineering | Blockchain researcher | Dapp engineer",
-    type: "July 4, 2022, Hamidreza Moradi worked with Aly on the same team",
-    desc: "Aly is one of the best among all people I have ever met and is a loyal colleague, understands complex matters. Aly is a strong and goal oriented team player; with every problem there was a solution.",
-    image: "/media/recom/hamidreza.jpg",
-    url: "https://www.linkedin.com/in/hamidreza-moradi-flokibb-eth-2b07581a7/",
+    name: "Sara Rabiee",
+    job: "Technical Manager at Zettle by PayPal / Agile Coach at spotify",
+    type: "July 12, 2022, Sara managed Aly directly",
+    desc: "I have worked with Aly for a couple of months. He is a great performer, easy to work with and a team player. I have observed him to work with designers in a very effective way. He delivers a good quality code in a timely manner and does not hesitate to comment on product solutions if he has a better solutions in mind. In my experience Aly's code and what he builds is very reliable and he is very patience with the constant changes coming from the product team. It was a pleasure for me to work with Aly and I hope it happens again in the future.",
+    image: "/media/recom/sara.jpg",
+    url: "https://www.linkedin.com/in/sara-rabiee-17711260/",
   },
   {
     name: "Hamidreza Moradi (FlokiBB.eth)",
