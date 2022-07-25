@@ -589,6 +589,14 @@ export const recomData: {
   url: string;
 }[] = [
   {
+    name: "Sadegh Ghaffari",
+    job: "Principal Product Designer at Wallex",
+    type: "July 25, 2022, Sadegh worked with Aly on the same team",
+    desc: "Worked with Aly on a project, He is easy reachable, and always in time. He is ready to provide all the necessary technical support and advice in case of need almost immediately. Enjoyed working with aly.",
+    image: "/media/recom/sadegh.jpg",
+    url: "https://www.linkedin.com/in/sadeghgh/",
+  },
+  {
     name: "Sara Rabiee",
     job: "Technical Manager at Zettle by PayPal / Agile Coach at spotify",
     type: "July 12, 2022, Sara managed Aly directly",
