@@ -75,7 +75,7 @@ export const biochapters: { title: string; desc: React.ReactElement<any> }[] = [
     ),
   },
   {
-    title: "Chapter Five: DeDogmaDAO | Feb 2022 - Present",
+    title: "Chapter Five: DeDogmaDAO | Feb 2022 - Nov 2022 | 10 mos",
     desc: (
       <>
         Aly started to work with{" "}
@@ -87,10 +87,10 @@ export const biochapters: { title: string; desc: React.ReactElement<any> }[] = [
           DeDogmaDAO
         </a>{" "}
         at Feb 2022. It was exactly what he wanted. A brilliant team with an
-        awesome unique product. He worked as a Front-End developer on a
-        NextJS project with typescript, tailwindcss, framer-motion and WAGMI
-        hook for interacting with Web3 and Ethereum chains. The big challenge
-        here was implementing the{" "}
+        awesome unique product. He worked as a Front-End developer on a NextJS
+        project with typescript, tailwindcss, framer-motion and WAGMI hook for
+        interacting with Web3 and Ethereum chains. The big challenge here was
+        implementing the{" "}
         <a
           href="https://staging.dedogmadao.com//auction"
           target="_blank"
@@ -108,6 +108,31 @@ export const biochapters: { title: string; desc: React.ReactElement<any> }[] = [
           gameboard
         </a>{" "}
         that is a non-realtime browser card game for lottery.
+      </>
+    ),
+  },
+  {
+    title: "Chapter Six: Immigration to UAE",
+    desc: (
+      <>
+        After a suffering process of immigration to United arab emirates, Aly
+        tried to move on and start a new job.
+      </>
+    ),
+  },
+  {
+    title: "Chapter Seven: Setup a company, Spila",
+    desc: (
+      <>
+        With the help of his professional friends, Aly founded{" "}
+        <a
+          href="https://spila.dev/"
+          target="_blank"
+          className="link-inside-text"
+        >
+          Spila
+        </a>{" "}
+        , a software-based company in Jun 2022. A multi-pipeline process was used to create applications at this company. Projects were built by several teams under the leadership of a technical lead. Depending on the needs of the project, each team had up to 10 talents.
       </>
     ),
   },
