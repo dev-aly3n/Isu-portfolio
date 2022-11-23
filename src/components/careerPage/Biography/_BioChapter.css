@@ -1,6 +1,6 @@
 @layer components {
   .bio-chapter-container {
-    @apply flex flex-col justify-center items-center w-10/12 sm:w-full my-3;
+    @apply flex flex-col justify-center items-start w-10/12 sm:w-full my-3;
     > h3 {
       @apply no-select-a-tag text-2xl font-bold self-start pl-5 cursor-pointer w-full;
     }
