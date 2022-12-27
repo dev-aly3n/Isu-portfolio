@@ -420,7 +420,7 @@ export const projectList: {
     desc: "This is a Nextjs application that offers a decentralized economic solution based on Ethereum. Here you can mint nft, play lottery and etc. I was the only frontend developer at dedogmadao's technical team. you can also find more link to staging phase in biography, chapter five.",
     url: "demmortaltreasure.com/",
     gitHub: "github.com/DeDogmaDao",
-    image: "dedogmadao.png",
+    image: "demmortaltreasure.png",
     techs: [
       { name: "React", color: "#61D9FA" },
       { name: "NextJS", color: "#081722" },
