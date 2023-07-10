@@ -18,14 +18,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -40%;
-    margin-left: -40%;
+    margin-top: -12.5vw;
+    margin-left: -12.5vw;
     border-width: 1vw;
     border-color: #16fbff;
     border-radius: 100%;
-    height: 80%;
+    height: 25vw;
     position: absolute;
-    width: 80%;
+    width: 25vw;
     -webkit-transform: translateZ(-5vw);
   }
   .key-thickness0 {
@@ -78,7 +78,7 @@
     > div {
       @apply relative key-door-tickness rounded-full duration-2000;
       > img {
-        @apply overflow-hidden rounded-full;
+        @apply overflow-hidden rounded-full w-[30vw];
       }
     }
   }

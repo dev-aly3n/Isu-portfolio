@@ -15,7 +15,7 @@
           background-image: url("/media/gate/keytext.jpg");
           background-position: center;
           background-size: fill;
-          @apply text-transparent bg-clip-text text-base md:text-2xl lg:text-3xl xl:text-4xl font-black text-center;
+          @apply text-transparent bg-clip-text text-base md:text-2xl lg:text-3xl xl:text-4xl font-black text-center will-change-transform;
         }
       }
       > div:nth-of-type(2) {
