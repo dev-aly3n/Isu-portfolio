@@ -417,7 +417,7 @@ export const projectList: {
 }[] = [
   {
     name: "Wizardex",
-    desc: "As the lead of a team of 6 talented individuals, I successfully delivered a fully onchain decentralized exchange (DEX) within a tight timeframe of 2 months. This innovative application operates solely through the front-end and smart contracts, eliminating the need for a traditional backend. Our collaborative efforts resulted in a seamless user experience and efficient handling of transactions, revolutionizing the way decentralized exchanges operate.",
+    desc: "Led a team of 6 developers in delivering a fully onchain DEX within 2 months, with no backend required. Revolutionized decentralized exchanges by creating a streamlined user experience and handling all operations on the frontend and through smart contracts.",
     url: "wizardex-test.vercel.app/",
     gitHub: "github.com/Ithil-protocol/dex-frontend",
     image: "wizardex.png",
