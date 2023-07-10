@@ -111,17 +111,17 @@ export const biochapters: { title: string; desc: React.ReactElement<any> }[] = [
       </>
     ),
   },
+  // {
+  //   title: "Chapter Six: Immigration to UAE",
+  //   desc: (
+  //     <>
+  //       After a suffering process of immigration to United arab emirates, Aly
+  //       tried to move on and start a new job.
+  //     </>
+  //   ),
+  // },
   {
-    title: "Chapter Six: Immigration to UAE",
-    desc: (
-      <>
-        After a suffering process of immigration to United arab emirates, Aly
-        tried to move on and start a new job.
-      </>
-    ),
-  },
-  {
-    title: "Chapter Seven: Setup a company, Spila",
+    title: "Chapter Six: Setup a company, Spila",
     desc: (
       <>
         With the help of his professional friends, Aly founded{" "}
