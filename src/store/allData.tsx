@@ -416,6 +416,24 @@ export const projectList: {
   techs: { name: string; color: string }[];
 }[] = [
   {
+    name: "ITHIL Protocol",
+    desc: "In this project, I led a team of 5 developers to successfully deliver a decentralized Next.js app. Our focus was on creating a financial interoperability layer that connects the entire web3 ecosystem. By leveraging Next.js, we achieved seamless integration and enhanced user experiences, revolutionizing the way financial interactions occur within the web3 landscape.",
+    url: "testnet.ithil.fi/",
+    gitHub: "github.com/Ithil-protocol/frontend",
+    image: "ithil.png",
+    techs: [
+      { name: "React", color: "#61D9FA" },
+      { name: "NextJS", color: "#081722" },
+      { name: "ChakraUI", color: "#DD3A0A" },
+      { name: "WAGMI-hook", color: "#7BB651" },
+      { name: "Viem", color: "#1fB251" },
+      { name: "Typescript", color: "#1572B6" },
+      { name: "Tailwindcss", color: "#06B6D4" },
+      { name: "FramerMotion", color: "#EC00C1" },
+      { name: "PostCSS", color: "#DD3A0A" },
+    ],
+  },
+  {
     name: "Wizardex",
     desc: "Led a team of 6 developers in delivering a fully onchain DEX within 2 months, with no backend required. Revolutionized decentralized exchanges by creating a streamlined user experience and handling all operations on the frontend and through smart contracts.",
     url: "wizardex-test.vercel.app/",
