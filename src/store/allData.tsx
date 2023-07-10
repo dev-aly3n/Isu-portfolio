@@ -416,6 +416,22 @@ export const projectList: {
   techs: { name: string; color: string }[];
 }[] = [
   {
+    name: "Wizardex",
+    desc: "As the lead of a team of 6 talented individuals, I successfully delivered a fully onchain decentralized exchange (DEX) within a tight timeframe of 2 months. This innovative application operates solely through the front-end and smart contracts, eliminating the need for a traditional backend. Our collaborative efforts resulted in a seamless user experience and efficient handling of transactions, revolutionizing the way decentralized exchanges operate.",
+    url: "wizardex-test.vercel.app/",
+    gitHub: "github.com/Ithil-protocol/dex-frontend",
+    image: "wizardex.png",
+    techs: [
+      { name: "React", color: "#61D9FA" },
+      { name: "NextJS", color: "#081722" },
+      { name: "MUI", color: "#06B6D4" },
+      { name: "SASS", color: "#DD3A0A" },
+      { name: "WAGMI-hook", color: "#7BB651" },
+      { name: "Ethers", color: "#1fB251" },
+      { name: "Typescript", color: "#1572B6" },
+    ],
+  },
+  {
     name: "DeDogmaDAO",
     desc: "This is a Nextjs application that offers a decentralized economic solution based on Ethereum. Here you can mint nft, play lottery and etc. I was the only frontend developer at dedogmadao's technical team. you can also find more link to staging phase in biography, chapter five.",
     url: "demmortaltreasure.com/",
@@ -602,6 +618,7 @@ export const projectMeta: {
     "/media/projects/icecream-shop.png",
     "/media/projects/music-player.png",
     "/media/projects/wikianime.png",
+    "/media/projects/wizardex.png",
   ],
 };
 
